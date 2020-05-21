@@ -6,10 +6,10 @@
 [X] sidebar
 [X] grilla articulos
 [X] footer
+[x] Hacer responsive todo
 
 -- pendiente
 [] Traer las categorias por js
 [] Poder crear nuevas categorias
 [] Simular seleccion de filtros
-[] Hacer responsive todo
 [--] more to-dos are coming soon

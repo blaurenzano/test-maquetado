@@ -486,6 +486,19 @@ main {
             letter-spacing: .4px;
             color: $black;
             margin-bottom: 14px;
+
+            span {
+                margin-left: 10px;
+                display: none;
+
+                svg {
+                    transform: rotate(0deg);
+                    width: 14px;
+                    @include transition(.2s);
+                }
+
+
+            }
         }
 
         .filterItem {
@@ -530,6 +543,18 @@ main {
                         }
                     }
                 }
+            }
+        }
+
+        &.active {
+            h2 {
+                span {
+                    transform: rotate(180deg);
+                }
+            }
+
+            .filterItem {
+                display: inline-block;
             }
         }
     }
@@ -665,7 +690,68 @@ footer {
     .Sidebar {
         width: 100%;
         margin-right: 0px;
+        margin-bottom: 20px;
 
+        #filters {
+            h2 {
+                cursor: pointer;
+
+                span {
+                    display: inline-block;
+                }
+            }
+
+            .filterItem {
+                width: calc(100% / 3 - 2.4%);
+                margin: 1%;
+                display: none;
+            }
+        }
     }
 
+    .Products {
+        width: 100%;
+    }
+
+}
+
+@media (max-width: 700px) {
+
+    #menuMobile {
+        width: 80%;
+    }
+
+    header {
+        .top {
+            img {
+                width: 140px;
+            }
+        }
+    }
+
+    .Sidebar {
+
+        #filters {
+            .filterItem {
+                width: 100%;
+                margin: 1%;
+            }
+        }
+    }
+
+    .Products {
+        .product {
+            width: 100%;
+        }
+    }
+
+    footer {
+        ul {
+            li {
+                width: 100%;
+                margin: 0;
+                margin-bottom: 10px;
+            }
+        }
+    }
 }
