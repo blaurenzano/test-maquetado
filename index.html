@@ -2,13 +2,334 @@
 <html lang="es">
 
 <head>
-	<meta charset="UTF-8">
+	<!--Staging no cache-->
+	<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+	<meta http-equiv="Pragma" content="no-cache" />
+	<meta http-equiv="Expires" content="0" />
+
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+	<!--Titles-->
 	<title>La Preuve</title>
-	<link rel="stylesheet" href="styles.css">
+	<meta property="og:title" content="La Preuve" />
+	<meta name="twitter:title" content="La Preuve" />
+
+	<!--Descriptions-->
+	<meta name="description"
+		content="Somos la cadena de tiendas de zapatillas con mayor cobertura en Argentina con más de 45 tiendas en las principales ciudades de Argentina y de manera remota con nuestra tienda online " />
+	<meta property="og:description"
+		content="Somos la cadena de tiendas de zapatillas con mayor cobertura en Argentina con más de 45 tiendas en las principales ciudades de Argentina y de manera remota con nuestra tienda online " />
+	<meta name="twitter:description"
+		content="Somos la cadena de tiendas de zapatillas con mayor cobertura en Argentina con más de 45 tiendas en las principales ciudades de Argentina y de manera remota con nuestra tienda online " />
+
+	<!--Icons-->
+	<!-- 32 || 64 -->
+	<link rel="shortcut icon" type="image/x-icon"
+		href="https://leandromuzzupappa.github.io/assets/images/favicon.png" />
+	<!-- 128 || 256 -->
+	<link rel="apple-touch-icon" href="https://leandromuzzupappa.github.io/assets/images/largeFavicon.png" />
+	<meta property="og:image" content="https://leandromuzzupappa.github.io/assets/images/largeFavicon.png" />
+	<meta name="twitter:image" content="https://leandromuzzupappa.github.io/assets/images/largeFavicon.png" />
+
+	<!-- Twitter card -->
+	<meta name="twitter:site" content="@LaPreuve" />
+	<meta name="twitter:creator" content="@LaPreuve" />
+	<meta name="twitter:card" content="summary_large_image" />
+
+	<!--CSS-->
+	<link rel="stylesheet" href="./assets/css/main.min.css" />
+
+	<!--Fonts-->
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+	<!--Analytics-->
+	<!--Cambiar UAID desde aca  UA-XXXXXXX-X  -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-XXXXXXX-X"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+
+		function gtag() {
+			dataLayer.push(arguments);
+		}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-XXXXXXX-X');
+	</script>
 </head>
 
 <body>
+	<div id="screenRes"></div>
 
+	<div id="menuMobile">
+		<nav>
+			<ul>
+				<li>
+					<a href="#" class="active">Sale</a>
+				</li>
+				<li>
+					<a href="#">E-shop</a>
+				</li>
+				<li>
+					<a href="#">Lookbook</a>
+				</li>
+				<li>
+					<a href="#">Campaña</a>
+				</li>
+				<li>
+					<a href="#">Locales</a>
+				</li>
+			</ul>
+		</nav>
+		<div class="col headerItems">
+			<ul>
+				<li>
+					<a href="#">
+						<svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="search"
+							class="svg-inline--fa fa-search fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg"
+							viewBox="0 0 512 512">
+							<path
+								d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z">
+							</path>
+						</svg>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="user"
+							class="svg-inline--fa fa-user fa-w-14" role="img" xmlns="http://www.w3.org/2000/svg"
+							viewBox="0 0 448 512">
+							<path
+								d="M224 256c70.7 0 128-57.3 128-128S294.7 0 224 0 96 57.3 96 128s57.3 128 128 128zm89.6 32h-16.7c-22.2 10.2-46.9 16-72.9 16s-50.6-5.8-72.9-16h-16.7C60.2 288 0 348.2 0 422.4V464c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48v-41.6c0-74.2-60.2-134.4-134.4-134.4z">
+							</path>
+						</svg>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="shopping-cart"
+							class="svg-inline--fa fa-shopping-cart fa-w-18" role="img"
+							xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+							<path
+								d="M528.12 301.319l47.273-208C578.806 78.301 567.391 64 551.99 64H159.208l-9.166-44.81C147.758 8.021 137.93 0 126.529 0H24C10.745 0 0 10.745 0 24v16c0 13.255 10.745 24 24 24h69.883l70.248 343.435C147.325 417.1 136 435.222 136 456c0 30.928 25.072 56 56 56s56-25.072 56-56c0-15.674-6.447-29.835-16.824-40h209.647C430.447 426.165 424 440.326 424 456c0 30.928 25.072 56 56 56s56-25.072 56-56c0-22.172-12.888-41.332-31.579-50.405l5.517-24.276c3.413-15.018-8.002-29.319-23.403-29.319H218.117l-6.545-32h293.145c11.206 0 20.92-7.754 23.403-18.681z">
+							</path>
+						</svg>
+					</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+
+	<header>
+		<div class="container">
+			<div class="col top">
+				<img src="./assets/images/logo.svg" alt="La Preuve">
+				<div class="headerItems">
+					<ul>
+						<li>
+							<a href="#">
+								<svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="search"
+									class="svg-inline--fa fa-search fa-w-16" role="img"
+									xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+									<path
+										d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z">
+									</path>
+								</svg>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="user"
+									class="svg-inline--fa fa-user fa-w-14" role="img" xmlns="http://www.w3.org/2000/svg"
+									viewBox="0 0 448 512">
+									<path
+										d="M224 256c70.7 0 128-57.3 128-128S294.7 0 224 0 96 57.3 96 128s57.3 128 128 128zm89.6 32h-16.7c-22.2 10.2-46.9 16-72.9 16s-50.6-5.8-72.9-16h-16.7C60.2 288 0 348.2 0 422.4V464c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48v-41.6c0-74.2-60.2-134.4-134.4-134.4z">
+									</path>
+								</svg>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="shopping-cart"
+									class="svg-inline--fa fa-shopping-cart fa-w-18" role="img"
+									xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+									<path
+										d="M528.12 301.319l47.273-208C578.806 78.301 567.391 64 551.99 64H159.208l-9.166-44.81C147.758 8.021 137.93 0 126.529 0H24C10.745 0 0 10.745 0 24v16c0 13.255 10.745 24 24 24h69.883l70.248 343.435C147.325 417.1 136 435.222 136 456c0 30.928 25.072 56 56 56s56-25.072 56-56c0-15.674-6.447-29.835-16.824-40h209.647C430.447 426.165 424 440.326 424 456c0 30.928 25.072 56 56 56s56-25.072 56-56c0-22.172-12.888-41.332-31.579-50.405l5.517-24.276c3.413-15.018-8.002-29.319-23.403-29.319H218.117l-6.545-32h293.145c11.206 0 20.92-7.754 23.403-18.681z">
+									</path>
+								</svg>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<nav id="menuDesktop">
+				<ul>
+					<li>
+						<a href="#" class="active">Sale</a>
+					</li>
+					<li>
+						<a href="#">E-shop</a>
+					</li>
+					<li>
+						<a href="#">Lookbook</a>
+					</li>
+					<li>
+						<a href="#">Campaña</a>
+					</li>
+					<li>
+						<a href="#">Locales</a>
+					</li>
+				</ul>
+			</nav>
+			<div id="mmbtn">
+				<span></span>
+				<span></span>
+				<span></span>
+			</div>
+		</div>
+	</header>
+
+	<main>
+		<div class="container">
+			<aside class="col Sidebar">
+				<h1 class="title">
+					Zapatillas
+				</h1>
+				<div id="showFilters"></div>
+				<div id="filters">
+					<h2>
+						Filtrar
+					</h2>
+					<div class="col filterItem">
+						<h4>
+							Categoría
+						</h4>
+						<ul>
+							<li>
+								<a href="#">
+									Zapatillas
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									Zapatos
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									Botas
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									Sandalias
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									Pantuflas
+								</a>
+							</li>
+						</ul>
+					</div>
+					<div class="col filterItem">
+						<h4>
+							Talles
+						</h4>
+						<ul>
+							<li>
+								<a href="#">
+									36
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									38
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									40
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									42
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									44
+								</a>
+							</li>
+						</ul>
+					</div>
+					<div class="col filterItem">
+						<h4>
+							Color
+						</h4>
+						<ul>
+							<li>
+								<a href="#">
+									Amarillo
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									Negro
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									Verde
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									Azul
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									Blanco
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</aside>
+			<section class="col Products">
+				<!--los productos vienen de un array por js odenados-->
+				<!--porque si los repetia y despues hacia un shuffle-->
+				<!--cada render iba a tener un orden distinto-->
+			</section>
+		</div>
+	</main>
+
+	<footer>
+		<div class="container">
+			<ul>
+				<li>
+					<a href="#">Ayuda</a>
+				</li>
+				<li>
+					<a href="#">Contacto</a>
+				</li>
+				<li>
+					<a href="#">Términos y condiciones</a>
+				</li>
+				<li>
+					<a href="#">Políticas de privacidad</a>
+				</li>
+			</ul>
+		</div>
+	</footer>
+
+
+	<div class="overlay"></div>
+	<div id="responseFromServer" class="msgPop"></div>
+	<script src="./assets/scripts/products.js"></script>
+	<script src="./assets/scripts/app.js"></script>
 </body>
 
 </html>
