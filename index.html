@@ -1,11 +1,172 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-	<meta charset="UTF-8">
-	<title>Test de maquetado</title>
-	<link rel="stylesheet" href="styles.css">
-</head>
-<body>
-
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Test de maquetado</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+      integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!--NAVBAR-->
+    <nav class="navb">
+      <div class="firstLine">
+        <img class="hamburger hideWide" src="assets/iconos/bars-solid.svg"/>
+        <img class="logo" src="assets/logo.svg"/>
+        <div class="iconsContainer">
+          <img class="icons hide" src="assets/iconos/search-solid.svg"/>
+          <img class="icons hide" src="assets/iconos/user-solid.svg" />
+          <img class="icons" src="assets/iconos/shopping-cart-solid.svg"/>
+        </div>
+      </div>
+      <div class="links hide">
+        <p><b>SALE</b></p>
+        <p>E-SHOP</p>
+        <p>LOOKBOOK</p>
+        <p>CAMPAÑA</p>
+        <p>LOCALES</p>
+      </div>
+    </nav>
+    <!--BARRA LATERAL-->
+    <div class="container">
+      <div class="row ">
+        <div class="col-lg-3 lateral">
+          <p class="title">Zapatillas</p>
+          <hr/>
+          <div class="d-none d-lg-block">
+            <p class="filter">Filtrar</p>
+            <div class="subtitle">
+              <p>Categoría</p>
+            </div>
+            <ul class="categories">
+              <li>Zapatillas</li>
+              <li>Zapatos</li>
+              <li>Botas</li>
+              <li>Sandalias</li>
+              <li>Pantuflas</li>
+            </ul>
+            <div class="subtitle">
+              <p>Talle</p>
+            </div>
+            <ul class="categories">
+              <li>36</li>
+              <li>38</li>
+              <li>40</li>
+              <li>42</li>
+              <li>44</li>
+            </ul>
+            <div class="subtitle">
+              <p>Color</p>
+            </div>
+            <ul class="categories">
+              <li>Amarillo</li>
+              <li>Negro</li>
+              <li>Verde</li>
+              <li>Azul</li>
+              <li>Blanco</li>
+            </ul>
+          </div>
+        </div>
+        <!--PRODUCTOS-->
+        <div class="col-lg-9">
+          <div class="container">
+            <div class="row products">
+              <div class="col-lg-4 col-md-6 col-sm-12">
+                <img src="assets/productos/zapatilla_1.jpg" />
+                <hr />
+                <h3>Zapatillas 1-XFK</h3>
+                <p>$5000</p>
+              </div>
+              <div class="col-lg-4 col-md-6 col-sm-12">
+                <img src="assets/productos/zapatilla_2.jpg" />
+                <hr />
+                <h3>Zapatillas 2000-X</h3>
+                <p>$9800</p>
+              </div>
+              <div class="col-lg-4 col-md-6 col-sm-12">
+                <img src="assets/productos/zapatilla_3.jpg" />
+                <hr />
+                <h3>Zapatillas 3 Run</h3>
+                <p>$6500</p>
+              </div>
+              <div class="col-lg-4 col-md-6 d-none d-md-block">
+                <img src="assets/productos/zapatilla_3.jpg" />
+                <hr />
+                <h3>Zapatillas 3 Run</h3>
+                <p>$6500</p>
+              </div>
+              <div class="col-lg-4 col-md-6 d-none d-md-block">
+                <img src="assets/productos/zapatilla_1.jpg" />
+                <hr />
+                <h3>Zapatillas 1-XFK</h3>
+                <p>$5000</p>
+              </div>
+              <div class="col-lg-4 col-md-6 d-none d-md-block">
+                <img src="assets/productos/zapatilla_2.jpg" />
+                <hr />
+                <h3>Zapatillas 2000-X</h3>
+                <p>$9800</p>
+              </div>
+              <div class="col-lg-4 col-md-6 d-none d-md-block">
+                <img src="assets/productos/zapatilla_1.jpg" />
+                <hr />
+                <h3>Zapatillas 1-XFK</h3>
+                <p>$5000</p>
+              </div>
+              <div class="col-lg-4 col-md-6 d-none d-md-block">
+                <img src="assets/productos/zapatilla_2.jpg" />
+                <hr />
+                <h3>Zapatillas 2000-X</h3>
+                <p>$9800</p>
+              </div>
+              <div class="col-lg-4 col-md-6 d-none d-md-block">
+                <img src="assets/productos/zapatilla_3.jpg" />
+                <hr />
+                <h3>Zapatillas 3 Run</h3>
+                <p>$6500</p>
+              </div>
+              <div class="col-lg-4 col-md-6 d-none d-md-block">
+                <img src="assets/productos/zapatilla_2.jpg" />
+                <hr />
+                <h3>Zapatillas 2000-X</h3>
+                <p>$9800</p>
+              </div>
+              <div class="col-lg-4 col-md-6 d-none d-md-block">
+                <img src="assets/productos/zapatilla_3.jpg" />
+                <hr />
+                <h3>Zapatillas 3 Run</h3>
+                <p>$6500</p>
+              </div>
+              <div class="col-lg-4 col-md-6 d-none d-lg-block">
+                <img src="assets/productos/zapatilla_1.jpg" />
+                <hr />
+                <h3>Zapatillas 1-XFK</h3>
+                <p>$5000</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--FOOTER-->
+    <div class="footer">
+      <div class="container">
+        <div class="row">
+          <p class="col-md-12 col-lg-3">Ayuda</p>
+          <p class="col-md-12 col-lg-3">Contacto</p>
+          <p class="col-md-12 col-lg-3">Términos y condiciones</p>
+          <p class="col-md-12 col-lg-3">Políticas de privacidad</p>
+        </div>
+      </div>
+    </div>
+    </div>
+  </body>
 </html>

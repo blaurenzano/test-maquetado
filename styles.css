@@ -1,3 +1,198 @@
-body{
-	margin: 0;
+body {
+  margin: 0;
+}
+
+.navb {
+  display: flex;
+  width: 100%;
+  padding: 3px 0;
+  background-color: #100217e6;
+  box-shadow: 0px 3px 6px #00000026;
+  flex-direction: column;
+}
+
+.firstLine {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.icons {
+  width: 23px;
+  height: auto;
+  margin: 0 5px;
+  cursor: pointer;
+}
+
+.iconsContainer {
+  position: absolute;
+  right: 5%;
+}
+
+.logo {
+  width: 206px;
+  height: auto;
+}
+
+.links {
+  width: 100%;
+  padding: 0 15%;
+  margin-top: 17.5px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.links p {
+  text-align: left;
+  font-size: 17px;
+  font-family: "Roboto", sans-serif;
+  letter-spacing: 0.4px;
+  color: white;
+  cursor: pointer;
+  display: inline-block;
+}
+
+.lateral {
+  margin-top: 40px;
+}
+
+.lateral hr {
+  border-color: black;
+  margin-top: -10px;
+}
+
+.title {
+  font-size: 24px;
+  font-weight: 700;
+  font-family: "Roboto", sans-serif;
+}
+
+.filter {
+  font-size: 20px;
+  font-weight: 700;
+  font-family: "Roboto", sans-serif;
+}
+
+.subtitle {
+  padding-top: 2px;
+  padding-left: 10px;
+  width: 260px;
+  height: 29px;
+  background: #e4e8ee 0% 0% no-repeat padding-box;
+}
+
+.subtitle p {
+  text-align: left;
+  font-size: 16px;
+  font-family: "Roboto", sans-serif;
+  letter-spacing: 0.32px;
+  color: #030b1c;
+  font-weight: 700;
+}
+.categories {
+  text-align: left;
+  font-size: 16px;
+  font-family: "Roboto", sans-serif;
+  letter-spacing: 0.4px;
+  color: #030b1c;
+  list-style: none;
+  margin-left: -28px;
+  margin-top: 5px;
+  cursor: pointer;
+}
+.categories li:hover {
+  font-weight: 700;
+}
+
+.products div img {
+  width: 260px;
+  height: auto;
+}
+
+.products div hr {
+  border-color: black;
+}
+.products div {
+  margin-top: 40px;
+}
+
+.products div h3 {
+  margin-top: -5px;
+  text-align: left;
+  font-size: 15px;
+  font-family: "Roboto", sans-serif;
+  letter-spacing: 0.32px;
+  color: #030b1c;
+}
+.products div p {
+  margin-top: -5px;
+  text-align: left;
+  font-weight: 700;
+  font-size: 16px;
+  font-family: "Roboto", sans-serif;
+  letter-spacing: 0.32px;
+  color: #030b1c;
+}
+
+.footer {
+  width: 100%;
+  padding: 10px 0;
+  background-color: #100217e6;
+  box-shadow: 0px -3px 6px #00000026;
+  margin-top: 100px;
+}
+
+.footer p {
+  text-align: center;
+  font-size: 15px;
+  font-family: "Roboto", sans-serif;
+  letter-spacing: 0.32px;
+  color: #fafafa;
+  padding: 0 5%;
+  margin-top: 10px;
+  cursor: pointer;
+}
+.footer p:hover {
+  font-weight: 700;
+}
+.hideWide {
+  width: 0;
+  height: 0;
+  visibility: hidden;
+}
+
+@media only screen and (max-width: 767px) {
+  .products div img {
+    justify-content: center;
+    width: 400px;
+    height: auto;
+    justify-content: center;
+  }
+  .navb {
+    display: flex;
+    width: 100%;
+    height: 80px;
+    background-color: #100217e6;
+    box-shadow: 0px 3px 6px #00000026;
+    flex-direction: column;
+  }
+
+  .icons {
+    width: 27px;
+    height: auto;
+    cursor: pointer;
+  }
+
+  .hamburger {
+    width: 25px;
+    height: auto;
+    cursor: pointer;
+    position: absolute;
+    left: 5%;
+    visibility: visible;
+  }
+
+  .hide {
+    visibility: hidden;
+  }
 }
