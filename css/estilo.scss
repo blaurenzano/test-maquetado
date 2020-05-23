@@ -2,6 +2,7 @@ $colorUno:#271d2d;
 $colorDos:#ffffff;
 $colorTres:#cccfd2;
 $colorCuatro:#000000;
+$colorFondo:#f9f9f9;
 
 @mixin floatLeft{
     float: left;
@@ -17,6 +18,9 @@ $colorCuatro:#000000;
     transition: $transform $tiempo $ease;
     transform: scale($scale);
     cursor: pointer;
+}
+body{
+    background-color:$colorFondo;
 }
 .ver,
 .filtro{
