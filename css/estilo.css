@@ -1,0 +1,212 @@
+.ver,
+.filtro {
+  display: none;
+}
+
+/*
+    Logo
+*/
+.logo {
+  text-align: center;
+}
+
+.logo__imagen {
+  width: 160px;
+}
+
+/*
+    icono
+*/
+.icono {
+  color: #ffffff;
+  font-size: 20px;
+}
+
+/*
+    Nav
+*/
+nav {
+  -webkit-box-shadow: -2px 5px 13px -5px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: -2px 5px 13px -5px rgba(0, 0, 0, 0.75);
+  box-shadow: -2px 5px 13px -5px rgba(0, 0, 0, 0.75);
+  background-color: #271d2d;
+}
+
+.navbar-dark .navbar__menu li {
+  padding: 0 20px;
+}
+.navbar-dark .navbar-nav .nav-link {
+  color: #ffffff;
+}
+.navbar-dark .navbar-nav .nav-link:hover, .navbar-dark .navbar-nav .nav-link:focus {
+  color: #ffffff;
+}
+.navbar-dark .navbar-toggler {
+  color: #ffffff;
+  border: none;
+}
+
+a {
+  color: #ffffff;
+}
+a:hover {
+  text-decoration: none;
+}
+a:focus, a:active {
+  font-weight: bolder;
+}
+
+.columnas {
+  margin: 100px 0 30px 0;
+}
+
+/*
+    Sidebar
+*/
+.sidebar {
+  float: left;
+  width: 100%;
+}
+
+.sidebar__menu {
+  display: block;
+  font-size: 14px;
+  float: left;
+  width: 100%;
+}
+.sidebar__menu ul {
+  float: left;
+  width: 100%;
+  list-style: none;
+  padding-left: 13px;
+}
+.sidebar__menu a {
+  color: #000000;
+}
+.sidebar__menu a:hover {
+  font-weight: bolder;
+}
+
+.sidebar__texto {
+  float: left;
+  width: 100%;
+  font-weight: bold;
+}
+
+.sidebar--zapatillas {
+  font-size: 20px;
+  border-bottom: 1px solid;
+}
+
+.sidebar--filtrar {
+  margin: 10px 0;
+}
+
+.sidebar--tipo {
+  background-color: #cccfd2;
+  padding: 5px 10px;
+}
+
+.sidebar__icono {
+  float: right;
+  display: none;
+}
+
+/*
+    grilla
+*/
+.grilla {
+  font-size: 14px;
+}
+
+.grilla__box {
+  margin-bottom: 20px;
+}
+
+.grilla__contenedor_imagen {
+  overflow: hidden;
+  border-bottom: 1px solid #271d2d;
+}
+
+.grilla__texto {
+  margin: 5px 0 0 0;
+}
+
+.grilla--precio {
+  font-weight: bolder;
+}
+
+.grilla__imagen {
+  float: left;
+  width: 100%;
+  position: relative;
+  -webkit-transition: transform 0.5s ease;
+  -moz-transition: transform 0.5s ease;
+  -o-transition: transform 0.5s ease;
+  -ms-transition: transform 0.5s ease;
+  transition: transform 0.5s ease;
+  transform: scale(1);
+  cursor: pointer;
+}
+.grilla__imagen:hover {
+  position: relative;
+  -webkit-transition: transform 0.5s ease-in-out;
+  -moz-transition: transform 0.5s ease-in-out;
+  -o-transition: transform 0.5s ease-in-out;
+  -ms-transition: transform 0.5s ease-in-out;
+  transition: transform 0.5s ease-in-out;
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+/*
+    footer
+*/
+footer {
+  font-size: 14px;
+  background-color: #271d2d;
+  color: #ffffff;
+  text-align: center;
+}
+footer ul {
+  list-style: none;
+  margin: 0;
+}
+footer ul li {
+  display: inline-block;
+  margin: 0 20px;
+  padding: 20px;
+}
+footer a:hover {
+  color: #ffffff;
+}
+
+@media (max-width: 576px) {
+  .ocultar,
+.sidebar__menu {
+    display: none;
+  }
+
+  .ver,
+.sidebar__icono {
+    display: block;
+  }
+
+  .navbar {
+    padding: 15px 15px 15px 0;
+  }
+
+  footer ul {
+    margin: 0;
+    padding: 20px 0;
+    text-align: center;
+  }
+  footer ul li {
+    width: 100%;
+    padding: 5px 0;
+    margin: 0;
+    display: block;
+  }
+}
+
+/*# sourceMappingURL=estilo.css.map */

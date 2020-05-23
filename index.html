@@ -1,11 +1,403 @@
-<!DOCTYPE html>
-<html lang="es">
+<!doctype html>
+<html lang="en">
 <head>
-	<meta charset="UTF-8">
-	<title>Test de maquetado</title>
-	<link rel="stylesheet" href="styles.css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" >
+    <link href="node_modules/font-awesome/css/font-awesome.min.css" rel="stylesheet" >
+    <link rel="stylesheet" href="css/estilo.css">
+    <title>Test de maquetado</title>
 </head>
 <body>
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <button class="navbar-toggler"
+                type="button"
+                data-toggle="collapse"
+                data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent"
+                aria-expanded="false"
+                aria-label="Toggle navigation">
+            <i class="fa fa-bars" aria-hidden="true"></i>
+        </button>
+        <div class="logo ver">
+            <a href="#" >
+                <img class="logo__imagen" src="assets/logo.svg" >
+            </a>
+        </div>
+        <div class="ver icono">
+            <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+        </div>
+        <div class="collapse navbar-collapse"
+             id="navbarSupportedContent">
+            <div class="mx-auto">
+                <div class="logo ocultar">
+                    <a href="#" >
+                        <img class="logo__imagen" src="assets/logo.svg" >
+                    </a>
+                </div>
+                <ul class="navbar-nav navbar__menu">
+                    <li class="nav-item">
+                        <a class="nav-link"
+                           href="#">
+                            SALE
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link"
+                           href="#">
+                            E-SHOP
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link"
+                           href="#">
+                            LOOKBOOK
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link"
+                           href="#">
+                            CAMPAÑA
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link"
+                           href="#">
+                            LOCALES
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="form-inline ocultar" style="margin-bottom: 20px">
+            <ul class="navbar-nav ">
+                <li class="nav-item">
+                    <a class="nav-link"
+                       href="#">
+                        <i class="fa fa-search" aria-hidden="true"></i>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link"
+                       href="#">
+                        <i class="fa fa-user" aria-hidden="true"></i>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link"
+                       href="#">
+                        <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div class=" columnas">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-4">
+                    <div class="sidebar">
+                        <div class="sidebar__texto sidebar--zapatillas">
+                            Zapatillas
+                            <button  type="button" class="btn sidebar__icono" onclick="mostrarOcultar()">
+                                <i class="fa fa-sliders" aria-hidden="true"></i>
+                            </button>
+                        </div>
+                        <div class="sidebar__texto sidebar--filtrar">
+                            Filtrar
+                        </div>
+                        <div class="sidebar__menu">
+                            <div class="sidebar__texto sidebar--tipo">
+                                Categoría
+                            </div>
+                            <ul>
+                                <li>
+                                    <a href="#">
+                                        Zapatillas
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        Zapatos
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        Botas
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        Sandalias
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        Pantuflas
+                                    </a>
+                                </li>
+                            </ul>
 
+                            <div class="sidebar__texto sidebar--tipo">
+                                Talle
+                            </div>
+                            <ul>
+                                <li>
+                                    <a href="#">
+                                        36
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        38
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        40
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        42
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        44
+                                    </a>
+                                </li>
+                            </ul>
+                            <div class="sidebar__texto sidebar--tipo">
+                                Color
+                            </div>
+                            <ul>
+                                <li>
+                                    <a href="#">
+                                        Amarillo
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        Negro
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        Verde
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        Azul
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        Blanco
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-8">
+                    <div class="grilla">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-sm-4">
+                                    <div class="grilla__box">
+                                        <div class="grilla__contenedor_imagen">
+                                            <img class="grilla__imagen" src="assets/productos/zapatilla_1.jpg">
+                                        </div>
+                                        <div class="grilla__texto">
+                                            Zapatilla 1-XFK
+                                        </div>
+                                        <div class="grilla__texto grilla--grilla__texto grilla--precio">
+                                            $5000
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-4">
+                                    <div class="grilla__box">
+                                        <div class="grilla__contenedor_imagen">
+                                            <img class="grilla__imagen" src="assets/productos/zapatilla_2.jpg">
+                                        </div>
+                                        <div class="grilla__texto">
+                                            Zapatilla 2000-X
+                                        </div>
+                                        <div class="grilla__texto grilla--precio">
+                                            $9800
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-4">
+                                    <div class="grilla__box">
+                                        <div class="grilla__contenedor_imagen">
+                                            <img class="grilla__imagen" src="assets/productos/zapatilla_3.jpg">
+                                        </div>
+                                        <div class="grilla__texto">
+                                            Zapatilla 3 run
+                                        </div>
+                                        <div class="grilla__texto grilla--precio">
+                                            $6500
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-sm-4">
+                                    <div class="grilla__box">
+                                        <div class="grilla__contenedor_imagen">
+                                            <img class="grilla__imagen" src="assets/productos/zapatilla_3.jpg">
+                                        </div>
+                                        <div class="grilla__texto">
+                                            Zapatilla 3 run
+                                        </div>
+                                        <div class="grilla__texto grilla--precio">
+                                            $6500
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-4">
+                                    <div class="grilla__box">
+                                        <div class="grilla__contenedor_imagen">
+                                            <img class="grilla__imagen" src="assets/productos/zapatilla_1.jpg">
+                                        </div>
+                                        <div class="grilla__texto">
+                                            Zapatilla 1-XFK
+                                        </div>
+                                        <div class="grilla__texto grilla--precio">
+                                            $5000
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-4">
+                                    <div class="grilla__box">
+                                        <div class="grilla__contenedor_imagen">
+                                            <img class="grilla__imagen" src="assets/productos/zapatilla_2.jpg">
+                                        </div>
+                                        <div class="grilla__texto">
+                                            Zapatilla 2000-X
+                                        </div>
+                                        <div class="grilla__texto grilla--precio">
+                                            $9800
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-sm-4">
+                                    <div class="grilla__box">
+                                        <div class="grilla__contenedor_imagen">
+                                            <img class="grilla__imagen" src="assets/productos/zapatilla_1.jpg">
+                                        </div>
+                                        <div class="grilla__texto">
+                                            Zapatilla 1-XFK
+                                        </div>
+                                        <div class="grilla__texto grilla--precio">
+                                            $5000
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-4">
+                                    <div class="grilla__box">
+                                        <div class="grilla__contenedor_imagen">
+                                            <img class="grilla__imagen" src="assets/productos/zapatilla_2.jpg">
+                                        </div>
+                                        <div class="grilla__texto">
+                                            Zapatilla 2000-X
+                                        </div>
+                                        <div class="grilla__texto grilla--precio">
+                                            $9800
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-4">
+                                    <div class="grilla__box">
+                                        <div class="grilla__contenedor_imagen">
+                                            <img class="grilla__imagen" src="assets/productos/zapatilla_3.jpg">
+                                        </div>
+                                        <div class="grilla__texto">
+                                            Zapatilla 3 run
+                                        </div>
+                                        <div class="grilla__texto grilla--precio">
+                                            $6500
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-4">
+                                    <div class="grilla__box">
+                                        <div class="grilla__contenedor_imagen">
+                                            <img class="grilla__imagen" src="assets/productos/zapatilla_2.jpg">
+                                        </div>
+                                        <div class="grilla__texto">
+                                            Zapatilla 2000-X
+                                        </div>
+                                        <div class="grilla__texto grilla--precio">
+                                            $9800
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-4">
+                                    <div class="grilla__box">
+                                        <div class="grilla__contenedor_imagen">
+                                            <img class="grilla__imagen" src="assets/productos/zapatilla_3.jpg">
+                                        </div>
+                                        <div class="grilla__texto">
+                                            Zapatilla 3 run
+                                        </div>
+                                        <div class="grilla__texto grilla--precio">
+                                            $6500
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-4">
+                                    <div class="grilla__box">
+                                        <div class="grilla__contenedor_imagen">
+                                            <img class="grilla__imagen" src="assets/productos/zapatilla_1.jpg">
+                                        </div>
+                                        <div class="grilla__texto">
+                                            Zapatilla 1-XFK
+                                        </div>
+                                        <div class="grilla__texto grilla--precio">
+                                            $5000
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="container">
+            <ul >
+                <li>
+                    <a href="#">Ayuda</a>
+                </li>
+                <li>
+                    <a href="#">Contacto</a>
+                </li>
+                <li>
+                    <a href="#">Términos y condiciones</a>
+                </li>
+                <li>
+                    <a href="#">Políticas de privacidad</a>
+                </li>
+            </ul>
+        </div>
+    </footer>
+    <script src="node_modules/jquery/dist/jquery.min.js" ></script>
+    <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/fontawesome.min.js"></script>
+    <script src="js/script.js"></script>
 </body>
 </html>

@@ -1,0 +1,199 @@
+$colorUno:#271d2d;
+$colorDos:#ffffff;
+$colorTres:#cccfd2;
+$colorCuatro:#000000;
+
+@mixin floatLeft{
+    float: left;
+    width: 100%;
+}
+
+@mixin transform($transform, $tiempo, $ease, $scale, $position){
+    position: $position;
+    -webkit-transition: $transform $tiempo $ease;
+    -moz-transition: $transform $tiempo $ease;
+    -o-transition: $transform $tiempo $ease;
+    -ms-transition: $transform $tiempo $ease;
+    transition: $transform $tiempo $ease;
+    transform: scale($scale);
+    cursor: pointer;
+}
+.ver,
+.filtro{
+    display: none;
+}
+/*
+    Logo
+*/
+.logo{
+    text-align: center;
+}
+.logo__imagen{
+    width: 160px;
+}
+/*
+    icono
+*/
+.icono{
+    color: $colorDos;
+    font-size: 20px;
+}
+/*
+    Nav
+*/
+nav{
+    -webkit-box-shadow: -2px 5px 13px -5px rgba(0,0,0,0.75);
+    -moz-box-shadow: -2px 5px 13px -5px rgba(0,0,0,0.75);
+    box-shadow: -2px 5px 13px -5px rgba(0,0,0,0.75);
+    background-color: $colorUno;
+}
+
+.navbar-dark{
+    & .navbar__menu li{
+        padding: 0 20px;
+    }
+    & .navbar-nav{
+
+        & .nav-link{
+            color: $colorDos;
+            &:hover, &:focus{
+                color: $colorDos;
+            }
+
+        }
+    }
+    & .navbar-toggler{
+        color: $colorDos;
+        border: none;
+    }
+}
+
+a{
+    color: $colorDos;
+    &:hover{
+        text-decoration: none;
+    }
+    &:focus, &:active{
+        font-weight: bolder;
+    }
+}
+
+.columnas{
+    margin: 100px 0 30px 0;
+}
+
+/*
+    Sidebar
+*/
+.sidebar{
+    @include floatLeft;
+}
+.sidebar__menu{
+    display: block;
+    font-size: 14px;
+    @include floatLeft;
+    & ul{
+        @include floatLeft;
+        list-style: none;
+        padding-left:13px;
+    }
+    & a{
+        color: $colorCuatro;
+        &:hover{
+            font-weight: bolder;
+        }
+    }
+}
+.sidebar__texto{
+    @include floatLeft;
+    font-weight: bold;
+}
+.sidebar--zapatillas{
+    font-size: 20px;
+    border-bottom: 1px solid;
+}
+.sidebar--filtrar{
+    margin: 10px 0;
+}
+.sidebar--tipo{
+    background-color: $colorTres;
+    padding: 5px 10px;
+}
+.sidebar__icono{
+    float: right;
+    display: none;
+}
+/*
+    grilla
+*/
+
+.grilla{
+    font-size: 14px;
+}
+.grilla__box{
+    margin-bottom: 20px;
+}
+.grilla__contenedor_imagen{
+    overflow: hidden;
+    border-bottom: 1px solid $colorUno;
+}
+.grilla__texto{
+    margin: 5px 0 0 0;
+}
+.grilla--precio{
+    font-weight: bolder;
+}
+.grilla__imagen{
+    @include floatLeft;
+    @include transform(transform, 0.5s, ease, 1,relative);
+    &:hover{
+        @include transform(transform, 0.5s, ease-in-out, 1.1,relative);
+    }
+}
+/*
+    footer
+*/
+footer{
+    font-size: 14px;
+    background-color: $colorUno;
+    color: $colorDos;
+    text-align: center;
+    & ul{
+        list-style: none;
+        margin: 0;
+        & li{
+            display: inline-block;
+            margin: 0 20px;
+            padding: 20px;
+        }
+    }
+    & a:hover{
+        color: $colorDos;
+    }
+}
+@media (max-width: 576px) {
+    .ocultar,
+    .sidebar__menu{
+        display: none;
+    }
+    .ver,
+    .sidebar__icono{
+        display: block;
+    }
+    .navbar{
+        padding: 15px 15px 15px 0;
+    }
+    footer{
+        & ul{
+            margin: 0;
+            padding: 20px 0;
+            text-align: center;
+            & li{
+                width: 100%;
+                padding: 5px 0;
+                margin: 0;
+                display: block;
+            }
+        }
+    }
+}
