@@ -1,0 +1,129 @@
+@font-face {
+  font-family: 'fontello';
+  src: url('../font/fontello.eot?27837328');
+  src: url('../font/fontello.eot?27837328#iefix') format('embedded-opentype'),
+       url('../font/fontello.woff2?27837328') format('woff2'),
+       url('../font/fontello.woff?27837328') format('woff'),
+       url('../font/fontello.ttf?27837328') format('truetype'),
+       url('../font/fontello.svg?27837328#fontello') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+ [class^="icon-"]:before, [class*=" icon-"]:before {
+  font-family: "fontello";
+  font-style: normal;
+  font-weight: normal;
+  speak: never;
+ 
+  display: inline-block;
+  text-decoration: inherit;
+  width: 1em;
+  margin-right: .2em;
+  text-align: center;
+  /* opacity: .8; */
+ 
+  /* For safety - reset parent styles, that can break glyph codes*/
+  font-variant: normal;
+  text-transform: none;
+ 
+  /* fix buttons height, for twitter bootstrap */
+  line-height: 1em;
+ 
+  /* Animation center compensation - margins should be symmetric */
+  /* remove if not needed */
+  margin-left: .2em;
+ 
+  /* you can be more comfortable with increased icons size */
+  /* font-size: 120%; */
+ 
+  /* Font smoothing. That was taken from TWBS */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+ 
+  /* Uncomment for 3D effect */
+  /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
+}
+
+.icon-user:before { content: '\e800'; } /* '' */
+.icon-shopping-cart:before { content: '\e801'; } /* '' */
+.icon-search:before { content: '\e802'; } /* '' */
+.icon-burguer:before { content: '\e803'; } /* '' */
+
+*{
+    font-family: 'Roboto', sans-serif;
+}
+
+body{
+    color: #030B1C;
+}
+
+ul{
+    list-style: none;
+    padding: 0;
+}
+
+header, footer{
+    background-color: #100217E6;
+    color: #fafafa;
+}
+
+nav ul li a, footer ul li a{
+    font-size: 1.2em;
+    color: white;
+    font-weight: 300;
+}
+
+footer ul li a{
+    font-size: 1em;
+}
+
+nav ul li a.active{
+    font-weight: 500;
+}
+
+main ul li{
+    margin: 0.5em 0;
+}
+
+h2{
+    font-weight: 700;
+    font-size: 1.5em;
+}
+
+.container-img-product{
+    height: 40vh;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.border-bottom{
+    border-color: #030B1C !important;
+}
+
+.list-group-item{
+    background-color: inherit;
+    border: none;
+}
+
+.list-group-item a{
+    color: inherit;
+}
+
+.title-filter{
+    font-size: 1.2em;
+}
+
+.container-filters > ul > li > :first-child{
+    background-color: #E4E8EE;
+    font-weight: 700;
+}
+
+.container-filters > ul > li{
+    font-size: .8em;
+}
+
+.container-filters > ul > li > *{
+    padding: .5em 0;
+    padding-left: 1em;
+}
