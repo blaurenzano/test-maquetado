@@ -1,11 +1,214 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-	<meta charset="UTF-8">
-	<title>Test de maquetado</title>
-	<link rel="stylesheet" href="styles.css">
-</head>
-<body>
 
+<head>
+    <meta charset="UTF-8">
+    <title>Test de maquetado</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg">
+            <a class="navbar-brand" href="#">
+                <img src="assets/logo.svg" width="200" height="auto" alt="">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+			  <img src="assets/iconos/bars-solid.svg" class="d-block" alt="" />
+			</button>
+            <div class="menuTop">
+                <ul>
+                    <li>
+                        <a href="#"><img src="assets/iconos/search-solid.svg" class="d-block" alt=""></a>
+                    </li>
+                    <li>
+                        <a href="#"><img src="assets/iconos/user-solid.svg" class="d-block" alt=""></a>
+                    </li>
+                    <li>
+                        <a href="#"><img src="assets/iconos/shopping-cart-solid.svg" class="d-block" alt=""></a>
+                    </li>
+                </ul>
+            </div>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Sale</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">E-shop</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Lookbook</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Campaña</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Locales</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <section class="content">
+        <div class="container mt-4">
+            <div class="row">
+                <aside class="col-12 col-sm-12 col-md-3 col-lg-3 col-xl-3">
+                    <h3>Zapatillas</h3>
+                    <div class="filter">
+                        <h4>Filtrar</h4>
+                        <ul class="filterList" id="cat">
+                            <li class="titleList">Categoría</li>
+                            <li><a href="#">Zapatillas</a></li>
+                            <li><a href="#">Zapatos</a></li>
+                            <li><a href="#">Botas</a></li>
+                            <li><a href="#">Sandalias</a></li>
+                            <li><a href="#">Pantuflas</a></li>
+                        </ul>
+                        <ul class="filterList" id="talle">
+                            <li class="titleList">Talle</li>
+                            <li><a href="#">36</a></li>
+                            <li><a href="#">38</a></li>
+                            <li><a href="#">40</a></li>
+                            <li><a href="#">42</a></li>
+                            <li><a href="#">44</a></li>
+                        </ul>
+                        <ul class="filterList" id="color">
+                            <li class="titleList">Color</li>
+                            <li><a href="#">Amarillo</a></li>
+                            <li><a href="#">Negro</a></li>
+                            <li><a href="#">Verde</a></li>
+                            <li><a href="#">Azul</a></li>
+                            <li><a href="#">Blanco</a></li>
+                        </ul>
+                    </div>
+                </aside>
+                <div class="col-12 col-sm-12 col-md-12 col-lg-9 col-xl-9 productsContent">
+                    <div class="row">
+                        <a href="#" class="d-block col-12 col-sm-12 col-md-6 col-lg-6 col-xl-4">
+                            <div class="card">
+                                <img src="assets/productos/zapatilla_1.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Zapatilla 1-XFK</h5>
+                                    <p class="card-text">$5000</p>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="#" class="d-block col-12 col-sm-12 col-md-6 col-lg-6 col-xl-4">
+                            <div class="card">
+                                <img src="assets/productos/zapatilla_2.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Zapatilla 1-XFK</h5>
+                                    <p class="card-text">$5000</p>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="#" class="d-block col-12 col-sm-12 col-md-6 col-lg-6 col-xl-4">
+                            <div class="card">
+                                <img src="assets/productos/zapatilla_3.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Zapatilla 1-XFK</h5>
+                                    <p class="card-text">$5000</p>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="#" class="d-block col-12 col-sm-12 col-md-6 col-lg-6 col-xl-4">
+                            <div class="card">
+                                <img src="assets/productos/zapatilla_1.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Zapatilla 1-XFK</h5>
+                                    <p class="card-text">$5000</p>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="#" class="d-block col-12 col-sm-12 col-md-6 col-lg-6 col-xl-4">
+                            <div class="card">
+                                <img src="assets/productos/zapatilla_2.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Zapatilla 1-XFK</h5>
+                                    <p class="card-text">$5000</p>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="#" class="d-block col-12 col-sm-12 col-md-6 col-lg-6 col-xl-4">
+                            <div class="card">
+                                <img src="assets/productos/zapatilla_3.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Zapatilla 1-XFK</h5>
+                                    <p class="card-text">$5000</p>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="#" class="d-block col-12 col-sm-12 col-md-6 col-lg-6 col-xl-4">
+                            <div class="card">
+                                <img src="assets/productos/zapatilla_1.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Zapatilla 1-XFK</h5>
+                                    <p class="card-text">$5000</p>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="#" class="d-block col-12 col-sm-12 col-md-6 col-lg-6 col-xl-4">
+                            <div class="card">
+                                <img src="assets/productos/zapatilla_2.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Zapatilla 1-XFK</h5>
+                                    <p class="card-text">$5000</p>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="#" class="d-block col-12 col-sm-12 col-md-6 col-lg-6 col-xl-4">
+                            <div class="card">
+                                <img src="assets/productos/zapatilla_3.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Zapatilla 1-XFK</h5>
+                                    <p class="card-text">$5000</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="container">
+            <ul class="footerMenu">
+                <li>
+                    <a href="#">Ayuda</a>
+                </li>
+                <li>
+                    <a href="#">Contacto</a>
+                </li>
+                <li>
+                    <a href="#">Términos y condiciones</a>
+                </li>
+                <li>
+                    <a href="#">Políticas de privacidad</a>
+                </li>
+            </ul>
+        </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    <script>
+        //scroll
+        window.onscroll = function() {
+            scrollFunction()
+        };
+
+        function scrollFunction() {
+            var header = document.querySelector("header");
+            if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+                header.classList.add("fixed-top");
+            } else {
+                header.classList.remove("fixed-top");
+            }
+        }
+    </script>
 </body>
+
 </html>

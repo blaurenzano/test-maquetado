@@ -1,3 +1,268 @@
-body{
-	margin: 0;
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap");
+ul,
+ol {
+  padding-left: 0;
+  list-style: none;
 }
+
+a:hover {
+  text-decoration: none;
+}
+
+/*global colors*/
+body {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  background: #FAFAFA;
+}
+
+body header {
+  background: #100217E6;
+  height: 100px;
+}
+
+body header nav.navbar {
+  position: relative;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+body header nav.navbar .navbar-brand {
+  margin-right: 0;
+}
+
+body header nav.navbar .menuTop {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+body header nav.navbar .menuTop ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+body header nav.navbar .menuTop ul li a {
+  display: block;
+  margin: 5px;
+  width: 20px;
+  height: 20px;
+  overflow: hidden;
+}
+
+body header nav.navbar .menuTop ul li a img {
+  width: 100%;
+  -webkit-filter: invert(1);
+          filter: invert(1);
+}
+
+body header nav.navbar .navbar-collapse .navbar-nav {
+  margin-top: 15px;
+}
+
+body header nav.navbar .navbar-collapse .navbar-nav li {
+  margin: 0px 2vw;
+}
+
+body header nav.navbar .navbar-collapse .navbar-nav li a {
+  padding: 0 0.5rem;
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  color: white;
+  letter-spacing: 0.4px;
+}
+
+body header.fixed-top {
+  height: auto;
+}
+
+body header.fixed-top .navbar-brand,
+body header.fixed-top .menuTop {
+  display: none;
+}
+
+body header.fixed-top .navbar-collapse ul.navbar-nav {
+  margin-top: 0;
+  padding: 10px;
+}
+
+body .content .container .row aside h3 {
+  display: block;
+  font-size: 24px;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+  border-bottom: 1px solid #030B1C;
+}
+
+body .content .container .row aside .filter {
+  padding-top: 5px;
+}
+
+body .content .container .row aside .filter h4 {
+  font-size: 20px;
+  margin-bottom: 10px;
+  color: #030B1C;
+}
+
+body .content .container .row aside .filter .filterList li {
+  display: block;
+  text-align: left;
+  padding: 5px 20px;
+  font-size: 0.9rem;
+}
+
+body .content .container .row aside .filter .filterList li a {
+  color: #030B1C;
+  display: block;
+}
+
+body .content .container .row aside .filter .filterList li.titleList {
+  font-weight: 600;
+  background: #E4E8EE;
+}
+
+body .content .container .row .productsContent .row a {
+  color: #030B1C;
+}
+
+body .content .container .row .productsContent .row a .card {
+  border: none;
+  background: white;
+  margin: 5px;
+}
+
+body .content .container .row .productsContent .row a .card .card-body {
+  border-top: 1px solid #030B1C;
+}
+
+body .content .container .row .productsContent .row a .card .card-body h5.card-title {
+  font-size: 16px;
+}
+
+body .content .container .row .productsContent .row a .card .card-body p.card-text {
+  font-weight: Bold;
+  font-size: 16px;
+}
+
+body footer {
+  background: #100217E6;
+  height: 58px;
+  padding: 10px;
+}
+
+body footer ul.footerMenu {
+  margin-bottom: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  padding: 10px;
+}
+
+body footer ul.footerMenu li a {
+  margin: 20px;
+  color: white;
+  font-size: 16px;
+}
+
+/*Responsive*/
+@media screen and (max-width: 992px) {
+  body header.fixed-top {
+    height: auto;
+  }
+  body header.fixed-top .navbar-brand,
+  body header.fixed-top .menuTop {
+    display: block;
+  }
+  body header.fixed-top .navbar-collapse ul.navbar-nav {
+    margin-top: 0;
+    padding: 10px;
+  }
+  body header {
+    height: auto;
+  }
+  body header nav.navbar {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  body header nav.navbar .menuTop ul li a {
+    width: 25px;
+    height: 25px;
+  }
+  body header nav.navbar .navbar-collapse ul.navbar-nav {
+    width: 100%;
+  }
+  body header nav.navbar .navbar-collapse ul.navbar-nav li.nav-item {
+    text-align: center;
+  }
+  body header nav.navbar .navbar-collapse ul.navbar-nav li.nav-item a.nav-link {
+    padding: 10px;
+    display: block;
+    text-align: center;
+  }
+  body header nav.navbar .navbar-toggler {
+    position: absolute;
+    left: 10px;
+    top: 10px;
+  }
+  body header nav.navbar .navbar-toggler img {
+    width: 25px;
+    -webkit-filter: invert(1);
+            filter: invert(1);
+  }
+  body header nav.navbar .menuTop {
+    top: 10px;
+  }
+  body header nav.navbar .menuTop ul {
+    margin-bottom: 0;
+  }
+  body header nav.navbar .menuTop ul li {
+    display: none;
+  }
+  body header nav.navbar .menuTop ul li:last-child {
+    display: block;
+  }
+  body section.content .container .row aside {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  body section.content .container .row {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  body section.content .container .row aside {
+    display: none;
+  }
+  body footer {
+    height: auto;
+  }
+  body footer .container ul.footerMenu {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  body footer .container ul.footerMenu li a {
+    margin: 10px 0;
+    display: block;
+  }
+}
+/*# sourceMappingURL=styles.css.map */

@@ -1,0 +1,275 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
+ul,
+ol {
+    padding-left: 0;
+    list-style: none;
+}
+
+a {
+    &:hover {
+        text-decoration: none;
+    }
+}
+
+
+/*global colors*/
+
+$black:#030B1C;
+$headerBG:#100217E6;
+$grisClaro:#E4E8EE;
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    background: #FAFAFA;
+    header {
+        background: $headerBG;
+        height: 100px;
+        nav.navbar {
+            position: relative;
+            flex-direction: column;
+            .navbar-brand {
+                margin-right: 0;
+            }
+            .menuTop {
+                position: absolute;
+                top: 20px;
+                right: 20px;
+                ul {
+                    display: flex;
+                    li {
+                        a {
+                            display: block;
+                            margin: 5px;
+                            width: 20px;
+                            height: 20px;
+                            overflow: hidden;
+                            img {
+                                width: 100%;
+                                filter: invert(1);
+                            }
+                        }
+                    }
+                }
+            }
+            .navbar-collapse {
+                .navbar-nav {
+                    margin-top: 15px;
+                    li {
+                        margin: 0px 2vw;
+                        a {
+                            padding: 0 0.5rem;
+                            text-transform: uppercase;
+                            font-size: 1.2rem;
+                            color: white;
+                            letter-spacing: 0.4px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    header.fixed-top {
+        height: auto;
+        .navbar-brand,
+        .menuTop {
+            display: none;
+        }
+        .navbar-collapse {
+            ul.navbar-nav {
+                margin-top: 0;
+                padding: 10px;
+            }
+        }
+    }
+    .content {
+        .container {
+            .row {
+                aside {
+                    h3 {
+                        display: block;
+                        font-size: 24px;
+                        padding-bottom: 10px;
+                        margin-bottom: 10px;
+                        border-bottom: 1px solid $black;
+                    }
+                    .filter {
+                        padding-top: 5px;
+                        h4 {
+                            font-size: 20px;
+                            margin-bottom: 10px;
+                            color: $black;
+                        }
+                        .filterList {
+                            li {
+                                display: block;
+                                text-align: left;
+                                padding: 5px 20px;
+                                font-size: 0.9rem;
+                                a {
+                                    color: $black;
+                                    display: block;
+                                }
+                            }
+                            li.titleList {
+                                font-weight: 600;
+                                background: $grisClaro;
+                            }
+                        }
+                    }
+                }
+                .productsContent {
+                    .row {
+                        a {
+                            color: $black;
+                            .card {
+                                border: none;
+                                background: white;
+                                margin: 5px;
+                                .card-body {
+                                    border-top: 1px solid $black;
+                                    h5.card-title {
+                                        font-size: 16px;
+                                    }
+                                    p.card-text {
+                                        font-weight: Bold;
+                                        font-size: 16px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    footer {
+        background: $headerBG;
+        height: 58px;
+        padding: 10px;
+        ul.footerMenu {
+            margin-bottom: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            align-content: center;
+            padding: 10px;
+            li {
+                a {
+                    margin: 20px;
+                    color: white;
+                    font-size: 16px;
+                }
+            }
+        }
+    }
+}
+
+
+/*Responsive*/
+
+@media screen and (max-width: 992px) {
+    body {
+        header.fixed-top {
+            height: auto;
+            .navbar-brand,
+            .menuTop {
+                display: block;
+            }
+            .navbar-collapse {
+                ul.navbar-nav {
+                    margin-top: 0;
+                    padding: 10px;
+                }
+            }
+        }
+        header {
+            height: auto;
+            nav.navbar {
+                align-items: center;
+                justify-content: space-between;
+                .menuTop {
+                    ul {
+                        li {
+                            a {
+                                width: 25px;
+                                height: 25px;
+                            }
+                        }
+                    }
+                }
+                .navbar-collapse {
+                    ul.navbar-nav {
+                        width: 100%;
+                        li.nav-item {
+                            text-align: center;
+                            a.nav-link {
+                                padding: 10px;
+                                display: block;
+                                text-align: center;
+                            }
+                        }
+                    }
+                }
+                .navbar-toggler {
+                    position: absolute;
+                    left: 10px;
+                    top: 10px;
+                    img {
+                        width: 25px;
+                        filter: invert(1);
+                    }
+                }
+                .menuTop {
+                    top: 10px;
+                    ul {
+                        margin-bottom: 0;
+                        li {
+                            display: none;
+                            &:last-child {
+                                display: block;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        section.content {
+            .container {
+                .row {
+                    aside {
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 700px) {
+    body {
+        section.content {
+            .container {
+                .row {
+                    flex-direction: column;
+                    aside {
+                        display: none;
+                    }
+                }
+            }
+        }
+        footer {
+            height: auto;
+            .container {
+                ul.footerMenu {
+                    flex-direction: column;
+                    li {
+                        a {
+                            margin: 10px 0;
+                            display: block;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
