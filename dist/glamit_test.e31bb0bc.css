@@ -1,12 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
-html {
-  scroll-behavior: smooth;
-}
-
-body {
-  background-color: #fafafa;
-}
-
 @media (max-width: 360px) {
   .mobile--hidden {
     display: none;
@@ -58,6 +50,14 @@ body {
     flex-wrap: nowrap;
   }
 }
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #fafafa;
+}
+
 .header__wrapper {
   width: 100%;
   max-width: 100%;
