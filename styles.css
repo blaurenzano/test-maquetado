@@ -124,3 +124,28 @@ body {
 .products__content { font-size: 16px; }
 
 .products__price { margin-top: -12px; }
+
+
+/* ============================= */
+/*          FOOTER               */
+/* ============================= */
+
+.footer {
+	width: 100%;
+	background: #100217E6;
+}
+
+.footer__list {
+	display: flex;
+	width: 70%;
+	height: 70px;
+	margin: 0 auto;
+	list-style: none;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.footer__list a {
+	color: #FAFAFA;
+	text-decoration: none;
+}
