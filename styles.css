@@ -1,3 +1,56 @@
-body{
+/* ============================= */
+/*          BASIC SETUP          */
+/* ============================= */
+
+body {
 	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+
+/* ============================= */
+/*          HEADER               */
+/* ============================= */
+
+.header {
+	width: 100%;
+	background: #100217E6;
+	padding: 10px 0;
+}
+
+.header__title {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+}
+
+.header__logo {
+	grid-column: 2 / 3;
+	justify-self: center;
+	height: 30px;
+}
+
+.header__icons {
+	justify-self: end;
+	align-self: end;
+	margin-right: 20px;
+}
+
+.header__icons-i {
+	height: 24px;
+	margin: 0 8px;
+	cursor: pointer;
+}
+
+.header__nav {
+	display: flex;
+	justify-content: space-around;
+	width: 85%;
+	margin: 12px auto 0 auto;
+}
+
+.header__nav-enlace {
+	color: #FAFAFA;
+	text-decoration: none;
+	text-transform: uppercase;
 }
