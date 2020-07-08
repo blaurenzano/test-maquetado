@@ -1,0 +1,56 @@
+// Import (Roboto) font
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap')
+
+body
+    background-color: white
+    font-family: $font-family
+    color: $text-color
+    max-width: 100%
+    width: 100%
+    max-height: 100%
+    height: 100%
+    margin: 0
+    padding: 0
+
+section
+    .group
+        // Mobile
+        @media ( max-width: $desktop-mw ) and ( max-height: $desktop-mh )
+            padding: 0 2em
+        
+        // Desktop
+        @media ( min-width: $desktop-mw ) and ( min-height: $desktop-mh )
+            padding: 2em 10em
+
+h3
+    // Mobile
+    @media ( max-width: $desktop-mw ) and ( max-height: $desktop-mh )
+        font-size: 3em
+    
+    // Desktop
+    @media ( min-width: $desktop-mw ) and ( min-height: $desktop-mh )
+        font-size: 1.5em
+
+h4
+    // Mobile
+    @media ( max-width: $desktop-mw ) and ( max-height: $desktop-mh )
+        font-size: 2.5em
+    
+    // Desktop
+    @media ( min-width: $desktop-mw ) and ( min-height: $desktop-mh )
+        font-size: 1.2em
+
+h5
+    // Mobile
+    @media ( max-width: $desktop-mw ) and ( max-height: $desktop-mh )
+        font-size: 1.5em
+    
+    // Desktop
+    @media ( min-width: $desktop-mw ) and ( min-height: $desktop-mh )
+        font-size: 1.1em
+
+#products-container
+    // Desktop
+    @media ( min-width: $desktop-mw ) and ( min-height: $desktop-mh )
+        display: grid
+        grid-template-columns: 20% 80%

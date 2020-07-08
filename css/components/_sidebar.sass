@@ -1,0 +1,29 @@
+.section-title
+    padding-bottom: .3em
+    border-bottom: 2px solid $text-color
+    margin-bottom: 2em
+
+.filters
+    // Mobile
+    @media ( max-width: $desktop-mw ) and ( max-height: $desktop-mh )
+        display: none
+    
+    position: relative
+    bottom: 2em
+    
+    &__category
+        margin-bottom: 1em
+
+        &__name
+            background-color: $filters-category-color
+            color: $primary-color
+            font-weight: 700
+            margin-bottom: .4em
+        
+        &__items-group
+            list-style: none
+            &__item
+                margin-bottom: .2em
+            &__link
+                text-decoration: none
+                color: $text-color
