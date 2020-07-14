@@ -80,6 +80,10 @@ img {
   text-align: center;
 }
 
+.actions-group ul {
+  list-style: none;
+}
+
 .actions-group ul li a img {
   width: 100%;
   height: 100%;
