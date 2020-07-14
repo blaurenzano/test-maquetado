@@ -1,6 +1,7 @@
 // Import (Roboto) font
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap')
 
+
 body
     background-color: white
     font-family: $font-family
@@ -9,11 +10,20 @@ body
     padding: 0
     min-height: 100%
 
+
 main
-    width: 90%
-    max-width: 324px
+    background-color: tomato
     margin: 0 auto
-    background-color: $secondary-color
+
+    // Mobile
+    @media ( max-width: $desktop-min-width ) and ( max-height: $desktop-min-height )
+        width: 90%
+        max-width: 324px
+    
+    // Desktop
+    @media ( min-width: $desktop-min-width ) and ( min-height: $desktop-min-height )
+        width: 80%
+        max-width: 1092px
 
     // Falseado del espacio ocupado por el header (por dejarlo fixed) ↓
 
@@ -25,12 +35,14 @@ main
     @media ( min-width: $desktop-min-width ) and ( min-height: $desktop-min-height )
         padding-top: 11.5rem
 
+
 img
     width: 50%
     height: 50%
 
-// #products-container
+
+#products-container
     // Desktop
-    // @media ( min-width: $desktop-mw ) and ( min-height: $desktop-mh )
-    //     display: grid
-    //     grid-template-columns: 20% 80%
+    @media ( min-width: $desktop-min-width ) and ( min-height: $desktop-min-height )
+        display: grid
+        grid-template-columns: 20% 80%
