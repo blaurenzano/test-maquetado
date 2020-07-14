@@ -13,6 +13,7 @@ main {
   max-width: 324px;
   margin: 0 auto;
   background-color: tomato;
+  padding-top: 5.5rem;
 }
 
 img {
@@ -52,8 +53,12 @@ img {
   max-width: -webkit-fit-content;
   max-width: -moz-fit-content;
   max-width: fit-content;
-  height: 20%;
+  height: 3.8rem;
   padding: .8rem .5rem;
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
 }
 
 .group.logo-container {
