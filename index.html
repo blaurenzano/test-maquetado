@@ -2,32 +2,35 @@
 <html lang="es">
   <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width = device-width, initial-scale=1.0">
+    <meta name="viewport" content="width = device-width, initial-scale = 1">
     <title>Test de maquetado</title>
     <link rel="icon" href="assets/logo.svg">
     <link rel="stylesheet" href="css/styles.css">
   </head>
   <body>
     <header id="header">
-      <div class="group">
+      <div class="group logo-container">
         <div class="box"><a id="burger-menu" href="#"><img id="burger-menu__icon" src="assets/iconos/bars-solid.svg" alt="Burger menu"></a></div>
-        <div class="box"><a href="#" class="logo"><img src="assets/logo.svg" alt="La Preuve"></a>
-          <nav class="header-menu">
+        <div class="box logo"><a href="#" class="logo__link"><img src="assets/logo.svg" alt="La Preuve" class="logo__file"></a></div>
+        <div class="box">
+          <nav class="actions-group">
+            <ul>
+              <li class="actions-group__search"><a href="#" class="actions-group__search__link"><img src="assets/iconos/search-solid.svg" alt="search-icon"></a></li>
+              <li class="actions-group__user"><a href="#" class="actions-group__user__link"><img src="assets/iconos/user-solid.svg" alt="user-icon"></a></li>
+              <li class="actions-group__shopping-cart"><a href="#" class="actions-group__shopping-cart__link"><img src="assets/iconos/shopping-cart-solid.svg" alt="shopping-cart-icon"></a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+      <div class="group header-menu">
+        <div class="box">
+          <nav class="header-menu__nav">
             <ul>
               <li><a href="#">Sale</a></li>
               <li><a href="#">E-Shop</a></li>
               <li><a href="#">Lookbook</a></li>
               <li><a href="#">Campaña</a></li>
               <li><a href="#">Locales</a></li>
-            </ul>
-          </nav>
-        </div>
-        <div class="box">
-          <nav class="actions-group">
-            <ul>
-              <li><a href="#" class="actions-group__item__search"><img src="assets/iconos/search-solid.svg" alt="search-icon"></a></li>
-              <li><a href="#" class="actions-group__item__user"><img src="assets/iconos/user-solid.svg" alt="user-icon" class="actions-group__item__user__icon"></a></li>
-              <li><a href="#" class="actions-group__item__shopping-cart"><img src="assets/iconos/shopping-cart-solid.svg" alt="shopping-cart-icon"></a></li>
             </ul>
           </nav>
         </div>

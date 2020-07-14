@@ -2,24 +2,44 @@ doctype html
 html(lang="es")
     head
         meta(charset="UTF-8")
-        meta(name="viewport", content="width = device-width, initial-scale=1.0")
+        meta(name="viewport", content="width = device-width, initial-scale = 1")
         title Test de maquetado
         link(rel="icon", href="assets/logo.svg")
         link(rel="stylesheet", href="css/styles.css")
     body
         header#header
-            .group
+            .group.logo-container
                 .box
                     a#burger-menu(href="#")
                         img#burger-menu__icon(
                             src="assets/iconos/bars-solid.svg"
                             alt="Burger menu")
-                .box
-                    a.logo(href="#")
-                        img(
+                .box.logo
+                    a.logo__link(href="#")
+                        img.logo__file(
                             src="assets/logo.svg"
                             alt="La Preuve")
-                    nav.header-menu
+                .box
+                    nav.actions-group
+                        ul
+                            li.actions-group__search
+                                a.actions-group__search__link(href="#")
+                                    img(
+                                        src="assets/iconos/search-solid.svg"
+                                        alt="search-icon")
+                            li.actions-group__user
+                                a.actions-group__user__link(href="#")
+                                    img(
+                                        src="assets/iconos/user-solid.svg"
+                                        alt="user-icon")
+                            li.actions-group__shopping-cart
+                                a.actions-group__shopping-cart__link(href="#")
+                                    img(
+                                        src="assets/iconos/shopping-cart-solid.svg"
+                                        alt="shopping-cart-icon")
+            .group.header-menu
+                .box
+                    nav.header-menu__nav
                         ul
                             li: a(href="#")
                                 | Sale
@@ -31,21 +51,6 @@ html(lang="es")
                                 | Campaña
                             li: a(href="#")
                                 | Locales
-                .box
-                    nav.actions-group
-                        ul
-                            li: a.actions-group__item__search(href="#")
-                                img(
-                                    src="assets/iconos/search-solid.svg"
-                                    alt="search-icon")
-                            li: a.actions-group__item__user(href="#")
-                                img.actions-group__item__user__icon(
-                                    src="assets/iconos/user-solid.svg"
-                                    alt="user-icon")
-                            li: a.actions-group__item__shopping-cart(href="#")
-                                img(
-                                    src="assets/iconos/shopping-cart-solid.svg"
-                                    alt="shopping-cart-icon")
         
         main#products-container
             section#sidebar
