@@ -9,7 +9,7 @@ body {
 }
 
 main {
-  background-color: tomato;
+  background-color: #FAFAFA;
   margin: 0 auto;
 }
 
@@ -258,6 +258,12 @@ img {
 .article__img {
   border-bottom: 1px solid #030B1C;
   margin-bottom: .5em;
+}
+
+@media (min-width: 1280px) and (min-height: 720px) {
+  .article__img {
+    width: 95%;
+  }
 }
 
 .article__img__file {
