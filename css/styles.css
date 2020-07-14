@@ -1,1 +1,30 @@
-/* No CSS */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+body {
+  background-color: white;
+  font-family: Roboto;
+  color: #030B1C;
+  margin: 0;
+  padding: 0;
+}
+
+main {
+  width: 90%;
+  margin: 0 auto;
+  background-color: tomato;
+}
+
+img {
+  width: 50%;
+  height: 50%;
+}
+
+#footer {
+  background-color: #1a0524;
+  width: 100%;
+}
+
+#header {
+  background-color: #1a0524;
+  width: 100%;
+  height: 20em;
+}
