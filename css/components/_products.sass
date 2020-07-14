@@ -1,62 +1,24 @@
-#products
-    .group
+// #products
+//     .group
         // Desktop
-        @media ( min-width: $desktop-mw ) and ( min-height: $desktop-mh )
-            display: grid
-            grid-template-columns: 33.3% 33.3% 33.3%
-            padding-top: 3.3em
-            margin-bottom: 1.3em
+        // @media ( min-width: $desktop-mw ) and ( min-height: $desktop-mh )
+        //     display: grid
+        //     grid-template-columns: 33.3% 33.3% 33.3%
+        //     padding-top: 3.3em
+        //     margin-bottom: 1.3em
 
-.product
-    margin-bottom: 4em
-    line-height: .6em
+.article__img
+    border-bottom: 1px solid $text-color
+    margin-bottom: .5em
 
-    // Desktop
-    @media ( min-width: $desktop-mw ) and ( min-height: $desktop-mh )
-        margin-bottom: 2em
-        line-height: .1em
+.article__img__file
+    width: 100%
 
-    &__img
-        border-bottom: 2px solid $text-color
-        text-align: center
+.article__name
+    text-decoration: none
+    color: $text-color
 
-        // Mobile
-        @media ( max-width: $desktop-mw ) and ( max-height: $desktop-mh )
-            margin-bottom: 1.2em
-
-        // Desktop
-        @media ( min-width: $desktop-mw ) and ( min-height: $desktop-mh )
-            margin-bottom: 1.3em
-            width: 14em
-
-        &__file
-            height: 15em
-            
-            // Desktop
-            @media ( min-width: $desktop-mw ) and ( min-height: $desktop-mh )
-                height: 10em
-    
-    &__name
-        font-weight: 400
-        text-decoration: none
-        color: $text-color
-
-        // Mobile
-        @media ( max-width: $desktop-mw ) and ( max-height: $desktop-mh )
-            font-size: 1.5em
-
-        // Desktop
-        @media ( min-width: $desktop-mw ) and ( min-height: $desktop-mh )
-            padding-top: 1.2em
-            font-size: 1.1em
-
-    &__price
-        font-weight: 700
-
-        // Mobile
-        @media ( max-width: $desktop-mw ) and ( max-height: $desktop-mh )
-            margin-top: 1em
-        
-        // Desktop
-        @media ( min-width: $desktop-mw ) and ( min-height: $desktop-mh )
-            margin-top: 1.4em
+.article__price
+    font-size: 1em
+    font-weight: 700
+    margin: .3em 0 1em

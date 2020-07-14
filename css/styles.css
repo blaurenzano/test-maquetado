@@ -12,7 +12,7 @@ main {
   width: 90%;
   max-width: 324px;
   margin: 0 auto;
-  background-color: tomato;
+  background-color: #FAFAFA;
   padding-top: 5.5rem;
 }
 
@@ -26,6 +26,7 @@ img {
   width: 100%;
   height: 20%;
   padding: 1.5rem 0;
+  margin-top: 4rem;
 }
 
 .footer-menu {
@@ -90,6 +91,26 @@ img {
 
 .group.header-menu {
   display: none;
+}
+
+.article__img {
+  border-bottom: 1px solid #030B1C;
+  margin-bottom: .5em;
+}
+
+.article__img__file {
+  width: 100%;
+}
+
+.article__name {
+  text-decoration: none;
+  color: #030B1C;
+}
+
+.article__price {
+  font-size: 1em;
+  font-weight: 700;
+  margin: .3em 0 1em;
 }
 
 #sidebar {
