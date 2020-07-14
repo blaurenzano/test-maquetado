@@ -15,7 +15,15 @@ main
     margin: 0 auto
     background-color: $secondary-color
 
-    padding-top: 5.5rem // falseado del espacio ocupado por el header
+    // Falseado del espacio ocupado por el header (por dejarlo fixed) ↓
+
+    // Mobile
+    @media ( max-width: $desktop-min-width ) and ( max-height: $desktop-min-height )
+        padding-top: 5.5rem
+    
+    // Desktop
+    @media ( min-width: $desktop-min-width ) and ( min-height: $desktop-min-height )
+        padding-top: 11.5rem
 
 img
     width: 50%
