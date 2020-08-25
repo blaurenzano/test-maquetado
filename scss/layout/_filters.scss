@@ -1,0 +1,35 @@
+.filters {
+  .title {
+    @include font-source(
+      $primary-font-family,
+      $title-font-size,
+      $color-tertiary,
+      $bold,
+      24px
+    );
+    letter-spacing: 0.4px;
+    text-align: left;
+    margin: -8px 0 14px;
+  }
+
+  .filters__list {
+    padding-top: 3px;
+
+    .filters__item {
+      padding: 0 16px;
+      margin-bottom: -2px;
+
+      a {
+        @include font-source(
+          $primary-font-family,
+          $medium-font-size,
+          $color-tertiary,
+          $normal,
+          22px
+        );
+        letter-spacing: 0.32px;
+        text-align: left;
+      }
+    }
+  }
+}

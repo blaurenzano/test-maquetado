@@ -1,0 +1,56 @@
+// --------------------------------------------------
+// breakpoints
+
+// Small tablets
+$screen-sm-min: 767px;
+
+// Medium Tablets (portrait view)
+$screen-tablet-min: 768px;
+$screen-tablet-max: 1024px;
+
+// Medium tablets (landscape view)
+$screen-md-min: 900px;
+
+// Tablets and small desktops
+$screen-lg-min: 1200px;
+
+// Desktops large
+$screen-xl-min: 1800px;
+
+$small: "small";
+$portrait: "portrait";
+$medium: "medium";
+$large: "large";
+$extra-large: "extra-large";
+
+// --------------------------------------------------
+// fonts
+
+$Roboto: "Roboto";
+
+$light: 300;
+$normal: 400;
+$semibold: 500;
+$bold: 700;
+
+$primary-font-family: ($Roboto, sans-serif);
+
+// --------------------------------------------------
+// font-size
+
+$large-font-size: 24px;
+$title-font-size: 20px;
+$medium-font-size: 16px;
+
+// --------------------------------------------------
+// colours
+
+$color-primary: #100217e6;
+$color-secondary: #fafafa;
+$color-tertiary: #030b1c;
+
+$color-black: #000000;
+$color-black-2: #00000026;
+$color-white: #ffffff;
+$color-light-grey: #e4e8ee;
+$color-light-grey-2: #fafafa;

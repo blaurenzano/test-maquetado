@@ -1,0 +1,24 @@
+.accordion {
+  margin-bottom: 10px;
+  
+  .accordion__header {
+    background-color: $color-light-grey;
+    padding: 5px 16px;
+
+    h2 {
+      @include font-source(
+        $primary-font-family,
+        $medium-font-size,
+        $color-tertiary,
+        $bold,
+        19px
+      );
+      letter-spacing: 0.32px;
+      text-align: left;
+    }
+  }
+
+  .accordion__body {
+    @include font-source($primary-font-family);
+  }
+}

@@ -1,0 +1,41 @@
+.footer {
+  background-color: $color-primary;
+  padding: 17px 20px;
+  margin-top: 50px;
+
+  @include breakpoint($small) {
+    padding: 8px 20px;
+  }
+
+  .content {
+    @include breakpoint($small) {
+      @include flex(flex);
+      flex-direction: column;
+    }
+
+    @include breakpoint($portrait) {
+      @include flex(flex);
+      flex-direction: column;
+    }
+
+    .footer-item {
+      @include font-source(
+        $primary-font-family,
+        $medium-font-size,
+        $color-light-grey-2,
+        $normal,
+        22px
+      );
+      letter-spacing: 0.32px;
+      padding: 0 30px;
+
+      @include breakpoint($small) {
+        padding: 6px 10px;
+      }
+
+      @include breakpoint($portrait) {
+        padding: 6px 10px;
+      }
+    }
+  }
+}

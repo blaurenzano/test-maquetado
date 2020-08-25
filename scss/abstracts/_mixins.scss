@@ -1,0 +1,80 @@
+@mixin font-source($font: false, $size: false, $colour: false, $weight: false, $lh: false) {
+  @if $font {
+    font-family: $font;
+  }
+  @if $size {
+    font-size: $size;
+  }
+  @if $colour {
+    color: $colour;
+  }
+  @if $weight {
+    font-weight: $weight;
+  }
+  @if $lh {
+    line-height: $lh;
+  }
+}
+
+@mixin breakpoint($size) {
+  @if $size == $small {
+    @media (max-width: #{$screen-sm-min - 1px}) {
+      @content;
+    }
+  } @else if $size == $portrait {
+    @media only screen 
+      and (min-device-width: $screen-tablet-min) 
+      and (max-device-width: $screen-tablet-max) 
+      and (orientation: portrait) 
+      and (-webkit-min-device-pixel-ratio: 1) {
+      @content;
+    }
+  } @else if $size == $medium {
+    @media (min-width: $screen-md-min) and (max-width: #{$screen-lg-min - 1px}) {
+      @content;
+    }
+  } @else if $size == $large {
+    @media (min-width: $screen-lg-min) and (max-width: #{$screen-xl-min - 1px}) {
+      @content;
+    }
+  } @else if $size == $extra-large {
+    @media (min-width: $screen-xl-min) {
+      @content;
+    }
+  }
+}
+
+@mixin flex($display: false, $align: false, $justify: false) {
+  @if $display {
+    display: flex;
+  }
+
+  @if $align {
+    align-items: $align;
+  }
+
+  @if $justify {
+    justify-content: $justify;
+  }
+}
+
+@mixin background-source($size: false, $repeat: false, $position: false) {
+  @if $size {
+    background-size: $size;
+  }
+
+  @if $repeat {
+    background-repeat: $repeat;
+  }
+
+  @if $position {
+    background-position: $position;
+  }
+}
+
+@mixin transform($transforms) {
+	-webkit-transform: $transforms;
+	-moz-transform: $transforms;
+	-ms-transform: $transforms;
+	transform: $transforms;
+}

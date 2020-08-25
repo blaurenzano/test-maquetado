@@ -1,0 +1,13 @@
+{
+  "name": "test-maquetado",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/blaurenzano/test-maquetado.git",
+  "author": "David Alaniz",
+  "license": "MIT",
+  "devDependencies": {
+    "browser-sync": "^2.26.12",
+    "gulp": "^4.0.2",
+    "gulp-sass": "^4.1.0"
+  }
+}

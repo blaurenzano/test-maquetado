@@ -1,0 +1,94 @@
+.products {
+  @include breakpoint($small) {
+    width: 100%;
+    margin: 0;
+  }
+
+  @include breakpoint($portrait) {
+    width: 100%;
+    margin: 0;
+  }
+
+  &.columns {
+    margin-bottom: 89px;
+
+    @include breakpoint($small) {
+      margin-bottom: 0;
+    }
+  }
+
+  .product__list {
+    @include breakpoint($small) {
+      margin-top: -30px;
+    }
+  }
+}
+
+.products__category {
+  @include font-source(
+    $primary-font-family,
+    $large-font-size,
+    $color-tertiary,
+    $bold,
+    29px
+  );
+  letter-spacing: 0.48px;
+  text-align: left;
+  padding: 7px 0;
+  margin-top: -5px;
+
+  @include breakpoint($small) {
+    margin-top: 2px;
+  }
+
+  &.with--border {
+    border-bottom: 1px solid $color-tertiary;
+  }
+}
+
+.product {
+  .product__image {
+    margin-bottom: 5px;
+
+    &::after {
+      content: "";
+      width: 100%;
+      height: 1px;
+      display: block;
+      background-color: $color-tertiary;
+    }
+  }
+
+  .product__name {
+    @include font-source(
+      $primary-font-family,
+      $medium-font-size,
+      $color-tertiary,
+      $normal,
+      22px
+    );
+    letter-spacing: 0.32px;
+    margin-bottom: 1px;
+
+    @include breakpoint($small) {
+      @include font-source(false, $title-font-size, false, false, 28px);
+      letter-spacing: 0.4px;
+    }
+  }
+
+  .product__price {
+    @include font-source(
+      $primary-font-family,
+      $medium-font-size,
+      $color-tertiary,
+      $bold,
+      22px
+    );
+    letter-spacing: 0.32px;
+
+    @include breakpoint($small) {
+      @include font-source(false, $title-font-size, false, false, 28px);
+      letter-spacing: 0.4px;
+    }
+  }
+}
