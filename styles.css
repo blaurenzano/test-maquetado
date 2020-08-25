@@ -1,3 +1,43 @@
-body{
-	margin: 0;
-}
+body{margin: 0;font-family: 'Roboto', sans-serif;}
+
+header {background:#100217}
+nav {display: none;margin: 20px;position: relative;padding-bottom: 10px;}
+nav a {color:#fff;}
+nav li {line-height: 30px;}
+nav .close{position: absolute;right: 0;}
+
+.topbar {display: grid; height: 69px; grid-template-columns: 1fr 2fr 1fr;margin:0 20px 0 20px;grid-template-areas: "nav1 nav2 nav3"}
+.topbar li:nth-child(1) {background: url(assets/iconos/hamburguesa.svg) left/30% no-repeat;}
+.topbar li:nth-child(2) {background: url(assets/logo.svg) center/80% no-repeat; text-indent: -9999px;}
+.topbar li:nth-child(3) a {height: 100%;display: block;}
+.topbar li:nth-child(3) a:nth-child(3) {background: url(assets/iconos/carrito.svg) right/30% no-repeat;}
+.topbar li:nth-child(3) a:nth-child(1),.topbar li:nth-child(3) a:nth-child(2) {display: none;}
+
+main {padding: 20px;}
+main h1 {margin-bottom: 10px;padding-bottom: 10px;text-align: left;font: normal normal bold 24px/29px Roboto;letter-spacing: 0.48px;color: #030B1C;border-bottom:1px solid #030B1C}
+section img {margin-bottom: 10px;border-bottom:1px solid #030B1C;padding: 20px 0 20px 0;}
+section h2 {padding-bottom: 5px;font: normal normal normal 20px/28px Roboto;letter-spacing: 0.4px;}
+section p {font: normal normal bold 20px/28px Roboto;}
+footer {padding: 15px 0 15px 0;background: #100217E6 0% 0% no-repeat padding-box;box-shadow: 0px -3px 6px #00000026;opacity: 1;display: grid;text-align: center;grid-template-columns:none}
+footer a {font: normal normal normal 16px/22px Roboto;letter-spacing: 0.32px;color: #FAFAFA;}
+.sidebarnav {display: none;}
+
+@media only screen and (min-width: 769px) {	
+	footer {grid-template-columns: repeat(4,1fr);}
+	nav,.topbar li:nth-child(3) a:nth-child(1),.topbar li:nth-child(3) a:nth-child(2) {display: block;}
+	.sidebarnav {display: grid;grid-template-rows:1.5% auto}
+	nav ul {display: grid;grid-template-columns: repeat(5,1fr);text-align: center;}
+	.topbar {grid-template-columns:5fr 1fr;grid-template-areas: "nav2 nav3";padding-top: 20px;}
+	.topbar li:nth-child(1),.head_mobile {display: none;}
+	main {display: grid;grid-template-columns: 20% auto;grid-gap: 2%;}
+	.filters {padding-top: 10px;}
+	.filters h2 {font: normal normal bold 20px/24px Roboto;}
+	.filters h3 {background: #E4E8EE 0% 0% no-repeat padding-box;font: normal normal bold 16px/19px Roboto;letter-spacing: 0.32px;padding: 7px;
+		margin: 5px 0 5px 0;}
+	.filters ul {padding-left: 10px;}
+	.nav3 {display: grid;grid-template-columns: repeat(3,20%);}
+	.topbar li:nth-child(2) {background: url(assets/logo.svg) center/15% no-repeat;}
+		.topbar li:nth-child(3) a:nth-child(1) {background: url(assets/iconos/busqueda.svg) center no-repeat;}
+		.topbar li:nth-child(3) a:nth-child(2) {background: url(assets/iconos/usuario.svg) center no-repeat;}	
+		.topbar li:nth-child(3) a:nth-child(3) {background: url(assets/iconos/carrito.svg) center no-repeat;}
+		.items {display: grid;grid-template-columns: repeat(3,1fr);grid-gap: 2%;}}
