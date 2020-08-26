@@ -2,10 +2,275 @@
 <html lang="es">
 <head>
 	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Test de maquetado</title>
-	<link rel="stylesheet" href="styles.css">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet" />
+	<link rel="stylesheet" href="css/styles.css" />
 </head>
 <body>
+	<nav class="navbar is-transparent">
+		<div class="navbar-brand">
+			<a class="navbar-item" href="#">
+				<img src="assets/logo.svg" alt="La Preuve" width="206" height="30">
+			</a>
+			<div class="navbar-item navbar__icons">
+				<div class="navbar__icons-item is-hidden-touch">
+					<a href="#">
+						<img src="assets/iconos/busqueda.svg" alt="Search" width="24">
+					</a>
+				</div>
+				<div class="navbar__icons-item is-hidden-touch">
+					<a href="#">
+						<img src="assets/iconos/usuario.svg" alt="User" width="21">
+					</a>
+				</div>
+				<div class="navbar__icons-item">
+					<a href="#">
+						<img src="assets/iconos/carrito.svg" alt="Cart" width="27">
+					</a>
+				</div>
+			</div>
+			
+			<div class="navbar-burger burger" data-target="navbarExampleTransparentExample"></div>
+		</div>
+	
+		<div id="navbarExampleTransparentExample" class="navbar-menu">
+			<div class="navbar-start">
+				<a class="navbar-item" href="#">Sale</a>
+				<a class="navbar-item" href="#">E-shop</a>
+				<a class="navbar-item" href="#">Lookbook</a>
+				<a class="navbar-item" href="#">Campaña</a>
+				<a class="navbar-item" href="#">Locales</a>
+			</div>
+		</div>
+	</nav>
 
+	<main class="container">
+		<div class="columns products">
+			<div class="column is-3">
+				<h2 class="title products__category with--border">Zapatillas</h2>
+
+				<div class="filters is-hidden-touch">
+					<h3 class="title is-4">Filtrar</h3>
+
+					<div class="accordion">
+						<div class="accordion__header">
+							<h2>Categoría</h2>
+						</div>
+						<div class="accordion__body">
+							<ul class="filters__list">
+								<li class="filters__item"><a href="#">Zapatillas</a></li>
+								<li class="filters__item"><a href="#">Zapatos</a></li>
+								<li class="filters__item"><a href="#">Botas</a></li>
+								<li class="filters__item"><a href="#">Sandalias</a></li>
+								<li class="filters__item"><a href="#">Pantuflas</a></li>
+							</ul>
+						</div>
+					</div>
+
+					<div class="accordion">
+						<div class="accordion__header">
+							<h2>Talle</h2>
+						</div>
+						<div class="accordion__body">
+							<ul class="filters__list">
+								<li class="filters__item"><a href="#">36</a></li>
+								<li class="filters__item"><a href="#">38</a></li>
+								<li class="filters__item"><a href="#">40</a></li>
+								<li class="filters__item"><a href="#">42</a></li>
+								<li class="filters__item"><a href="#">44</a></li>
+							</ul>
+						</div>
+					</div>
+
+					<div class="accordion">
+						<div class="accordion__header">
+							<h2>Color</h2>
+						</div>
+						<div class="accordion__body">
+							<ul class="filters__list">
+								<li class="filters__item"><a href="#">Amarillo</a></li>
+								<li class="filters__item"><a href="#">Negro</a></li>
+								<li class="filters__item"><a href="#">Verde</a></li>
+								<li class="filters__item"><a href="#">Azul</a></li>
+								<li class="filters__item"><a href="#">Blanco</a></li>
+							</ul>
+						</div>
+					</div>
+
+				</div>
+			</div>
+			<div class="column is-9">
+				<div class="columns product__list is-multiline">
+					<div class="column is-4">
+						<div class="product">
+							<div class="product__image">
+								<img src="assets/productos/zapatilla_1.jpg" alt="">
+							</div>
+							<div class="product__name">
+								<p>Zapatilla 1-XFK</p>
+							</div>
+							<div class="product__price">
+								<span>$5000</span>
+							</div>
+						</div>
+					</div>
+					<div class="column is-4">
+						<div class="product">
+							<div class="product__image">
+								<img src="assets/productos/zapatilla_2.jpg" alt="">
+							</div>
+							<p class="product__name">
+								Zapatilla 2000-X
+							</p>
+							<div class="product__price">
+								<span>$9800</span>
+							</div>
+						</div>
+					</div>
+					<div class="column is-4">
+						<div class="product">
+							<div class="product__image">
+								<img src="assets/productos/zapatilla_3.jpg" alt="">
+							</div>
+							<div class="product__name">
+								<p>Zapatilla 3 Run</p>
+							</div>
+							<div class="product__price">
+								<span>$6500</span>
+							</div>
+						</div>
+					</div>
+					<div class="column is-4">
+						<div class="product">
+							<div class="product__image">
+								<img src="assets/productos/zapatilla_3.jpg" alt="">
+							</div>
+							<div class="product__name">
+								<p>Zapatilla 3 Run</p>
+							</div>
+							<div class="product__price">
+								<span>$6500</span>
+							</div>
+						</div>
+					</div>
+					<div class="column is-4">
+						<div class="product">
+							<div class="product__image">
+								<img src="assets/productos/zapatilla_1.jpg" alt="">
+							</div>
+							<div class="product__name">
+								<p>Zapatilla 1-XFK</p>
+							</div>
+							<div class="product__price">
+								<span>$5000</span>
+							</div>
+						</div>
+					</div>
+					<div class="column is-4">
+						<div class="product">
+							<div class="product__image">
+								<img src="assets/productos/zapatilla_2.jpg" alt="">
+							</div>
+							<p class="product__name">
+								Zapatilla 2000-X
+							</p>
+							<div class="product__price">
+								<span>$9800</span>
+							</div>
+						</div>
+					</div>
+					<div class="column is-4">
+						<div class="product">
+							<div class="product__image">
+								<img src="assets/productos/zapatilla_1.jpg" alt="">
+							</div>
+							<div class="product__name">
+								<p>Zapatilla 1-XFK</p>
+							</div>
+							<div class="product__price">
+								<span>$5000</span>
+							</div>
+						</div>
+					</div>
+					<div class="column is-4">
+						<div class="product">
+							<div class="product__image">
+								<img src="assets/productos/zapatilla_2.jpg" alt="">
+							</div>
+							<p class="product__name">
+								Zapatilla 2000-X
+							</p>
+							<div class="product__price">
+								<span>$9800</span>
+							</div>
+						</div>
+					</div>
+					<div class="column is-4">
+						<div class="product">
+							<div class="product__image">
+								<img src="assets/productos/zapatilla_3.jpg" alt="">
+							</div>
+							<div class="product__name">
+								<p>Zapatilla 3 Run</p>
+							</div>
+							<div class="product__price">
+								<span>$6500</span>
+							</div>
+						</div>
+					</div>
+					<div class="column is-4">
+						<div class="product">
+							<div class="product__image">
+								<img src="assets/productos/zapatilla_2.jpg" alt="">
+							</div>
+							<p class="product__name">
+								Zapatilla 2000-X
+							</p>
+							<div class="product__price">
+								<span>$9800</span>
+							</div>
+						</div>
+					</div>
+					<div class="column is-4">
+						<div class="product">
+							<div class="product__image">
+								<img src="assets/productos/zapatilla_3.jpg" alt="">
+							</div>
+							<div class="product__name">
+								<p>Zapatilla 3 Run</p>
+							</div>
+							<div class="product__price">
+								<span>$6500</span>
+							</div>
+						</div>
+					</div>
+					<div class="column is-4">
+						<div class="product">
+							<div class="product__image">
+								<img src="assets/productos/zapatilla_1.jpg" alt="">
+							</div>
+							<div class="product__name">
+								<p>Zapatilla 1-XFK</p>
+							</div>
+							<div class="product__price">
+								<span>$5000</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</div>
+	</main>
+
+	<footer class="footer">
+		<div class="content has-text-centered">
+			<a class="footer-item" href="#">Ayuda</a>
+			<a class="footer-item" href="#">Contacto</a>
+			<a class="footer-item" href="#">Términos y condiciones</a>
+			<a class="footer-item" href="#">Políticas de privacidad</a>
+		</div>
+	</footer>
 </body>
 </html>

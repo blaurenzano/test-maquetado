@@ -1,0 +1,114 @@
+.navbar {
+  flex-direction: column;
+  background-color: $color-primary;
+  box-shadow: 0px 3px 6px $color-black-2;
+
+  .navbar-brand {
+    position: relative;
+    margin-bottom: -6px;
+
+    @include breakpoint($small) {
+      min-height: 3.6875rem;
+    }
+
+    .navbar-item {
+      margin: 0 auto;
+
+      @include breakpoint($small) {
+        order: 1;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        @include transform(translate(-50%, -50%));
+      }
+
+      @include breakpoint($portrait) {
+        order: 1;
+      }
+
+      img {
+        @include breakpoint($small) {
+          width: 140px;
+        }
+      }
+    }
+
+    .navbar__icons {
+      @include flex(flex, center);
+      position: absolute;
+      right: 0;
+      top: 50%;
+      @include transform(translateY(-50%));
+      margin-right: 12px;
+
+      @include breakpoint($small) {
+        width: 52px;
+        height: 100%;
+        padding: 0;
+        margin-right: 0;
+        justify-content: center;
+      }
+
+      .navbar__icons-item {
+        margin-right: 15px;
+
+        @include breakpoint($small) {
+          display: none;
+        }
+
+        &:last-child {
+          @include breakpoint($small) {
+            display: block;
+            margin-right: 0;
+          }
+
+          img {
+            width: 27px;
+          }
+        }
+
+        a {
+          @include flex(flex);
+        }
+      }
+    }
+  }
+
+  .navbar-menu {
+    .navbar-start {
+      margin: 0 auto;
+
+      .navbar-item {
+        @include font-source(
+          $primary-font-family,
+          $title-font-size,
+          $color-secondary,
+          $normal,
+          24px
+        );
+        letter-spacing: 0.4px;
+        text-transform: uppercase;
+        padding: 11px 48px;
+      }
+    }
+  }
+}
+
+.navbar-burger {
+  margin-left: 0;
+  position: relative;
+  height: 3.6875rem;
+
+  &::after {
+    content: "";
+    background-image: url("/assets/iconos/hamburguesa.svg");
+    @include background-source(100% auto, no-repeat, center);
+    height: 27px;
+    width: 24px;
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    @include transform(translate(-50%, -50%));
+  }
+}
