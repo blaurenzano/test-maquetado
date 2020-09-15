@@ -1,0 +1,187 @@
+/* General */
+  * {
+  box-sizing: border-box;
+  }
+
+  *:focus {
+  outline: none;
+  }
+
+  body{
+    background: white;
+    font-family: 'Montserrat', sans-serif;
+  }
+
+  @media (min-width: 760px){
+  body {
+      background: #e6e6e642;
+
+  }
+}
+
+  a,
+  a:hover,
+  a:visited{
+    text-decoration: none;
+  }
+
+  ul, li {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+  }
+
+
+  /* Estilo nav */
+
+    .titulo_responsive{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .titulo_principal{
+      display: none;
+      color: white;
+    }
+    .divIconosNav{
+      display: none;
+      color: white;
+    }
+
+    .ulNav{
+        display: contents;
+    }
+    .liNav{
+      color: white;
+    }
+
+    .imgShopResponsive{
+      display: inline-block;
+      color: white;
+    }
+
+    .NavResponsive{
+      margin-top: -1em;
+      background: #000526 !important;
+    }
+
+    .NavMax{
+      background: #000526;
+    }
+
+    @media (min-width: 760px){
+    .ulNav {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+
+    .titulo_principal{
+      text-align: center;
+      display: block;
+    }
+    .divIconosNav{
+      margin-top: -2em;
+      float: right;
+      display: inline-block;
+    }
+
+    .imgShopResponsive{
+      display: none !important;
+
+    }
+    .titulo_responsive {
+      display: none;
+    }
+    .NavResponsive{
+      margin-top: 0;
+    }
+  }
+
+
+  /* Estilos Home */
+
+  .divFiltros{
+  width: 100%;
+  }
+  .txtCategoria{
+    font-size: 1.2em;
+    font-weight: 600;
+    color: #000526;
+  }
+
+  .Filtros{
+    background: #dce1f3;
+    color: #000526 !important;
+    padding: 6px;
+    font-size: 0.9em;
+    font-weight: 600;
+    margin: 0;
+  }
+
+  .ItemsFiltros{
+    color: #000526 !important;
+    margin: 0;
+    font-size: 0.9em;
+    padding-left: 10px;
+  }
+
+  .txtFiltros{
+    font-size: 1.1em;
+    font-weight: 600;
+    color: #000526;
+  }
+
+  .divListFiltros{
+    display: none;
+  }
+
+  .txtProducto{
+    color: #000526 !important;
+    font-size: 0.9em;
+  }
+  .precio{
+    color: #000526 !important;
+    font-size: 0.9em;
+    font-weight: 600;
+  }
+  @media (min-width: 760px){
+  .divFiltros{
+    width: 80%;
+  }
+  .divListFiltros{
+    display: block;
+  }
+  }
+
+  /* Estilos footer */
+
+
+.footer{
+  background: #000526 !important;
+  text-align: center;
+
+
+}
+.ulFooter{
+  color: white;
+  font-size: 0.8em;
+  text-align: center;
+  display: inline-block;
+}
+
+.liFooter{
+  padding: 10px;
+}
+
+@media (min-width: 760px){
+
+  .ulFooter{
+
+    display: flex;
+    justify-content: center;
+
+  }
+}
