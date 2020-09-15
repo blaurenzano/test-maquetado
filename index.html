@@ -2,10 +2,46 @@
 <html lang="es">
 <head>
 	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Test de maquetado</title>
+	<link rel="stylesheet" href="/bootstrap-4.5.2-dist/css/bootstrap-grid.min.css">
 	<link rel="stylesheet" href="styles.css">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-
+	<header class="header">
+		<div class="container">
+			<div class="row">
+				<div class="col d-flex justify-content-start">
+					<button class="icon icon-menu"></button>
+				</div>
+				<div class="col d-flex justify-content-center">
+					<img class="logo" src="/assets/logo.svg" alt="Logo">
+				</div>
+				<div class="col d-flex justify-content-end">
+					<span class="icon icon-search icon-none"></span>
+					<span class="icon icon-user icon-none"></span>
+					<span class="icon icon-cart"></span>
+				</div>
+			</div>
+			<nav class="container">
+				<ul class="header-list">
+					<li><a class="link active" href="#">Sale</a></li>
+					<li><a class="link" href="#">E-Shop</a></li>
+					<li><a class="link" href="#">Lookbock</a></li>
+					<li><a class="link" href="#">Campaña</a></li>
+					<li><a class="link" href="#">Locales</a></li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+	<footer class="footer">
+		<ul class="container footer-list ">
+			<li class="footer-list-item">Ayuda</li>
+			<li class="footer-list-item">Contacto</li>
+			<li class="footer-list-item">Términos y condiciones</li>
+			<li class="footer-list-item">Políticas de privacidad</li>
+		</ul>
+	</footer>
 </body>
 </html>
