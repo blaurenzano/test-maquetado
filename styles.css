@@ -269,7 +269,29 @@ body{
 
 /* -- Mobile Media Queries -- */
 @media (max-width: 576px) {
-	
 
+	/* Header Navbar */
+	.header {
+		height: 69px;
+	}
+
+	.hamburger__icon {
+		display: block;
+	}
+
+	.header__logo {
+		width: 139.67px;
+		height: 20.26px;
+		margin-bottom: 0;
+	}
+
+	.search__btn {
+		display: none;
+	}
+
+	.login__icon {
+		display: none;
+	}
+	
 
 }
