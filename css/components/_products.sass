@@ -1,0 +1,28 @@
+#articles
+    .group
+        // Desktop
+        @media ( min-width: $desktop-min-width ) and ( min-height: $desktop-min-height )
+            display: grid
+            grid-template-columns: 33.3% 33.3% 33.3%
+            padding-top: 3.3em
+            margin-bottom: 1.3em
+
+.article__img
+    border-bottom: 1px solid $text-color
+    margin-bottom: .5em
+
+    // Desktop
+    @media ( min-width: $desktop-min-width ) and ( min-height: $desktop-min-height )
+        width: 95%
+
+.article__img__file
+    width: 100%
+
+.article__name
+    text-decoration: none
+    color: $text-color
+
+.article__price
+    font-size: 1em
+    font-weight: 700
+    margin: .3em 0 1em

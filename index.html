@@ -1,11 +1,172 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-	<meta charset="UTF-8">
-	<title>Test de maquetado</title>
-	<link rel="stylesheet" href="styles.css">
-</head>
-<body>
-
-</body>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width = device-width, initial-scale = 1">
+    <title>Test de maquetado</title>
+    <link rel="icon" href="assets/logo.svg">
+    <link rel="stylesheet" href="css/styles.css">
+  </head>
+  <body>
+    <header id="header">
+      <div class="group logo-container">
+        <div class="box"><a id="burger-menu" href="#"><img id="burger-menu__icon" src="assets/iconos/bars-solid.svg" alt="Burger menu"></a></div>
+        <div class="box logo"><a href="#" class="logo__link"><img src="assets/logo.svg" alt="La Preuve" class="logo__file"></a></div>
+        <div class="box actions">
+          <nav class="actions-group">
+            <ul>
+              <li class="actions-group__search"><a href="#" class="actions-group__search__link"><img src="assets/iconos/search-solid.svg" alt="search-icon"></a></li>
+              <li class="actions-group__user"><a href="#" class="actions-group__user__link"><img src="assets/iconos/user-solid.svg" alt="user-icon"></a></li>
+              <li class="actions-group__shopping-cart"><a href="#" class="actions-group__shopping-cart__link"><img src="assets/iconos/shopping-cart-solid.svg" alt="shopping-cart-icon"></a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+      <div class="group header-menu">
+        <div class="box">
+          <nav class="header-menu__nav">
+            <ul>
+              <li class="active"><a href="#">Sale</a></li>
+              <li><a href="#">E-Shop</a></li>
+              <li><a href="#">Lookbook</a></li>
+              <li><a href="#">Campaña</a></li>
+              <li><a href="#">Locales</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <main id="products-container">
+      <section id="sidebar">
+        <div class="group">
+          <div class="box section-title">
+            <h3 class="section-title__label">Zapatillas</h3>
+          </div>
+          <div class="box filters">
+            <h4>Filtrar</h4>
+            <div class="filters__category">
+              <div class="filters__category__name">Categoría</div>
+              <ul class="filters__category__items-group">
+                <li><a href="#">Zapatillas</a></li>
+                <li><a href="#">Zapatos</a></li>
+                <li><a href="#">Botas</a></li>
+                <li><a href="#">Sandalias</a></li>
+                <li><a href="#">Pantuflas</a></li>
+              </ul>
+            </div>
+            <div class="filters__category">
+              <div class="filters__category__name">Talle</div>
+              <ul class="filters__category__items-group">
+                <li><a href="#">36</a></li>
+                <li><a href="#">38</a></li>
+                <li><a href="#">40</a></li>
+                <li><a href="#">42</a></li>
+                <li><a href="#">44</a></li>
+              </ul>
+            </div>
+            <div class="filters__category">
+              <div class="filters__category__name">Color</div>
+              <ul class="filters__category__items-group">
+                <li><a href="#">Amarillo</a></li>
+                <li><a href="#">Negro</a></li>
+                <li><a href="#">Verde</a></li>
+                <li><a href="#">Azul</a></li>
+                <li><a href="#">Blanco</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="articles">
+        <div class="group">
+          <div class="box">
+            <div class="article">
+              <div class="article__img"><a href="#" class="article__img__link"><img src="assets/productos/zapatilla_1.jpg" class="article__img__file"></a></div><a href="#" class="article__name">Zapatilla 1-XFK</a>
+              <p class="article__price">$5000</p>
+            </div>
+          </div>
+          <div class="box">
+            <div class="article">
+              <div class="article__img"><a href="#" class="article__img__link"><img src="assets/productos/zapatilla_2.jpg" class="article__img__file"></a></div><a href="#" class="article__name">Zapatilla 2000-X</a>
+              <p class="article__price">$9800</p>
+            </div>
+          </div>
+          <div class="box">
+            <div class="article">
+              <div class="article__img"><a href="#" class="article__img__link"><img src="assets/productos/zapatilla_3.jpg" class="article__img__file"></a></div><a href="#" class="article__name">Zapatilla 3 Run</a>
+              <p class="article__price">$6500</p>
+            </div>
+          </div>
+          <div class="box">
+            <div class="article">
+              <div class="article__img"><a href="#" class="article__img__link"><img src="assets/productos/zapatilla_3.jpg" class="article__img__file"></a></div><a href="#" class="article__name">Zapatilla 3 Run</a>
+              <p class="article__price">$6500</p>
+            </div>
+          </div>
+          <div class="box">
+            <div class="article">
+              <div class="article__img"><a href="#" class="article__img__link"><img src="assets/productos/zapatilla_1.jpg" class="article__img__file"></a></div><a href="#" class="article__name">Zapatilla 1-XFK</a>
+              <p class="article__price">$5000</p>
+            </div>
+          </div>
+          <div class="box">
+            <div class="article">
+              <div class="article__img"><a href="#" class="article__img__link"><img src="assets/productos/zapatilla_2.jpg" class="article__img__file"></a></div><a href="#" class="article__name">Zapatilla 2000-X</a>
+              <p class="article__price">$9800</p>
+            </div>
+          </div>
+          <div class="box">
+            <div class="article">
+              <div class="article__img"><a href="#" class="article__img__link"><img src="assets/productos/zapatilla_2.jpg" class="article__img__file"></a></div><a href="#" class="article__name">Zapatilla 2000-X</a>
+              <p class="article__price">$9800</p>
+            </div>
+          </div>
+          <div class="box">
+            <div class="article">
+              <div class="article__img"><a href="#" class="article__img__link"><img src="assets/productos/zapatilla_3.jpg" class="article__img__file"></a></div><a href="#" class="article__name">Zapatilla 3 Run</a>
+              <p class="article__price">$6500</p>
+            </div>
+          </div>
+          <div class="box">
+            <div class="article">
+              <div class="article__img"><a href="#" class="article__img__link"><img src="assets/productos/zapatilla_1.jpg" class="article__img__file"></a></div><a href="#" class="article__name">Zapatilla 1-XFK</a>
+              <p class="article__price">$5000</p>
+            </div>
+          </div>
+          <div class="box">
+            <div class="article">
+              <div class="article__img"><a href="#" class="article__img__link"><img src="assets/productos/zapatilla_1.jpg" class="article__img__file"></a></div><a href="#" class="article__name">Zapatilla 1-XFK</a>
+              <p class="article__price">$5000</p>
+            </div>
+          </div>
+          <div class="box">
+            <div class="article">
+              <div class="article__img"><a href="#" class="article__img__link"><img src="assets/productos/zapatilla_2.jpg" class="article__img__file"></a></div><a href="#" class="article__name">Zapatilla 2000-X</a>
+              <p class="article__price">$9800</p>
+            </div>
+          </div>
+          <div class="box">
+            <div class="article">
+              <div class="article__img"><a href="#" class="article__img__link"><img src="assets/productos/zapatilla_3.jpg" class="article__img__file"></a></div><a href="#" class="article__name">Zapatilla 3 Run</a>
+              <p class="article__price">$6500</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer id="footer">
+      <div class="group">
+        <div class="box">
+          <nav class="footer-menu">
+            <ul>
+              <li><a href="#">Ayuda</a></li>
+              <li><a href="#">Contacto</a></li>
+              <li><a href="#">Términos y condiciones</a></li>
+              <li><a href="#">Políticas de privacidad</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </footer>
+  </body>
 </html>

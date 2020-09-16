@@ -1,0 +1,48 @@
+#sidebar
+    // Mobile
+    @media ( max-width: $desktop-min-width ) and ( max-height: $desktop-min-height )
+        margin-bottom: 1.8em
+    
+    // Desktop
+    @media ( min-width: $desktop-min-width ) and ( min-height: $desktop-min-height )
+        margin-right: 2em
+        padding-top: 1.7em
+
+.section-title__label
+    padding-bottom: .3em
+    border-bottom: 2px solid black
+
+    // Desktop
+    @media ( min-width: $desktop-min-width ) and ( min-height: $desktop-min-height )
+        font-size: 1.3rem
+
+.box.filters
+    // Mobile
+    @media ( max-width: $desktop-min-width ) and ( max-height: $desktop-min-height )
+        display: none
+    
+    h4
+        margin: .7em 0
+    
+    ul
+        margin: 0
+        padding: 0
+        list-style: none
+
+        li
+            margin: .2em 0
+
+            a
+                text-decoration: none
+                color: $text-color
+
+.filters__category
+    margin: 1em 0
+
+    &__name
+        font-weight: 700
+        background-color: $filters-category-color
+        padding: .2em 0 .2em .7em
+    
+    &__items-group li
+        padding-left: .7em

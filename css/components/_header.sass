@@ -1,0 +1,111 @@
+#header
+    background-color: $primary-color
+    width: 100%
+
+    // Mobile
+    @media ( max-width: $desktop-min-width ) and ( max-height: $desktop-min-height )
+        max-width: fit-content
+        height: 3.8rem
+        padding: .8rem .5rem
+
+    // Desktop
+    @media ( min-width: $desktop-min-width ) and ( min-height: $desktop-min-height )
+        max-width: 100%
+        height: 10rem
+
+    position: fixed
+    left: 0
+    top: 0
+    right: 0
+
+
+.group.logo-container
+    width: 95%
+    margin: 0 auto
+
+    display: flex
+    justify-content: space-between
+    align-items: center
+
+    // Desktop
+    @media ( min-width: $desktop-min-width ) and ( min-height: $desktop-min-height )
+        margin-top: 2.5rem
+
+
+.logo
+    text-align: center
+
+.logo__file
+    // Desktop
+    @media ( min-width: $desktop-min-width ) and ( min-height: $desktop-min-height )
+        width: 40%
+        height: 40%
+
+#burger-menu
+    // Desktop
+    @media ( min-width: $desktop-min-width ) and ( min-height: $desktop-min-height )
+        display: none
+
+.actions-group
+    // Desktop
+    @media ( min-width: $desktop-min-width ) and ( min-height: $desktop-min-height )
+        margin-top: 1rem
+
+    ul
+        list-style: none
+
+        // Desktop
+        @media ( min-width: $desktop-min-width ) and ( min-height: $desktop-min-height )
+            margin: 0
+            padding: 0
+        
+            li
+                display: inline-block
+                width: 2rem
+
+                a
+                    display: block
+                    text-decoration: none
+
+                    img
+                        width: 1.8rem
+                        height: 1.8rem
+    
+    // Mobile
+    @media ( max-width: $desktop-min-width ) and ( max-height: $desktop-min-height )
+        img
+            width: 100%
+            height: 100%
+    
+        &__search, &__user
+            display: none
+
+
+.group.header-menu
+    margin-top: 1rem
+    text-align: center
+    padding-right: 5rem
+
+    // Mobile
+    @media ( max-width: $desktop-min-width ) and ( max-height: $desktop-min-height )
+        display: none
+    
+    // Desktop
+    @media ( min-width: $desktop-min-width ) and ( min-height: $desktop-min-height )
+        ul
+            margin: 0
+            padding: 0
+            list-style: none
+
+            li
+                display: inline-block
+
+                a
+                    display: block
+                    padding: 0 2.5em
+                    text-decoration: none
+                    color: $secondary-color
+                    text-transform: uppercase
+            
+            li.active
+                font-weight: 700

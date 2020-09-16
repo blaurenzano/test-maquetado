@@ -1,0 +1,42 @@
+#footer
+    background-color: $primary-color
+    width: 100%
+
+    // Mobile
+    @media ( max-width: $desktop-min-width ) and ( max-height: $desktop-min-height )
+        height: 20%
+        padding: 1.5rem 0
+        margin-top: 4rem
+    
+    // Desktop
+    @media ( min-width: $desktop-min-width ) and ( min-height: $desktop-min-height )
+        height: 3rem
+        padding: .5rem 0
+        margin-top: 7rem
+
+.footer-menu
+    text-align: center
+    
+    ul
+        margin: 0
+        padding: 0
+        list-style: none
+        
+        li
+            // Mobile
+            @media ( max-width: $desktop-min-width ) and ( max-height: $desktop-min-height )
+                margin: 1em 0
+            
+            // Desktop
+            @media ( min-width: $desktop-min-width ) and ( min-height: $desktop-min-height )
+                display: inline-block
+                padding-top: 1em
+            
+            a
+                text-decoration: none
+                color: $secondary-color
+
+                // Desktop
+                @media ( min-width: $desktop-min-width ) and ( min-height: $desktop-min-height )
+                    display: block
+                    padding: 0 1.5em

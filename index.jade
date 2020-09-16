@@ -1,0 +1,212 @@
+doctype html
+html(lang="es")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width = device-width, initial-scale = 1")
+        title Test de maquetado
+        link(rel="icon", href="assets/logo.svg")
+        link(rel="stylesheet", href="css/styles.css")
+    body
+        header#header
+            .group.logo-container
+                .box
+                    a#burger-menu(href="#")
+                        img#burger-menu__icon(
+                            src="assets/iconos/bars-solid.svg"
+                            alt="Burger menu")
+                .box.logo
+                    a.logo__link(href="#")
+                        img.logo__file(
+                            src="assets/logo.svg"
+                            alt="La Preuve")
+                .box.actions
+                    nav.actions-group
+                        ul
+                            li.actions-group__search
+                                a.actions-group__search__link(href="#")
+                                    img(
+                                        src="assets/iconos/search-solid.svg"
+                                        alt="search-icon")
+                            li.actions-group__user
+                                a.actions-group__user__link(href="#")
+                                    img(
+                                        src="assets/iconos/user-solid.svg"
+                                        alt="user-icon")
+                            li.actions-group__shopping-cart
+                                a.actions-group__shopping-cart__link(href="#")
+                                    img(
+                                        src="assets/iconos/shopping-cart-solid.svg"
+                                        alt="shopping-cart-icon")
+            .group.header-menu
+                .box
+                    nav.header-menu__nav
+                        ul
+                            li.active: a(href="#")
+                                | Sale
+                            li: a(href="#")
+                                | E-Shop
+                            li: a(href="#")
+                                | Lookbook
+                            li: a(href="#")
+                                | Campaña
+                            li: a(href="#")
+                                | Locales
+        
+        main#products-container
+            section#sidebar
+                .group
+                    .box.section-title
+                        h3.section-title__label Zapatillas
+                    .box.filters
+                        h4 Filtrar
+                        .filters__category
+                            .filters__category__name Categoría
+                            ul.filters__category__items-group
+                                li: a(href="#")
+                                    | Zapatillas
+                                li: a(href="#")
+                                    | Zapatos
+                                li: a(href="#")
+                                    | Botas
+                                li: a(href="#")
+                                    | Sandalias
+                                li: a(href="#")
+                                    | Pantuflas
+                        .filters__category
+                            .filters__category__name Talle
+                            ul.filters__category__items-group
+                                li: a(href="#")
+                                    | 36
+                                li: a(href="#")
+                                    | 38
+                                li: a(href="#")
+                                    | 40
+                                li: a(href="#")
+                                    | 42
+                                li: a(href="#")
+                                    | 44
+                        .filters__category
+                            .filters__category__name Color
+                            ul.filters__category__items-group
+                                li: a(href="#")
+                                    | Amarillo
+                                li: a(href="#")
+                                    | Negro
+                                li: a(href="#")
+                                    | Verde
+                                li: a(href="#")
+                                    | Azul
+                                li: a(href="#")
+                                    | Blanco
+            section#articles
+                .group
+                    .box
+                        .article
+                            .article__img
+                                a.article__img__link(href="#")
+                                    img.article__img__file(src="assets/productos/zapatilla_1.jpg")
+                            a.article__name(href="#")
+                                | Zapatilla 1-XFK
+                            p.article__price $5000
+                    .box
+                        .article
+                            .article__img
+                                a.article__img__link(href="#")
+                                    img.article__img__file(src="assets/productos/zapatilla_2.jpg")
+                            a.article__name(href="#")
+                                | Zapatilla 2000-X
+                            p.article__price $9800
+                    .box
+                        .article
+                            .article__img
+                                a.article__img__link(href="#")
+                                    img.article__img__file(src="assets/productos/zapatilla_3.jpg")
+                            a.article__name(href="#")
+                                | Zapatilla 3 Run
+                            p.article__price $6500
+                    .box
+                        .article
+                            .article__img
+                                a.article__img__link(href="#")
+                                    img.article__img__file(src="assets/productos/zapatilla_3.jpg")
+                            a.article__name(href="#")
+                                | Zapatilla 3 Run
+                            p.article__price $6500
+                    .box
+                        .article
+                            .article__img
+                                a.article__img__link(href="#")
+                                    img.article__img__file(src="assets/productos/zapatilla_1.jpg")
+                            a.article__name(href="#")
+                                | Zapatilla 1-XFK
+                            p.article__price $5000
+                    .box
+                        .article
+                            .article__img
+                                a.article__img__link(href="#")
+                                    img.article__img__file(src="assets/productos/zapatilla_2.jpg")
+                            a.article__name(href="#")
+                                | Zapatilla 2000-X
+                            p.article__price $9800
+                    .box
+                        .article
+                            .article__img
+                                a.article__img__link(href="#")
+                                    img.article__img__file(src="assets/productos/zapatilla_2.jpg")
+                            a.article__name(href="#")
+                                | Zapatilla 2000-X
+                            p.article__price $9800
+                    .box
+                        .article
+                            .article__img
+                                a.article__img__link(href="#")
+                                    img.article__img__file(src="assets/productos/zapatilla_3.jpg")
+                            a.article__name(href="#")
+                                | Zapatilla 3 Run
+                            p.article__price $6500
+                    .box
+                        .article
+                            .article__img
+                                a.article__img__link(href="#")
+                                    img.article__img__file(src="assets/productos/zapatilla_1.jpg")
+                            a.article__name(href="#")
+                                | Zapatilla 1-XFK
+                            p.article__price $5000
+                    .box
+                        .article
+                            .article__img
+                                a.article__img__link(href="#")
+                                    img.article__img__file(src="assets/productos/zapatilla_1.jpg")
+                            a.article__name(href="#")
+                                | Zapatilla 1-XFK
+                            p.article__price $5000
+                    .box
+                        .article
+                            .article__img
+                                a.article__img__link(href="#")
+                                    img.article__img__file(src="assets/productos/zapatilla_2.jpg")
+                            a.article__name(href="#")
+                                | Zapatilla 2000-X
+                            p.article__price $9800
+                    .box
+                        .article
+                            .article__img
+                                a.article__img__link(href="#")
+                                    img.article__img__file(src="assets/productos/zapatilla_3.jpg")
+                            a.article__name(href="#")
+                                | Zapatilla 3 Run
+                            p.article__price $6500
+
+        footer#footer
+            .group
+                .box
+                    nav.footer-menu
+                        ul
+                            li: a(href="#")
+                                | Ayuda
+                            li: a(href="#")
+                                | Contacto
+                            li: a(href="#")
+                                | Términos y condiciones
+                            li: a(href="#")
+                                | Políticas de privacidad
