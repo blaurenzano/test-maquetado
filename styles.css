@@ -1,3 +1,617 @@
 body{
-	margin: 0;
+    margin: 0px;
+    padding: 0px;
 }
+
+#top{
+    overflow: hidden;
+    background:  #fff;
+}
+
+header{
+    padding: 2em 0;
+}
+
+/* LOGO */
+
+#header-logo img{
+    width: 206px;
+    height: 30px;
+    margin-left: 11em;
+    position: relative;
+    top: -35px;
+    z-index: 2;
+}
+
+@media (min-width: 300px) and (max-width: 450px){
+    header{
+        padding: 0;
+    }
+    
+    #header-logo img{
+        width: 135px;
+        margin-left: 2em;
+        top: 18px;
+        position: relative;
+        z-index: 999;
+    }
+}
+
+@media (min-width: 451px) and (max-width: 555px){
+    header{
+        padding: 0;
+    }
+    
+    #header-logo img{
+        width: 150px;
+        margin-left: 3.5em;
+        top: 18px;
+        position: relative;
+        z-index: 999;
+    }
+}
+
+@media (min-width: 556px){
+    #header-logo img{
+        margin-left: 4em;
+        top: 0em;
+    }
+}
+
+@media (min-width: 768px){
+    #header-logo img{
+        margin-left: 6em;
+        top: 0px;
+    }
+}
+
+@media (min-width: 992px){
+    #header-logo img{
+        margin-left: 9em;
+        top: -40px;
+    }
+}
+
+@media (min-width: 1200px){
+    #header-logo img{
+        margin-left: 11em;
+    }
+}
+
+/* FIN DE LOGO */
+
+
+/* Iconos del header */
+
+p.icon{
+    margin: 10px;
+    float: right;
+}
+
+@media (min-width: 300px) and (max-width: 450px){
+    p.icon{
+        overflow: hidden;
+    }
+
+    #movil{
+        overflow: visible;
+        float: left;
+        position: relative;
+        top: -20px;
+        left: -23px;
+        cursor: pointer;
+    }
+
+    #movil img{
+        width: 24px;
+        margin-top: -21px;
+    }
+}
+
+@media (min-width: 375px) and (max-width: 450px){
+    #users-movil{
+        overflow: visible;
+        float: left;
+        position: relative;
+        left: -1em;
+        top: -2px;
+    }
+}
+
+@media (min-width: 451px) and (max-width: 555px){
+    p.icon{
+        overflow: hidden;
+    }
+
+    #movil{
+        overflow: visible;
+        float: left;
+        position: relative;
+        top: -20px;
+        left: 30px;
+        cursor: pointer;
+    }
+
+    #movil img{
+        width: 24px;
+        margin-top: -21px;
+        left: 19em;
+    }
+
+    #users-movil{
+        overflow: visible;
+        float: left;
+        position: relative;
+        left: 4em;
+        top: -3px;
+    }
+
+}
+
+
+
+@media (min-width: 300px) and (max-width: 450px){
+    .icon img{
+        left: 19rem;
+    }
+
+    p.icon{
+        overflow: hidden;
+    }
+}
+
+@media (min-width: 556px) and (max-width: 575px){
+    p.icon{
+        float: left;
+        position: relative;
+        left: 8em;
+        top: -19px
+    }
+}
+
+
+@media (min-width: 576px){
+    p.icon{
+        float: left;
+        position: relative;
+        left: -2em;
+        top: 35px;
+    }
+}
+
+@media (min-width: 768px){
+    p.icon{
+        left: 2em;
+        margin-top: 11px;
+    }
+}
+
+.icon img{
+    width: 18px;
+    margin-top: -55px;
+    position: relative;
+    left: 17rem;
+    transition: all 300ms;
+}
+
+.icon img:hover{
+    transform: scale(1.2, 1.2);
+}
+
+@media (min-width: 992px){
+    .icon img{
+        left: 27rem;
+        margin-top: -143px;
+    }
+}
+
+@media (min-width: 1200px){
+    .icon img{
+        left: 36rem;
+    }
+}
+
+/* FIN ICONOS DE HEADER*/
+
+
+/* Menu del Header*/
+
+#home-top{
+    background: #100217E6;
+    height: 129px;
+    width: 100%;
+}
+
+@media (min-width: 300px) and (max-width: 450px){
+    #home-top{
+        height: auto;
+        position: fixed;
+        z-index: 8;
+    }
+}
+
+@media (min-width: 451px) and (max-width: 555px){
+    #home-top{
+        height: auto;
+        position: fixed;
+        z-index: 8;
+    }
+}
+
+@media (min-width: 556px){
+    #home-top{
+        height: 100px;
+        position: fixed;
+        z-index: 8;
+    }
+}
+
+@media (min-width: 992px){
+    #home-top{
+        position: relative;
+    }
+}
+
+
+.navbar{
+    padding: 0em 32rem;
+    margin-top: -4em;
+}
+
+@media (min-width: 300px) and (max-width: 450px){
+    .navbar{
+        padding: 0em 0rem;
+        margin-top: -5.5em;
+    }
+
+}
+
+@media (min-width: 451px) and (max-width: 555px){
+    .navbar{
+        padding: 0em 0rem;
+        margin-top: -5.5em;
+    }
+
+}
+
+@media (min-width: 556px) and (max-width: 575px){
+    .navbar{
+        padding: 0em 0rem;
+        margin-top: 2.7em;
+    }
+}
+
+@media (min-width: 576px){
+    .navbar{
+        margin-top: 42px;
+        padding: 0em 0rem;
+    }
+}
+
+@media (min-width: 768px){
+    .navbar{
+        margin-top: 2.5em;
+    }
+}
+
+
+.navbar-nav{
+    text-align: center;
+}
+
+.navbar-light .navbar-nav .nav-link{
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0.5em 2em;
+    transition: all 400ms;
+}
+
+.navbar-light .navbar-nav .nav-link:hover{
+    color: #58177e;
+}
+
+@media (min-width: 300px) and (max-width: 450px){
+    .navbar-light .navbar-nav .nav-link{
+        padding: 0.25rem 2.5em;
+        font-family: 15px;
+    }
+}
+
+.navbar-light .navbar-toggler{
+    color: transparent !important;
+    border-color: transparent !important;
+}
+
+.navbar-light .navbar-toggler-icon{
+    background-image: url(bootstrap/img/iconos/hamburguesa.svg);
+}
+
+.navbar-expand-lg .navbar-nav{
+    margin-left: -11em;
+}
+
+@media (min-width: 300px) and (max-width: 450px){
+    .navbar-expand-lg .navbar-nav{
+        margin-left: -39px;
+        float: left;
+    }
+}
+
+@media (min-width: 556px){
+    .navbar-expand-lg .navbar-nav{
+        margin-left: -5em;
+    }
+}
+
+.bg-light{
+    background-color: #271b2e !important;
+}
+
+@media (min-width: 300px) and (max-width: 450px){
+    .bg-light{
+        display: flex;
+        right: none;
+        margin-right: 10em;
+        border-radius: 5px;
+        position: fixed;
+        margin-top: 27px;
+        z-index: 8;
+        margin-left: -15px;
+        width: 95px;
+    }
+
+}
+
+@media (min-width: 451px) and (max-width: 555px){
+    .bg-light{
+        display: flex;
+        right: none;
+        border-radius: 5px;
+        position: fixed;
+        margin-top: 27px;
+        z-index: 8;
+        margin-left: -15px;
+        margin-top: 2em;
+        width: 151px;
+
+    }
+}
+
+@media (min-width: 556px){
+    .bg-light{
+        display: flex;
+        position: fixed;
+        z-index: 8;
+        padding-left: 4em;
+        left: -2em;
+    }
+}
+
+@media (min-width: 992px){
+    .bg-light{
+        position: relative;
+        margin-top: -60px;
+        padding-left: 16em;
+    }
+}
+
+@media (min-width: 1200px){
+    .bg-light{
+        margin-left: 11em;
+    }
+}
+
+
+.nav-item{
+    margin-top: 1em;
+}
+
+@media (min-width: 451px) and (max-width: 555px){
+    .nav-item{
+        margin-left: 8em;
+    }
+}
+
+/* FIN DE MENU HEADER*/
+
+
+/* Filtrado de los productos */
+@media (min-width: 300px) and (max-width: 450px){
+    #productos-container{
+        margin-top: 8em;
+    }
+}
+
+@media (min-width: 451px) and (max-width: 555px){
+    #productos-container{
+        margin-top: 8em;
+    }
+}
+
+@media (min-width: 556px){
+    #productos-container{
+        margin-top: 12em;
+    }
+}
+
+@media (min-width: 768px){
+    #productos-container{
+        margin-top: 10em;
+    }
+}
+
+@media (min-width: 992px){
+    #productos-container{
+        margin-top: 1em;
+    }
+}
+
+
+#filtros-container h3{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 24px;
+    margin-top: 1em;
+    box-shadow: 0px 1px 0px #393d3f, 0px 2px 0px #100217E6;
+    color: #100217E6;
+}
+
+#filtros-container h4{
+    font-size: 21px;
+    color: #100217E6;
+}
+
+
+#filtros-container .list-group-item-action.active{
+     background: #100217E6;
+     border-color: #100217E6;
+}
+
+#filtros-container .list-group{
+    margin-bottom: 1em;
+}
+
+span.badge.badge-secondary.badge-pill{
+    float: right;
+}
+
+@media (min-width: 300px) and (max-width: 450px){
+    .list-group {
+        margin-bottom: 1em;
+        margin-top: 1em;
+    }
+} 
+
+.fa{
+    float: right
+}
+
+/* FIN DE FILTRO DE PRODUCTOS*/
+
+/* IMAGENES */
+
+.card{
+    margin-top: 3em;
+    margin-left: 2em;
+    transition: all 400ms;
+    cursor: pointer;
+    box-shadow: 1px 2px 0px #ccc, 2px 3px 0px #ccc;
+    border: 0px !important
+}
+
+@media (min-width: 556px) and (max-width: 575px){
+    .card{
+        margin-left: 5em;
+        width: 400px;
+    }
+}
+
+@media (min-width: 992px){
+    .card{
+        width: 206px;
+    }
+}
+
+.img-thumbnail{
+    border: 0px !important;
+}
+
+.card:hover{
+    transform: scale(1.2,1.2);
+}
+
+/* FIN DE IMAGENES*/
+
+/* Footer */
+
+footer{
+   background: #100217E6;
+   height: 60px;
+   text-align: center;
+}
+
+@media (min-width: 300px) and (max-width: 450px){
+    footer{
+        height: 100%;
+        margin-top: 3em;
+    }
+}
+
+@media (min-width: 451px) and (max-width: 555px){
+    footer{
+        height: 100%;
+        margin-top: 3em;
+    }
+}
+
+@media (min-width: 556px){
+    footer{
+        height: 100%;
+        margin-top: 3em;
+    }
+}
+
+.footer-list{
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    margin-top: 1em;
+}
+
+.footer-list a{
+    padding: 2em;
+    text-decoration: none;
+    color: white;
+    transition: all 400ms;
+}
+
+.footer-list a:hover{
+    color: #851bb9e6;
+}
+
+@media (min-width: 300px) and (max-width: 450px){
+    .footer-list a{
+        display: block;
+        padding: 0.2em;
+        overflow: hidden;
+    }
+}
+
+@media (min-width: 451px) and (max-width: 555px){
+    .footer-list a{
+        display: block;
+        padding: 0.2em;
+        overflow: hidden;
+    }
+}
+
+@media (min-width: 556px){
+    .footer-list a{
+        display: block;
+        overflow: hidden;
+        padding: 0.2em;
+    }
+}
+
+@media (min-width: 992px){
+    .footer-list{
+        display: block ruby;
+    }
+
+    .footer-list a{
+        padding: 1.2em;
+    }
+}
+
+/* FIN DEL FOOTER 
+
+Antes de despedirme con un simple “FIN” quiero agradecerte por darme la oportunidad de realizar ese ejercicio.
+Te cuento que utilice Bootstrap 4 y poco de JavaScript para la función del Icono fa-chevron-down y fa-chevron-up de la pestaña “FILTROS” para pantallas móviles.
+
+Solo espero que puedas entender el código, me tomé mucho tiempo acomodarlo para que se pueda entender bien y bueno…
+Esto es todo, me divertí mucho en codear el ejercicio. ¡Muchas gracias! 
+
+*/
+
+
+
+

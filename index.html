@@ -1,11 +1,430 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-	<meta charset="UTF-8">
-	<title>Test de maquetado</title>
-	<link rel="stylesheet" href="styles.css">
-</head>
-<body>
 
+
+<!-- Antes de despedirme con un simple “FIN” quiero agradecerte por darme la oportunidad de realizar este ejercicio.
+Te cuento que utilice Bootstrap 4 y poco de JavaScript para la función del Icono fa-chevron-down y fa-chevron-up de la pestaña “FILTROS” para pantallas móviles.
+
+Solo espero que puedas entender el código, me tomé mucho tiempo acomodarlo para que se pueda entender bien y bueno…
+Esto es todo, me divertí mucho en codear el ejercicio. ¡Muchas gracias! -->
+
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>TEST de maquetado</title>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+
+
+
+</head>
+
+<body>
+    <section id="top">
+
+        <header id="home-top">
+            <div class="container">
+
+                <div class="row">
+
+                    <div class="col-md-4 col-sm-4">
+
+                        <h1 id="header-logo" class="image-text">
+
+                            <a>
+
+                                <i class="logo"><img src="bootstrap/img/logo.svg" alt="logo"></i>
+
+                            </a>
+
+                        </h1>
+
+                    </div>
+
+                    <div class="col-md-6 col-sm-6">
+
+                        <p id="movil" class="icon">
+                            <a href="#"><img src="bootstrap/img/iconos/carrito.svg" alt="Buscar"></a>
+                        </p>
+
+                        <p id="users-movil" class="icon">
+                            <a href="#"><img src="bootstrap/img/iconos/usuario.svg" alt="Usuario"></a>
+                        </p class="icon">
+
+                        <p class="icon">
+                            <a href="#"><img src="bootstrap/img/iconos/busqueda.svg" alt="Comprar"></a>
+                        </p>
+
+                    </div>
+
+        </header>
+
+        <!-- Menu header -->
+
+        <div class="col-md-12 col-sm-8">
+
+
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">SALE</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">E-SHOP</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">LOOKBOOK</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">CAMPAÑA</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">LOCALES</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+
+        </div> <!-- 12 -->
+
+        </div> <!-- /row -->
+
+        </div> <!-- container -->
+
+    </section>
+
+    <!-- Fin Menu del Header -->
+
+    <!-- Filtrado de productos -->
+
+    <section id="productos-container">
+
+        <div class="container">
+            <div class="row">
+
+                <div class="col-12 col-md-4 col-lg-3">
+
+                    <!-- Pestaña de filtro en pantalla small -->
+                    <div class="list-group d-sm-none">
+                        <a href="#" id="filtrosToggle"
+                            class="list-group-item list-group-item-action navbar-toggler mb-3-d-flex justify-content-between"
+                            data-toggle="collapse" data-target="#filtros-container" aria-controls="filtros-container"
+                            aria-expanded="false"><span>Filtros</span><i class="fa fa-chevron-down"></i></a>
+                    </div>
+
+                    <div class="collapse navbar-collapse d-sm-block" id="filtros-container">
+
+                        <h3>Zapatillas</h3>
+                        <h4>Filtrar</h4>
+
+                        <!-- CATEGORÍAS -->
+
+                        <div class="list-group">
+                            <a href="#" class="list-group-item list-group-item-action active">
+                                <h5 class="list-group-item-heading">Categoría</h5>
+                            </a>
+                        </div>
+
+                        <div class="list-group">
+                            <a href="" class="list-group-item list-group-item-action">
+                                Zapatillas <span class="badge badge-secondary badge-pill">11</span>
+                            </a>
+
+                            <a href="" class="list-group-item list-group-item-action">
+                                Zapatos <span class="badge badge-secondary badge-pill">16</span>
+                            </a>
+
+                            <a href="" class="list-group-item list-group-item-action">
+                                Botas <span class="badge badge-secondary badge-pill">20</span>
+                            </a>
+
+                            <a href="" class="list-group-item list-group-item-action">
+                                Sandalias <span class="badge badge-secondary badge-pill">15</span>
+                            </a>
+
+                            <a href="" class="list-group-item list-group-item-action">
+                                Pantuflas <span class="badge badge-secondary badge-pill">8</span>
+                            </a>
+                        </div>
+
+                        <!-- FIN DE CATEGORIAS -->
+
+                        <!-- TALLES -->
+
+                        <div class="list-group">
+                            <a href="#" class="list-group-item list-group-item-action active">
+                                <h5 class="list-group-item-heading">Talle</h5>
+                            </a>
+                        </div>
+
+                        <div class="list-group">
+                            <a href="" class="list-group-item list-group-item-action">
+                                36 <span class="badge badge-secondary badge-pill">9</span>
+                            </a>
+
+                            <a href="" class="list-group-item list-group-item-action">
+                                38 <span class="badge badge-secondary badge-pill">11</span>
+                            </a>
+
+                            <a href="" class="list-group-item list-group-item-action">
+                                40 <span class="badge badge-secondary badge-pill">13</span>
+                            </a>
+
+                            <a href="" class="list-group-item list-group-item-action">
+                                42 <span class="badge badge-secondary badge-pill">6</span>
+                            </a>
+
+                            <a href="" class="list-group-item list-group-item-action">
+                                44 <span class="badge badge-secondary badge-pill">5</span>
+                            </a>
+                        </div>
+
+                        <!-- FIN DE TALLES -->
+
+                        <!-- COLORES -->
+
+                        <div class="list-group">
+                            <a href="#" class="list-group-item list-group-item-action active">
+                                <h5 class="list-group-item-heading">Color</h5>
+                            </a>
+                        </div>
+
+                        <div class="list-group">
+                            <a href="" class="list-group-item list-group-item-action list-group-item-warning">
+                                Amarillo <span class="badge badge-secondary badge-pill">9</span>
+                            </a>
+
+                            <a href="" class="list-group-item list-group-item-action list-group-item-dark">
+                                Negro <span class="badge badge-secondary badge-pill">11</span>
+                            </a>
+
+                            <a href="" class="list-group-item list-group-item-action list-group-item-success">
+                                Verde <span class="badge badge-secondary badge-pill">13</span>
+                            </a>
+
+                            <a href="" class="list-group-item list-group-item-action list-group-item-light">
+                                Blanco <span class="badge badge-secondary badge-pill">6</span>
+                            </a>
+
+                            <a href="" class="list-group-item list-group-item-action list-group-item-primary">
+                                Azul <span class="badge badge-secondary badge-pill">5</span>
+                            </a>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- FIN DE COLORES -->
+
+                <!-- FIN De Filtrado por productos -->
+
+                <!-- Imagenes -->
+
+                <div class="col-sm-12 col-md-8">
+                    <div class="row">
+
+                        <div class="col-sm-12 col-md-6 col-lg-4">
+
+                            <div class="card">
+
+                                <img class="img-thumbnail" src="bootstrap/img/productos/zapatilla_1.jpg" alt="">
+                                <div class="card-block">
+                                    <h4 class="card-title">Zapatilla 1-XFK</h4>
+                                    <p class="card-text">$5000</p>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="col-sm-12 col-md-6 col-lg-4">
+
+                            <div class="card">
+
+                                <img class="img-thumbnail" src="bootstrap/img/productos/zapatilla_2.jpg" alt="">
+                                <div class="card-block">
+                                    <h4 class="card-title">Zapatilla 2000-x</h4>
+                                    <p class="card-text">$9800</p>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="col-sm-12 col-md-6 col-lg-4">
+
+                            <div class="card">
+
+                                <img class="img-thumbnail" src="bootstrap/img/productos/zapatilla_3.jpg" alt="">
+                                <div class="card-block">
+                                    <h4 class="card-title">Zapatilla 3 Run</h4>
+                                    <p class="card-text">$6500</p>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="col-sm-12 col-md-6 col-lg-4">
+
+                            <div class="card">
+
+                                <img class="img-thumbnail" src="bootstrap/img/productos/zapatilla_3.jpg" alt="">
+                                <div class="card-block">
+                                    <h4 class="card-title">Zapatilla 3 Run</h4>
+                                    <p class="card-text">$6500</p>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="col-sm-12 col-md-6 col-lg-4">
+
+                            <div class="card">
+
+                                <img class="img-thumbnail" src="bootstrap/img/productos/zapatilla_2.jpg" alt="">
+                                <div class="card-block">
+                                    <h4 class="card-title">Zapatilla 2-X</h4>
+                                    <p class="card-text">$9800</p>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="col-sm-12 col-md-6 col-lg-4">
+
+                            <div class="card">
+
+                                <img class="img-thumbnail" src="bootstrap/img/productos/zapatilla_1.jpg" alt="">
+                                <div class="card-block">
+                                    <h4 class="card-title">Zapatilla 1-XFK</h4>
+                                    <p class="card-text">$5000</p>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="col-sm-12 col-md-6 col-lg-4">
+
+                            <div class="card">
+
+                                <img class="img-thumbnail" src="bootstrap/img/productos/zapatilla_2.jpg" alt="">
+                                <div class="card-block">
+                                    <h4 class="card-title">Zapatilla 2-X</h4>
+                                    <p class="card-text">$9800</p>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="col-sm-12 col-md-6 col-lg-4">
+
+                            <div class="card">
+
+                                <img class="img-thumbnail" src="bootstrap/img/productos/zapatilla_3.jpg" alt="">
+                                <div class="card-block">
+                                    <h4 class="card-title">Zapatilla 3 Run</h4>
+                                    <p class="card-text">$6800</p>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="col-sm-12 col-md-6 col-lg-4">
+
+                            <div class="card">
+
+                                <img class="img-thumbnail" src="bootstrap/img/productos/zapatilla_1.jpg" alt="">
+                                <div class="card-block">
+                                    <h4 class="card-title">Zapatilla 1-XFK</h4>
+                                    <p class="card-text">$5000</p>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="col-sm-12 col-md-6 col-lg-4">
+
+                            <div class="card">
+
+                                <img class="img-thumbnail" src="bootstrap/img/productos/zapatilla_2.jpg" alt="">
+                                <div class="card-block">
+                                    <h4 class="card-title">Zapatilla 2-X</h4>
+                                    <p class="card-text">$9800</p>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="col-sm-12 col-md-6 col-lg-4">
+
+                            <div class="card">
+
+                                <img class="img-thumbnail" src="bootstrap/img/productos/zapatilla_3.jpg" alt="">
+                                <div class="card-block">
+                                    <h4 class="card-title">Zapatilla 3 Run</h4>
+                                    <p class="card-text">$6500</p>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="col-sm-12 col-md-6 col-lg-4">
+
+                            <div class="card">
+
+                                <img class="img-thumbnail" src="bootstrap/img/productos/zapatilla_1.jpg" alt="">
+                                <div class="card-block">
+                                    <h4 class="card-title">Zapatilla 1-XFK</h4>
+                                    <p class="card-text">$5000</p>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FIN DE IMAGENES -->
+
+    <!-- FOOTER / Pie de página -->
+
+    <footer>
+
+        <div class="container">
+
+            <div class="row">
+
+                <div class="col-md-12">
+
+                    <div class="footer-list">
+
+                        <a href="#">Ayuda</a>
+                        <a href="#">Contacto</a>
+                        <a href="#">Términos y condiciones</a>
+                        <a href="#">Politica de privacidad</a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </footer>
+    <script type="text/javascript" src="jquery/jquery-3.5.1.min.js"></script>
+    <script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="app.js"></script>
 </body>
+
+<!-- FIN DEL FOOTER -->
+
 </html>
