@@ -223,7 +223,7 @@ body{
 	margin-top: 20px;
 }
 
-.aside__accordion {
+.aside__content {
 	margin-top: 14px;
 	list-style: none;
 }
@@ -232,10 +232,19 @@ body{
 	height: 29px;
 	padding: 5px 16px;
 	background: var(--gris-claro);
+	cursor: pointer;
 }
 
-.aside__submenu {
+.aside__category:hover {
+	background: hsla(0,0%,0%,0.2);
+	transition: 0.5s;
+}
+
+.aside__accordion {
 	padding: 5px 16px;
+	max-height: 0;
+	overflow: hidden;
+	transition: max-height 0.2s ease-out;
 }
 
 .aside__item, .aside__link {
