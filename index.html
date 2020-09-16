@@ -1,11 +1,262 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-	<meta charset="UTF-8">
-	<title>Test de maquetado</title>
-	<link rel="stylesheet" href="styles.css">
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Test de maquetado</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="/jquery/jquery.min.js"></script>
+    <script src="/jquery/jquery-ui.min.js"></script>
+    <script>
+      async function getProducts() {
+        var request = await fetch("https://run.mocky.io/v3/86889022-aa12-4640-891f-ee12757bcf00");
+        var result = await request.json();
+        return result;
+      }
+      var GlobaProducts = [];
+      var GlobalProductsFiltered = [];
+      var filters = {
+        typeShoes: [
+          { type: "zapatillas", selected: false },
+          { type: "zapatos", selected: false },
+          { type: "botas", selected: false },
+          { type: "sandalias", selected: false },
+          { type: "pantuflas", selected: false },
+        ],
+        talle: [
+          { type: "talle32", selected: false },
+          { type: "talle35", selected: false },
+          { type: "talle36", selected: false },
+          { type: "talle38", selected: false },
+          { type: "talle40", selected: false },
+          { type: "talle42", selected: false },
+          { type: "talle44", selected: false },
+        ],
+        color: [
+          { type: "yellow", selected: false },
+          { type: "black", selected: false },
+          { type: "green", selected: false },
+          { type: "blue", selected: false },
+          { type: "white", selected: false },
+        ],
+      };
 
-</body>
+      getProducts().then(function (response) {
+        GlobaProducts = response.data;
+        GlobalProductsFiltered = GlobaProducts;
+        createProducts();
+      });
+
+      $(function () {
+        $("#accordion").accordion();
+
+        $(".toggles").controlgroup({
+          direction: "vertical",
+        });
+
+        $(".toggle").on("change", handleToggle);
+        function handleToggle(e) {
+          var target = $(e.target);
+          Object.keys(filters).forEach(function (currentFilter) {
+            filters[currentFilter].forEach((element, index) => {
+              if (element.type === e.target.name) {
+                filters[currentFilter][index].selected = target.is(":checked");
+              }
+            });
+          });
+
+          $(".shape").toggleClass(target[0].id, target.is(":checked"));
+          filterProducts();
+          createProducts();
+        }
+      });
+      function createCardProduct(name, price, image) {
+        return `<div class="card">
+          <a class="product">
+            <img src="${image}" alt="zapatilla_1" />
+            <p>${name}<br><span>${price}</span></br></p>  
+          </a>
+        </div>`;
+      }
+
+      function createProducts() {
+        var producContainer = $("#product-container");
+        producContainer.html("");
+        for (i = 0; i < GlobalProductsFiltered.length; i++) {
+          var product = createCardProduct(GlobalProductsFiltered[i].name, GlobalProductsFiltered[i].price, GlobalProductsFiltered[i].image);
+          producContainer.append(product);
+        }
+        if (GlobalProductsFiltered.length < 3) {
+          producContainer.append(`<div style="width:828px"></div>`);
+        }
+      }
+
+      function filterProducts() {
+        GlobalProductsFiltered = GlobaProducts.filter(function (product) {
+          var choose = "";
+          Object.keys(filters).forEach(function (currentFilter) {
+            filters[currentFilter].forEach((element) => {
+              if (element.selected === true && element.type === product.category.toLowerCase()) {
+                choose = product;
+              }
+              if (element.selected === true && element.type === `talle${product.talle}`) {
+                choose = product;
+              }
+              if (element.selected === true && element.type === product.color.toLowerCase()) {
+                choose = product;
+              }
+            });
+          });
+          return choose;
+        });
+
+        if (detectUnselection() === true) {
+          GlobalProductsFiltered = GlobaProducts;
+        }
+      }
+
+      function detectUnselection() {
+        var someOneIsSelected = false;
+        Object.keys(filters).forEach(function (currentFilter) {
+          filters[currentFilter].forEach((element) => {
+            if (element.selected === true) {
+              someOneIsSelected = true;
+            }
+          });
+        });
+        return !someOneIsSelected;
+      }
+    </script>
+  </head>
+  <body>
+    <header>
+      <div class="topmenu">
+        <a href="" class="topmenu__link--left">
+          <img src="assets/iconos/hamburguesa.svg" alt="main_menu" />
+        </a>
+        <a href="" class="topmenu__link--right">
+          <img src="assets/logo.svg" alt="logo" class="topmenu__link__img--logo" />
+        </a>
+        <a href="" class="topmenu__link--right topmenu__link--mq">
+          <img src="assets/iconos/busqueda.svg" alt="buscar" />
+        </a>
+        <a href="" class="topmenu__link--margin topmenu__link--mq">
+          <img src="assets/iconos/usuario.svg" alt="usuario" />
+        </a>
+        <a href="" class="topmenu__link--margin">
+          <img src="assets/iconos/carrito.svg" alt="carrito" />
+        </a>
+      </div>
+      <nav class="mainmenu">
+        <ul>
+          <li>
+            <a href="">sale</a>
+          </li>
+          <li>
+            <a href="">e-shop</a>
+          </li>
+          <li>
+            <a href="">lookbook</a>
+          </li>
+          <li>
+            <a href="">campaña</a>
+          </li>
+          <li>
+            <a href="">locales</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <div class="container" id="product-container"></div>
+      <aside>
+        <h1>Zapatillas</h1>
+        <hr />
+        <h2>Filtrar</h2>
+        <div id="accordion">
+          <h3>Categoría</h3>
+          <div>
+            <div class="toggle-wrap">
+              <div class="toggles">
+                <label for="zapatillas">Zapatillas</label>
+                <input class="toggle typeshoes-toggle" type="checkbox" name="zapatillas" id="zapatillas" />
+                <label for="zapatos">Zapatos</label>
+                <input class="toggle typeshoes-toggle" type="checkbox" name="zapatos" id="zapatos" />
+                <label for="botas">Botas</label>
+                <input class="toggle typeshoes-toggle" type="checkbox" name="botas" id="botas" />
+                <label for="sandalias">Sandalias</label>
+                <input class="toggle typeshoes-toggle" type="checkbox" name="sandalias" id="sandalias" />
+                <label for="pantuflas">Pantuflas</label>
+                <input class="toggle typeshoes-toggle" type="checkbox" name="pantuflas" id="pantuflas" />
+              </div>
+            </div>
+          </div>
+          <h3>Talle</h3>
+          <div>
+            <div class="toggle-wrap">
+              <div class="toggles">
+                <label for="talle32">32</label>
+                <input class="toggle talle-toggle" type="checkbox" name="talle32" id="talle32" />
+                <label for="talle35">35</label>
+                <input class="toggle talle-toggle" type="checkbox" name="talle35" id="talle35" />
+                <label for="talle36">36</label>
+                <input class="toggle talle-toggle" type="checkbox" name="talle36" id="talle36" />
+                <label for="talle38">38</label>
+                <input class="toggle" type="checkbox" name="talle38" id="talle38" />
+                <label for="talle40">40</label>
+                <input class="toggle talle-toggle" type="checkbox" name="talle40" id="talle40" checked />
+                <label for="talle42">42</label>
+                <input class="toggle talle-toggle" type="checkbox" name="talle42" id="talle42" checked />
+                <label for="talle44">44</label>
+                <input class="toggle talle-toggle" type="checkbox" name="talle44" id="talle44" checked />
+              </div>
+            </div>
+          </div>
+          <h3>Color</h3>
+          <div>
+            <div class="toggle-wrap">
+              <div class="toggles">
+                <label for="yellow">Amarillo</label>
+                <input class="toggle color-toggle" type="checkbox" name="yellow" id="yellow" />
+                <label for="black">Negro</label>
+                <input class="toggle" type="checkbox" name="black" id="black" />
+                <label for="green">Verde</label>
+                <input class="toggle color-toggle" type="checkbox" name="green" id="green" checked />
+                <label for="blue">Azul</label>
+                <input class="toggle color-toggle" type="checkbox" name="blue" id="blue" checked />
+                <label for="white">Blanco</label>
+                <input class="toggle color-toggle" type="checkbox" name="white" id="white" checked />
+              </div>
+            </div>
+          </div>
+        </div>
+      </aside>
+    </main>
+    <footer>
+      <div class="container">
+        <ul>
+          <li>
+            <a href="#">Ayuda</a>
+          </li>
+          <li>
+            <a href="#">Contactos</a>
+          </li>
+          <li>
+            <a href="#">Términos y condiciones</a>
+          </li>
+          <li>
+            <a href="#">Políticas de privacidad</a>
+          </li>
+        </ul>
+      </div>
+    </footer>
+  </body>
 </html>
+
+<!-- <div class="card">
+  <a class="product" href="/assets/productos/zapatilla_1.jpg">
+    <img src="/assets/productos/zapatilla_1.jpg" alt="zapatilla_1" />
+    <p>Zapatilla 1-XF-K <br><span>$5000</span></br></p>  
+  </a>
+</div> -->

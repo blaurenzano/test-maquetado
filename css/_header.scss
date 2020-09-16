@@ -1,0 +1,99 @@
+@import "./var";
+
+header {
+  background-color: var(--fondo-header);
+  padding-left: var(--padding-40);
+  padding-right: var(--padding-40);
+  padding-top: var(--padding-18);
+  div.topmenu {
+    display: flex;
+    justify-content: center;
+    a {
+      display: block;
+      &.topmenu__link {
+      }
+      &.topmenu__link--right {
+        margin-left: auto;
+      }
+      &.topmenu__link--left {
+        display: none;
+      }
+      &.topmenu__link--margin {
+        margin-left: 10px;
+      }
+      img {
+        height: 24px;
+        &.topmenu__link__img--logo {
+          height: 30px;
+        }
+      }
+    }
+  }
+  @media (max-width: 600px) {
+    div.topmenu {
+      a {
+        &.topmenu__link--left {
+          display: block;
+        }
+        &.topmenu__link--mq {
+          display: none;
+        }
+        &.topmenu__link--right {
+          margin-right: auto;
+          margin-left: auto;
+        }
+        img {
+          height: 24px;
+          &.topmenu__link__img--logo {
+            height: 24px;
+          }
+        }
+      }
+    }
+  }
+
+  nav.mainmenu {
+    ul {
+      display: flex;
+      justify-content: center;
+      padding-inline-start: 0px;
+      list-style: none;
+      li {
+        margin-left: 49px;
+        margin-right: 49px;
+        margin-top: 18px;
+        margin-bottom: 11px;
+        &:first-child {
+          margin-left: 0px;
+        }
+        &:last-child {
+          margin-right: 0px;
+        }
+        a {
+          font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-bold) var(--unnamed-font-size-20) / var(--unnamed-line-spacing-24)
+            var(--unnamed-font-family-roboto);
+          letter-spacing: var(--unnamed-character-spacing-0-4);
+          color: var(--texto-header);
+          text-align: left;
+          font: normal normal bold 20px/24px Roboto;
+          letter-spacing: 0.4px;
+          color: #fafafa;
+          text-transform: uppercase;
+          opacity: 1;
+
+          text-decoration: none;
+        }
+      }
+    }
+  }
+  @media (max-width: 880px) {
+    nav.mainmenu {
+      ul {
+        flex-direction: column;
+        li {
+          margin-left: 0px;
+        }
+      }
+    }
+  }
+}

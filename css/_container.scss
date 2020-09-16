@@ -1,0 +1,107 @@
+@import "./var";
+
+main {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 41px;
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 828px;
+    width: 828px;
+    div.card {
+      max-width: 260px;
+      max-height: 232px;
+      margin-left: 16px;
+      margin-bottom: 32px;
+      a {
+        text-decoration: none;
+        img {
+          width: 100%;
+          border-bottom: 1.5px solid black;
+        }
+
+        p {
+          font-size: var(--unnamed-font-size-16);
+          font-family: var(--unnamed-font-family-roboto);
+          font-weight: var(--unnamed-font-weight-light);
+          color: var(--color-texto);
+          margin-top: 8px;
+          margin-bottom: 8px;
+          span {
+            font-weight: var(--unnamed-font-weight-bold);
+          }
+        }
+      }
+    }
+  }
+  aside {
+    min-width: 260px;
+    width: 260px;
+    h1 {
+      font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-bold) var(--unnamed-font-size-24) / var(--unnamed-line-spacing-29)
+        var(--unnamed-font-family-roboto);
+      letter-spacing: var(--unnamed-character-spacing-0-48);
+      color: var(--color-texto);
+      text-align: left;
+      opacity: 1;
+      margin-top: 0px;
+      margin-bottom: 7.5px;
+    }
+    hr {
+      margin: 0px;
+      background-color: var(--color-texto);
+      height: 1px;
+    }
+    h2 {
+      font-family: var(--unnamed-font-family-roboto);
+      font-style: var(--unnamed-font-style-normal);
+      font-weight: var(--unnamed-font-weight-bold);
+      font-size: var(--unnamed-font-size-20);
+      line-height: var(--unnamed-line-spacing-24);
+      letter-spacing: var(--unnamed-character-spacing-0-4);
+      color: var(--color-texto);
+    }
+    .ui-accordion-header {
+      background: var(--gris-claro);
+      font-size: var(--unnamed-font-size-16);
+      font-family: var(--unnamed-font-family-roboto);
+      font-weight: var(--unnamed-font-weight-light);
+      color: var(--color-texto);
+      padding-top: 5px;
+      padding-bottom: 5px;
+      padding-left: 16px;
+    }
+    h3 {
+      &:focus,
+      &.ui-state-focus {
+        outline: 0;
+      }
+    }
+    .toggle-wrap {
+      margin-top: 5px;
+      padding-left: 16px;
+      .toggles {
+        display: flex;
+        flex-direction: column;
+
+        label {
+          font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-normal) var(--unnamed-font-size-16) / var(--unnamed-line-spacing-22)
+            var(--unnamed-font-family-roboto);
+          letter-spacing: var(--unnamed-character-spacing-0-32);
+          color: var(--color-texto);
+          text-align: left;
+          opacity: 1;
+          &.ui-state-active {
+            font-weight: bold;
+          }
+        }
+        input {
+          display: none;
+        }
+      }
+    }
+  }
+}
