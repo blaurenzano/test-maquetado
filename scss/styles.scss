@@ -266,6 +266,10 @@ nav{
 			.tipos-filtros{
 				padding-bottom: 10px;
 
+				input{
+					display: none;
+				}
+
 				h3{
 					margin: 0px;
 					padding: 5px 16px;
@@ -315,6 +319,14 @@ nav{
 		display: flex;
 		flex-direction: column;
 
+		.filtros input:checked ~ .grupo-filtros{
+			display: block !important;
+			padding: 5px 20px;
+			
+			& > p{
+				color: $--texto-header;
+			}
+		}
 
 		aside{
 			visibility: hidden;
@@ -332,11 +344,15 @@ nav{
 				
 				.container-filtros{
 					overflow: auto;
-					height: 170px;
+					height: 160px;
+
+					.tipos-filtros{
+						padding: 0px;
+					}
 
 					.grupo-filtros{
-						visibility: hidden;
 						display: none;
+						z-index: 2;
 					}
 				}
 
@@ -346,6 +362,7 @@ nav{
 				}
 
 				h3{
+					cursor: pointer;
 					padding: 5px 20px;
 				}
 			}

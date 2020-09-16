@@ -200,6 +200,8 @@ nav {
       border-bottom: 1px solid #030B1C; }
     .container-main aside .filtros .tipos-filtros {
       padding-bottom: 10px; }
+      .container-main aside .filtros .tipos-filtros input {
+        display: none; }
       .container-main aside .filtros .tipos-filtros h3 {
         margin: 0px;
         padding: 5px 16px;
@@ -229,6 +231,11 @@ nav {
       padding: 80px 15px 250px;
       display: flex;
       flex-direction: column; }
+      .container-main .filtros input:checked ~ .grupo-filtros {
+        display: block !important;
+        padding: 5px 20px; }
+        .container-main .filtros input:checked ~ .grupo-filtros > p {
+          color: #FAFAFA; }
       .container-main aside {
         visibility: hidden;
         width: 100%; }
@@ -241,14 +248,17 @@ nav {
           top: 350px; }
           .container-main aside .filtros .container-filtros {
             overflow: auto;
-            height: 170px; }
+            height: 160px; }
+            .container-main aside .filtros .container-filtros .tipos-filtros {
+              padding: 0px; }
             .container-main aside .filtros .container-filtros .grupo-filtros {
-              visibility: hidden;
-              display: none; }
+              display: none;
+              z-index: 2; }
           .container-main aside .filtros .h2 {
             padding: 0px 20px;
             color: #FAFAFA; }
           .container-main aside .filtros h3 {
+            cursor: pointer;
             padding: 5px 20px; }
       .container-main section {
         width: 100%; }
