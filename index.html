@@ -1,11 +1,253 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
-	<meta charset="UTF-8">
-	<title>Test de maquetado</title>
-	<link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Bootstrap link -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/d92a2a2802.js" crossorigin="anonymous"></script>
+    <!-- /Bootstrap link -->
+
+    <!-- Font link -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    <!-- /Font link -->
+    
+    <!-- CSS link -->
+    <link rel="stylesheet" href="./public/css/style.css">
+    <!-- /CSS link -->
+
+    <title>La Preuve | Zapatillas</title>
 </head>
 <body>
 
+    <!-- Header -->
+    <header class="main-header">
+        <div class="header-container">
+            <div class="menu-toggle">
+                <i class="fas fa-bars"></i>
+                <!-- <img src="./public/img/burguer.png" alt="Navbar burguer" class="logo"> -->
+            </div>
+            <nav class="col-12 navbar">
+                <div class="menu-nav container">
+                    <ul>
+                        <li>Sale</li>
+                        <li>E-shop</li>
+                        <li>Lookbook</li>
+                        <li>Campaña</li>
+                        <li>Locales</li>
+                    </ul>
+                </div>
+            </nav>
+            <div>
+                <div class="logo-div">
+                        <img src="./public/img/logo.svg" alt="La preuve logo" class="logo">
+                </div>
+                <div class="user-div">
+                        <i class="fas fa-shopping-cart"></i>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- /Header -->
+
+    <div class="main container">
+    <!-- Product filter -->
+        <div class="filter-container col-12 col-lg-3">
+            <div>
+                <div class="product-type">
+                    <h1>Zapatillas</h1>
+                </div>
+                <div class="filter-tools">
+                    <div>
+                        <h2>Filtrar</h2>
+                    </div>
+                    <div class="filter-options">
+                        <h3><span class="category-title">-</span> Categoría</h3>
+                        <ul class="category">
+                            <li>Zapatillas</li>
+                            <li>Zapatos</li>
+                            <li>Botas</li>
+                            <li>Sandalias</li>
+                            <li>Pantuflas</li>
+                        </ul>
+                    </div>
+                    <div class="filter-options">
+                        <h3><span class="waist-title">-</span> Talle</h3>
+                        <ul class="waist">
+                            <li>36</li>
+                            <li>38</li>
+                            <li>40</li>
+                            <li>42</li>
+                            <li>44</li>
+                        </ul>
+                    </div>
+                    <div class="filter-options">
+                        <h3><span class="colour-title">-</span> Color</h3>
+                        <ul class="colour">
+                            <li>Amarillo</li>
+                            <li>Negro</li>
+                            <li>Verde</li>
+                            <li>Azul</li>
+                            <li>Blanco</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    <!-- /Product filter -->
+
+    <!-- Products box -->
+        <div class="products-wrapper col-12 col-lg-9">
+            <div class="col-12 col-lg-4">
+                <section class="product-box">
+                    <figure class="product-box_image">
+                        <img src="./public/img/zapatilla_1.png" alt="Zapatilla">
+                    </figure>
+                    <article class="product-box_data">
+                        <span>Zapatilla 1-XFK</span>
+                        <p>$5000</p>
+                    </article>
+                </section>
+            </div>
+            <div class="col-12 col-lg-4">
+                <section class="product-box">
+                    <figure class="product-box_image">
+                        <img src="./public/img/zapatilla_2.png" alt="Zapatilla">
+                    </figure>
+                    <article class="product-box_data">
+                        <span>Zapatilla 2000-X</span>
+                        <p>$9800</p>
+                    </article>
+                </section>
+            </div>
+            <div class="col-12 col-lg-4">
+                <section class="product-box">
+                    <figure class="product-box_image">
+                        <img src="./public/img/zapatilla_3.png" alt="Zapatilla">
+                    </figure>
+                    <article class="product-box_data">
+                        <span>Zapatilla 3 Run</span>
+                        <p>$6500</p>
+                    </article>
+                </section>
+            </div>
+            <div class="col-12 col-lg-4">
+                <section class="product-box">
+                    <figure class="product-box_image">
+                        <img src="./public/img/zapatilla_3.png" alt="Zapatilla">
+                    </figure>
+                    <article class="product-box_data">
+                        <span>Zapatilla 3 Run</span>
+                        <p>$6500</p>
+                    </article>
+                </section>
+            </div>
+            <div class="col-12 col-lg-4">
+                <section class="product-box">
+                    <figure class="product-box_image">
+                        <img src="./public/img/zapatilla_1.png" alt="Zapatilla">
+                    </figure>
+                    <article class="product-box_data">
+                        <span>Zapatilla 1-XFK</span>
+                        <p>$5000</p>
+                    </article>
+                </section>
+            </div>
+            <div class="col-12 col-lg-4">
+                <section class="product-box">
+                    <figure class="product-box_image">
+                        <img src="./public/img/zapatilla_2.png" alt="Zapatilla">
+                    </figure>
+                    <article class="product-box_data">
+                        <span>Zapatilla 2000-X</span>
+                        <p>$9800</p>
+                    </article>
+                </section>
+            </div>
+            <div class="col-12 col-lg-4">
+                <section class="product-box">
+                    <figure class="product-box_image">
+                        <img src="./public/img/zapatilla_1.png" alt="Zapatilla">
+                    </figure>
+                    <article class="product-box_data">
+                        <span>Zapatilla 1-XFK</span>
+                        <p>$5000</p>
+                    </article>
+                </section>
+            </div>
+            <div class="col-12 col-lg-4">
+                <section class="product-box">
+                    <figure class="product-box_image">
+                        <img src="./public/img/zapatilla_2.png" alt="Zapatilla">
+                    </figure>
+                    <article class="product-box_data">
+                        <span>Zapatilla 2000-X</span>
+                        <p>$9800</p>
+                    </article>
+                </section>
+            </div>
+            <div class="col-12 col-lg-4">
+                <section class="product-box">
+                    <figure class="product-box_image">
+                        <img src="./public/img/zapatilla_3.png" alt="Zapatilla">
+                    </figure>
+                    <article class="product-box_data">
+                        <span>Zapatilla 3 Run</span>
+                        <p>$6500</p>
+                    </article>
+                </section>
+            </div>
+            <div class="col-12 col-lg-4">
+                <section class="product-box">
+                    <figure class="product-box_image">
+                        <img src="./public/img/zapatilla_2.png" alt="Zapatilla">
+                    </figure>
+                    <article class="product-box_data">
+                        <span>Zapatilla 2000-X</span>
+                        <p>$9800</p>
+                    </article>
+                </section>
+            </div>
+            <div class="col-12 col-lg-4">
+                <section class="product-box">
+                    <figure class="product-box_image">
+                        <img src="./public/img/zapatilla_3.png" alt="Zapatilla">
+                    </figure>
+                    <article class="product-box_data">
+                        <span>Zapatilla 3 Run</span>
+                        <p>$6500</p>
+                    </article>
+                </section>
+            </div>
+            <div class="col-12 col-lg-4">
+                <section class="product-box">
+                    <figure class="product-box_image">
+                        <img src="./public/img/zapatilla_1.png" alt="Zapatilla">
+                    </figure>
+                    <article class="product-box_data">
+                        <span>Zapatilla 1-XFK</span>
+                        <p>$5000</p>
+                    </article>
+                </section>
+            </div>
+        </div>
+    <!-- /Products box -->
+    </div>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div>
+            <ul class="footer-list">
+                <li class="footer-data">Ayuda</li>
+                <li class="footer-data">Contacto</li>
+                <li class="footer-data">Términos y condiciones</li>
+                <li class="footer-data">Políticas de privacidad</li>
+            </ul>
+        </div>
+    </footer>
+    <!-- /Footer -->
+    <script src="./public/js/js.js"></script>
 </body>
 </html>
