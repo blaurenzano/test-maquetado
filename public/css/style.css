@@ -173,6 +173,7 @@ img {
 @media (max-width:991px) {
     .menu-list{
         padding-top: 5px;
+        margin-bottom: 0px;
     }
     .menu-list li{
         padding: 2px 0;

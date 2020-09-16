@@ -3,18 +3,72 @@
         "name": "Zapatilla 1-XFK",
         "price": 5000,
         "type": "Zapatillas",
-        "image": "./img/zapatilla_1.png"
+        "image": "zapatilla_1.png"
     },
     {
         "name": "Zapatilla 2000-X",
         "price": 9800,
         "type": "Botas",
-        "image": "./img/zapatilla_2.png"
+        "image": "zapatilla_2.png"
     },
     {
         "name": "Zapatilla 3 Run",
         "price": 6500,
         "type": "Zapatos",
-        "image": "./img/zapatilla_3.png"
+        "image": "zapatilla_3.png"
+    },
+    {
+        "name": "Zapatilla 3 Run",
+        "price": 6500,
+        "type": "Zapatos",
+        "image": "zapatilla_3.png"
+    },
+    {
+        "name": "Zapatilla 1-XFK",
+        "price": 5000,
+        "type": "Zapatillas",
+        "image": "zapatilla_1.png"
+    },
+    {
+        "name": "Zapatilla 2000-X",
+        "price": 9800,
+        "type": "Botas",
+        "image": "zapatilla_2.png"
+    },
+    {
+        "name": "Zapatilla 1-XFK",
+        "price": 5000,
+        "type": "Zapatillas",
+        "image": "zapatilla_1.png"
+    },
+    {
+        "name": "Zapatilla 3 Run",
+        "price": 6500,
+        "type": "Zapatos",
+        "image": "zapatilla_3.png"
+    },
+    {
+        "name": "Zapatilla 2000-X",
+        "price": 9800,
+        "type": "Botas",
+        "image": "zapatilla_2.png"
+    },
+    {
+        "name": "Zapatilla 3 Run",
+        "price": 6500,
+        "type": "Zapatos",
+        "image": "zapatilla_3.png"
+    },
+    {
+        "name": "Zapatilla 2000-X",
+        "price": 9800,
+        "type": "Botas",
+        "image": "zapatilla_2.png"
+    },
+    {
+        "name": "Zapatilla 1-XFK",
+        "price": 5000,
+        "type": "Zapatillas",
+        "image": "zapatilla_1.png"
     }
 ]
