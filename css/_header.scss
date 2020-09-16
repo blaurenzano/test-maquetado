@@ -5,9 +5,24 @@ header {
   padding-left: var(--padding-40);
   padding-right: var(--padding-40);
   padding-top: var(--padding-18);
+  @media (max-width: 880px) {
+    padding-bottom: var(--padding-18);
+    padding-left: var(--padding-15);
+    padding-right: var(--padding-15);
+  }
   div.topmenu {
     display: flex;
     justify-content: center;
+    button {
+      background-color: rgba(0, 0, 0, 0);
+      border: none;
+      &:focus {
+        outline: 0;
+      }
+      &.topmenu__link--left {
+        display: none;
+      }
+    }
     a {
       display: block;
       &.topmenu__link {
@@ -29,8 +44,13 @@ header {
       }
     }
   }
-  @media (max-width: 600px) {
+  @media (max-width: 880px) {
     div.topmenu {
+      button {
+        &.topmenu__link--left {
+          display: block;
+        }
+      }
       a {
         &.topmenu__link--left {
           display: block;
@@ -70,14 +90,11 @@ header {
           margin-right: 0px;
         }
         a {
-          font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-bold) var(--unnamed-font-size-20) / var(--unnamed-line-spacing-24)
-            var(--unnamed-font-family-roboto);
+          font: var(--unnamed-font-style-normal) normal var(--unnamed-font-size-20) / var(--unnamed-line-spacing-24) var(--unnamed-font-family-roboto);
           letter-spacing: var(--unnamed-character-spacing-0-4);
           color: var(--texto-header);
           text-align: left;
-          font: normal normal bold 20px/24px Roboto;
           letter-spacing: 0.4px;
-          color: #fafafa;
           text-transform: uppercase;
           opacity: 1;
 
@@ -88,6 +105,7 @@ header {
   }
   @media (max-width: 880px) {
     nav.mainmenu {
+      display: none;
       ul {
         flex-direction: column;
         li {

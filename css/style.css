@@ -1,3 +1,15 @@
+@font-face {
+  font-family: Roboto;
+  src: url("../fonts/roboto-light-webfont.woff") format("woff");
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: Roboto;
+  src: url("../fonts/roboto-medium-webfont.woff") format("woff");
+  font-weight: bold;
+}
+
 :root {
   /* Colors: */
   --fondo-header: #100217e6;
@@ -23,6 +35,7 @@
   /* padding */
   --padding-40: 40px;
   --padding-18: 18px;
+  --padding-15: 15px;
 }
 
 /* Character Styles */
@@ -84,6 +97,14 @@ header {
   padding-top: var(--padding-18);
 }
 
+@media (max-width: 880px) {
+  header {
+    padding-bottom: var(--padding-18);
+    padding-left: var(--padding-15);
+    padding-right: var(--padding-15);
+  }
+}
+
 header div.topmenu {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -91,6 +112,19 @@ header div.topmenu {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+
+header div.topmenu button {
+  background-color: rgba(0, 0, 0, 0);
+  border: none;
+}
+
+header div.topmenu button:focus {
+  outline: 0;
+}
+
+header div.topmenu button.topmenu__link--left {
+  display: none;
 }
 
 header div.topmenu a {
@@ -117,7 +151,10 @@ header div.topmenu a img.topmenu__link__img--logo {
   height: 30px;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 880px) {
+  header div.topmenu button.topmenu__link--left {
+    display: block;
+  }
   header div.topmenu a.topmenu__link--left {
     display: block;
   }
@@ -164,19 +201,20 @@ header nav.mainmenu ul li:last-child {
 }
 
 header nav.mainmenu ul li a {
-  font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-bold) var(--unnamed-font-size-20)/var(--unnamed-line-spacing-24) var(--unnamed-font-family-roboto);
+  font: var(--unnamed-font-style-normal) normal var(--unnamed-font-size-20)/var(--unnamed-line-spacing-24) var(--unnamed-font-family-roboto);
   letter-spacing: var(--unnamed-character-spacing-0-4);
   color: var(--texto-header);
   text-align: left;
-  font: normal normal bold 20px/24px Roboto;
   letter-spacing: 0.4px;
-  color: #fafafa;
   text-transform: uppercase;
   opacity: 1;
   text-decoration: none;
 }
 
 @media (max-width: 880px) {
+  header nav.mainmenu {
+    display: none;
+  }
   header nav.mainmenu ul {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -186,6 +224,18 @@ header nav.mainmenu ul li a {
   header nav.mainmenu ul li {
     margin-left: 0px;
   }
+}
+
+@font-face {
+  font-family: Roboto;
+  src: url("../fonts/roboto-light-webfont.woff") format("woff");
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: Roboto;
+  src: url("../fonts/roboto-medium-webfont.woff") format("woff");
+  font-weight: bold;
 }
 
 :root {
@@ -213,6 +263,7 @@ header nav.mainmenu ul li a {
   /* padding */
   --padding-40: 40px;
   --padding-18: 18px;
+  --padding-15: 15px;
 }
 
 /* Character Styles */
@@ -278,8 +329,6 @@ main {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
   margin-top: 41px;
 }
 
@@ -399,6 +448,51 @@ main aside .toggle-wrap .toggles input {
   display: none;
 }
 
+.show {
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+}
+
+@media (max-width: 935px) {
+  main {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  main aside {
+    display: none;
+  }
+}
+
+@media (max-width: 600px) {
+  main .container {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  main .container div.card {
+    max-width: 331px;
+    max-height: 295px;
+    margin-left: 0px;
+  }
+  main aside {
+    display: none;
+  }
+}
+
+@font-face {
+  font-family: Roboto;
+  src: url("../fonts/roboto-light-webfont.woff") format("woff");
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: Roboto;
+  src: url("../fonts/roboto-medium-webfont.woff") format("woff");
+  font-weight: bold;
+}
+
 :root {
   /* Colors: */
   --fondo-header: #100217e6;
@@ -424,6 +518,7 @@ main aside .toggle-wrap .toggles input {
   /* padding */
   --padding-40: 40px;
   --padding-18: 18px;
+  --padding-15: 15px;
 }
 
 /* Character Styles */

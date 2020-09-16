@@ -1,3 +1,15 @@
+@font-face {
+  font-family: Roboto;
+  src: url("../fonts/roboto-light-webfont.woff") format("woff");
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: Roboto;
+  src: url("../fonts/roboto-medium-webfont.woff") format("woff");
+  font-weight: bold;
+}
+
 :root {
   /* Colors: */
   --fondo-header: #100217e6;
@@ -24,6 +36,7 @@
   /* padding */
   --padding-40: 40px;
   --padding-18: 18px;
+  --padding-15: 15px;
 }
 
 /* Character Styles */

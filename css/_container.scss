@@ -4,7 +4,7 @@ main {
   display: flex;
   flex-direction: row-reverse;
   justify-content: center;
-  flex-wrap: wrap;
+  //flex-wrap: wrap;
   margin-top: 41px;
   .container {
     display: flex;
@@ -102,6 +102,32 @@ main {
           display: none;
         }
       }
+    }
+  }
+}
+.show {
+  display: flex !important;
+}
+@media (max-width: 935px) {
+  main {
+    align-items: center;
+    aside {
+      display: none;
+    }
+  }
+}
+@media (max-width: 600px) {
+  main {
+    .container {
+      justify-content: center;
+      div.card {
+        max-width: 331px;
+        max-height: 295px;
+        margin-left: 0px;
+      }
+    }
+    aside {
+      display: none;
     }
   }
 }
