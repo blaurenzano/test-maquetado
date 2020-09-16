@@ -17,6 +17,7 @@ window.onload = function () {
     for (var i = 0; i < accordion.length; i++) {
 
         accordion[i].onclick = function () {
+
             this.classList.toggle('active');
 
             let aside__accordion  = this.nextElementSibling;
@@ -28,7 +29,5 @@ window.onload = function () {
                 aside__accordion.style.maxHeight = aside__accordion.scrollHeight + 'px';
             }
         }
-    }
-
-
+    };
 }
