@@ -7,17 +7,20 @@
 	<link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
+	<input type="checkbox" class="toggler">
+	<div class="hamburger"></div>
 	<header>
 		<div class="container logo-container">
 			<img class="logo" src="./assets/logo.svg"/>
 
 			<div class="icons-container">
-				<img src="./assets/iconos/search-solid.svg"/>
-				<img src="./assets/iconos/user-solid.svg"/>
-				<img src="./assets/iconos/shopping-cart-solid.svg"/>
+				<div class="icons-nav">
+					<img src="./assets/iconos/search-solid.svg"/>
+					<img src="./assets/iconos/user-solid.svg"/>
+				</div>
+				<img src="./assets/iconos/shopping-cart-solid.svg" class="cart"/>
 			</div>
 		</div>
-		
 		<div class="container nav-container">
 			<nav>
 				<ul>
@@ -35,40 +38,110 @@
 			<h1 class="h1 titulo">Zapatillas</h1>
 			<div class="filtros">
 				<h2 class="h2">Filtrar</h2>
-				<div class="tipos-filtros">
-					<h3 class="h3">Categoría</h3>
-					<div class="grupo-filtros">
-						<p class="texto">Zapatillas</p>
-						<p class="texto">Zapatos</p>
-						<p class="texto">Botas</p>
-						<p class="texto">Sandalias</p>
-						<p class="texto">Pantuflas</p>
+				<div class="container-filtros">
+					<div class="tipos-filtros">
+						<h3 class="h3">Categoría</h3>
+						<div class="grupo-filtros">
+							<p class="texto">Zapatillas</p>
+							<p class="texto">Zapatos</p>
+							<p class="texto">Botas</p>
+							<p class="texto">Sandalias</p>
+							<p class="texto">Pantuflas</p>
+						</div>
 					</div>
-				</div>
-				<div class="tipos-filtros">
-					<h3 class="h3">Talle</h3>
-					<div class="grupo-filtros">
-						<p class="texto">36</p>
-						<p class="texto">38</p>
-						<p class="texto">40</p>
-						<p class="texto">42</p>
-						<p class="texto">44</p>
+					<div class="tipos-filtros">
+						<h3 class="h3">Talle</h3>
+						<div class="grupo-filtros">
+							<p class="texto">36</p>
+							<p class="texto">38</p>
+							<p class="texto">40</p>
+							<p class="texto">42</p>
+							<p class="texto">44</p>
+						</div>
 					</div>
-				</div>
-				<div class="tipos-filtros">
-					<h3 class="h3">Color</h3>
-					<div class="grupo-filtros">
-						<p class="texto">Amarillo</p>
-						<p class="texto">Negro</p>
-						<p class="texto">Verde</p>
-						<p class="texto">Azul</p>
-						<p class="texto">Blanco</p>
+					<div class="tipos-filtros">
+						<h3 class="h3">Color</h3>
+						<div class="grupo-filtros">
+							<p class="texto">Amarillo</p>
+							<p class="texto">Negro</p>
+							<p class="texto">Verde</p>
+							<p class="texto">Azul</p>
+							<p class="texto">Blanco</p>
+						</div>
 					</div>
-				</div>
+				</div>				
 			</div>
 		</aside>
 		<section>
+			<div class="producto">
+				<img src="./assets/productos/zapatilla_1.jpg">
+				<p class="texto">Zapatilla 1-XFK</p>
+				<span class="texto">$5000</span>
+			</div>
+			<div class="producto">
+				<img src="./assets/productos/zapatilla_2.jpg">
+				<p class="texto">Zapatilla 2000-X</p>
+				<span class="texto">$9800</span>
+			</div>
+			<div class="producto">
+				<img src="./assets/productos/zapatilla_3.jpg">
+				<p class="texto">Zapatilla 3 Run</p>
+				<span class="texto">$6500</span>
+			</div>
+			<div class="producto">
+				<img src="./assets/productos/zapatilla_3.jpg">
+				<p class="texto">Zapatilla 3 Run</p>
+				<span class="texto">$6500</span>
+			</div>
+			<div class="producto">
+				<img src="./assets/productos/zapatilla_1.jpg">
+				<p class="texto">Zapatilla 1-XFK</p>
+				<span class="texto">$5000</span>
+			</div>
+			<div class="producto">
+				<img src="./assets/productos/zapatilla_2.jpg">
+				<p class="texto">Zapatilla 2000-X</p>
+				<span class="texto">$9800</span>
+			</div>
+			<div class="producto">
+				<img src="./assets/productos/zapatilla_1.jpg">
+				<p class="texto">Zapatilla 1-XFK</p>
+				<span class="texto">$5000</span>
+			</div>
+			<div class="producto">
+				<img src="./assets/productos/zapatilla_2.jpg">
+				<p class="texto">Zapatilla 2000-X</p>
+				<span class="texto">$9800</span>
+			</div>
+			<div class="producto">
+				<img src="./assets/productos/zapatilla_3.jpg">
+				<p class="texto">Zapatilla 3 Run</p>
+				<span class="texto">$6500</span>
+			</div>
+			<div class="producto">
+				<img src="./assets/productos/zapatilla_2.jpg">
+				<p class="texto">Zapatilla 2000-X</p>
+				<span class="texto">$9800</span>
+			</div>
+			<div class="producto">
+				<img src="./assets/productos/zapatilla_3.jpg">
+				<p class="texto">Zapatilla 3 Run</p>
+				<span class="texto">$6500</span>
+			</div>
+			<div class="producto">
+				<img src="./assets/productos/zapatilla_1.jpg">
+				<p class="texto">Zapatilla 1-XFK</p>
+				<span class="texto">$5000</span>
+			</div>
 		</section>
 	</div>
+	<footer>
+		<div class="container footer-container">	
+			<a href="" class="texto">Ayuda</a>
+			<a href="" class="texto">Contacto</a>
+			<a href="" class="texto">Términos y condiciones</a>
+			<a href="" class="texto">Políticas de privacidad</a>
+		</div>
+	</footer>
 </body>
 </html>
