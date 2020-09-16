@@ -1,11 +1,199 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-	<meta charset="UTF-8">
 	<title>Test de maquetado</title>
+	<meta charset="UTF-8">
+	<meta name="description" content="">
+	<meta name="keywords" content="">
+    <meta name="description" content="Descripción de la WEB">   
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">  
 	<link rel="stylesheet" href="styles.css">
+	<script src="app.js"></script>
 </head>
 <body>
-
+	<!-- Header Navbar -->
+	<header class="header">
+		<div class="header__container">
+			<div class="hamburger">
+				<a class="hamburger__link" href="#">
+					<img class="hamburger__icon" src="./assets/iconos/bars-solid.svg" alt="Botón Menu" />
+				</a>
+			</div>
+			<div class="header__brand">
+				<a class="header__home" href="#">
+					<img class="header__logo" src="./assets/logo.svg" alt="Logotipo La Preuve - Ir a inicio" />
+				</a>
+			</div>
+			<div class="header__user-panel">
+				<div class="search">
+					<form action="" class="search__form">
+						<button class="search__btn">
+							<img class="search__icon" src="./assets/iconos/search-solid.svg" alt="Buscar productos" />
+						</button>
+						<input type="text" class="search__input" placeholder="Buscar" name="search__input" maxlength="120" />
+					</form>
+				</div>
+				<div class="login">
+					<a class="login__link" href="#">
+						<img class="login__icon" src="./assets/iconos/user-solid.svg" alt="Login usario" />
+					</a>
+				</div>
+				<div class="cart">
+					<a class="cart__link" href="#">
+						<img class="cart__icon" src="./assets/iconos/shopping-cart-solid.svg" alt="Carrito de compras" />
+					</a>
+				</div>
+			</div>
+		</div>
+		<nav class="navbar">
+			<ul class="navbar__list">
+				<li class="navbar__item">
+					<a class="navbar__link navbar__link--active links-header" href="#">Sale</a>
+				</li>
+				<li class="navbar__item">
+					<a class="navbar__link links-header" href="#">E-Shop</a>
+				</li>
+				<li class="navbar__item">
+					<a class="navbar__link links-header" href="#">Lookbook</a>
+				</li>
+				<li class="navbar__item">
+					<a class="navbar__link links-header" href="#">Campaña</a>
+				</li>
+				<li class="navbar__item">
+					<a class="navbar__link links-header" href="#">Locales</a>
+				</li>
+			</ul>
+		</nav>
+	</header>
+	<main class="main-container">
+		<!-- Aside Categories -->
+		<aside class="aside">
+			<div class="aside__title">
+				<h1 class="aside__h1 h1">Zapatillas</h1>
+			</div>
+			<div class="aside__subtitle">
+				<h2 class="h2">Filtrar</h2>
+			</div>
+			<ul class="aside__content">
+				<li>
+					<div class="aside__category">
+						<h3 class="h3">Categoría</h3>
+					</div>
+					<ul class="aside__accordion">
+						<li class="aside__item"><a class="aside__link texto" href="#">Zapatillas</a></li>
+						<li class="aside__item"><a class="aside__link texto" href="#">Zapatos</a></li>
+						<li class="aside__item"><a class="aside__link texto" href="#">Botas</a></li>
+						<li class="aside__item"><a class="aside__link texto" href="#">Sandalias</a></li>
+						<li class="aside__item"><a class="aside__link texto" href="#">Pantuflas</a></li>
+					</ul>
+				</li>
+				<li>
+					<div class="aside__category">
+						<h3 class="h3">Talle</h3>
+					</div>
+					<ul class="aside__accordion">
+						<li class="aside__item"><a class="aside__link texto" href="#">36</a></li>
+						<li class="aside__item"><a class="aside__link texto" href="#">38</a></li>
+						<li class="aside__item"><a class="aside__link texto" href="#">40</a></li>
+						<li class="aside__item"><a class="aside__link texto" href="#">42</a></li>
+						<li class="aside__item"><a class="aside__link texto" href="#">44</a></li>
+					</ul>
+				</li>
+				<li>
+					<div class="aside__category">
+						<h3 class="h3">Color</h3>
+					</div>
+					<ul class="aside__accordion">
+						<li class="aside__item"><a class="aside__link texto" href="#">Amarillo</a></li>
+						<li class="aside__item"><a class="aside__link texto" href="#">Negro</a></li>
+						<li class="aside__item"><a class="aside__link texto" href="#">Verde</a></li>
+						<li class="aside__item"><a class="aside__link texto" href="#">Azul</a></li>
+						<li class="aside__item"><a class="aside__link texto" href="#">Blanco</a></li>
+					</ul>
+				</li>
+			</ul>
+		</aside>
+		<!-- Products Section -->
+		<section class="product">
+			<article class="product__article texto">
+				<img class="product__img" src="./assets/productos/zapatilla_1.jpg" alt="Zapatillas marca modelo" />
+				<p class="product__title">Zapatilla 1-XFK</p>
+				<p class="product__price">$5000</p>
+			</article>
+			<article class="product__article texto">
+				<img class="product__img" src="./assets/productos/zapatilla_2.jpg" alt="Zapatillas marca modelo" />
+				<p class="product__title">Zapatilla 2000-X</p>
+				<p class="product__price">$9800</p>
+			</article>
+			<article class="product__article texto">
+				<img class="product__img" src="./assets/productos/zapatilla_3.jpg" alt="Zapatillas marca modelo" />
+				<p class="product__title">Zapatilla 3 Run</p>
+				<p class="product__price">$6500</p>
+			</article>
+			<article class="product__article texto">
+				<img class="product__img" src="./assets/productos/zapatilla_3.jpg" alt="Zapatillas marca modelo" />
+				<p class="product__title">Zapatilla 3 Run</p>
+				<p class="product__price">$6500</p>
+			</article>
+			<article class="product__article texto">
+				<img class="product__img" src="./assets/productos/zapatilla_1.jpg" alt="Zapatillas marca modelo" />
+				<p class="product__title">Zapatilla 1-XFK</p>
+				<p class="product__price">$5000</p>
+			</article>
+			<article class="product__article texto">
+				<img class="product__img" src="./assets/productos/zapatilla_2.jpg" alt="Zapatillas marca modelo" />
+				<p class="product__title">Zapatilla 2000-X</p>
+				<p class="product__price">$9800</p>
+			</article>
+			<article class="product__article texto">
+				<img class="product__img" src="./assets/productos/zapatilla_1.jpg" alt="Zapatillas marca modelo" />
+				<p class="product__title">Zapatilla 1-XFK</p>
+				<p class="product__price">$5000</p>
+			</article>
+			<article class="product__article texto">
+				<img class="product__img" src="./assets/productos/zapatilla_2.jpg" alt="Zapatillas marca modelo" />
+				<p class="product__title">Zapatilla 2000-X</p>
+				<p class="product__price">$9800</p>
+			</article>
+			<article class="product__article texto">
+				<img class="product__img" src="./assets/productos/zapatilla_3.jpg" alt="Zapatillas marca modelo" />
+				<p class="product__title">Zapatilla 3 Run</p>
+				<p class="product__price">$6500</p>
+			</article>
+			<article class="product__article texto">
+				<img class="product__img" src="./assets/productos/zapatilla_2.jpg" alt="Zapatillas marca modelo" />
+				<p class="product__title">Zapatilla 2000-X</p>
+				<p class="product__price">$9800</p>
+			</article>
+			<article class="product__article texto">
+				<img class="product__img" src="./assets/productos/zapatilla_3.jpg" alt="Zapatillas marca modelo" />
+				<p class="product__title">Zapatilla 3 Run</p>
+				<p class="product__price">$6500</p>
+			</article>
+			<article class="product__article texto">
+				<img class="product__img" src="./assets/productos/zapatilla_1.jpg" alt="Zapatillas marca modelo" />
+				<p class="product__title">Zapatilla 1-XFK</p>
+				<p class="product__price">$5000</p>
+			</article>
+		</section>
+	</main>
+	<footer class="footer">
+		<ul class="footer__list texto">
+			<li class="footer_item">
+				<a class="footer__link" href="#">Ayuda</a>
+			</li>
+			<li class="footer_item">
+				<a class="footer__link" href="#">Contacto</a>
+			</li>
+			<li class="footer_item">
+				<a class="footer__link" href="#">Términos y condiciones</a>
+			</li>
+			<li class="footer_item">
+				<a class="footer__link" href="#">Políticas de privacidad</a>
+			</li>
+		</ul>
+	</footer>
 </body>
 </html>
