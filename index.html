@@ -1,11 +1,159 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
 	<meta charset="UTF-8">
 	<title>Test de maquetado</title>
 	<link rel="stylesheet" href="styles.css">
 </head>
-<body>
 
+<body>
+	<header>
+		<img class="logo" src="img/logo.svg" alt="logo">
+		<div class="iconos">
+			<img class="icono icon" src="img/busqueda.svg" alt="busqueda">
+			<img class="icono icon" src="img/usuario.svg" alt="usuario">
+			<img class="icono" src="img/carrito.svg" alt="carrito">
+		</div>
+		<input type="checkbox" id="btn-menu">
+		<label for="btn-menu"><img class="hamburguesa" src="img/hamburguesa.svg" alt="hamburguesa"></label>
+		<nav class="navbar">
+			<ul class="nav">
+				<li class="item">
+					<a class="link" href="#">SALE</a>
+				</li>
+				<li class="item">
+					<a class="link" href="#">E-SHOP</a>
+				</li>
+				<li class="item">
+					<a class="link" href="#">LOOKBOOK</a>
+				</li>
+				<li class="item">
+					<a class="link" href="#">CAMPAÑA</a>
+				</li>
+				<li class="item">
+					<a class="link" href="#">LOCALES</a>
+				</li>
+			</ul>
+		</nav>
+	</header>
+	<main class="container">
+		<div class="left">
+			<h1 class="titulo-secundario">Zapatillas</h1>
+			<div class="filtros">
+				<h2 class="subtitulo-secundario">Filtrar</h2>
+				<div class="acordeon">
+					<div class="acordeon-item">
+						<input type="radio" name="acordeon" id="item1">
+						<label for="item1" class="titulos">Categoría</label>
+						<ul class="lista">
+							<li class="elemento">Zapatillas</li>
+							<li class="elemento">Zapatos</li>
+							<li class="elemento">Botas</li>
+							<li class="elemento">Sandalias</li>
+							<li class="elemento">Pantuflas</li>
+						</ul>
+					</div>
+					<div class="acordeon-item">
+						<input type="radio" name="acordeon" id="item2">
+						<label for="item2" class="titulos">Talle</label>
+						<ul class="lista">
+							<li class="elemento">36</li>
+							<li class="elemento">38</li>
+							<li class="elemento">40</li>
+							<li class="elemento">42</li>
+							<li class="elemento">44</li>
+						</ul>
+					</div>
+					<div class="acordeon-item">
+						<input type="radio" name="acordeon" id="item3">
+						<label for="item3" class="titulos">Color</label>
+						<ul class="lista">
+							<li class="elemento">Amarillo</li>
+							<li class="elemento">Negro</li>
+							<li class="elemento">Verde</li>
+							<li class="elemento">Azul</li>
+							<li class="elemento">Blanco</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="right">
+			<div class="zapatilla">
+				<img class="img-zapatillas" src="img/zapatilla1.png" alt="zapatilla">
+				<p class="nombre">Zapatilla 1-XFK</p>
+				<p class="precio">$5000</p>
+			</div>
+			<div class="zapatilla">
+				<img class="img-zapatillas" src="img/zapatilla2.png" alt="zapatilla">
+				<p class="nombre">Zapatilla 2000-X</p>
+				<p class="precio">$9800</p>
+			</div>
+			<div class="zapatilla">
+				<img class="img-zapatillas" src="img/zapatilla3.png" alt="zapatilla">
+				<p class="nombre">Zapatilla 3 Run</p>
+				<p class="precio">$6500</p>
+			</div>
+
+			<div class="repetido">
+				<div class="zapatilla">
+					<img class="img-zapatillas" src="img/zapatilla3.png" alt="zapatilla">
+					<p class="nombre">Zapatilla 3 Run</p>
+					<p class="precio">$6500</p>
+				</div>
+				<div class="zapatilla">
+					<img class="img-zapatillas" src="img/zapatilla1.png" alt="zapatilla">
+					<p class="nombre">Zapatilla 1-XFK</p>
+					<p class="precio">$5000</p>
+				</div>
+				<div class="zapatilla">
+					<img class="img-zapatillas" src="img/zapatilla2.png" alt="zapatilla">
+					<p class="nombre">Zapatilla 2000-X</p>
+					<p class="precio">$9800</p>
+				</div>
+	
+				<div class="zapatilla">
+					<img class="img-zapatillas" src="img/zapatilla1.png" alt="zapatilla">
+					<p class="nombre">Zapatilla 1-XFK</p>
+					<p class="precio">$5000</p>
+				</div>
+				<div class="zapatilla">
+					<img class="img-zapatillas" src="img/zapatilla2.png" alt="zapatilla">
+					<p class="nombre">Zapatilla 2000-X</p>
+					<p class="precio">$9800</p>
+				</div>
+				<div class="zapatilla">
+					<img class="img-zapatillas" src="img/zapatilla3.png" alt="zapatilla">
+					<p class="nombre">Zapatilla 3 Run</p>
+					<p class="precio">$6500</p>
+				</div>
+	
+				<div class="zapatilla">
+					<img class="img-zapatillas" src="img/zapatilla2.png" alt="zapatilla">
+					<p class="nombre">Zapatilla 2000-X</p>
+					<p class="precio">$9800</p>
+				</div>
+				<div class="zapatilla">
+					<img class="img-zapatillas" src="img/zapatilla3.png" alt="zapatilla">
+					<p class="nombre">Zapatilla 3 Run</p>
+					<p class="precio">$6500</p>
+				</div>
+				<div class="zapatilla">
+					<img class="img-zapatillas" src="img/zapatilla1.png" alt="zapatilla">
+					<p class="nombre">Zapatilla 1-XFK</p>
+					<p class="precio">$5000</p>
+				</div>
+			</div>
+		</div>
+	</main>
+	<footer class="footer-name">
+		<ul class="lista-footer">
+			<li class="item-footer"><a href="#">Ayuda</a></li>
+			<li class="item-footer"><a href="#">Contacto</a></li>
+			<li class="item-footer"><a href="#">Términos y condiciones</a></li>
+			<li class="item-footer"><a href="#">Políticas de privacidad</a></li>
+		</ul>
+	</footer>
 </body>
 </html>
