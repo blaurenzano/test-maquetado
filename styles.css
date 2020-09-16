@@ -97,6 +97,7 @@ body{
 	justify-content: center;
 	align-items: center;
 	flex-direction: column;
+	z-index: 100;
 }
 
 .hamburger__icon {
@@ -319,22 +320,29 @@ body{
 		position: fixed;
 		width: 100vw;
 		height: calc(100% - 69px);
-		/*top: -100vh;*/
+		left: -100vw;
 		background: var(--fondo-header);
 		text-align: center;
-		transition: all 0.3s;
+		opacity: 0;
+		transition: 0.5s ease-in;
 		flex-flow: column wrap;	
+		z-index: -100;
 	} 
 
 	.navbar__link::before {
 		height: 100%;
 		background: rgba(255,255,255,0.1);
-		z-index: -1;
+		z-index: -10;
+	}
+
+	.navbar__list--show {
+		left: 0px;
+		opacity: 1;
 	}
 
 }
 
-@media (orientation: landscape) {
+@media (max-width: 767px) and (orientation: landscape) {
 	.navbar__list {
 		overflow: scroll;
 		height: calc(100% - 65px);
