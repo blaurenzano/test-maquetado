@@ -32,27 +32,43 @@ img {
 /*====== Header ======*/
 .main-header {
     display: flex;
+    position: relative;
+    margin-bottom: 1rem;
 }
 
 .header-container {
-    display: flex;
     width: 100%;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-content: center;
     background: var(--header);
     color: var(--header-text);
     font-size: 2.3rem;
     padding: 15px 15px 15px 15px;
 }
 
+.header-basics {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+.menu-toggle {
+    display: flex;
+    align-items: center;
+}
+.fa-bars{
+    font-size: 3rem;
+}
 .logo-div {
     display: flex;
     justify-content: center;
+    width: fit-content;
 }
 
 .logo {
     width:70%;
+}
+
+.user-icon{
+    display: none;
 }
 
 .navbar {
@@ -154,6 +170,16 @@ img {
 }
 /*====== /Footer ======*/
 
+@media (max-width:991px) {
+    .menu-list{
+        padding-top: 5px;
+    }
+    .menu-list li{
+        padding: 2px 0;
+        font-size: 1.9rem;
+    }
+}
+
 @media (min-width: 992px) {
     html,
     body {
@@ -169,7 +195,7 @@ img {
         width:100%;
     }
     .main {
-        padding: 4rem 20px 20px 20px;
+        padding: 3rem 20px 20px 20px;
     }
     .menu-toggle {
         display: none;
@@ -178,12 +204,21 @@ img {
         justify-content: center;
         padding: 15px 15px 0px 15px;
     }
-    .header-container div:last-child {
-        justify-content: right;
+    .header-basics{
+        justify-content: center;
     }
-    .navbar-on {
+    .user-div{
+        position: absolute;
+        right: 4rem;
+    }
+    .user-icon {
+        display: initial;
+    }
+    .fas {
+        padding: 0 0.4rem;
+    }
+    .navbar{
         display: flex;
-        order: 10;
     }
     .menu-nav ul {
         display: flex;
@@ -202,6 +237,9 @@ img {
     }
     .menu-nav ul li:first-child {
         font-weight: 500;
+    }
+    .menu-icon{
+        display: none;
     }
     /*====== /Header ======*/
 
@@ -225,6 +263,9 @@ img {
     }
     .filter-options h3, .filter-options li {
         padding-left: 15px;
+    }
+    .category-title, .waist-title, .colour-title {
+        cursor: pointer;
     }
     .products-wrapper {
         display: flex;
