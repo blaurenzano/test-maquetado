@@ -1,0 +1,135 @@
+{
+  "data": [
+    {
+      "name": "Zapatilla 1-XFK",
+      "price": "$5000",
+      "image": "assets/productos/zapatilla_1.jpg",
+      "category": "Zapatillas",
+      "talle": 35,
+      "color": "Amarillo"
+    },
+    {
+      "name": "Zapato 10-XCK",
+      "price": "$5500",
+      "image": "assets/productos/zapatilla_2.jpg",
+      "category": "Zapatos",
+      "talle": 40,
+      "color": "Azul"
+    },
+    {
+      "name": "Botas 5-XAK",
+      "price": "$8000",
+      "image": "assets/productos/zapatilla_3.jpg",
+      "category": "Botas",
+      "talle": 32,
+      "color": "Blanco"
+    },
+    {
+      "name": "Sandalia 8-AFK",
+      "price": "$7500",
+      "image": "assets/productos/zapatilla_1.jpg",
+      "category": "Sandalias",
+      "talle": 36,
+      "color": "Negro"
+    },
+    {
+      "name": "Pantuflas 2-XFG",
+      "price": "$3500",
+      "image": "assets/productos/zapatilla_2.jpg",
+      "category": "Pantuflas",
+      "talle": 38,
+      "color": "Verde"
+    },
+    {
+      "name": "Zapatilla 4-CFK",
+      "price": "$7500",
+      "image": "assets/productos/zapatilla_3.jpg",
+      "category": "Zapatillas",
+      "talle": 10,
+      "color": "Negro"
+    },
+    {
+      "name": "Zapatos 3-LFK",
+      "price": "$9500",
+      "image": "assets/productos/zapatilla_1.jpg",
+      "category": "zapatos",
+      "talle": 35,
+      "color": "Amarillo"
+    },
+    {
+      "name": "Botas 3-XLK",
+      "price": "$9500",
+      "image": "assets/productos/zapatilla_2.jpg",
+      "category": "Botas",
+      "talle": 42,
+      "color": "Azul"
+    },
+    {
+      "name": "Sandalia 4-BFK",
+      "price": "$6500",
+      "image": "assets/productos/zapatilla_3.jpg",
+      "category": "Sandalia",
+      "talle": 44,
+      "color": "Verde"
+    },
+    {
+      "name": "Pantufla 9-XCC",
+      "price": "$5500",
+      "image": "assets/productos/zapatilla_1.jpg",
+      "category": "Pantuflas",
+      "talle": 42,
+      "color": "Blanco"
+    },
+    {
+      "name": "Zapatilla 5-AFK",
+      "price": "$6000",
+      "image": "assets/productos/zapatilla_2.jpg",
+      "category": "Zapatillas",
+      "talle": 40,
+      "color": "Negro"
+    },
+    {
+      "name": "Zapatos 1-XFK",
+      "price": "$7500",
+      "image": "assets/productos/zapatilla_1.jpg",
+      "category": "Zapatos",
+      "talle": 38,
+      "color": "Amarillo"
+    },
+    {
+      "name": "Botas 1-CLF",
+      "price": "$8000",
+      "image": "assets/productos/zapatilla_1.jpg",
+      "category": "Botas",
+      "talle": 44,
+      "color": "Azul"
+    },
+    {
+      "name": "Sandalia 6-FFK",
+      "price": "$8500",
+      "image": "assets/productos/zapatilla_1.jpg",
+      "category": "Sandalias",
+      "talle": 40,
+      "color": "Verde"
+    },
+    {
+      "name": "Pantufla 3-MFK",
+      "price": "$4800",
+      "image": "assets/productos/zapatilla_1.jpg",
+      "category": "Pantuflas",
+      "talle": 35,
+      "color": "Negro"
+    },
+    {
+      "name": "Zapatilla 1-CCK",
+      "price": "$7000",
+      "image": "assets/productos/zapatilla_1.jpg",
+      "category": "Zapatillas",
+      "talle": 36,
+      "color": "Amarillo"
+    }
+  ]
+}
+// Mock https://run.mocky.io/v3/86889022-aa12-4640-891f-ee12757bcf00
+
+//DElete Mock https://designer.mocky.io/manage/delete/86889022-aa12-4640-891f-ee12757bcf00/8vM1jSKP3irahZN4EcqUj14bUVbpOwkBFUZv

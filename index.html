@@ -1,11 +1,143 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-	<meta charset="UTF-8">
-	<title>Test de maquetado</title>
-	<link rel="stylesheet" href="styles.css">
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Test de maquetado</title>
+    <meta name="viewport" content="width=device-width, user-scalable=no" />
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="/jquery/jquery.min.js"></script>
+    <script src="/jquery/jquery-ui.min.js"></script>
+    <script src="/jquery/script.js"></script>
+  </head>
+  <body>
+    <header>
+      <div class="topmenu">
+        <button class="topmenu__link--left" id="tooglemenu">
+          <img src="assets/iconos/hamburguesa.svg" alt="main_menu" />
+        </button>
+        <a href="" class="topmenu__link--right">
+          <img src="assets/logo.svg" alt="logo" class="topmenu__link__img--logo" />
+        </a>
+        <a href="" class="topmenu__link--right topmenu__link--mq">
+          <img src="assets/iconos/busqueda.svg" alt="buscar" />
+        </a>
+        <a href="" class="topmenu__link--margin topmenu__link--mq">
+          <img src="assets/iconos/usuario.svg" alt="usuario" />
+        </a>
+        <a href="" class="topmenu__link--margin">
+          <img src="assets/iconos/carrito.svg" alt="carrito" />
+        </a>
+      </div>
+      <nav class="mainmenu" id="mainmenu">
+        <ul>
+          <li>
+            <a href="">sale</a>
+          </li>
+          <li>
+            <a href="">e-shop</a>
+          </li>
+          <li>
+            <a href="">lookbook</a>
+          </li>
+          <li>
+            <a href="">campaña</a>
+          </li>
+          <li>
+            <a href="">locales</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
 
-</body>
+    <main>
+      <div class="container" id="product-container"></div>
+      <aside>
+        <h1>Zapatillas</h1>
+        <hr />
+        <h2>Filtrar</h2>
+        <div id="accordion">
+          <h3>Categoría</h3>
+          <div>
+            <div class="toggle-wrap">
+              <div class="toggles">
+                <label for="zapatillas">Zapatillas</label>
+                <input class="toggle typeshoes-toggle" type="checkbox" name="zapatillas" id="zapatillas" />
+                <label for="zapatos">Zapatos</label>
+                <input class="toggle typeshoes-toggle" type="checkbox" name="zapatos" id="zapatos" />
+                <label for="botas">Botas</label>
+                <input class="toggle typeshoes-toggle" type="checkbox" name="botas" id="botas" />
+                <label for="sandalias">Sandalias</label>
+                <input class="toggle typeshoes-toggle" type="checkbox" name="sandalias" id="sandalias" />
+                <label for="pantuflas">Pantuflas</label>
+                <input class="toggle typeshoes-toggle" type="checkbox" name="pantuflas" id="pantuflas" />
+              </div>
+            </div>
+          </div>
+          <h3>Talle</h3>
+          <div>
+            <div class="toggle-wrap">
+              <div class="toggles">
+                <label for="talle32">32</label>
+                <input class="toggle talle-toggle" type="checkbox" name="talle32" id="talle32" />
+                <label for="talle35">35</label>
+                <input class="toggle talle-toggle" type="checkbox" name="talle35" id="talle35" />
+                <label for="talle36">36</label>
+                <input class="toggle talle-toggle" type="checkbox" name="talle36" id="talle36" />
+                <label for="talle38">38</label>
+                <input class="toggle talle-toggle" type="checkbox" name="talle38" id="talle38" />
+                <label for="talle40">40</label>
+                <input class="toggle talle-toggle" type="checkbox" name="talle40" id="talle40" />
+                <label for="talle42">42</label>
+                <input class="toggle talle-toggle" type="checkbox" name="talle42" id="talle42" />
+                <label for="talle44">44</label>
+                <input class="toggle talle-toggle" type="checkbox" name="talle44" id="talle44" />
+              </div>
+            </div>
+          </div>
+          <h3>Color</h3>
+          <div>
+            <div class="toggle-wrap">
+              <div class="toggles">
+                <label for="amarillo">Amarillo</label>
+                <input class="toggle color-toggle" type="checkbox" name="amarillo" id="amarillo" />
+                <label for="negro">Negro</label>
+                <input class="toggle color-toggle" type="checkbox" name="negro" id="negro" />
+                <label for="verde">Verde</label>
+                <input class="toggle color-toggle" type="checkbox" name="verde" id="verde" />
+                <label for="azul">Azul</label>
+                <input class="toggle color-toggle" type="checkbox" name="azul" id="azul" />
+                <label for="blanco">Blanco</label>
+                <input class="toggle color-toggle" type="checkbox" name="blanco" id="blanco" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </aside>
+    </main>
+    <footer>
+      <div class="container">
+        <ul>
+          <li>
+            <a href="#">Ayuda</a>
+          </li>
+          <li>
+            <a href="#">Contactos</a>
+          </li>
+          <li>
+            <a href="#">Términos y condiciones</a>
+          </li>
+          <li>
+            <a href="#">Políticas de privacidad</a>
+          </li>
+        </ul>
+      </div>
+    </footer>
+  </body>
 </html>
+
+<!-- <div class="card">
+  <a class="product" href="/assets/productos/zapatilla_1.jpg">
+    <img src="/assets/productos/zapatilla_1.jpg" alt="zapatilla_1" />
+    <p>Zapatilla 1-XF-K <br><span>$5000</span></br></p>  
+  </a>
+</div> -->
