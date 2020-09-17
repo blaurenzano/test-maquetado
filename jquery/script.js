@@ -7,7 +7,7 @@ var menuIsOpen = false;
 var GlobaProducts = [];
 var GlobalProductsFiltered = [];
 var filters = {
-  typeShoes: [
+  category: [
     { type: "zapatillas", selected: false },
     { type: "zapatos", selected: false },
     { type: "botas", selected: false },
@@ -56,28 +56,33 @@ function createProducts() {
   }
 }
 
-function filterProducts() {
-  GlobalProductsFiltered = GlobaProducts.filter(function (product) {
-    var choose = "";
-    Object.keys(filters).forEach(function (currentFilter) {
-      filters[currentFilter].forEach((element) => {
-        if (element.selected === true && element.type === product.category.toLowerCase()) {
-          choose = product;
-        }
-        if (element.selected === true && element.type === `talle${product.talle}`) {
-          choose = product;
-        }
-        if (element.selected === true && element.type === product.color.toLowerCase()) {
-          choose = product;
-        }
+function genericFilter(type, provider) {
+  if (detectUnselectionByType(type) === false) {
+    GlobalProductsFiltered = provider.filter(function (product) {
+      var choose = "";
+      Object.keys(filters).forEach(function (currentFilter) {
+        filters[currentFilter].forEach((element) => {
+          var stdParam = type === "talle" ? `talle${product[type]}` : product[type].toLowerCase();
+          if (element.selected === true && element.type === stdParam) {
+            choose = product;
+          }
+        });
       });
+      return choose;
     });
-    return choose;
-  });
+  }
 
   if (detectUnselection() === true) {
     GlobalProductsFiltered = GlobaProducts;
   }
+}
+
+function filterProducts() {
+  genericFilter("category", GlobaProducts);
+
+  genericFilter("talle", GlobalProductsFiltered);
+
+  genericFilter("color", GlobalProductsFiltered);
 }
 
 function detectUnselection() {
@@ -88,6 +93,16 @@ function detectUnselection() {
         someOneIsSelected = true;
       }
     });
+  });
+  return !someOneIsSelected;
+}
+
+function detectUnselectionByType(currentFilter) {
+  var someOneIsSelected = false;
+  filters[currentFilter].forEach((element) => {
+    if (element.selected === true) {
+      someOneIsSelected = true;
+    }
   });
   return !someOneIsSelected;
 }
