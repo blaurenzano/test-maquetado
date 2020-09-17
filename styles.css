@@ -10,6 +10,12 @@
 
 body{
 	margin: 0;
+	font-family: var(--font-family);
+	background-color: var(--text-color-light);
+}
+
+.w-100 {
+	width: 100%;
 }
 
 .header {
@@ -71,7 +77,6 @@ body{
 	flex-direction: row;
 	list-style:none;
 	font-size: var(	--font-size-medium);
-	font-family: var(--font-family);
 	padding: 20px 20px 0px 20px;
 	margin-top: 0;
 	margin-bottom: 0;
@@ -83,8 +88,38 @@ body{
 	text-transform: uppercase;
 }
 
-.active {
+.--text-decoration-none{
+	text-decoration: none;
+}
+
+.--bold {
 	font-weight: bold;
+}
+
+.section-title {
+	color: var(--text-color);
+  padding-bottom: 8px;
+  border-bottom: solid 1px var(--text-color);
+}
+
+.article-container {
+	margin-top: 20px;
+}
+
+.article-container:first-child {
+	margin-top: 0;
+}
+
+.article-img {
+	width: 100%;
+	border-bottom: solid 1px var(--text-color);
+}
+
+.article-text {
+	font-size: var(--font-size-medium);
+	color: var(--text-color);
+	margin-top: 10px;
+  margin-bottom: 0;
 }
 
 .footer,
@@ -94,13 +129,16 @@ body{
 	width: 100%;
 }
 
+.footer {
+	margin-top: 50px;
+}
+
 .footer-list {
 	display: flex;
   justify-content: center;
 	flex-direction: column;
 	list-style:none;
 	font-size: var(--font-size-small);
-	font-family: var(--font-family);
 	align-items: center;
 	padding: 20px;
 	margin-top: 0;
@@ -115,15 +153,20 @@ body{
 	.logo {
 		width: 206px;
 		height: 30px;
-	}
-	.icon-menu {
-		display: none;
-	}
+	} 	
 	.icon-none {
 		display: inline-block;
 	}
 	.header-list {
 		display: flex;
+	}
+	.main-container {
+		padding-top: 40px;
+		padding-bottom: 40px;
+	}
+	.article-container{
+		padding: 8px;
+		margin: 0;
 	}
 	.footer-list {
 		flex-direction: row; 
