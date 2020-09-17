@@ -134,6 +134,11 @@ img {
     font-weight: 900!important;
 }
 
+.quitFilter {
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
 .product-box_image{
     border-bottom: 1px solid black;
 }
@@ -241,7 +246,7 @@ img {
         color: var(--header-text);
         font-weight: 300;
     }
-    .menu-nav ul li:first-child {
+    .menu-nav ul li:nth-child(3) {
         font-weight: 500;
     }
     .menu-icon{
@@ -270,7 +275,7 @@ img {
     .filter-options h3, .filter-options li {
         padding-left: 15px;
     }
-    .category-title, .waist-title, .colour-title {
+    .category-title, .waist-title, .colour-title,.sneakers-list, .shoes-list, .boots-list {
         cursor: pointer;
     }
     .products-wrapper {
