@@ -129,6 +129,11 @@ img {
     display: none;
 }
 
+.bold {
+    font-size: 18px!important;
+    font-weight: 900!important;
+}
+
 .product-box_image{
     border-bottom: 1px solid black;
 }

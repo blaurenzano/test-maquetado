@@ -2,13 +2,13 @@ window.onload = function () {
 
     let menu = document.querySelector('.menu-toggle');
     let navbar = document.querySelector('.navbar');
+
     let category = document.querySelector('.category-title');
     let waist = document.querySelector('.waist-title');
     let colour = document.querySelector('.colour-title');
-    let categoryList = document.querySelector('.category');
-    let waistList = document.querySelector('.waist');
-    let colourList = document.querySelector('.colour');
-
+    let categoryList = document.querySelector('.category-list');
+    let waistList = document.querySelector('.waist-list');
+    let colourList = document.querySelector('.colour-list');
 
     /*====== Products from external JSON ======*/
     fetch('https://gzevallos-mp-ecommerce-nodejs.herokuapp.com/api/products')
@@ -16,7 +16,7 @@ window.onload = function () {
         .then(data => {
             data.forEach(element => {
                 document.querySelector('.products-wrapper').innerHTML += `
-                    <div class="col-12 col-lg-4 ${element.type}">
+                    <div class="col-12 col-lg-4 ${element.type}" id=>
                         <section class="product-box">
                             <figure class="product-box_image">
                                 <img src="public/img/${element.image}" alt="${element.name}">
@@ -30,8 +30,70 @@ window.onload = function () {
 
                 `
             });
+
+            let sneakers = document.querySelectorAll('.Zapatillas');
+            let boots = document.querySelectorAll('.Botas');
+            let shoes = document.querySelectorAll('.Zapatos');
+            let sneakersList = document.querySelector('.sneakers-list');
+            let bootsList = document.querySelector('.boots-list');
+            let shoesList = document.querySelector('.shoes-list');
+
+            /* Products filters */
+            sneakersList.addEventListener('click', e => {
+
+                sneakersList.classList.add('bold');
+                bootsList.classList.remove('bold');
+                shoesList.classList.remove('bold');
+
+                sneakers.forEach(y => {
+                    y.classList.remove('reduce')
+                })
+                shoes.forEach(y => {
+                    y.classList.add('reduce')
+                })
+                boots.forEach(y => {
+                    y.classList.add('reduce')
+                })
+            })
+
+            bootsList.addEventListener('click', e => {
+
+                sneakersList.classList.remove('bold');
+                bootsList.classList.add('bold');
+                shoesList.classList.remove('bold');
+
+                boots.forEach(y => {
+                    y.classList.remove('reduce')
+                })
+                sneakers.forEach(y => {
+                    y.classList.add('reduce')
+                })
+                shoes.forEach(y => {
+                    y.classList.add('reduce')
+                })
+            })
+            
+            shoesList.addEventListener('click', e => {
+
+                sneakersList.classList.remove('bold');
+                bootsList.classList.remove('bold');
+                shoesList.classList.add('bold');
+
+                shoes.forEach(y => {
+                    y.classList.remove('reduce')
+                })
+                sneakers.forEach(y => {
+                    y.classList.add('reduce')
+                })
+                boots.forEach(y => {
+                    y.classList.add('reduce')
+                })
+            })
+            /*====== /Products filters ======*/
+            
         })
     /*====== /Products from external JSON ======*/
+
 
     /*====== Mobile menu ======*/
     menu.addEventListener('click', e => {
@@ -39,6 +101,7 @@ window.onload = function () {
         navbar.classList.toggle('navbar-on')
     })
     /*====== /Mobile menu ======*/
+
 
     /*====== Filters ======*/
     category.addEventListener('click', e => {
@@ -78,5 +141,4 @@ window.onload = function () {
         }
     })
     /*====== /Filters ======*/
-
 }
