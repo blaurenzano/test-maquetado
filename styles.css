@@ -33,6 +33,7 @@ body{
 	height: 23px;
 	background: var(--text-color-light);
 	-webkit-mask-size: cover;
+	cursor: pointer;
 }
 
 .icon-menu {
@@ -59,10 +60,6 @@ body{
 	-webkit-mask-image: url(/assets/iconos/shopping-cart-solid.svg);
 }
 
-.icon-none {
-	display: none;
-}
-
 .icon-cart,
 .icon-search,
 .icon-user {
@@ -70,7 +67,7 @@ body{
 }
 
 .header-list {
-	display: none;
+	display: flex;
 	justify-content: space-between;
 	margin: auto;
 	max-width: 804px;
@@ -122,6 +119,31 @@ body{
   margin-bottom: 0;
 }
 
+.section-filter {
+	color: var(--text-color);
+	font-size: var(--font-size-medium);
+}
+
+.filter-title {
+	color: var(--text-color);
+	font-size: var(--font-size-small);
+	background-color: var(--light-gray);
+	padding: 5px 16px;
+	margin: 0;
+}
+
+.filter-list {
+	list-style:none;
+	padding-left: 16px;
+	margin: 5px 0;
+}
+
+.filter-item {
+	color: var(--text-color);
+	font-size: var(--font-size-small);
+	padding: 3px 0;
+	cursor: pointer;
+}
 .footer,
 .header {
 	background-color: var(--background-color-dark);
@@ -154,12 +176,6 @@ body{
 		width: 206px;
 		height: 30px;
 	} 	
-	.icon-none {
-		display: inline-block;
-	}
-	.header-list {
-		display: flex;
-	}
 	.main-container {
 		padding-top: 40px;
 		padding-bottom: 40px;
