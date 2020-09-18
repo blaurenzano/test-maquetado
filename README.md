@@ -5,6 +5,8 @@ A tener en cuenta
 - Utilicé la metodología BEM por primera vez, por lo que espero que el código se entienda. 
 - Agradeceré una devolución que me permita seguir aprendiendo.
 
+Demo:  https://juandhers.github.io/test-maquetado/
+
 
 ## Ejercicio de maquetado html & css
 En el siguiente vínculo vas a encontrar el diseño de una web hecho en Adobe XD, en versión desktop y mobile:
