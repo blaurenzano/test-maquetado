@@ -195,6 +195,7 @@ hr {
 	color: #fafafa;
 	background: var(--fondo-header);
 	background: #100217;
+	margin-top: 5%;
 }
 
 .footer-body__sitemap {
