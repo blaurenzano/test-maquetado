@@ -1,4 +1,12 @@
-# Ejercicio de maquetado html & css
+# Maquetado de acuerdo al diseño otorgado 
+A tener en cuenta
+- Realice el maquetado en HTML y CSS puro, podría haber utilizado Bootstrap pero intenté no hacerlo para ejercitar y refrescar algunos conceptos.
+- El resposive esta hecho para el brackpoint de 360px de acuerdo al diseño de la ejercitación. La medida intermedia la hice solo para evitar un salto bursco, pero no es funcional.
+- Utilicé la metodología BEM por primera vez, por lo que espero que el código se entienda. 
+- Agradeceré una devolución que me permita seguir aprendiendo.
+
+
+## Ejercicio de maquetado html & css
 En el siguiente vínculo vas a encontrar el diseño de una web hecho en Adobe XD, en versión desktop y mobile:
 https://xd.adobe.com/view/f3229a4d-559d-4a23-500f-6c99f584ac0e-8513/
 Podés alternar entre la vista interactiva o la vista de especificaciones con los botones de la derecha, para poder ver datos de medidas, tipografías, colores, etc.
