@@ -1,11 +1,155 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
 	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Test de maquetado</title>
 	<link rel="stylesheet" href="styles.css">
+	<!--Normalize -->
+	<link rel="stylesheet" href="normalize.css">
+	<!--Google Fonts-->
+	<link
+		href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+		rel="stylesheet">
 </head>
-<body>
 
+<body>
+	<header>
+		<nav class="nav">
+			<div class="nav__container-top">
+				<div class="cointainer-top__bar">
+					<a href="#"><img src="./assets/iconos/bars-solid.svg" class="nav__icon nav__icon--responsive"
+							alt="boton-menu"></a>
+				</div>
+
+				<div>
+					<a href="#"><img src="./assets/logo.svg" class="nav__img-logo" alt="logo"></a>
+				</div>
+				<div>
+					<a href="#"><img src="./assets/iconos/search-solid.svg" class="nav__icon nav__icon--responsive-off"
+							alt="search"></a>
+					<a href="#"><img src="./assets/iconos/user-solid.svg" class="nav__icon nav__icon--responsive-off"
+							alt="user"></a>
+					<a href="#"><img src="./assets/iconos/shopping-cart-solid.svg" class="nav__icon" alt="cart"></a>
+				</div>
+			</div>
+			<div class="nav__container-bottom">
+				<ul class="container-bottom__ul">
+					<li class="container-bottom__ul-li"><a href="#" class="container-bottom__a--active">Sale</a></li>
+					<li class="container-bottom__ul-li"><a href="#">e-shop</a></li>
+					<li class="container-bottom__ul-li"><a href="#">lookbook</a></li>
+					<li class="container-bottom__ul-li"><a href="#">Campaña</a></li>
+					<li class="container-bottom__ul-li"><a href="#">locales</a></li>
+				</ul>
+			</div>
+		</nav>
+	</header>
+
+	<div class="container">
+		<aside class="container__aside">
+			<h1 class="aside__h1">Zapatillas</h1>
+			<h2 class="aside__h2">Filtrar</h2>
+			<nav>
+				<h3 class="aside__h3">Categoría</h3>
+				<li class="aside__li"><a class="aside__li-a">Zapatillas</a></li>
+				<li class="aside__li"><a class="aside__li-a"></a>Zapatos</a></li>
+				<li class="aside__li"><a class="aside__li-a"></a>Botas</a></li>
+				<li class="aside__li"><a class="aside__li-a"></a>Sandalias</a></li>
+				<li class="aside__li"><a class="aside__li-a"></a>Pantuflas</a></li>
+			</nav>
+			<nav>
+				<h3 class="aside__h3">Talla</h3>
+				<li class="aside__li"><a class="aside__li-a"></a>36</a></li>
+				<li class="aside__li"><a class="aside__li-a"></a>38</a></li>
+				<li class="aside__li"><a class="aside__li-a"></a>40</a></li>
+				<li class="aside__li"><a class="aside__li-a"></a>42</a></li>
+				<li class="aside__li"><a class="aside__li-a"></a>44</a></li>
+			</nav>
+			<nav>
+				<h3 class="aside__h3">Color</h3>
+				<li class="aside__li"><a class="aside__li-a"></a>Amarillo</a></li>
+				<li class="aside__li"><a class="aside__li-a"></a>Negro</a></li>
+				<li class="aside__li"><a class="aside__li-a"></a>Verde</a></li>
+				<li class="aside__li"><a class="aside__li-a"></a>Azul</a></li>
+				<li class="aside__li"><a class="aside__li-a"></a>Blanco</a></li>
+			</nav>
+		</aside>
+
+		<section class="container__section">
+			<article class="card">
+				<img src="assets/productos/zapatilla_1.jpg" class="card__img" />
+				<p class="card__product">Zapatilla 1-XFK</p>
+				<p class="card__price">$5000</p>
+			</article>
+			<article class="card">
+				<img src="assets/productos/zapatilla_2.jpg" class="card__img" />
+				<p class="card__product">Zapatilla 2000-X</p>
+				<p class="card__price">$9800</p>
+			</article>
+			<article class="card">
+				<img src="assets/productos/zapatilla_3.jpg" class="card__img" />
+				<p class="card__product">Zapatilla 3 Run</p>
+				<p class="card__price">$6500</p>
+			</article>
+
+			<article class="card">
+				<img src="assets/productos/zapatilla_3.jpg" class="card__img" />
+				<p class="card__product">Zapatilla 3 Run</p>
+				<p class="card__price">$6500</p>
+			</article>
+			<article class="card">
+				<img src="assets/productos/zapatilla_1.jpg" class="card__img" />
+				<p class="card__product">Zapatilla 1-XFK</p>
+				<p class="card__price">$5000</p>
+			</article>
+			<article class="card">
+				<img src="assets/productos/zapatilla_2.jpg" class="card__img" />
+				<p class="card__product">Zapatilla 2000-X</p>
+				<p class="card__price">$9800</p>
+			</article>
+
+			<article class="card">
+				<img src="assets/productos/zapatilla_1.jpg" class="card__img" />
+				<p class="card__product">Zapatilla 1-XFK</p>
+				<p class="card__price">$5000</p>
+			</article>
+			<article class="card">
+				<img src="assets/productos/zapatilla_2.jpg" class="card__img" />
+				<p class="card__product">Zapatilla 2000-X</p>
+				<p class="card__price">$9800</p>
+			</article>
+			<article class="card">
+				<img src="assets/productos/zapatilla_3.jpg" class="card__img" />
+				<p class="card__product">Zapatilla 3 Run</p>
+				<p class="card__price">$6500</p>
+			</article>
+
+			<article class="card">
+				<img src="assets/productos/zapatilla_2.jpg" class="card__img" />
+				<p class="card__product">Zapatilla 2000-X</p>
+				<p class="card__price">$9800</p>
+			</article>
+			<article class="card">
+				<img src="assets/productos/zapatilla_3.jpg" class="card__img" />
+				<p class="card__product">Zapatilla 3 Run</p>
+				<p class="card__price">$6500</p>
+			</article>
+			<article class="card">
+				<img src="assets/productos/zapatilla_1.jpg" class="card__img" />
+				<p class="card__product">Zapatilla 1-XFK</p>
+				<p class="card__price">$5000</p>
+			</article>
+		</section>
+	</div>
+	<footer>
+		<ul class="footer__ul">
+			<li class="footer__ul-li"><a class="footer__li-a">Ayuda</a></li>
+			<li class="footer__ul-li"><a class="footer__li-a">Contactos</a></li>
+			<li class="footer__ul-li"><a class="footer__li-a">Terminos y condiciones</a></li>
+			<li class="footer__ul-li"><a class="footer__li-a">Politicas y Privacidad</a></li>
+		</ul>
+    </footer>
 </body>
+
 </html>
