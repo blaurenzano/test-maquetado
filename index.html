@@ -2,10 +2,261 @@
 <html lang="es">
 <head>
 	<meta charset="UTF-8">
-	<title>Test de maquetado</title>
-	<link rel="stylesheet" href="styles.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, minimum-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+	<meta name="description" content="Calzados Deportivos y Casual para todo tipo de actividades">
+	<meta name="keywords" content="zapatillas, deportivas, deporte, zapatos, botas, sandalias, pantuflas, unisex, primavera, verano, calzado fresco"/>
+	<meta name="subject" content="Calzados Deportivos y Casual para todo tipo de actividades">
+	<meta name="language" content="es_ES">
+	<meta name="robots" content="index,follow" />
+	<meta name="coverage" content="Worldwide">
+	<meta name="distribution" content="Global">
+	<meta name="revisit-after" content="7 days">
+	<meta http-equiv="Expires" content="0">
+	<meta http-equiv="Pragma" content="max-age=31536000">
+	<meta http-equiv="Cache-Control" content="max-age=31536000">
+	<meta property="og:title" content="La Preuve | Calzado para todo el día | Bienestar"/>
+	<meta property="og:image" content="assets/productos/zapatilla_1@2x.png"/>
+	<meta property="og:description" content="Calzados Deportivos y Casual para todo tipo de actividades"/>
+	<title>Test de maquetado - Glamit</title>
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="reset.css">
+	<link rel="stylesheet" type="text/css" href="styles.css">	
 </head>
 <body>
-
+	<nav class="nav-body">
+		<article class="nav-body__logo-box">
+			<img loading="lazy" src="assets/iconos/logo@2x.png" alt="Logo cLa Preuve">
+		</article>
+		<article  class="nav-body__icon-box">
+			<ul>
+				<li><img loading="lazy" src="assets/iconos/busqueda@2x.png" alt="Logo búsqueda"></li>
+				<li><img loading="lazy" src="assets/iconos/usuario@2x.png" alt="Logo usuario"></li>
+				<li><img loading="lazy" src="assets/iconos/carrito@2x.png" alt="Logo carrito de compras"></li>	
+			</ul>
+		</article>
+		<input class="menu-btn" type="checkbox" id="menu-btn" />
+		<label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+		<article class="nav-body__texto-header-box">
+			<ul class="links-header">
+				<li>Sale</li>
+				<li><nobr>E-Shop</nobr></li>
+				<li>Lookbook</li>
+				<li>Campaña</li>
+				<li>Locales</li>
+			</ul>
+		</article>
+	</nav>
+	<section class="global-container-box">
+		<aside class="listado-calzados-box">
+			<h1 class="h1">Zapatillas</h1>
+			<hr>
+			<span class="listado-calzados-box__mobile">
+				<h2 class="h2">Filtrar</h2>
+				<h3 class="h3">Categoría</h3>
+				<ul class="listado-calzados-box__categoria texto">
+					<li>Zapatillas</li>
+					<li>Zapatos</li>
+					<li>Botas</li>
+					<li>Sandalias</li>
+					<li>Pantuflas</li>
+				</ul>
+				<h3 class="h3">Talle</h3>
+				<ul class="listado-calzados-box__talle texto">
+					<li>36</li>
+					<li>38</li>
+					<li>40</li>
+					<li>42</li>
+					<li>44</li>
+				</ul>
+				<h3 class="h3">Color</h3>
+				<ul class="listado-calzados-box__color texto">
+					<li>Amarillo</li>
+					<li>Negro</li>
+					<li>Verde</li>
+					<li>Azul</li>
+					<li>Blanco</li>
+				</ul>
+			</span>		
+		</aside>
+		<section class="productos-box">
+			<article class="productos-box__container">
+				<figure>
+					<picture class="productos-box__container__img">
+					  <source media="(max-width: 480px)" srcset="assets/productos/zapatilla_1.png">
+					  <source media="(min-width: 481px)" srcset="assets/productos/zapatilla_1@2x.png">
+					  <img loading="lazy" src="assets/productos/zapatilla_1@2x.png" alt="Zapatilla Blanca y Roja">
+					</picture>
+					<hr>
+					<article class="productos-box__container_copy texto">
+						<p>Zapatilla 1-XFK</p>
+						<p>$5000</p>
+					</article>
+				</figure>
+			</article>
+			<article class="productos-box__container">
+				<figure>
+					<picture class="productos-box__container__img">
+					  <source media="(max-width: 480px)" srcset="assets/productos/zapatilla_2.png">
+					  <source media="(min-width: 481px)" srcset="assets/productos/zapatilla_2@2x.png">
+					  <img loading="lazy" src="assets/productos/zapatilla_1-1@2x.png" alt="Zapatilla Casual Negra">
+					</picture>
+					<hr>
+					<article class="productos-box__container_copy texto">
+						<p>Zapatilla 2000-X</p>
+						<p>$9800</p>
+					</article>
+				</figure>
+			</article>
+			<article class="productos-box__container">
+				<figure>
+					<picture class="productos-box__container__img">
+					  <source media="(max-width: 480px)" srcset="assets/productos/zapatilla_3.png">
+					  <source media="(min-width: 481px)" srcset="assets/productos/zapatilla_3@2x.png">
+					  <img loading="lazy" src="assets/productos/zapatilla_1@2x.png" alt="Zapatilla Deportiva Running Negra">
+					</picture>
+					<hr>
+					<article class="productos-box__container_copy texto">
+						<p>Zapatilla 3 Run</p>
+						<p>$6500</p>	
+					</article>				
+				</figure>
+			</article>
+			<article class="productos-box__container">
+				<figure>
+					<picture class="productos-box__container__img">
+					  <source media="(max-width: 480px)" srcset="assets/productos/zapatilla_1.png">
+					  <source media="(min-width: 481px)" srcset="assets/productos/zapatilla_1@2x.png">
+					  <img loading="lazy" src="assets/productos/zapatilla_1@2x.png" alt="Zapatilla Blanca y Roja">
+					</picture>
+					<hr>
+					<article class="productos-box__container_copy texto">
+						<p>Zapatilla 1-XFK</p>
+						<p>$5000</p>
+					</article>
+				</figure>
+			</article>
+			<article class="productos-box__container">
+				<figure>
+					<picture class="productos-box__container__img">
+					  <source media="(max-width: 480px)" srcset="assets/productos/zapatilla_2.png">
+					  <source media="(min-width: 481px)" srcset="assets/productos/zapatilla_2@2x.png">
+					  <img loading="lazy" src="assets/productos/zapatilla_1-1@2x.png" alt="Zapatilla Casual Negra">
+					</picture>
+					<hr>
+					<article class="productos-box__container_copy texto">
+						<p>Zapatilla 2000-X</p>
+						<p>$9800</p>
+					</article>
+				</figure>
+			</article>
+			<article class="productos-box__container">
+				<figure>
+					<picture class="productos-box__container__img">
+					  <source media="(max-width: 480px)" srcset="assets/productos/zapatilla_3.png">
+					  <source media="(min-width: 481px)" srcset="assets/productos/zapatilla_3@2x.png">
+					  <img loading="lazy" src="assets/productos/zapatilla_1@2x.png" alt="Zapatilla Deportiva Running Negra">
+					</picture>
+					<hr>
+					<article class="productos-box__container_copy texto">
+						<p>Zapatilla 3 Run</p>
+						<p>$6500</p>	
+					</article>				
+				</figure>
+			</article>
+			<article class="productos-box__container">
+				<figure>
+					<picture class="productos-box__container__img">
+					  <source media="(max-width: 480px)" srcset="assets/productos/zapatilla_1.png">
+					  <source media="(min-width: 481px)" srcset="assets/productos/zapatilla_1@2x.png">
+					  <img loading="lazy" src="assets/productos/zapatilla_1@2x.png" alt="Zapatilla Blanca y Roja">
+					</picture>
+					<hr>
+					<article class="productos-box__container_copy texto">
+						<p>Zapatilla 1-XFK</p>
+						<p>$5000</p>
+					</article>
+				</figure>
+			</article>
+			<article class="productos-box__container">
+				<figure>
+					<picture class="productos-box__container__img">
+					  <source media="(max-width: 480px)" srcset="assets/productos/zapatilla_2.png">
+					  <source media="(min-width: 481px)" srcset="assets/productos/zapatilla_2@2x.png">
+					  <img loading="lazy" src="assets/productos/zapatilla_1-1@2x.png" alt="Zapatilla Casual Negra">
+					</picture>
+					<hr>
+					<article class="productos-box__container_copy texto">
+						<p>Zapatilla 2000-X</p>
+						<p>$9800</p>
+					</article>
+				</figure>
+			</article>
+			<article class="productos-box__container">
+				<figure>
+					<picture class="productos-box__container__img">
+					  <source media="(max-width: 480px)" srcset="assets/productos/zapatilla_3.png">
+					  <source media="(min-width: 481px)" srcset="assets/productos/zapatilla_3@2x.png">
+					  <img loading="lazy" src="assets/productos/zapatilla_1@2x.png" alt="Zapatilla Deportiva Running Negra">
+					</picture>
+					<hr>
+					<article class="productos-box__container_copy texto">
+						<p>Zapatilla 3 Run</p>
+						<p>$6500</p>	
+					</article>				
+				</figure>
+			</article>
+			<article class="productos-box__container">
+				<figure>
+					<picture class="productos-box__container__img">
+					  <source media="(max-width: 480px)" srcset="assets/productos/zapatilla_1.png">
+					  <source media="(min-width: 481px)" srcset="assets/productos/zapatilla_1@2x.png">
+					  <img loading="lazy" src="assets/productos/zapatilla_1@2x.png" alt="Zapatilla Blanca y Roja">
+					</picture>
+					<hr>
+					<article class="productos-box__container_copy texto">
+						<p>Zapatilla 1-XFK</p>
+						<p>$5000</p>
+					</article>
+				</figure>
+			</article>
+			<article class="productos-box__container">
+				<figure>
+					<picture class="productos-box__container__img">
+					  <source media="(max-width: 480px)" srcset="assets/productos/zapatilla_2.png">
+					  <source media="(min-width: 481px)" srcset="assets/productos/zapatilla_2@2x.png">
+					  <img loading="lazy" src="assets/productos/zapatilla_1-1@2x.png" alt="Zapatilla Casual Negra">
+					</picture>
+					<hr>
+					<article class="productos-box__container_copy texto">
+						<p>Zapatilla 2000-X</p>
+						<p>$9800</p>
+					</article>
+				</figure>
+			</article>
+			<article class="productos-box__container">
+				<figure>
+					<picture class="productos-box__container__img">
+					  <source media="(max-width: 480px)" srcset="assets/productos/zapatilla_3.png">
+					  <source media="(min-width: 481px)" srcset="assets/productos/zapatilla_3@2x.png">
+					  <img loading="lazy" src="assets/productos/zapatilla_1@2x.png" alt="Zapatilla Deportiva Running Negra">
+					</picture>
+					<hr>
+					<article class="productos-box__container_copy texto">
+						<p>Zapatilla 3 Run</p>
+						<p>$6500</p>	
+					</article>				
+				</figure>
+			</article>
+		</section>
+	</section>
+	<footer class="footer-body">
+		<ul class="footer-body__sitemap texto">
+			<li>Ayuda</li>
+			<li>Contacto</li>
+			<li>Términos y condiciones</li>
+			<li>Políticas de privacidad</li>
+		</ul>
+	</footer>
 </body>
 </html>
