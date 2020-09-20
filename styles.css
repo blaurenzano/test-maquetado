@@ -266,10 +266,16 @@ hr {
 	}
 	.nav-body .menu-btn:checked ~ .nav-body__texto-header-box ul {
 		grid-template-columns: none;
-		margin-top: 5%;
+		margin-top: 7%;
 	}
-	.nav-body .menu-btn:checked ~ .nav-body__texto-header-box .links-header li{
+	.nav-body .menu-btn:checked ~ .nav-body__texto-header-box .links-header ul {
+		width: auto;
+		place-self: center center;
+	}
+	.nav-body .menu-btn:checked ~ .nav-body__texto-header-box .links-header li {
 		padding: 3%;
+		width: auto;
+		place-self: center center;
 	}
 
 	.nav-body .menu-btn:checked ~ .menu-icon .navicon {
