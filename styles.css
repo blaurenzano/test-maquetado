@@ -1,3 +1,96 @@
-body{
-	margin: 0;
+@font-face{
+	font-family: 'PowellItalic';
+	src: url('./fonts/ltc-powell-w01-italic.ttf');
+}
+
+*{
+	margin:0px;
+	padding: 0px;
+	box-sizing: border-box;
+}
+
+nav{
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	min-height: 8vh;
+	background-color: #24192a;
+	font-family: "PowellItalic";
+}
+
+.logo{
+	color: white;
+	letter-spacing: 5px;
+	font-size: 22px;
+	font-weight: normal;
+} 
+
+.nav-links{
+	display: flex;
+	justify-content: space-around;
+	width: 40%;
+}
+
+.nav-links a{
+	color: white;
+	text-decoration: none;
+	letter-spacing: 3px;
+	font-weight: bold;
+	font-size: 14px;
+}
+
+.nav-links li{
+	list-style: none;
+	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+	text-transform: uppercase;
+}
+
+
+.burguer div{
+	width: 25px;
+	height: 3px;
+	background-color: rgb(226,226,226);
+	margin: 3px;
+}
+
+.burguer img, .cart img{
+	margin: 10px;
+}
+
+.burguer, .cart{
+	display: none;
+}
+
+@media screen and(max-width: 1024px){
+	.nav-links{
+		width: 60%;
+	}
+}
+
+@media screen and (max-width:768px){
+	body{
+		overflow-x: hidden;
+	}
+	.nav-links{
+		position:absolute;
+		left: 0px;
+		height: 92vh;
+		top: 10vh;
+		background-color: white;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		width: 30%;
+		transform: translateX(100%);
+	}
+	.nav-links li{
+		opacity: 0;
+	}
+	.burguer, .cart{
+		display: block;
+		cursor: pointer
+	}
+	nav{
+		justify-content: space-between;
+	}
 }
