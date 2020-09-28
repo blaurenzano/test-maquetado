@@ -1,3 +1,456 @@
 body{
-	margin: 0;
+	text-align: center;
+	margin: 0px;
+	padding: 0px;
+	width: 100%;
+	background-color: #FAFAFA;
+
+	}
+	/* ---HEADER--- */
+
+.clearfix{
+	clear: both;
+	float: none;
+	
 }
+
+#header__mobile{
+	display: none;
+	filter: invert();
+}
+
+#header {
+	border: 1px solid black;
+	height : 120px;
+	width: 100%;
+	background:#100217E6 ;
+	margin-bottom: 30px;
+	padding-bottom: 20px;
+	
+
+}
+
+.sticky {
+	position: fixed;	
+	top: 0;
+	
+}
+
+.stickybody{
+	margin-top: 11%;
+}
+
+.panel {
+	padding: 0 18px;
+	display: none;
+	overflow: hidden;
+  }
+
+
+
+#header__mobile__logo {
+	margin-top: 1.5rem;
+	
+}
+#header__mobile__logo__img{
+	float: left;
+	text-align: end;
+	width: 60%;
+
+}
+
+
+#header__buttons {
+	float: left;
+	text-align: right;
+	filter: invert();
+	width: 39%;
+	margin-top: 10px;
+	
+}
+#header__buttons a{
+	margin-right: 15px;
+}
+
+#header__menu li{
+	
+	font-size: 20px;
+	display: inline;
+	color: white;
+	margin-left: 6%;
+	margin-right: 3%;
+	font-weight: 500;
+	letter-spacing: 1px;
+	font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+	
+}
+#header__menu ul{
+	margin-bottom: 5%;
+	margin-right: 3%;
+
+}
+	/* ---HEADER--- */
+
+
+	/* ---BODY--- */
+
+#cuerpo__content{
+	width: 75%;
+	float: right;
+	margin-top: 0px;
+	padding-top: 0px;
+	
+
+}
+hr{
+	color: black;
+}
+ /* ---SIDEBAR--- */
+#cuerpo__sidebar{
+	width: 15%;
+	float: right;
+	
+	font-display: left;
+	text-align: start;
+	margin: 0px;
+	padding: 0px;
+}
+
+
+h1, h3{
+	font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+}
+
+h1{
+	margin-bottom: 0px;
+	font-size: xx-large;
+}
+
+#cuerpo__sidebar hr{
+	margin-top: 5px;
+	padding: 0px;
+}
+
+#cuerpo__sidebar li{
+	font-size: 15px;
+	font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+	list-style: none;
+	font-weight: 600;
+	margin-top: 3px;
+	
+}
+
+#cuerpo__sidebar ul{
+	margin-top: 0px;
+	padding-left: 15px;
+}
+
+#cuerpo__sidebar__title{
+	background-color: #E4E8EE;
+	height: 25px;
+	padding-top: 3px;
+	padding-bottom: 1px;
+	}
+#cuerpo__sidebar__title label{
+	margin-left: 15px;
+
+	font-size:15px;
+	font-weight:bold;
+	font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+ /* ---SIDEBAR--- */
+
+  /* ---ARTICLES--- */
+
+#cuerpo__content__card{
+	margin-top: 45px;
+	float: left;
+	width: 30%;
+	padding-right: 0px;
+	
+	
+}
+
+
+
+#cuerpo__content__card hr{
+	margin-right: 10%;
+	margin-left: 10%;
+	margin-top : 0px;
+	text-align: left;
+	
+}
+
+#cuerpo__content__card label{
+	font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+	font-weight: 500;
+	font-size: 20px;
+	text-align: left;
+}
+
+#cuerpo__content__card li{
+	list-style: none;
+	text-align: start;
+	margin: 0px;
+	
+	
+}
+
+
+  /* ---ARTICLES--- */
+
+#footer{
+	background:#100217E6 ;
+	width: 100%;
+	padding: 0;
+	margin: 0;
+	padding-top: 5px;
+	margin-top: 2%;
+}
+
+  #footer li{
+	
+	font-size: 20px;
+	display: inline;
+	color: white;
+	margin-left: 15px;
+ margin-right: 45px;
+	font-weight: 100;
+	letter-spacing: 1px;
+	font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+	
+}
+#footer ul{
+	
+	height: 58px;
+	margin: 0;
+	padding-top: 10px;
+	padding-right: 0px;
+	margin-right: 0px;
+}
+	
+/* ---BODY--- */
+
+@media only screen  and (max-width: 1030px) 
+{
+	#header__buttons img {
+		width: 5%;
+	}	
+	#header__mobile__logo__img img{
+		width: 50%;
+	}
+
+}
+
+@media only screen  and (max-width: 988px) 
+ {
+
+h1,h3{
+	font-size: medium;
+}
+
+label{
+	font-size: xx-small;
+	text-align: start;
+}
+
+li,ul{
+	font-size: x-small;
+
+}
+
+#cuerpo__content__card label{
+
+	font-weight: 100;
+	font-size: 15px;
+	text-align: start;
+}
+	
+
+}
+
+@media only screen  and (max-width: 615px) 
+{
+
+#header{
+	
+	margin: 0;
+	padding: 0;
+	height: 80px;
+}
+
+#header__mobile{
+	display: block;
+	float: left;
+	width: 15%;
+	margin-left: 5%;
+}
+#header__mobile img {
+	width: 30%;
+}
+
+
+#header__mobile__logo{
+	padding: 0;
+	margin:0 ;
+	margin-top: 0;
+	margin-right: 25%;
+	width: 100%;
+	margin-top: 25px;
+	
+}
+
+#header__mobile__logo__img{
+	
+	padding: 0;
+	margin-bottom:15px ;
+	text-align: center;
+}
+
+#header__buttons{
+	float: left;
+	padding: 0;
+	margin: 0;
+	top:10px;
+	right:0;
+	position: fixed;
+	width: 10%;
+	text-align: center;
+	align-items: flex-start;
+	
+	
+}
+
+#header__buttons__cart {
+	width: 100%;
+	display: block;
+}
+
+#header__buttons img {
+	width: 50%;
+
+}	
+
+#cuerpo__content{
+	
+	width: 100%;
+	float: none;
+	clear: both;
+	float: none;
+}
+
+#header__buttons__search, #header__buttons__user  {
+	display: none;
+
+}
+#header__menu {
+	display: none;
+}
+
+
+#cuerpo__content__card label{
+	
+	font-weight: 0;
+	 font-size: 25px;
+   }
+   
+#cuerpo__sidebar__menu, h3{
+   display: none;
+   }
+
+#cuerpo__sidebar{
+	position: absolute;
+	float: none;
+	clear: both;
+	
+	
+}
+#cuerpo__sidebar h1{
+	padding: 0;
+	margin: 0;
+	font-size: xx-large;
+	text-align: start;
+	margin-left: 15px;
+
+	
+}
+#cuerpo__sidebar {
+	width: 100%;
+	margin-bottom: 50px;
+}
+
+}
+@media only screen  and (max-width: 491px) 
+{	
+	#cuerpo__content{width: 90%;}
+
+	#cuerpo__content__card label{
+		font-weight: 0;
+		font-size: 10px;
+	}
+}
+
+
+
+   @media only screen  and (max-width: 484px) 
+{	
+
+	#footer{
+		padding-bottom: 40px;
+		
+	}
+
+	#footer ul{
+		margin-left: 25px;
+	}
+
+	#footer li{
+		display: table-row;
+		font-size: small;
+		margin-bottom: 25px;
+		
+		text-align: center;
+		
+	
+	}
+}
+
+
+@media only screen  and (max-width: 360px) 
+ {
+
+	#header__mobile__logo{
+	
+		height: 150px;
+	}
+
+	#cuerpo__content{
+		width: 100%;
+	}
+	
+	#cuerpo__content__card{
+		width: 100%;
+	}
+
+	#footer li{
+		display: table-header-group;
+		
+		text-align: center;
+	
+	}
+
+	#cuerpo__content__card label{
+		font-weight: 0;
+		font-size: 15px;
+		
+	
+	}
+}
+
+
+
+
+
+	
+	
