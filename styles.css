@@ -13,30 +13,22 @@ nav{
 	display: flex;
 	justify-content: space-around;
 	align-items: center;
-	min-height: 8vh;
+	height: 8vh;
 	background-color: #24192a;
-	font-family: "PowellItalic";
 }
-
-.logo{
-	color: white;
-	letter-spacing: 5px;
-	font-size: 22px;
-	font-weight: normal;
-} 
 
 .nav-links{
 	display: flex;
 	justify-content: space-around;
-	width: 40%;
+	width: 60%;
 }
 
 .nav-links a{
 	color: white;
 	text-decoration: none;
-	letter-spacing: 3px;
 	font-weight: bold;
 	font-size: 14px;
+	padding: 10px;
 }
 
 .nav-links li{
@@ -57,8 +49,18 @@ nav{
 	margin: 10px;
 }
 
-.burguer, .cart{
+.burguer{
 	display: none;
+}
+
+
+.right-icons{
+	display: block;
+	cursor: pointer
+}
+
+.right-icons img{
+	margin: 10px;
 }
 
 @media screen and(max-width: 1024px){
@@ -72,25 +74,54 @@ nav{
 		overflow-x: hidden;
 	}
 	.nav-links{
+		/*
+		taken transformX 100%
+		*/
+		background-color: #24192a;
 		position:absolute;
 		left: 0px;
 		height: 92vh;
-		top: 10vh;
-		background-color: white;
+		top: 8vh;
 		display: flex;
 		flex-direction: column;
 		align-items: center;
 		width: 30%;
-		transform: translateX(100%);
+		transform: translateX(-100%);
 	}
 	.nav-links li{
 		opacity: 0;
 	}
-	.burguer, .cart{
+	.burguer{
 		display: block;
 		cursor: pointer
+	}
+	.search, .user{
+		display: none;
 	}
 	nav{
 		justify-content: space-between;
 	}
+}
+
+.nav-active{
+	transform: translateX(0%);
+}
+
+@keyframes navLinkFade{
+	from{
+		opacity: 0;
+		transform: translateX(50px);
+	}
+	to{
+		opacity: 1;
+		transform: translateX(0%);
+	}
+}
+
+.aside{
+	background-color: green;
+}
+
+.content{
+	background-color: indianred;
 }
