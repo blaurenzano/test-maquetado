@@ -11,40 +11,76 @@
 <body>
 
 	<nav>
-		<div class="burguer">
-			<img src="assets/iconos/bars-solid.svg" height="30vh">
-			<!--<div class="line1"></div>
-			<div class="line2"></div>
-			<div class="line3"></div>-->
+		<div class="navbar">
+			<div class="burguer">
+				<img src="assets/iconos/bars-solid.svg" height="30vh">
+				<!--<div class="line1"></div>
+				<div class="line2"></div>
+				<div class="line3"></div>-->
+			</div>
+			<div class="logo">
+				<!--<h4>La Preuve</h4>-->
+				<img src="assets/logo.svg" height="20vh">
+			</div>
+
+			<div class="right-icons">
+				<img class="search" src="assets/iconos/search-solid.svg" height="20vh">
+				<img class="user" src="assets/iconos/user-solid.svg" height="20vh">
+				<img class="cart" src="assets/iconos/shopping-cart-solid.svg" height="20vh">
+			</div>
 		</div>
-		<div class="logo">
-			<!--<h4>La Preuve</h4>-->
-			<img src="assets/logo.svg" height="20vh">
-		</div>
-		<ul class="nav-links">
-			<li><a href="#">Sale</a></li>
-			<li><a href="#">E-shop</a></li>
-			<li><a href="#">Lookbook</a></li>
-			<li><a href="#">Campaña</a></li>
-			<li><a href="#">Locales</a></li>
-		</ul>
-		<div class="right-icons">
-			<img class="search" src="assets/iconos/search-solid.svg" height="20vh">
-			<img class="user" src="assets/iconos/user-solid.svg" height="20vh">
-			<img class="cart" src="assets/iconos/shopping-cart-solid.svg" height="20vh">
+		<div class="bar">
+			<ul class="nav-links">
+				<li><a href="#">Sale</a></li>
+				<li><a href="#">E-shop</a></li>
+				<li><a href="#">Lookbook</a></li>
+				<li><a href="#">Campaña</a></li>
+				<li><a href="#">Locales</a></li>
+			</ul>
 		</div>
 	</nav>
 
-	<section class="aside">
-
-	</section>
-	<main class="content">
-
-	</main>
+	<div class="content">
+		<section class="aside">
+			<div class="filters">
+				<h3>Zapatillas</h3>
+				<hr/>
+				<h5>Filtrar</h5>
+				<ul>
+					<li>Categoria</li>
+					<li>Zapatillas</li>
+					<li>Zapatos</li>
+					<li>Botas</li>
+					<li>Sandalias</li>
+					<li>Pantuflas</li>
+				</ul>
+				<ul>
+					<li>Talle</li>
+					<li>36</li>
+					<li>38</li>
+					<li>40</li>
+					<li>42</li>
+					<li>44</li>
+				</ul>
+				<ul>
+					<li>Color</li>
+					<li>Amarillo</li>
+					<li>Negro</li>
+					<li>Verde</li>
+					<li>Azul</li>
+					<li>Blanco</li>
+				</ul>
+			</div>
+		</section>
+		<div class="items">
+			<!-- Filled from app.js-->
+		</div>
+	</div>
 
 
 
 	<script src="animations.js"></script>
+	<script src="https://d3js.org/d3.v5.min.js"></script>
 	<script src="app.js"></script>
 </body>
 

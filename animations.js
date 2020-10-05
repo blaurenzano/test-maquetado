@@ -2,6 +2,7 @@ const navSlide = () =>{
     const burguer = document.querySelector('.burguer')
     const nav = document.querySelector('.nav-links')
     const navLinks = document.querySelectorAll('.nav-links li')
+    const items = document.getElementsByClassName('items')[0]
 
     burguer.addEventListener('click', ()=>{
         nav.classList.toggle('nav-active')
