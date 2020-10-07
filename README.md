@@ -1,5 +1,5 @@
 # Instalar paquetes antes de probar
-Después de clonar el repositorio, utilizar "npm i" para instalar las dependencias. Una vez instaladas ejecutar npm start y abrirlo en el localhost:3000
+Después de clonar el repositorio, utilizar "npm i" para instalar las dependencias. Una vez instaladas ejecutar "npm start" y abrir desde el navegador en el localhost:3000
 
 ## Ejercicio de maquetado html & css
 En el siguiente vínculo vas a encontrar el diseño de una web hecho en Adobe XD, en versión desktop y mobile:
