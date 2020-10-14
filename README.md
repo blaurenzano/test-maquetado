@@ -1,3 +1,7 @@
+# para correr la app
+Se debe abrir una consola dentor de la carpeta del proyecto "la-preuve" y correr los siguientes comandos:
+npm start
+
 # Ejercicio de maquetado html & css
 En el siguiente vínculo vas a encontrar el diseño de una web hecho en Adobe XD, en versión desktop y mobile:
 https://xd.adobe.com/view/f3229a4d-559d-4a23-500f-6c99f584ac0e-8513/
