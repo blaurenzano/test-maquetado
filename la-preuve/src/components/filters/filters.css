@@ -34,6 +34,9 @@
 .filters__filter-box span:hover {
 	color: red;
 }
+.filters__filter-box.open span {
+	display: none;
+}
 /* Mobile */
 @media screen and (max-width: 768px){
 	.filters {

@@ -13,7 +13,13 @@ function Catalog(){
 			{
 				catalog.map((product, index)=>
 
-					<Product key={index} id={index} img={product.img} title={product.title} price={product.price}  />
+					<Product
+						key={index}
+						id={index}
+						img={product.img}
+						title={product.title}
+						price={product.price}
+					/>
 
 				)
 			}

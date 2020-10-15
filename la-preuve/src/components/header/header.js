@@ -1,11 +1,20 @@
 import React from 'react'
 import './header.css'
 
+function habdleClickDropdownMenu(){
+	const $header = document.getElementById("header");
+	if( $header.classList.contains('header--open') ){
+		$header.className = "header";
+	}else {
+		$header.className = "header header--open";
+	}
+}
+
 function Header(){
 	return(
-		<header className="header">
+		<header className="header" id="header">
 	        <div className="header__main">
-		        <a className="header__dropdown-menu">
+		        <a className="header__dropdown-menu" onClick={() => habdleClickDropdownMenu()} >
 		        	<img src={require('../../assets/iconos/bars-solid.svg')} />
 		        </a>
 		        <a className="header__logo" href="#" alt="La preuve logo" title="Ir a la Home">

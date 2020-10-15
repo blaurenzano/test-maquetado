@@ -36,6 +36,8 @@
   --filters__subtitle-fontSize: 20px;
 }
 
+@import url('http://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
 /* Global */
 a {
   text-decoration: none;
