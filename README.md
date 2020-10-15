@@ -1,7 +1,7 @@
-# para correr la app
-Se debe abrir una consola dentor de la carpeta del proyecto "la-preuve" y correr los siguientes comandos:
-### `npm install`
-### `npm start`
+# para correr el proyecto
+Se debe abrir una consola dentro de la carpeta del proyecto "la-preuve" y correr los siguientes comandos:
+## `npm install`
+## `npm start`
 
 # Ejercicio de maquetado html & css
 En el siguiente vínculo vas a encontrar el diseño de una web hecho en Adobe XD, en versión desktop y mobile:
