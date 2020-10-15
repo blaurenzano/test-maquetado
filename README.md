@@ -1,5 +1,7 @@
 # para correr el proyecto
-Se debe abrir una consola dentro de la carpeta del proyecto "la-preuve" y correr los siguientes comandos:
+1. Se debe cambiar a la branch `react` para ver la prueba desarrollada con React.js
+2. Ingresar a la carpeta del proyecto `la-preuve`
+3. Una vez dentro, abrir una consola y correr los siguientes comandos:
 ### `npm install`
 ### `npm start`
 
