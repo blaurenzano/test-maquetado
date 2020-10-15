@@ -1,0 +1,174 @@
+*{
+	margin:0;padding:0;
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+}
+:root {
+	--bg-preuve: #24182b;
+	--text-preuve: #24182b;
+}
+body{
+	margin: 0;
+}
+/* Backgrounds, Texts, Global Clases */
+.text-preuve {
+	color:var(--text-preuve);
+}
+.bg-preuve{
+	background-color: var(--bg-preuve);
+}
+.footer-preuve{ 
+	width: 100%;
+	background-color: var(--bg-preuve);
+	font-size:1.25em;
+	margin:0;
+	padding:0;
+	color:white;
+	text-decoration: none;
+}
+.brand-preuve {
+	font-size:2.5em;
+	margin:0;
+	padding:0;
+	color:white;
+	text-decoration: none;
+}
+.brand-preuve:hover {
+	color:white;
+	text-decoration: none;
+}
+#navPreuve .nav-link {
+	font-size:1.35em;
+	margin-right:5em;
+}
+
+.menu-slide-lg .nav-link {
+	font-size:1.65em;
+}
+/* Backgrounds, Texts, Global Clases */
+
+.col-12 .card-body {
+	border-top:1px solid black;
+}
+
+.menu-slide-lg {
+	position: absolute;
+	top:1em;
+	right: 3em;
+	display:none;
+}
+
+.menu-toggler {
+	display:block;
+}
+
+.menu-cart {
+	display:block;
+}
+
+#mainContent {
+	margin-top: 75px;
+}
+
+.list-header {
+	border-bottom: 1px solid black;
+	margin-bottom:1em;
+	width: 100%;
+}
+.list-content{
+	width:100%;
+}
+.list-content h3 {
+	font-size:1.45em;
+}
+.categoria {
+	background:#e4e8ee;
+	border-bottom: 1px solid #c9c9c9;
+}
+.categorias {
+	list-style: none;
+}
+.logo {
+	width:50%;
+}
+
+/* Small devices (landscape phones, 576px and up)*/
+@media (min-width: 576px) { 
+	#mainContent {
+		margin-top: 75px;
+	}	
+	.menu-slide-lg {
+		display: none;
+	}
+	.menu-toggler {
+		display:block;
+	}
+	.menu-cart {
+		display:block;
+	}
+
+	.logo {
+		width:50%;
+	}
+ }
+
+/* Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) { 
+	#mainContent {
+		margin-top: 118px;
+	}	
+	.menu-slide-lg {
+		display: none;
+	}
+	.menu-toggler {
+		display:block;
+	}
+	.menu-cart {
+		display:block;
+	}
+
+	.logo {
+		width:50%;
+	}
+ }
+
+/*  Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) { 
+	#mainContent {
+		margin-top: 118px;
+	}	
+	.menu-slide-lg {
+		display: block;
+	} 
+	.menu-toggler {
+		display:none;
+	}
+	.menu-cart {
+		display:none;
+	}
+
+	.logo {
+		width:50%;
+	}
+}
+
+/*  Extra large devices (large desktops, 1200px and up)*/
+@media (min-width: 1200px) { 
+	#mainContent {
+		margin-top: 165px;
+	}	
+	.menu-slide-lg {
+		display: block;
+	} 
+	.menu-toggler {
+		display:none;
+	}
+	.menu-cart {
+		display:none;
+	}
+	.logo {
+		width:50%;
+	}
+	
+ }

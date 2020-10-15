@@ -2,10 +2,190 @@
 <html lang="es">
 <head>
 	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Test de maquetado</title>
-	<link rel="stylesheet" href="styles.css">
+	<!--Se utilizo bootstrap & fontawesome-->
+	<link rel="stylesheet" href="./configs/css/bootstrap.min.css">
+	<link rel="stylesheet" href="./configs/css/all.min.css">
+	<link rel="stylesheet" href="./configs/css/styles.css">
 </head>
 <body>
+	<header class="container-fluid header-preuve bg-preuve navbar-dark fixed-top m-0 p-0">
+		<div class="container-fluid d-flex justify-content-between align-items-center p-3 pt-lg-4">
+			<!--Boton para abrir menu en mobile-->
+			<button class="navbar-toggler menu-toggler" id="buttonMenu">
+				<i class="fas fa-bars" id="openBar"></i>
+			  <i class="fas fa-times d-none" id="closeBar"></i>
+			</button>
+			<!-- Logo Preuve -->
+			<a class="mx-auto brand-preuve text-center" href="#">
+				<img src="./assets/logo.svg" alt="Logo La Preuve" class="logo">	
+			</a>
+			<!-- Botton para ir al carrito o desplegarlo (en caso de desarrollarlo)-->
+			<button class="navbar-toggler menu-cart">
+				<i class="fas fa-shopping-cart"></i>
+			</button>
+			<!--Mini Nav superior derecha con los a para sus respectivas paginaciones o funcionalidades -->
+			<div class="menu-slide-lg navbar-expand-lg">
+				<ul class="navbar-nav mx-auto">
+					<li class="nav-item">
+						<a class="nav-link" href="#"><i class="fas fa-search"></i></a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#"><i class="fas fa-user"></i></a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#"><i class="fas fa-shopping-cart"></i></a>
+					</li>
+				</ul>
+			</div>
 
+		</div>
+		<!--Nav plegable para mobile y responsive para desktop-->
+		<nav class="navbar navbar-expand-lg navbar-light nav-expand d-none d-md-block" id="navPreuve">
+			<div class="collapse navbar-collapse" id="collapseThis">
+			  <ul class="navbar-nav mx-auto">
+				<li class="nav-item active">
+				  <a class="nav-link" href="#">SALE <span class="sr-only">(current)</span></a>
+				</li>
+				<li class="nav-item">
+				  <a class="nav-link" href="#">E-SHOP</a>
+				</li>
+				<li class="nav-item">
+				  <a class="nav-link" href="#">LOOKBOOK</a>
+				</li>
+				<li class="nav-item">
+				  <a class="nav-link" href="#">CAMPAÑA</a>
+				</li>
+				<li class="nav-item">
+				  <a class="nav-link" href="#">LOCALES</a>
+				</li>
+			  </ul>
+			</div>
+		  </nav>
+	</header>
+	<!-- Seccion principal, con sus filtros y contenido -->
+	<section class="container" id="mainContent">
+		<main class="row">
+			<div class="d-none d-sm-none d-md-block col-md-4 col-lg-3">
+				<!-- Cabecera de la lista -->
+				<div class="list-header">
+					<h2>Zapatillas</h2>
+				</div>
+				<!-- Contenido de la lista -->
+				<div class="list-content">
+
+					<h3>Filtrar</h3>
+					<!-- Filtros -->
+					<div id="accordion">
+						<div class="card">					  
+						  <ul class="categorias">
+
+								<li class="categoria d-flex justify-content-between">
+									<a class="btn collapsed w-100 text-left pt-0 pb-0 mt-0 mb-0" id="btnToggle1" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+									Categoría
+									</a>
+									<div class="icon" id="iconToggle1" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseThree">
+										<i class="fas fa-plus" id="iToggle1"></i>
+									</div>
+								</li>
+
+							<div id="collapseOne" class="collapse multi-collapse" aria-labelledby="headingOne">
+								<div class="card-body" id="catLoader">
+									
+								</div>
+								</div>
+
+							</ul>
+
+						</div>
+						<div class="card">
+							<ul class="categorias">
+
+								<li class="categoria d-flex justify-content-between">
+									<a class="btn collapsed w-100 text-left pt-0 pb-0 mt-0 mb-0" id="btnToggle2" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+									  Talle
+									</a>
+									<div class="icon" id="iconToggle2" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseThree">
+										<i class="fas fa-plus" id="iToggle2"></i>
+									</div>
+								</li>
+
+						  	<div id="collapseTwo" class="collapse multi-collapse" aria-labelledby="headingTwo">
+							<div class="card-body" id="tallesLoader">
+									
+							</div>
+							</div>
+
+							</ul>
+						</div>
+						<div class="card">
+							<ul class="categorias">
+
+								<li class="categoria d-flex justify-content-between">
+									<a class="btn collapsed w-100 text-left pt-0 pb-0 mt-0 mb-0" id="btnToggle3" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+										Color
+									</a>
+									<div class="icon" id="iconToggle3" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+										<i class="fas fa-plus" id="iToggle3"></i>
+									</div>
+								</li>
+
+						  <div id="collapseThree" class="collapse multi-collapse" aria-labelledby="headingThree">
+							<div class="card-body" id="colorLoader">
+									
+								
+							</div>
+						  </div>
+
+							</ul>
+						</div>
+					  </div>
+
+				</div>
+			</div>
+			<!-- Contenido generado desde data almacenada en /data/data.js-->
+			<div class="col-12 col-md-8 col-lg-9">
+				<div class="row" id="dataGen">
+					<!--Item Estatico para la tienda, modelo
+						<div class="col-12 col-md-6 col-lg-4">
+							
+							<div class="card">
+								<img class="card-img-top" src="./assets/productos/zapatilla_1.jpg" alt="Card image cap">
+								<div class="card-body">
+									<h5 class="card-title">Zapatilla 1-XFK</h5>
+									<p class="card-text">$5000</p>
+								</div>
+							</div>
+							
+						</div>
+					-->	
+				</div>
+		</main>
+	</section>
+	<footer class="container-fluid footer-preuve">
+		<!-- Footer del sitio -->
+		<nav class="navbar navbar-expand-lg navbar-dark nav-expand">
+			  <ul class="navbar-nav mx-auto text-center" id="footerNav">
+				<li class="nav-item active">
+				  <a class="nav-link" href="#">Ayuda</a>
+				</li>
+				<li class="nav-item">
+				  <a class="nav-link" href="#">Contacto</a>
+				</li>
+				<li class="nav-item">
+				  <a class="nav-link" href="#">Términos y condiciones</a>
+				</li>
+				<li class="nav-item">
+				  <a class="nav-link" href="#">Políticas de privacidad</a>
+				</li>
+			  </ul>
+		  </nav>
+	</footer>
+	<!-- Se importa jquery para la funcionalidad de bootstrap + bootstrap, más la data y los settings adicionales-->
+	<script src="./configs/js/jquery-3.3.1.min.js"></script>
+	<script src="./configs/js/bootstrap.min.js"></script>
+	<script src="./data/data.js"></script>
+	<script src="./configs//js/settings.js"></script>
 </body>
 </html>
