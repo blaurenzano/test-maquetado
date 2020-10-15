@@ -1,0 +1,12 @@
+.catalog {
+	max-width: 812px;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+/* Mobile */
+@media screen and (max-width: 768px){
+	.catalog {
+		justify-content: center;
+	}
+}

@@ -1,0 +1,76 @@
+{
+	"catalog": [
+		{
+			"id": 0,
+			"img": "/productos/zapatilla_1.jpg",
+			"title": "Zapatilla 1-XFK",
+			"price":"$5000"
+		},
+		{
+			"id": 0,
+			"img": "/productos/zapatilla_2.jpg",
+			"title": "Zapatilla 2000-X",
+			"price":"$9800"
+		},
+		{
+			"id": 0,
+			"img": "/productos/zapatilla_3.jpg",
+			"title": "Zapatilla 3 Run",
+			"price":"$6500"
+		},
+		{
+			"id": 0,
+			"img": "/productos/zapatilla_3.jpg",
+			"title": "Zapatilla 3 Run",
+			"price":"$6500"
+		},
+		{
+			"id": 0,
+			"img": "/productos/zapatilla_1.jpg",
+			"title": "Zapatilla 1-XFK",
+			"price":"$5000"
+		},
+		{
+			"id": 0,
+			"img": "/productos/zapatilla_2.jpg",
+			"title": "Zapatilla 2000-X",
+			"price":"$9800"
+		},
+		{
+			"id": 0,
+			"img": "/productos/zapatilla_1.jpg",
+			"title": "Zapatilla 1-XFK",
+			"price":"$5000"
+		},
+		{
+			"id": 0,
+			"img": "/productos/zapatilla_2.jpg",
+			"title": "Zapatilla 2000-X",
+			"price":"$9800"
+		},
+		{
+			"id": 0,
+			"img": "/productos/zapatilla_3.jpg",
+			"title": "Zapatilla 3 Run",
+			"price":"$6500"
+		},
+		{
+			"id": 0,
+			"img": "/productos/zapatilla_2.jpg",
+			"title": "Zapatilla 2000-X",
+			"price":"$9800"
+		},
+		{
+			"id": 0,
+			"img": "/productos/zapatilla_3.jpg",
+			"title": "Zapatilla 3 Run",
+			"price":"$6500"
+		},
+		{
+			"id": 0,
+			"img": "/productos/zapatilla_1.jpg",
+			"title": "Zapatilla 1-XFK",
+			"price":"$5000"
+		}
+	]
+}
