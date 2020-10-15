@@ -5,21 +5,21 @@ import Footer from './components/footer/footer.js';
 import Filters from './components/filters/filters.js';
 import Catalog from './components/catalog/catalog.js';
 
-function App() {
-  return (
-    <div className="app">
+function App (){
+    return (
+        <div className="app">
 
-      <Header />
+            <Header />
 
-      <div className="content">
-        <Filters />
-        <Catalog />
-      </div>
+            <div className="content">
+                <Filters />
+                <Catalog />
+            </div>
 
-      <Footer />
+            <Footer />
 
-    </div>
-  );
+        </div>
+    )
 }
 
 export default App;

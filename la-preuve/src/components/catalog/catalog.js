@@ -1,9 +1,9 @@
 import React from 'react';
 import Data from '../../services/api.json';
 import Product from '../product/product.js';
-import './catalog.css'
+import './catalog.css';
 
-function Catalog(){
+function Catalog() {
 
 	const catalog = Data.catalog;
 

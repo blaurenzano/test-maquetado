@@ -1,5 +1,5 @@
-import React from 'react'
-import './filters.css'
+import React from 'react';
+import './filters.css';
 
 function onClickCategoryTitle(event){
     if( event.target.parentElement.classList.contains('open') ){
@@ -10,7 +10,8 @@ function onClickCategoryTitle(event){
     }
 }
 
-function Filters(){
+function Filters (){
+
     return(
         <section className="filters">
             <h2 className="filters__title">Zapatillas</h2>
