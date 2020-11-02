@@ -1,0 +1,277 @@
+body {
+  background-color: #fafafa;
+  margin: 0;
+}
+
+.app {
+  display:flex;
+}
+
+ /* NAVBAR*/
+
+
+ #navbarNav{
+  justify-content: center;
+ }
+ 
+ #navbarNav ul{
+ justify-content: space-around;
+ width: 100%;
+ }
+
+
+ #navbarNav a{
+  font-family: 'Roboto';
+  font-size: 20px;
+
+}
+
+ #navbar-links {
+  margin-top: 54px;
+  opacity: initial;
+  padding-bottom: 0px;
+  margin-left: -17px;
+  width: 1401px;
+ }
+
+ .navbar-light .navbar-toggler-icon {
+  filter: invert(293%) sepia(192%) saturate(2007%) hue-rotate(940deg) brightness(139%) contrast(92%);
+}
+
+ .navbar-light .navbar-nav .nav-link {
+  color:  rgb(255 255 255) !important; 
+}
+
+.navbar {
+  overflow: hidden;
+  background-color: #24182b;
+  position: fixed !important;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+  opacity: 0.95;
+}
+
+.navbar a {
+  color: #f2f2f2;
+  text-align: center;
+  /* padding: 14px 16px; */
+  text-decoration: none;
+  font-size: 20px;
+  margin-right: 61px;
+}
+
+.navbar a:hover {
+  background: #ddd;
+  color: black;
+  font-weight: bold;
+}
+
+.navbar p{
+  color:white;
+  text-align: center;
+}
+
+.links{
+  display:flex;
+  justify-content: center;
+}
+
+.navbar-icons{
+  display: flex;
+  justify-content: flex-end;
+  width: 99%;
+}
+
+.navbar-logo{
+  flex: 1;
+  background-image: url(/assets/logo.svg);
+  background-size: 200px;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-bottom: -8px;
+  margin-left: 45px;
+  top: 18px;
+  left: 580px;
+  width: 206px;
+  height: 30px;
+}
+
+
+.navbar-icons img{
+  width: 23px;
+  height: auto;
+  margin: 20px 10px 0px 7px;
+  filter: invert(293%) sepia(192%) saturate(2007%) hue-rotate(940deg) brightness(139%) contrast(92%);
+}
+
+/* SIDE MENU*/
+#side-menu{
+  /* padding-left: 35px; */
+  height: 83%;
+  width: 300px;
+  background-color: #fafafa;
+  position: absolute;
+  opacity: 1;
+}
+
+#side-menu a{
+  width: 92%;
+  display: block;
+  border: none;
+  white-space: normal;
+  float: none;
+  outline: 0px;
+  text-decoration: none;
+  font-family: 'Roboto';
+  font-size: 16px;
+  text-align: left;
+}
+
+#side-menu a:hover {
+  background: #ddd;
+  color: black;
+}
+
+#side-menu p{
+  font-size: 30px;
+  font-weight: bold;
+  margin-bottom: -3px;
+}
+
+#side-menu h3{
+  margin-left: 14px;
+}
+
+#side-menu h3{
+  font-size: 16px;
+}
+
+.section{
+  background-color: #E4E8EE;
+  padding: 3px 0px 3px 0px;
+  display: block;
+  font-weight: bold;
+  font-size: 17px;
+}
+
+/*PRODUCTOS*/
+.app-context{
+  display: flex;
+  height: 100%;
+  width: 100%;
+  padding-top: 116px;
+  padding-left: 170px;
+}
+
+#products {
+  margin: 36px 0px 0px 332px;
+  height: 100%;
+  width: 80%;
+  display: flex;
+}
+
+.item{
+  margin-left: 15px;
+}
+
+.item img{
+  top: 141px;
+  left: 967px;
+  width: 260px;
+  height: 182px;
+}
+
+.item price{
+  font-family: 'Roboto';
+  font-size: 16px;
+  text-align: left;
+  font-weight: bold;
+}
+
+.item p{
+    font-family: 'Roboto';
+    font-size: 16px;
+    text-align: left;
+}
+
+/* FOOTER */
+
+.footer {
+  display: flex;
+  width: 114%;
+  height: 6%;
+  background-color: #24182b;
+  position: absolute;
+  bottom: 0px;
+  justify-content: center;
+}
+
+.footer a {
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 16px;
+  font-family: 'Roboto';
+  margin-right: 61px;
+  text-align: left;
+}
+
+
+@media (max-width:767px) {
+
+  #side-menu{
+    visibility: hidden;
+  }
+
+  #products{
+    all: initial;
+    margin-left: -111px;
+    overflow-y: scroll;
+    max-height: 399px;
+  }
+
+  .item{
+    margin-left: 0px;
+  }
+
+  .footer{
+    display: flex;
+    width: 114%;
+    height: 27%;
+    background-color: #24182b;
+    position: fixed;
+    bottom: 0px;
+    flex-direction: column;
+    padding-bottom: 86px;
+  }
+
+  .footer a {
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 12px;
+    margin-bottom: -16px;
+    margin-right: 118px;
+}
+
+  .navbar-logo{
+    margin-left: 70px;
+  }
+
+  #search, #user{
+    visibility: hidden;
+  }
+
+  #navbarNav a{
+    margin-left: -1000px;
+  }
+
+  #cart{
+    margin-right: 176px;
+    margin-top: -10px;
+  }
+
+}

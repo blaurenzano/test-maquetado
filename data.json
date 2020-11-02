@@ -1,0 +1,35 @@
+{ 
+    "list": {
+            "productList": [{
+                "product": {
+                    "image": "assets/productos/zapatilla_1.jpg",
+                    "id": "110",
+                    "name": "Zapatilla 1-XFK",
+                    "description": "<p>Zapatillas para deporte</p>",
+                    "quantity": 20,
+                    "price": "$5000",
+                    "category": "Zapatillas"
+                    }
+            }, {
+                "product": {
+                    "image": "assets/productos/zapatilla_2.jpg",
+                    "id": "111",
+                    "name": "Zapatilla 2000-x",
+                    "description": "<p>Zapatillas para calle</p>",
+                    "quantity": 10,
+                    "price": "$9800",
+                    "category": "Zapatillas"
+                }
+            }, {
+                "product": {
+                    "image": "assets/productos/zapatilla_3.jpg",
+                    "id": "112",
+                    "name": "Zapatilla 3 Run",
+                    "description": "<p>Zapatillas para correr</p>",
+                    "quantity": 12,
+                    "price": "$6500",
+                    "category": "Zapatillas"
+                }
+            }]
+        }
+    }
