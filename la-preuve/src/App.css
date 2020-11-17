@@ -1,0 +1,71 @@
+:root {
+  /* Generic Colors */
+  --violet:           #24182b;
+  --light-white:          #FAFAFA;
+  --lightGray:          #E4E8EE;
+  --darkGray:           #030b1c;
+  --red:              red;
+  --white:            white;
+
+  /* Colors */
+  --site-text-color:        var(--darkGray);
+  --site-hover-color:       var(--red);
+  --header-bg-color:        var(--violet);
+  --header-text-color:      var(--light-white);
+  --catalog_bg-color:       var(--light-white);
+  --product__image-borderColor: var(--darkGray);
+  --footer-bg-color:        var(--violet);
+  --footer-text-color:      var(--light-white);
+  --footer__nav__a-hover-color: var(--red);
+  --filterBox__title-bg-color:  var(--lightGray);
+  --filters__title-borderColor:   var(--darkGray);
+
+  /* Sizes */
+  --header__logo-width:     206px;
+  --header__actions-width:    24px;
+  --header__logo__img-padL:     37%;
+  --filters-width:        260px;
+
+  /* Fonts */
+  --site-fontFamily:        'Roboto', sans-serif;
+  --site-fontSize:        16px;
+  --header__nav-fontSize:     20px;
+  --product__title-fontSize:    var(--site-fontSize);
+  --font-spacing-0-4:       0.4px;
+  --footer-fontSize:        var(--site-fontSize);
+  --filters__subtitle-fontSize: 20px;
+}
+
+@import url('http://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+/* Global */
+a {
+  text-decoration: none;
+}
+body {
+  color: var(--site-text-color);
+  font-family: var(--site-fontFamily);
+  font-size: var(--site-fontSize);
+  margin: 0;
+  padding: 0;
+}
+h1, h2, h3, h4, h5, h6, p {
+  margin: 0;
+}
+
+/* Content */
+.content {
+  background-color: var(--catalog_bg-color);
+  display: flex;
+  justify-content: center;
+  padding: 40px 0 80px;
+}
+
+/* Mobile */
+@media screen and (max-width: 768px){
+  .content {
+    background: var(--white);
+    padding-top: 10px;
+  }
+
+}

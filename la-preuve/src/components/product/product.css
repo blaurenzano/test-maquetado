@@ -1,0 +1,33 @@
+.product {
+	box-sizing: border-box;
+	padding: 	0 8px 30px;
+	transition: all 0.3s;
+	width: 		33.33%;
+}
+.product:hover {
+	transform: scale(1.1);
+}
+.product__image img {
+	width: 100%;
+	border-bottom: 1px solid var(--product__image-borderColor);
+}
+.product__title a {
+	color: 		var(--site-text-color);
+	font-size: 	var(--product__title-fontSize);
+	font-weight: normal;
+}
+.product__price {
+	font-weight: bold;
+}
+
+/* Mobile */
+@media screen and (max-width: 768px){
+	.product {
+		max-width: 320px;
+		width: 100%;
+	}
+	.product__title a,
+	.product__price {
+		font-size: 20px;
+	}
+}

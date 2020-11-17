@@ -1,3 +1,10 @@
+# para correr el proyecto
+1. Se debe cambiar a la branch `react` para ver la prueba desarrollada con React.js
+2. Ingresar a la carpeta del proyecto `la-preuve`
+3. Una vez dentro, abrir una consola y correr los siguientes comandos:
+### `npm install`
+### `npm start`
+
 # Ejercicio de maquetado html & css
 En el siguiente vínculo vas a encontrar el diseño de una web hecho en Adobe XD, en versión desktop y mobile:
 https://xd.adobe.com/view/f3229a4d-559d-4a23-500f-6c99f584ac0e-8513/

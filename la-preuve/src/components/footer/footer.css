@@ -1,0 +1,29 @@
+/* Footer */
+.footer {
+	background-color: var(--footer-bg-color);
+	font-size: var(--footer-fontSize);
+}
+.footer__nav {
+	align-items: center;
+	display: flex;
+	justify-content: center;
+	padding: 20px 0;
+}
+.footer__nav a {
+	color: var(--footer-text-color);
+	padding: 0 2%;
+	transition: color .3s;
+}
+.footer__nav a:hover {
+	color: var(--footer__nav__a-hover-color);
+}
+/* Mobile */
+@media screen and (max-width: 768px){
+	/* Footer */
+	.footer__nav {
+		flex-flow: column;
+	}
+	.footer__nav a{
+		padding: 0 0 15px;
+	}
+}
