@@ -5,12 +5,17 @@
 		<title>Ejercicio Maquetación</title>
 		<link rel="stylesheet" href="styles.css">
 		<link rel="stylesheet" href="simple-grid.min.css">
+		<meta name="viewport" content="width=device-width, user-scalable=no">
 	</head>
 	<body>
+
+<!------------------------------------------HEADER------------------------------------------------------------------------------>
 		<div class="header">
 			<div class="row">
-				<a href="#"><img class="logo" src="assets/logo.svg" alt=""></a>
-				<div class="header-items">
+				<!-- MOBILE HAMBURGUER MENU HEADER -->
+				<a href="#" class="header-action"><img src="assets/iconos/bars-solid.svg" alt=""></a>
+				<a href="#" class="logo-container"><img class="logo" src="assets/logo.svg" alt=""></a>
+				<div class="header-actions">
 					<a href="#" class="header-action"><img src="assets/iconos/search-solid.svg" alt=""></a>
 					<a href="#" class="header-action"><img src="assets/iconos/user-solid.svg" alt=""></a>
 					<a href="#" class="header-action"><img src="assets/iconos/shopping-cart-solid.svg" alt=""></a>
@@ -24,13 +29,13 @@
 				<a href="#" class="header-link">LOCALES</a>
 			</div>
 		</div>
+<!---------------------------------------COLUMNA FILTROS------------------------------------------------------------------------>
 		<div class="row">
-			<div class="col-3">
-				<div class="row active-category">
-					<span>Zapatillas</span>
-				</div>
-				
-				<span>Filtrar</span>
+			<div class="col-3 filters">
+				<div class="row active-category bold">
+					<span class="bold">Zapatillas</span>
+				</div>				
+				<span class="bold">Filtrar</span>
 				<div class="filter-group">
 					<div class="filter-header">
 						<span>Categoria</span>
@@ -68,6 +73,7 @@
 					</ul>
 				</div>
 			</div>
+<!--------------------------------------COLUMNA PRODUCTOS--------------------------------------------------------------->
 			<div class="col-9">
 				<div class="row">
 					<div class="col-4 card">
@@ -139,11 +145,12 @@
 				</div>		
 			</div>		
 		</div>
+<!--------------------------------------------------------FOOTER---------------------------------------------------->
 		<div class="row footer">
-			<a style="color: #FAFAFA;" href="#">Ayuda</a>
-			<a href="#">Contacto</a>
-			<a href="#">Términos y condiciones</a>
-			<a href="#">Politicas de privacidad</a>
+			<a class="footer-element" href="#">Ayuda</a>
+			<a class="footer-element" href="#">Contacto</a>
+			<a class="footer-element" href="#">Términos y condiciones</a>
+			<a class="footer-element" href="#">Politicas de privacidad</a>
 		</div>		
 	</body>
 </html>
