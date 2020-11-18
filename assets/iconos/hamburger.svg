@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+    <defs>
+        <clipPath id="prefix__clip-path">
+            <path id="prefix__Trazado_215" d="M181.27 529.07v2h18v-2zm0 7h18v-2h-18zm0 5h18v-2h-18z" data-name="Trazado 215"/>
+        </clipPath>
+        <clipPath id="prefix__clip-path-2">
+            <path id="prefix__Rectángulo_143" d="M0 0h24v24H0z" data-name="Rectángulo 143" transform="translate(2 -1)"/>
+        </clipPath>
+    </defs>
+    <g id="prefix__hamburger" transform="translate(-178.27 -523.07)">
+        <g id="prefix__Grupo_323" data-name="Grupo 323">
+            <g id="prefix__Grupo_322" clip-path="url(#prefix__clip-path)" data-name="Grupo 322">
+                <g id="prefix__Grupo_321" clip-path="url(#prefix__clip-path-2)" data-name="Grupo 321" transform="translate(176.27 524.07)">
+                    <path id="prefix__Rectángulo_142" fill="#fff" d="M0 0h28v22H0z" data-name="Rectángulo 142"/>
+                </g>
+            </g>
+        </g>
+        <path id="prefix__Rectángulo_144" fill="none" d="M0 0h24v24H0z" data-name="Rectángulo 144" transform="translate(178.27 523.07)"/>
+    </g>
+</svg>
