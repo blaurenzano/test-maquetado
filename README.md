@@ -1,4 +1,11 @@
-# Ejercicio de maquetado html & css
+# Instalar paquetes antes de probar
+Después de clonar el repositorio, utilizar "npm i" para instalar las dependencias. Una vez instaladas ejecutar "npm start" y abrir desde el navegador en el localhost:3000
+
+
+
+---------------------------------------------------------------------------------------------------------------------
+
+## Ejercicio de maquetado html & css
 En el siguiente vínculo vas a encontrar el diseño de una web hecho en Adobe XD, en versión desktop y mobile:
 https://xd.adobe.com/view/f3229a4d-559d-4a23-500f-6c99f584ac0e-8513/
 Podés alternar entre la vista interactiva o la vista de especificaciones con los botones de la derecha, para poder ver datos de medidas, tipografías, colores, etc.
