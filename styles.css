@@ -1,3 +1,190 @@
-body{
-	margin: 0;
+@font-face{
+	font-family: 'PowellItalic';
+	src: url('./fonts/ltc-powell-w01-italic.ttf');
+}
+
+*{
+	margin:0px;
+	padding: 0px;
+	box-sizing: border-box;
+}
+
+.logo>img {
+	justify-self: center;
+}
+
+.right-icons img{
+	justify-self: end;
+	margin: auto;
+}
+
+nav{
+	height: 12vh;
+	flex-direction: column;
+	background-color: #24192a;
+}
+
+.bar{
+	justify-content: flex-end;
+}
+
+.navbar{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.nav-links{
+	display: flex;
+	justify-content: space-evenly;
+    width: 80%;
+    margin-left: 10%;
+}
+
+.nav-links a{
+	color: white;
+	text-decoration: none;
+	font-size: 14px;
+	padding: 10px;
+}
+
+.nav-links li{
+	list-style: none;
+	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+	text-transform: uppercase;
+}
+
+.nav-links li:first-child a{
+	font-weight: bold;
+}
+
+.burguer div{
+	width: 25px;
+	height: 3px;
+	background-color: rgb(226,226,226);
+	margin: 3px;
+}
+
+.burguer img, .cart img{
+	margin: 10px;
+}
+
+.burguer{
+	visibility: hidden;
+}
+
+
+.right-icons{
+	display: block;
+	cursor: pointer
+}
+
+.right-icons img{
+	margin: 10px;
+}
+
+.content{
+	width: 69%;
+	height: 88vh;
+}
+
+/*
+@media screen and(max-width: 1024px){
+	.nav-links{
+		width: 60%;
+	}
+}
+*/
+.aside{
+	width: 30%;
+	height:88vh;
+	display: flex;
+	font-family: sans-serif;
+	justify-content: flex-end;
+}
+.items{
+	width: 60%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+@media screen and (max-width:768px){
+	body{
+		overflow-x: hidden;
+	}
+	nav{
+		height: 8vh;
+	}
+	.nav-links{
+		visibility: hidden;
+		background-color: #24192a;
+		position:absolute;
+		left: 0px;
+		height: 92vh;
+		top: 8vh;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		width: 30%;
+		margin-left: 0px;
+	}
+	.nav-links li{
+		opacity: 0;
+	}
+	.burguer{
+		display: block;
+		cursor: pointer;
+		visibility: visible;
+	}
+	.search, .user{
+		display: none;
+	}
+	nav{
+		justify-content: space-between;
+	}
+	.items{
+		width: 100%;
+	}
+	.aside{
+		display: none;
+	}
+}
+
+.nav-active{
+	visibility: visible;
+}
+
+@keyframes navLinkFade{
+	from{
+		opacity: 0;
+		transform: translateX(50px);
+	}
+	to{
+		opacity: 1;
+		transform: translateX(0%);
+	}
+}
+
+.content{
+	display: flex;
+	flex-direction: row;
+	width: -webkit-fill-available;
+	margin-top: 1em;
+}
+
+.filters{
+	width: 60%;
+}
+
+.filters ul li:first-child{
+	background-color: lightgray;
+	font-weight: bold;
+	margin: 5px 5px 5px 0px;
+}
+
+
+.filters ul li{
+	font-size: 0.8em;
+	list-style-type: none;
+	margin: 3px
 }
