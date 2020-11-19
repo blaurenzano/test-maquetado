@@ -1,4 +1,3 @@
-
 //PARA EL ACORDEON EN FILTROS
 const accordion = document.querySelectorAll(".accordion");
 for (let i = 0; i < accordion.length; i++) {
@@ -44,7 +43,6 @@ const colores = document.querySelectorAll("a[data-color-filter]");
     function onlyShowCards(color,style = "none")
     {
         const cardColor = document.querySelectorAll(".card:not([data-color*='"+color+"'])");
-        console.log(cardColor);
         cardColor.forEach(element => {
             element.style.display = style;            
         });
@@ -52,7 +50,6 @@ const colores = document.querySelectorAll("a[data-color-filter]");
 
 //PARA LISTAR POR COLUMNAS VARIABLES
 const options = document.querySelectorAll("li[data-value]");
-const cards = document.querySelectorAll(".card");
 
     options.forEach(option => {
         option.addEventListener("click",() => 
@@ -60,24 +57,25 @@ const cards = document.querySelectorAll(".card");
             switch(option.dataset.value)
             {
                 case "1":
-                    changeColumnCards(cards,12)
+                    changeColumnCards(12)
                     break;
                 case "2":
-                    changeColumnCards(cards, 6);
+                    changeColumnCards( 6);
                     break;
                 case "3":
-                    changeColumnCards(cards, 4);
+                    changeColumnCards( 4);
                     break;
                 case "4":
-                    changeColumnCards(cards, 3);
+                    changeColumnCards( 3);
                     break;
             }
         } )
     });
 
 
-function changeColumnCards(cards, newColumnName)
+function changeColumnCards(newColumnName)
 {
+    const cards = document.querySelectorAll(".card");
     cards.forEach(card => {
     let actualColumnClassName = getColumnClass(card);
     card.classList.replace(actualColumnClassName, "col-"+newColumnName)
@@ -89,4 +87,33 @@ function getColumnClass(div)
     return columnClassName;
 }
 
+//CARGAR PRODUCTOS DESDE JSON EXTERNO
 
+ window.fetch('data/productos.json')
+ .then(response => response.json())
+ .then(data => {
+    contenedor = document.querySelector("#contenedor-productos");
+    data.forEach(producto => {
+        contenedor.innerHTML += `<div data-color="${producto.color}" class="col-6 card">
+                                    <img class="product-img" src="${producto.imagen}" alt="${producto.nombre}">
+                                    <span class="product-name">${producto.nombre}</span>
+                                    <span data-price="${producto.precio}" class="product-price">$${producto.precio}</span>
+                                </div>`
+    });    
+ });
+
+//OPCIONAL ELEGIDO PERSONALMENTE: FILTRADO POR PRECIO
+
+const searchButton = document.querySelector("#search");
+searchButton.addEventListener("click", () => {
+    let from = Number(document.querySelector("#from").value);
+    let to = Number(document.querySelector("#to").value);
+    let productPrices = document.querySelectorAll(".product-price");
+    productPrices.forEach(product => {
+       let productPrice = Number(product.dataset.price);
+        if(productPrice>to || productPrice < from)
+        {
+            product.parentElement.style.display = "none";
+        }        
+    });
+})

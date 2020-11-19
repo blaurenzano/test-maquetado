@@ -1,8 +1,13 @@
 # Sobre la solucion propuesta
 El ejercicio base como el primer punto opcional fueron resueltos utilizando completamente HTML y CSS con el micro framework simple-grid para facilitar la ubicacion de los elemntos en formato columna manteniendo una solucion liviana en su carga. Los cuatro ultimos puntos opcionales estarán resultos implementando javascript tratandose de funcionalidad; de todas maneras será en su version vanilla.
 
+## Para ejecutar
+Desde la raiz ejecutar los siguientes comandos en orden:
+<code>npm install</code>
+<code>npm run dev</code>
 
-## Ejercicio de maquetado html & css
+
+### Ejercicio de maquetado html & css
 En el siguiente vínculo vas a encontrar el diseño de una web hecho en Adobe XD, en versión desktop y mobile:
 https://xd.adobe.com/view/f3229a4d-559d-4a23-500f-6c99f584ac0e-8513/
 Podés alternar entre la vista interactiva o la vista de especificaciones con los botones de la derecha, para poder ver datos de medidas, tipografías, colores, etc.

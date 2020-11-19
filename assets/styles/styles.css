@@ -131,4 +131,30 @@ ul{
 .cantidad-productos-mobile{
 	display: none;
 }
+.search-group{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin: 16px 0;
+}
+.filter-price {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.filter-price img{
+	cursor: pointer;
+	height: 16px;
+	width: auto;
+	margin: 2px;
+}
+
+#from, #to{
+	width: 35%;
+}
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
+}
 

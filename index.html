@@ -29,11 +29,11 @@
 					</div>
 				</div>
 				<!-- MOBILE HAMBURGUER MENU HEADER END-->
-				<a href="#" class="logo-container"><img class="logo" src="assets/logo.svg" alt=""></a>
+				<a href="#" class="logo-container"><img class="logo" src="assets/logo.svg" alt="Logo"></a>
 				<div class="header-actions">
-					<a href="#" class="header-action"><img src="assets/iconos/search-solid.svg" alt=""></a>
-					<a href="#" class="header-action"><img src="assets/iconos/user-solid.svg" alt=""></a>
-					<a href="#" class="header-action"><img src="assets/iconos/shopping-cart-solid.svg" alt=""></a>
+					<a href="#" class="header-action"><img src="assets/iconos/search-solid.svg" alt="Search"></a>
+					<a href="#" class="header-action"><img src="assets/iconos/user-solid.svg" alt="User"></a>
+					<a href="#" class="header-action"><img src="assets/iconos/shopping-cart-solid.svg" alt="Cart"></a>
 				</div>
 			</div>
 			<div class="row header-links">
@@ -80,13 +80,25 @@
 						Color
 					</div>					
 					<ul class="panel">
+						<li><a data-color-filter="all" href="#">Todos</a></li>
 						<li><a data-color-filter="amarillo" href="#">Amarillo</a></li>
 						<li><a data-color-filter="negro" href="#">Negro</a></li>
 						<li><a data-color-filter="verde" href="#">Verde</a></li>
 						<li><a data-color-filter="azul" href="#">Azul</a></li>
-						<li><a data-color-filter="blanco" href="#">Blanco</a></li>
-						<li><a data-color-filter="all" href="#">Todos</a></li>
+						<li><a data-color-filter="blanco" href="#">Blanco</a></li>						
 					</ul>
+				</div>
+				<div class="filter-group">
+					<div class="filter-header accordion">
+						Precios
+					</div>			
+					<div class="panel">
+						<div class="search-group">
+							<input type="number" min="1" id="from" placeholder="Desde">
+							<input type="number" min="1" id="to" placeholder="Hasta">
+							<button id="search" class="filter-price"><img src="assets/iconos/search-solid.svg" alt=""></button>
+						</div>
+					</div>
 				</div>
 				<span class="bold">Agrupar</span>
 				<div class="filter-group">
@@ -111,67 +123,8 @@
 							<li data-value="2"><a href="#">Dos columnas</a></li>
 						</ul>
 					</div>
-				<div class="row">
-					<div data-color="blanco" class="col-6 card">
-						<img class="product-img" src="assets/productos/zapatilla_1.jpg" alt="Zapatilla 1-XFK">
-						<span class="product-name">Zapatilla 1-XFK</span>
-						<span class="product-price">$5000</span>
-					</div>
-					<div data-color="negro" class="col-6 card">
-						<img class="product-img" src="assets/productos/zapatilla_2.jpg" alt="Zapatilla 2000-X">
-						<span class="product-name">Zapatilla 2000-X</span>
-						<span class="product-price">$9800</span>
-					</div>
-					<div data-color="negro,amarillo" class="col-6 card">
-						<img class="product-img" src="assets/productos/zapatilla_3.jpg" alt="Zapatilla 3 Run">
-						<span class="product-name">Zapatilla 3 Run</span>
-						<span class="product-price">$6500</span>
-					</div>
-					<div data-color="negro,amarillo" class="col-6 card">
-						<img class="product-img" src="assets/productos/zapatilla_3.jpg" alt="Zapatilla 3 Run">
-						<span class="product-name">Zapatilla 3 Run</span>
-						<span class="product-price">$6500</span>
-					</div>
-					<div data-color="blanco" class="col-6 card">
-						<img class="product-img" src="assets/productos/zapatilla_1.jpg" alt="Zapatilla 1-XFK">
-						<span class="product-name">Zapatilla 1-XFK</span>
-						<span class="product-price">$5000</span>
-					</div>
-					<div data-color="negro" class="col-6 card">
-						<img class="product-img" src="assets/productos/zapatilla_2.jpg" alt="Zapatilla 2000-X">
-						<span class="product-name">Zapatilla 2000-X</span>
-						<span class="product-price">$9800</span>
-					</div>
-					<div data-color="blanco" class="col-6 card">
-						<img class="product-img" src="assets/productos/zapatilla_1.jpg" alt="Zapatilla 1-XFK">
-						<span class="product-name">Zapatilla 1-XFK</span>
-						<span class="product-price">$5000</span>
-					</div>
-					<div data-color="negro" class="col-6 card">
-						<img class="product-img" src="assets/productos/zapatilla_2.jpg" alt="Zapatilla 2000-X">
-						<span class="product-name">Zapatilla 2000-X</span>
-						<span class="product-price">$9800</span>
-					</div>
-					<div data-color="negro,amarillo" class="col-6 card">
-						<img class="product-img" src="assets/productos/zapatilla_3.jpg" alt="Zapatilla 3 Run">
-						<span class="product-name">Zapatilla 3 Run</span>
-						<span class="product-price">$6500</span>
-					</div>
-					<div data-color="negro" class="col-6 card">
-						<img class="product-img" src="assets/productos/zapatilla_2.jpg" alt="Zapatilla 2000-X">
-						<span class="product-name">Zapatilla 2000-X</span>
-						<span class="product-price">$9800</span>
-					</div>
-					<div data-color="negro,amarillo" class="col-6 card">
-						<img class="product-img" src="assets/productos/zapatilla_3.jpg" alt="Zapatilla 3 Run">
-						<span class="product-name">Zapatilla 3 Run</span>
-						<span class="product-price">$6500</span>
-					</div>
-					<div data-color="blanco" class="col-6 card">
-						<img class="product-img" src="assets/productos/zapatilla_1.jpg" alt="Zapatilla 1-XFK">
-						<span class="product-name">Zapatilla 1-XFK</span>
-						<span class="product-price">$5000</span>
-					</div>
+				<div id="contenedor-productos" class="row">
+					
 				</div>		
 			</div>		
 		</div>
