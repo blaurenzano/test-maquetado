@@ -1,0 +1,13 @@
+.container-filtrar {
+  display: none;
+}
+
+@include desktop {
+  .container-filtrar {
+    display: block;
+  }
+  aside {
+    width: 333px;
+    margin: 20px;
+  }
+}

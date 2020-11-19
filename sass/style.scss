@@ -1,0 +1,28 @@
+@import "common/all";
+@import "layout/header";
+@import "layout/nav";
+@import "layout/aside";
+@import "layout/section";
+@import "layout/footer";
+
+body,
+h1,
+h4,
+ul,
+li {
+  margin: 0;
+  font-family: $roboto;
+}
+
+.container-aside-articule {
+  display: flex;
+  flex-direction: column;
+}
+
+@include desktop {
+  .container-aside-articule {
+    background-color: $gris_claro;
+    padding: 0 139px;
+    flex-direction: row;
+  }
+}

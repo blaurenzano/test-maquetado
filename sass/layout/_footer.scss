@@ -1,0 +1,28 @@
+footer {
+  background-color: $fondo_header;
+  color: $texto_header;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.container-textos {
+  padding: 20px 0;
+
+  border-top: 1px solid;
+  margin: 20px;
+}
+
+.container-texto-footer {
+  padding: 10px 0 20px;
+}
+
+@include desktop {
+  footer {
+    height: 68px;
+    flex-direction: row;
+    justify-content: center;
+  }
+  .container-texto-footer {
+    padding: 0 30px;
+  }
+}

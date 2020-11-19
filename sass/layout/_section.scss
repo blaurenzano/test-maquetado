@@ -1,0 +1,29 @@
+article {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+h4,
+p {
+  color: $color-texto;
+}
+h2 {
+  border-bottom: 1px solid;
+}
+.img-zapatilla {
+  height: 232px;
+}
+.container-textos {
+  border-top: 1px solid $color-texto;
+}
+
+@include desktop {
+  article {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  section {
+    width: 260px;
+    margin: 0 10px;
+  }
+}
