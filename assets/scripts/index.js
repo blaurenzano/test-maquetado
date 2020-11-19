@@ -35,6 +35,8 @@ const colores = document.querySelectorAll("a[data-color-filter]");
                 case "blanco":
                     onlyShowCards("blanco");
                     break;
+                case "todos":
+                    onlyShowCards("all");
             }
         })
     });
