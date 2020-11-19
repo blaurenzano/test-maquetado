@@ -2,10 +2,128 @@
 <html lang="es">
 <head>
 	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Test de maquetado</title>
 	<link rel="stylesheet" href="styles.css">
 </head>
 <body>
+	<header>
+		<div class="header container">
+			<div class="hamburger" role="button" aria-lebel="Abrir menu" aria-expanded="false">
+				<img src="assets/iconos/bars-solid.svg" alt="" class="icon only-mobile">
+			</div>
+			<div class="logo">
+				<a href="index.html" title="Logo La Preuve"><img src="assets/logo.svg" alt="La Preuve"></a> 
+			</div>
+			<ul class="icons-bar">
+				<li><a href="" title="buscar" role="button"><img src="assets/iconos/search-solid.svg" alt="" class="icon only-desktop"></a></li>
+				<li><a href="" title="perfil"><img src="assets/iconos/user-solid.svg" alt="" class="icon only-desktop"></a></li>
+				<li><a href="" title="carrito de compras"><img src="assets/iconos/shopping-cart-solid.svg" alt="" class="icon"></a></li>
+			</ul>
+		</div>
+		<nav role="navigation" class="navigation">
+			<ul class="menu">
+				<li><a href="">SALE</a></li>
+				<li><a href="">E-SHOP</a></li>
+				<li><a href="">LOOKBOOK</a></li>
+				<li><a href="">CAMPAÑA</a></li>
+				<li><a href="">LOCALES</a></li>
+				<li><a href="" title="buscar" role="button"><img src="assets/iconos/search-solid.svg" alt="" class="icon only-mobile"></a></li>
+				<li><a href="" title="perfil"><img src="assets/iconos/user-solid.svg" alt="" class="icon only-mobile"></a></li>
+			</ul>
+		</nav>
+	</header>
+	<main class="container">
+		<section class="sale">
+			<div class="filter-search">
+				<h2 class="title">Zapatillas</h2>
+				<div class="filters only-desktop">
+					<h3>Filtrar</h3>
+					<h4 class="filters__category accordion" tabindex="0" role="button" aria-pressed="false">Categoría</h4>
+					<ul class="filters__list">
+						<li><a href="#">Zapatillas</a></li>
+						<li><a href="#">Zapatos</a></li>
+						<li><a href="#">Botas</a></li>
+						<li><a href="#">Sandalias</a></li>
+						<li><a href="#">Pantuflas</a></li>
+					</ul>
+
+					<h4 class="filters__category accordion" tabindex="0" role="button" aria-pressed="false">Talle</h4>
+					<ul class="filters__list">
+						<li><a href="#">36</a></li>
+						<li><a href="#">38</a></li>
+						<li><a href="#">40</a></li>
+						<li><a href="#">42</a></li>
+						<li><a href="#">44</a></li>
+					</ul>
+
+					<h4 class="filters__category accordion" tabindex="0" role="button" aria-pressed="false">Color</h4>
+					<ul class="filters__list">
+						<li><a href="#">Amarillo</a></li>
+						<li><a href="#">Negro</a></li>
+						<li><a href="#">Verde</a></li>
+						<li><a href="#">Azul</a></li>
+						<li><a href="#">Blanco</a></li>
+					</ul>
+				</div>
+			</div>
+			<ul class="products">
+				<li>
+					<div class="product">
+						<img src="assets/productos/zapatilla_1.jpg" alt="zapatilla 1" class="product__img">
+						<a href="" class="product__title">Zapatilla 1-XFK</a>
+						<span class="product__price">$5000</span>
+					</div>
+				</li>
+				<li>
+					<div class="product">
+						<img src="assets/productos/zapatilla_2.jpg" alt="zapatilla 2" class="product__img">
+						<a href="" class="product__title">Zapatilla 2000-X</a>
+						<span class="product__price">$5000</span>
+					</div>
+				</li>
+				<li>
+					<div class="product">
+						<img src="assets/productos/zapatilla_3.jpg" alt="zapatilla 3" class="product__img">
+						<a href="" class="product__title">Zapatilla 3 Run</a>
+						<span class="product__price">$5000</span>
+					</div>
+				</li>
+				<li>
+					<div class="product">
+						<img src="assets/productos/zapatilla_1.jpg" alt="zapatilla 1" class="product__img">
+						<a href="" class="product__title">Zapatilla 1-XFK</a>
+						<span class="product__price">$5000</span>
+					</div>
+				</li>
+				<li>
+					<div class="product">
+						<img src="assets/productos/zapatilla_2.jpg" alt="zapatilla 2" class="product__img">
+						<a href="" class="product__title">Zapatilla 2000-X</a>
+						<span class="product__price">$5000</span>
+					</div>
+				</li>
+				<li>
+					<div class="product">
+						<img src="assets/productos/zapatilla_3.jpg" alt="zapatilla 3" class="product__img">
+						<a href="" class="product__title">Zapatilla 3 Run</a>
+						<span class="product__price">$5000</span>
+					</div>
+				</li>
+			</ul>
+		</section> 
+	</main>
+	<footer class="footer">
+		<ul class="footer__list container">
+			<li><a href="">Ayuda</a></li>
+			<li><a href="">Contacto</a></li>
+			<li><a href="">Términos y condiciones</a></li>
+			<li><a href="">Políticas de privacidad</a></li>
+		</ul>
+	</footer>
+
+
+<script src="js/index.js"></script>
 
 </body>
 </html>
