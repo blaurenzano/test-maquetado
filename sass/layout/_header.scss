@@ -1,0 +1,71 @@
+header,
+nav {
+  background-color: $fondo_header;
+  height: 50px;
+  color: $texto_header;
+}
+
+h1 {
+  text-align: center;
+  padding-left: 60px;
+}
+
+header {
+  height: 69px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.icono,
+nav {
+  display: none;
+}
+
+.menu {
+  display: none;
+}
+.menu--item {
+  padding: 0 60px;
+}
+
+a {
+  text-decoration: none;
+  color: $texto_header;
+  font-size: 20px;
+  font-weight: 100;
+}
+.container-icono {
+  margin: 0 10px;
+}
+@include desktop {
+  header,
+  nav {
+    height: 50px;
+  }
+  header {
+    padding: 0 40px;
+    justify-content: space-between;
+  }
+  .icono,
+  nav {
+    display: block;
+  }
+
+  .menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .container-iconos {
+    display: flex;
+  }
+  .icono-bars {
+    display: none;
+  }
+}
+
+@include phone {
+  h1 {
+    font-size: 24px;
+  }
+}
