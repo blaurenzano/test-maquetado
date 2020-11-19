@@ -1,0 +1,160 @@
+* { box-sizing: border-box }
+a img {
+	border: 0;
+}
+a:link, a:visited, a:active {
+    text-decoration:none;
+}
+.active-category{
+	border-bottom: 1px solid #030B1C;
+	font-size: 24px;
+}
+.active-category + span, .filter-group + span{
+	display: block;
+	font-size: 20px;
+	padding: 16px 0;
+}
+body{
+	margin: 0;
+	background-color: #FAFAFA;
+	color: #030B1C;
+	font-size: 16px;
+}
+.bold{
+	font-weight: bold;
+}
+.card{
+	display: flex;
+	flex-direction: column;
+}
+.filter-header{
+	background-color:#E4E8EE;
+	font-weight: bold;
+	padding: 5px 16px;
+}
+.filter-group ul{
+	padding-left: 16px;
+}
+.filter-group{
+	margin-bottom: 10px;
+}
+.footer{
+	display: flex;
+	justify-content: center;
+	background-color: #100217E6;
+	padding: 20px;
+	box-shadow: 0px -3px 6px #00000026;
+}
+.footer-element{
+	color: #FAFAFA;
+	margin:0 4vw;
+}
+.header{
+	display: flex;
+	flex-direction: column;
+	background-color: #100217E6;
+	padding: 18px;
+	box-shadow: 0px 3px 6px #00000026;
+}
+.header .row{
+	display: flex;
+	justify-content: center;
+}
+.header-action img{
+	display: block;
+	height: 24px;
+	width: auto;
+	filter: invert();
+	padding: 0 5px;
+}
+.header-actions {
+	display: flex;
+	position: absolute;
+	right: 10px;
+	top: 5px;
+	justify-self: flex-end;
+}
+.header-link{
+	color: #FAFAFA;
+	padding: 0 4vw;
+}
+.header-links{
+	margin-top: 18px;
+}
+.product-img{
+	width: 100%;
+	height: auto;
+	border-bottom: 1px solid #030B1C;
+}
+.logo{
+	display: block;
+	height: 30px;
+	width: auto;
+}
+.product-name{
+	align-self: flex-start;
+	line-height: 22px;
+	color: #030B1C;
+}
+.product-price{
+	align-self: flex-start;
+	font-weight: bold;
+	color: #030B1C;
+	line-height: 22px;
+}
+.texto{
+	color: #030B1C;
+}
+ul{
+	list-style: none;
+	padding-left: 0;
+	margin: 0;
+}
+.menu-container{
+	display: none;
+}
+.accordion{
+	cursor: pointer;
+	width: 100%;
+	text-align: left;
+	border: none;
+	outline: none;
+	transition: 0.4s;
+}
+.panel {
+	display: none;
+	overflow: hidden;
+}
+.cantidad-productos-desktop{
+	display: block;
+}
+.cantidad-productos-mobile{
+	display: none;
+}
+.search-group{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin: 16px 0;
+}
+.filter-price {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.filter-price img{
+	cursor: pointer;
+	height: 16px;
+	width: auto;
+	margin: 2px;
+}
+
+#from, #to{
+	width: 35%;
+}
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
+}
+

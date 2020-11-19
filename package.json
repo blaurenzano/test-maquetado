@@ -1,0 +1,24 @@
+{
+  "name": "ejercicio-maquetado",
+  "version": "1.0.0",
+  "description": "El ejercicio base como el primer punto opcional fueron resueltos utilizando completamente HTML y CSS con el micro framework simple-grid para facilitar la ubicacion de los elemntos en formato columna manteniendo una solucion liviana en su carga. Los cuatro ultimos puntos opcionales estarán resultos implementando javascript tratandose de funcionalidad; de todas maneras será en su version vanilla.",
+  "main": "index.html",
+  "dependencies": {
+    "serve": "^11.3.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "serve ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jonamartin/test-maquetado.git"
+  },
+  "author": "Jonathan Martin",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jonamartin/test-maquetado/issues"
+  },
+  "homepage": "https://github.com/jonamartin/test-maquetado#readme"
+}

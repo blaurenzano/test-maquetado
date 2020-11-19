@@ -1,13 +1,22 @@
-# Ejercicio de maquetado html & css
+# Sobre la solucion propuesta
+El ejercicio base como el primer punto opcional fueron resueltos utilizando completamente HTML y CSS con el micro framework simple-grid para facilitar la ubicacion de los elemntos en formato columna manteniendo una solucion liviana en su carga. Los cuatro ultimos puntos opcionales, como el que he incoporado, estan resueltos implementando javascript tratandose de funcionalidad; de todas maneras es en su version vanilla. En el ejemplo de filtrado de productos lo he hecho por color ya que la categoria activa es zapatillas y desconozco los talles, incorporé el "todos" para devolver la busqueda original. He decidio incorporar como opcional el filtrado por precios de productos.
+
+## Para ejecutar
+Desde la raiz ejecutar los siguientes comandos en orden:
+<code>npm install</code>
+<code>npm run dev</code>
+
+
+### Ejercicio de maquetado html & css
 En el siguiente vínculo vas a encontrar el diseño de una web hecho en Adobe XD, en versión desktop y mobile:
 https://xd.adobe.com/view/f3229a4d-559d-4a23-500f-6c99f584ac0e-8513/
 Podés alternar entre la vista interactiva o la vista de especificaciones con los botones de la derecha, para poder ver datos de medidas, tipografías, colores, etc.
 
-## Objetivo
+### Objetivo
 El objetivo del ejercicio es maquetar el diseño usando html y css. Cuanto más fiel al diseño sea el resultado mejor.
 Podés armarlo como te sea más cómodo, si preferís usar sass, less, o incluso algún framework. Siempre aclarando si hace falta hacer alguna instalación o correr algún comando para poder ver el resultado.
 
-#### Evaluaremos:
+##### Evaluaremos:
 * Fidelidad al diseño desktop y mobile
 * Que el resultado sea responsive
 * Código prolijo y semántico
