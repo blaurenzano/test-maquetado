@@ -165,6 +165,7 @@ ul{
 	display: flex;
 	flex-direction: column;
 	align-items: flex-start;
+	margin-bottom: 3rem;
 }
 @media (min-width: 1281px) {
 	.product{
@@ -188,18 +189,6 @@ ul{
 	letter-spacing: 0.4px;
 	font-weight: bold;
 }
-
-
-
-
-
-
-
-
-
-
-
-
 .sale{
 	display: flex;
 	flex-direction: column;
@@ -217,7 +206,6 @@ ul{
 		width: 20%;
 	}
 }
-
 .filters__category{
 	font-size: 16px;
 	font-weight: bold;
@@ -225,8 +213,10 @@ ul{
 	letter-spacing: 0.32px;
 	background-color: #E4E8EE;
 	padding: 5px 0 5px 16px;
+	cursor: pointer;
 }
 .filters__list{
+	display: none;
 	font-size: 16px;
 	padding-left: 16px;
 }

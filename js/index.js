@@ -1,12 +1,25 @@
-// selector
+//Menu
 var menu = document.querySelector('.hamburger');
 
-// method
 function toggleMenu(event){
 event.preventDefault();
 this.classList.toggle('is-active');
 document.querySelector( ".navigation" ).classList.toggle("is-active");
 }
 
-// event
 menu.addEventListener('click', toggleMenu, false);
+
+
+
+//Accordion
+const accordion = document.querySelectorAll(".accordion");
+
+accordion.forEach(element => {
+    element.addEventListener('click', ()=>{
+        const list = element.nextElementSibling;
+        list.style.display === "block" ? list.style.display = "none" : list.style.display = "block";
+    })
+
+    
+});
+
