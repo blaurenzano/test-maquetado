@@ -1,5 +1,5 @@
 # Sobre la solucion propuesta
-El ejercicio base como el primer punto opcional fueron resueltos utilizando completamente HTML y CSS con el micro framework simple-grid para facilitar la ubicacion de los elemntos en formato columna manteniendo una solucion liviana en su carga. Los cuatro ultimos puntos opcionales estarán resultos implementando javascript tratandose de funcionalidad; de todas maneras será en su version vanilla.
+El ejercicio base como el primer punto opcional fueron resueltos utilizando completamente HTML y CSS con el micro framework simple-grid para facilitar la ubicacion de los elemntos en formato columna manteniendo una solucion liviana en su carga. Los cuatro ultimos puntos opcionales, como el que he incoporado, estan resueltos implementando javascript tratandose de funcionalidad; de todas maneras es en su version vanilla. En el ejemplo de filtrado de productos lo he hecho por color ya que la categoria activa es zapatillas y desconozco los talles, incorporé el "todos" para devolver la busqueda original. He decidio incorporar como opcional el filtrado por precios de productos.
 
 ## Para ejecutar
 Desde la raiz ejecutar los siguientes comandos en orden:
