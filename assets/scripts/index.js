@@ -11,13 +11,52 @@ for (let i = 0; i < accordion.length; i++) {
   });
 }
 
+//PARA FILTRAR (EJEMPLO: COLOR)
+
+const colores = document.querySelectorAll("a[data-color-filter]");
+    colores.forEach(color => 
+    {
+        color.addEventListener("click", () => {
+            onlyShowCards("all","block");
+            switch(color.dataset.colorFilter)
+            {
+                case "amarillo":
+                    onlyShowCards("amarillo");
+                    break;
+                case "negro":
+                    onlyShowCards("negro");
+                    break;
+                case "verde":
+                    onlyShowCards("verde");
+                    break;
+                 case "azul":
+                    onlyShowCards("azul");
+                    break;
+                case "blanco":
+                    onlyShowCards("blanco");
+                    break;
+            }
+        })
+    });
+
+    function onlyShowCards(color,style = "none")
+    {
+        const cardColor = document.querySelectorAll(".card:not([data-color*='"+color+"'])");
+        console.log(cardColor);
+        cardColor.forEach(element => {
+            element.style.display = style;            
+        });
+    }
+
 //PARA LISTAR POR COLUMNAS VARIABLES
 const options = document.querySelectorAll("li[data-value]");
 const cards = document.querySelectorAll(".card");
 
     options.forEach(option => {
-        option.addEventListener("click",() => {
-            switch(option.dataset.value){
+        option.addEventListener("click",() => 
+        {
+            switch(option.dataset.value)
+            {
                 case "1":
                     changeColumnCards(cards,12)
                     break;
