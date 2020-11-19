@@ -81,5 +81,11 @@
 	.menu-content a {
 		color: #FAFAFA;
 		padding: 0;
+	}
+	.cantidad-productos-desktop{
+		display: none;
+	}
+	.cantidad-productos-mobile{
+		display: initial;
 	}	
 }

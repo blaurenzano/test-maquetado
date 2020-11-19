@@ -113,5 +113,22 @@ ul{
 .menu-container{
 	display: none;
 }
-
+.accordion{
+	cursor: pointer;
+	width: 100%;
+	text-align: left;
+	border: none;
+	outline: none;
+	transition: 0.4s;
+}
+.panel {
+	display: none;
+	overflow: hidden;
+}
+.cantidad-productos-desktop{
+	display: initial;
+}
+.cantidad-productos-mobile{
+	display: none;
+}
 

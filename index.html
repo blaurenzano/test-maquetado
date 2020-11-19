@@ -52,10 +52,10 @@
 				</div>				
 				<span class="bold">Filtrar</span>
 				<div class="filter-group">
-					<div class="filter-header">
-						<span>Categoria</span>
+					<div class="filter-header accordion">
+						Categoria
 					</div>
-					<ul>
+					<ul class="panel">
 						<li><a href="#">Zapatillas</a></li>
 						<li><a href="#">Zapatos</a></li>
 						<li><a href="#">Botas</a></li>
@@ -64,10 +64,10 @@
 					</ul>
 				</div>
 				<div class="filter-group">
-					<div class="filter-header">
-						<span>Talle</span>
+					<div class="filter-header accordion">
+						Talle
 					</div>
-					<ul>
+					<ul class="panel">
 						<li><a href="#">36</a></li>
 						<li><a href="#">38</a></li>
 						<li><a href="#">40</a></li>
@@ -76,10 +76,10 @@
 					</ul>
 				</div>
 				<div class="filter-group">
-					<div class="filter-header">
-						<span>Color</span>
+					<div class="filter-header accordion">
+						Color
 					</div>					
-					<ul>
+					<ul class="panel">
 						<li><a href="#">Amarillo</a></li>
 						<li><a href="#">Negro</a></li>
 						<li><a href="#">Verde</a></li>
@@ -90,6 +90,19 @@
 			</div>
 <!--------------------------------------COLUMNA PRODUCTOS--------------------------------------------------------------->
 			<div class="col-9">
+				<div class="row">
+					<label class="cantidad-productos-desktop" for="cantidad-productos-desktop">Columnas</label>
+					<select class="cantidad-productos-desktop" id="cantidad-productos-desktop">
+						<option value="2">2</option>
+						<option value="3">3</option>
+						<option value="4">4</option>
+					</select>
+					<label class="cantidad-productos-mobile" for="cantidad-productos-mobile">Columnas</label>
+					<select class="cantidad-productos-mobile" id="cantidad-productos-mobile">
+						<option value="1">1</option>
+						<option value="2">2</option>
+					</select>
+				</div>
 				<div class="row">
 					<div class="col-4 card">
 						<img class="product-img" src="assets/productos/zapatilla_1.jpg" alt="">
@@ -166,6 +179,7 @@
 			<a class="footer-element" href="#">Contacto</a>
 			<a class="footer-element" href="#">Términos y condiciones</a>
 			<a class="footer-element" href="#">Politicas de privacidad</a>
-		</div>		
+		</div>
+		<script src="assets/scripts/index.js"></script>		
 	</body>
 </html>
