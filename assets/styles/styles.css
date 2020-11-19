@@ -9,7 +9,7 @@ a:link, a:visited, a:active {
 	border-bottom: 1px solid #030B1C;
 	font-size: 24px;
 }
-.active-category + span{
+.active-category + span, .filter-group + span{
 	display: block;
 	font-size: 20px;
 	padding: 16px 0;
@@ -126,7 +126,7 @@ ul{
 	overflow: hidden;
 }
 .cantidad-productos-desktop{
-	display: initial;
+	display: block;
 }
 .cantidad-productos-mobile{
 	display: none;

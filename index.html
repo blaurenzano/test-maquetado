@@ -3,9 +3,9 @@
 	<head>
 		<meta charset="UTF-8">
 		<title>Ejercicio Maquetación</title>
+		<link rel="stylesheet" href="assets/styles/simple-grid.min.css">
 		<link rel="stylesheet" href="assets/styles/styles.css">
 		<link rel="stylesheet" href="assets/styles/styles-mobile.css">
-		<link rel="stylesheet" href="assets/styles/simple-grid.min.css">
 		<meta name="viewport" content="width=device-width, user-scalable=no">
 	</head>
 	<body>
@@ -87,85 +87,86 @@
 						<li><a href="#">Blanco</a></li>
 					</ul>
 				</div>
+				<span class="bold">Agrupar</span>
+				<div class="filter-group">
+					<div class="filter-header accordion">
+						Columnas
+					</div>
+					<ul class="panel">
+						<li data-value="2"><a href="#">Dos columnas</a></li>
+						<li class="cantidad-productos-desktop" data-value="3"><a href="#">Tres columnas</a></li>
+						<li class="cantidad-productos-desktop" data-value="4"><a href="#">Cuatro columnas</a></li>
+					</ul>
+				</div>
 			</div>
 <!--------------------------------------COLUMNA PRODUCTOS--------------------------------------------------------------->
 			<div class="col-9">
+					<div class="row filter-group cantidad-productos-mobile">
+						<div class="filter-header accordion">
+							Cantidad de columnas
+						</div>
+						<ul class="panel">
+							<li class="cantidad-productos-mobile" data-value="1"><a href="#">Una columna</a></li>
+							<li data-value="2"><a href="#">Dos columnas</a></li>
+						</ul>
+					</div>
 				<div class="row">
-					<label class="cantidad-productos-desktop" for="cantidad-productos-desktop">Columnas</label>
-					<select class="cantidad-productos-desktop" id="cantidad-productos-desktop">
-						<option value="2">2</option>
-						<option value="3">3</option>
-						<option value="4">4</option>
-					</select>
-					<label class="cantidad-productos-mobile" for="cantidad-productos-mobile">Columnas</label>
-					<select class="cantidad-productos-mobile" id="cantidad-productos-mobile">
-						<option value="1">1</option>
-						<option value="2">2</option>
-					</select>
-				</div>
-				<div class="row">
-					<div class="col-4 card">
+					<div class="col-6 card">
 						<img class="product-img" src="assets/productos/zapatilla_1.jpg" alt="">
 						<span class="product-name">Zapatilla 1-XFK</span>
 						<span class="product-price">$5000</span>
 					</div>
-					<div class="col-4 card">
+					<div class="col-6 card">
 						<img class="product-img" src="assets/productos/zapatilla_2.jpg" alt="">
 						<span class="product-name">Zapatilla 2000-X</span>
 						<span class="product-price">$9800</span>
 					</div>
-					<div class="col-4 card">
+					<div class="col-6 card">
 						<img class="product-img" src="assets/productos/zapatilla_3.jpg" alt="">
 						<span class="product-name">Zapatilla 3 Run</span>
 						<span class="product-price">$6500</span>
 					</div>
-				</div>
-				<div class="row">
-					<div class="col-4 card">
+					<div class="col-6 card">
 						<img class="product-img" src="assets/productos/zapatilla_3.jpg" alt="">
 						<span class="product-name">Zapatilla 3 Run</span>
 						<span class="product-price">$6500</span>
 					</div>
-					<div class="col-4 card">
+					<div class="col-6 card">
 						<img class="product-img" src="assets/productos/zapatilla_1.jpg" alt="">
 						<span class="product-name">Zapatilla 1-XFK</span>
 						<span class="product-price">$5000</span>
 					</div>
-					<div class="col-4 card">
+					<div class="col-6 card">
 						<img class="product-img" src="assets/productos/zapatilla_2.jpg" alt="">
 						<span class="product-name">Zapatilla 2000-X</span>
 						<span class="product-price">$9800</span>
 					</div>
-				</div>
-				<div class="row">
-					<div class="col-4 card">
+					<div class="col-6 card">
 						<img class="product-img" src="assets/productos/zapatilla_1.jpg" alt="">
 						<span class="product-name">Zapatilla 1-XFK</span>
 						<span class="product-price">$5000</span>
 					</div>
-					<div class="col-4 card">
+					<div class="col-6 card">
 						<img class="product-img" src="assets/productos/zapatilla_2.jpg" alt="">
 						<span class="product-name">Zapatilla 2000-X</span>
 						<span class="product-price">$9800</span>
 					</div>
-					<div class="col-4 card">
+					<div class="col-6 card">
 						<img class="product-img" src="assets/productos/zapatilla_3.jpg" alt="">
 						<span class="product-name">Zapatilla 3 Run</span>
 						<span class="product-price">$6500</span>
 					</div>
-				</div>
-				<div class="row">
-					<div class="col-4 card">
+					<div class="col-6 card">
 						<img class="product-img" src="assets/productos/zapatilla_2.jpg" alt="">
 						<span class="product-name">Zapatilla 2000-X</span>
 						<span class="product-price">$9800</span>
 					</div>
-					<div class="col-4 card">
+					<div class="col-6 card">
 						<img class="product-img" src="assets/productos/zapatilla_3.jpg" alt="">
 						<span class="product-name">Zapatilla 3 Run</span>
 						<span class="product-price">$6500</span>
 					</div>
-					<div class="col-4 card">
+					<div class="col-6 card">
 						<img class="product-img" src="assets/productos/zapatilla_1.jpg" alt="">
 						<span class="product-name">Zapatilla 1-XFK</span>
 						<span class="product-price">$5000</span>

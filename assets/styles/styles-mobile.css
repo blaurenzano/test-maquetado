@@ -86,6 +86,10 @@
 		display: none;
 	}
 	.cantidad-productos-mobile{
-		display: initial;
-	}	
+		display: block;
+	}
+	/* Cantidad de columnas variable */
+	.col-6{
+		width: 46%;
+	}
 }
