@@ -266,6 +266,9 @@ header {
   #logo__img {
     margin-right: 30vw;
   }
+  .grid-container {
+  margin: 30px 80px;
+  }
 }
 @media only screen and (max-width: 950px) {
   #logo__img {
@@ -280,6 +283,7 @@ header {
   .links-header {
     margin: 0 50px;
   }
+
 }
 
 @media only screen and (max-width: 760px) {
@@ -319,43 +323,7 @@ header {
       "p2"
       "p3"
   }
-  .selection-menu {
-    display: none;
-  }
-  .p1 {
-    grid-area: p1;
-  }
-  .p2 {
-    grid-area: p2;
-  }
-  .p3 {
-    grid-area: p3;
-  }
-  .p4 {
-    display: none;
-  }
-  .p5 {
-    display: none;
-  }
-  .p6 {
-    display: none;
-  }
-  .p7 {
-    display: none;
-  }
-  .p8 {
-    display: none;
-  }
-  .p9 {
-    display: none;
-  }
-  .p10 {
-    display: none;
-  }
-  .p11 {
-    display: none;
-  }
-  .p12 {
+  .selection-menu, .p4, .p5, .p6, .p7, .p8, .p9, .p10, .p11, .p12 {
     display: none;
   }
 
