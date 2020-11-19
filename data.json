@@ -1,0 +1,86 @@
+[
+    {
+        "imagen": "assets/productos/zapatilla_1.jpg",
+        "id": "110",
+        "nombre": "Zapatilla 1-XFK",
+        "precio": "$5000",
+        "categoria": "Zapatillas"
+    },
+    {
+        "imagen": "assets/productos/zapatilla_2.jpg",
+        "id": "111",
+        "nombre": "Zapatilla 2000-x",
+        "precio": "$9800",
+        "categoria": "Zapatillas"
+    },
+    {
+        "imagen": "assets/productos/zapatilla_3.jpg",
+        "id": "112",
+        "nombre": "Zapatilla 3 Run",
+        "precio": "$6500",
+        "categoria": "Zapatillas"
+    },
+    {
+        "imagen": "assets/productos/zapatilla_3.jpg",
+        "id": "112",
+        "nombre": "Zapatilla 3 Run",
+        "precio": "$6500",
+        "categoria": "Zapatillas"
+    },
+    {
+        "imagen": "assets/productos/zapatilla_1.jpg",
+        "id": "110",
+        "nombre": "Zapatilla 1-XFK",
+        "precio": "$5000",
+        "categoria": "Zapatillas"
+    },
+    {
+        "imagen": "assets/productos/zapatilla_2.jpg",
+        "id": "111",
+        "nombre": "Zapatilla 2000-x",
+        "precio": "$9800",
+        "categoria": "Zapatillas"
+    },
+    {
+        "imagen": "assets/productos/zapatilla_1.jpg",
+        "id": "110",
+        "nombre": "Zapatilla 1-XFK",
+        "precio": "$5000",
+        "categoria": "Zapatillas"
+    },
+    {
+        "imagen": "assets/productos/zapatilla_2.jpg",
+        "id": "111",
+        "nombre": "Zapatilla 2000-x",
+        "precio": "$9800",
+        "categoria": "Zapatillas"
+    },
+    {
+        "imagen": "assets/productos/zapatilla_3.jpg",
+        "id": "112",
+        "nombre": "Zapatilla 3 Run",
+        "precio": "$6500",
+        "categoria": "Zapatillas"
+    },
+    {
+        "imagen": "assets/productos/zapatilla_2.jpg",
+        "id": "111",
+        "nombre": "Zapatilla 2000-x",
+        "precio": "$9800",
+        "categoria": "Zapatillas"
+    },
+    {
+        "imagen": "assets/productos/zapatilla_3.jpg",
+        "id": "112",
+        "nombre": "Zapatilla 3 Run",
+        "precio": "$6500",
+        "categoria": "Zapatillas"
+    },
+    {
+        "imagen": "assets/productos/zapatilla_1.jpg",
+        "id": "110",
+        "nombre": "Zapatilla 1-XFK",
+        "precio": "$5000",
+        "categoria": "Zapatillas"
+    }
+]
