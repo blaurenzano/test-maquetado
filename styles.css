@@ -1,3 +1,374 @@
 body{
 	margin: 0;
+	padding: 0;
+	text-decoration: none;
+	list-style: none;
+	box-sizing: border-box;
+}
+/*Navbar*/
+header{
+    top: 0;
+    right: 0;
+    width: 100%;
+    box-sizing: border-box;
+}
+.-nav{
+	background-color: #100217E6;
+	width: 100%;
+	position: fixed;
+	height: 100px;
+}
+.-cajanav{
+	width: 100%;
+	height: 45px;
+	line-height: 45px;
+}
+.-cajaicono{
+	float: right;
+	margin-top: -2em;
+	margin-right: 1em;
+}
+.-logo{
+	width: 206px;
+	height: 29px;
+	text-align: center;
+	display: block;
+	margin: 2px auto;
+}
+.-icononav{
+	width: 23px;
+	margin-right: 10px;
+	margin-top: 10px;
+	cursor: pointer;
+}
+.-icononav-cart{
+	width: 23px;
+	margin-right: 5px;
+	margin-top: 10px;
+	cursor: pointer;
+}
+
+.-icononav-menu{
+	width: 23px;
+	margin-bottom: -0.5em;
+}
+.checkbtn{
+	display: none;
+	cursor: pointer;
+}
+#check{
+	display: none;
+}
+nav ul{
+	width: 97%;
+	text-align: center;
+}
+nav ul li{
+	display: inline-block;
+	margin-right: 3em;
+	margin-bottom: 5px;
+}
+nav ul li a{
+	color: white;
+	text-decoration: none;
+	font-size: 20px;
+	font-weight: bold;
+	font-family: 'Roboto', sans-serif;
+}
+nav ul li a:hover{
+	background-color: beige;
+	padding: 3px;
+	color: black;
+	border-radius: 10%;
+	transition: 1s;
+}
+/*Filas*/
+.-cajabtn{
+	margin-right: 2em;
+}
+.-btnunafila{
+	width: 3em;
+	display: none;
+	float: right;
+	margin-top: 100px;
+	margin-left: 1em;
+	background-color: white;
+	border: greenyellow solid 1px;
+	border-radius: 5px;
+	font-size: 20px;
+	cursor: pointer;
+	font-family: 'Roboto', sans-serif;
+}
+.-btnunafila:hover{
+	background-color: rgba(52, 178, 167, 0.8);
+}
+.-btndosfilas{
+	width: 3em;
+	float: right;
+	margin-top: 100px;
+	margin-left: 1em;
+	background-color: white;
+	border: greenyellow solid 1px;
+	border-radius: 5px;
+	font-size: 20px;
+	cursor: pointer;
+	font-family: 'Roboto', sans-serif;
+}
+.-btndosfilas:hover{
+	background-color: rgba(52, 178, 167, 0.8);
+}
+.-btntresfilas{
+	width: 3em;
+	float: right;
+	margin-top: 100px;
+	margin-left: 1em;
+	background-color: white;
+	border: greenyellow solid 1px;
+	border-radius: 5px;
+	font-size: 20px;
+	cursor: pointer;
+	font-family: 'Roboto', sans-serif;
+}
+.-btntresfilas:hover{
+	background-color: rgba(52, 178, 167, 0.8);
+}
+.-btncuatrofilas{
+	width: 3em;
+	float: right;
+	margin-top: 100px;
+	margin-left: 1em;
+	background-color: white;
+	border: greenyellow solid 1px;
+	border-radius: 5px;
+	font-size: 20px;
+	cursor: pointer;
+	font-family: 'Roboto', sans-serif;
+}
+.-btncuatrofilas:hover{
+	background-color: rgba(52, 178, 167, 0.8);
+}
+/*Filtros*/
+.-seccion{
+	display: flex;
+	justify-content: center;
+	width: 100%;
+	min-height: 100vh;
+}
+.-cajaseccion{
+	display: flex;
+	width: 80%;
+	margin-top: 20px;
+}
+.-cajafiltros{
+	width: 25%;
+}
+.-titulofiltrar{
+	font-family: 'Roboto', sans-serif;
+}
+.-filtros{
+	display: flex;
+	flex-direction: column;
+}
+.acordeon{
+	background-color: rgba(178, 210, 207, 0.88);
+	margin-bottom: 1em;
+	line-height: 30px;
+	transition: 0.5s;
+	cursor: pointer;
+}
+.-textofiltro{
+	color: black;
+	font-size: 17px;
+	font-weight: bold;
+	text-decoration: none;
+	margin-left: 1em;
+	font-family: 'Roboto', sans-serif;
+}
+.panel{
+	margin-top: -1em;
+	margin-left: 1em;
+	overflow: hidden;
+	display: none;
+}
+.-atributo{
+    text-decoration: none;
+    color: black;
+	margin-top: -1em;
+	font-family: 'Roboto', sans-serif;
+}
+.-textozapatillas{
+	font-size: 30px;
+	font-weight: bold;
+	border-bottom: solid 1px black;
+	line-height: 50px;
+	font-family:'Roboto', sans-serif;
+}
+/*Productos */
+.-cajaproductos{
+	width: 75%;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	margin-top: 4em;
+}
+.-productos{
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+.-cajatitulozapatillas{
+	display: none;
+}
+.-titulozapatillas{
+	display: none;
+}
+.-nuevoproducto{
+	width: 32%;
+}
+.-nuevoproducto-dosfilas{
+	width: 50%;
+}
+.-nuevoproducto-cuatrofilas{
+    width: 24%;
+}
+.-imgproducto{
+	width: 90%;
+	display: flex;
+	border-bottom: solid 1px black;
+	margin-left: 1em;
+}
+.-textoproducto{
+	margin-bottom: -15px;
+	margin-left: 1em;
+	font-family: 'Roboto', sans-serif;
+}
+.-precioproducto{
+	font-weight: bold;
+	font-family: 'Roboto', sans-serif;
+	margin-left: 1em;
+}
+/*Footer*/
+footer{
+	width: 100%;
+	background-color: #100217E6;
+	display: flex;
+	justify-content: center;
+	margin-top: 3em;
+}
+footer p{
+	display: flex;
+	margin-right: 3em;
+	font-family: 'Roboto', sans-serif;
+	color: white;
+}
+@media(max-width: 858px){
+	.checkbtn{
+		display: block;
+		margin-left: 10px;
+	}
+	.-icononav{
+		display: none;
+	}
+	.-nav{
+		height: 45px;
+	}
+	.-logo{
+		width: 139px;
+		height: 29px;
+		margin-top: -2.5em;
+	}
+	nav ul{
+		position: fixed;
+		width: 100%;
+		height: 100vh;
+		background-color: #100217E6;
+		margin-top: -1px;
+		left: -115%;
+		transition: all .5s;
+	}
+	nav ul li{
+		display: block;
+		margin-top: 2em;
+	}
+	nav ul.active{
+		left: 0;
+	}
+	.-icono-nav-cart{
+		margin-right: 1em;
+		margin-top: -5px;
+	}
+	/*Filas*/
+	.-btnunafila{
+		display: inline;
+		margin-top: 50px;
+	}
+	.-btndosfilas{
+		margin-top: 50px;
+	}
+	.-btntresfilas{
+		display: none;
+	}
+	.-btncuatrofilas{
+		display: none;
+	}
+	/*Seccion*/
+	.-cajaseccion{
+		width: 100%;
+	}
+	/*Filtros*/
+	.-cajafiltros{
+		display: none;
+	}
+	/*Productos*/
+	.-cajaproductos{
+		width: 100%;
+		margin-top: 0;
+	}
+	.-cajatitulozapatillas{
+		display: block;
+		width: 100%;
+		border-bottom: solid 1px black;
+		height: 55px;
+		top: -3em;
+	}
+	.-titulozapatillas{
+		display: block;
+		font-family: 'Roboto', sans-serif;
+		font-weight: bold;
+		font-size: 24px;
+		margin-left: 14px;
+	}
+	.-nuevoproducto{
+		width: 100%;
+	}
+	.-imgproducto{
+		margin-left: 0;
+		width: 100%;
+	}
+	.-textoproducto{
+		font-size: 20px;
+		margin-left: 0.5em;
+	}
+	.-precioproducto{
+		font-size: 20px;
+		margin-left: 0.5em;
+	}
+	/*Filas*/
+	.-nuevoproducto-cuatrofilas{
+		width: 100%;
+	}
+	/*Footer*/
+	footer{
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		margin-top: 3em;
+	}
+	footer p{
+		display: flex;
+		margin-bottom: 1em;
+		margin-left: 3em;
+		font-family: 'Roboto', sans-serif;
+	}
 }

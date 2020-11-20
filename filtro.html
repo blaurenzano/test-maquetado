@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title>Test de maquetado</title>
+	<meta name="viewport" content="width=device-width">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+	<header>
+		<nav class="-nav">
+			<div class="-cajanav">
+				<input type="checkbox" id="check">
+				<label for="check" class = "checkbtn">
+					<img src="assets/iconos/bars-solid.svg" class="-icononav-menu" alt="">
+				</label>
+				<img src="assets/logo.svg" class="-logo" alt="">
+				<div class="-cajaicono">
+					<img src="assets/iconos/search-solid.svg" class="-icononav" alt="">
+					<img src="assets/iconos/user-solid.svg" class="-icononav" alt="">
+					<img src="assets/iconos/shopping-cart-solid.svg" class="-icononav-cart" alt="">
+				</div>	
+			</div>
+			<ul>
+				<li><a href="#">SALE</a></li>
+				<li><a href="#">E-SHOP</a></li>
+				<li><a href="#">LOOKBOOK</a></li>
+				<li><a href="#">CAMPAÑA</a></li>
+				<li><a href="#">LOCALES</a></li>
+			</ul>
+		</nav>
+		<div class="-cajabtn">
+			<button id="unafila" class="-btnunafila">1 Fila</button>
+			<button id="dosfilas" class="-btndosfilas">2 Filas</button>
+			<button id="tresfilas" class="-btntresfilas">3 Filas</button>
+			<button id="cuatrofilas" class="-btncuatrofilas">4 Filas</button>
+		</div>
+	</header>
+	<section class="-seccion">
+		<div class="-cajaseccion">
+			<aside class="-cajafiltros">
+				<p class="-textozapatillas">Zapatillas</p>
+				<h2 class="-titulofiltrar">Filtrar</h2>
+				<div class="-filtros">
+					<div class="acordeon">
+						<a href="#" class="-textofiltro">Categoría</a>
+					</div>
+					<div class="panel">
+						<p><a href="filtro.html" class="-atributo">Zapatillas</a></p>
+						<p><a href="filtro.html" class="-atributo">Zapatos</a></p>
+						<p><a href="filtro.html" class="-atributo">Botas</a></p>
+						<p><a href="filtro.html" class="-atributo">Sandalias</a></p>
+						<p><a href="filtro.html" class="-atributo">Pantuflas</a></p>
+					</div>
+					<div class="acordeon">
+						<a href="#" class="-textofiltro">Talle</a>
+					</div>
+					<div class="panel">
+						<p><a href="filtro.html" class="-atributo">36</a></p>
+						<p><a href="filtro.html" class="-atributo">38</a></p>
+						<p><a href="filtro.html" class="-atributo">40</a></p>
+						<p><a href="filtro.html" class="-atributo">42</a></p>
+						<p><a href="filtro.html" class="-atributo">44</a></p>
+					</div>
+					<div class="acordeon">
+						<a href="#" class="-textofiltro">Color</a>
+					</div>
+					<div class="panel">
+						<p><a href="filtro.html" class="-atributo">Amarillo</a></p>
+						<p><a href="filtro.html" class="-atributo">Negro</a></p>
+						<p><a href="filtro.html" class="-atributo">Verde</a></p>
+						<p><a href="filtro.html" class="-atributo">Azul</a></p>
+						<p><a href="filtro.html" class="-atributo">blanco</a></p>
+					</div>
+				</div>
+			</aside>
+			<section class="-cajaproductos">
+				<header class="-cajatitulozapatillas">
+					<p class="-titulozapatillas">Zapatillas</p>
+				</header>
+				<div class="-productos">
+					<article class="-nuevoproducto">
+						<img src="assets/productos/zapatilla_2.jpg" class="-imgproducto" alt="">
+						<p class="-textoproducto">Zapatilla 2000-X</p>
+						<p class="-precioproducto">$9800</p>
+					</article>
+					<article class="-nuevoproducto">
+						<img src="assets/productos/zapatilla_3.jpg" class="-imgproducto" alt="">
+						<p class="-textoproducto">Zapatilla 3 Run</p>
+						<p class="-precioproducto">$6500</p>
+					</article>
+					<article class="-nuevoproducto">
+						<img src="assets/productos/zapatilla_1.jpg" class="-imgproducto" alt="">
+						<p class="-textoproducto">Zapatilla 1-XFK</p>
+						<p class="-precioproducto">$5000</p>
+					</article>
+				</div>
+			</section>
+		</div>
+	</section>
+	<footer>
+		<p>Ayuda</p>
+		<p>Contacto</p>
+		<p>Términos y condiciones</p>
+		<p>Politicas de privacidad</p>
+	</footer>
+	<script src="js/filtros.js"></script>
+	<script type="text/javascript">
+	$(document).ready(function(){
+		$('.checkbtn').click(function(){
+			$('nav ul').toggleClass('active')
+		})
+	})
+	</script>
+	<script src="js/filas.js"></script>
+</body>
+</html>

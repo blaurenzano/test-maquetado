@@ -1,0 +1,74 @@
+[
+  {
+    "categoria": "Zapatilla",
+    "modelo":    "1-XFK",
+    "precio":    5000,
+    "imagen":   "zapatilla_1.jpg"
+  },
+  {
+    "categoria": "Zapatilla",
+    "modelo":  "2000-X",
+    "precio":   9800,
+    "imagen":   "zapatilla_2.jpg"
+  },
+  {
+    "categoria": "Zapatilla",
+    "modelo":  "3 Run",
+    "precio":   6500,
+    "imagen":   "zapatilla_3.jpg"
+  },  
+  {
+    "categoria": "Zapatilla",
+    "modelo":  "3 Run",
+    "precio":   6500,
+    "imagen":   "zapatilla_3.jpg"
+  },
+  {
+    "categoria": "Zapatilla",
+    "modelo":    "1-XFK",
+    "precio":    5000,
+    "imagen":   "zapatilla_1.jpg"
+  },
+  {
+    "categoria": "Zapatilla",
+    "modelo":  "2000-X",
+    "precio":   9800,
+    "imagen":   "zapatilla_2.jpg"
+  },
+  {
+    "categoria": "Zapatilla",
+    "modelo":    "1-XFK",
+    "precio":    5000,
+    "imagen":   "zapatilla_1.jpg"
+  },
+  {
+    "categoria": "Zapatilla",
+    "modelo":  "2000-X",
+    "precio":   9800,
+    "imagen":   "zapatilla_2.jpg"
+  },
+  {
+    "categoria": "Zapatilla",
+    "modelo":  "3 Run",
+    "precio":   6500,
+    "imagen":   "zapatilla_3.jpg"
+  },
+  {
+    "categoria": "Zapatilla",
+    "modelo":  "2000-X",
+    "precio":   9800,
+    "imagen":   "zapatilla_2.jpg"
+  },
+    {
+    "categoria": "Zapatilla",
+    "modelo":  "3 Run",
+    "precio":   6500,
+    "imagen":   "zapatilla_3.jpg"
+  },
+  {
+    "categoria": "Zapatilla",
+    "modelo":    "1-XFK",
+    "precio":    5000,
+    "imagen":   "zapatilla_1.jpg"
+  }
+]
