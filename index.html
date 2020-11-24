@@ -6,192 +6,212 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Test de maquetado</title>
 	<link rel="preconnect" href="https://fonts.gstatic.com">
-	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
-	<header>
-		<div>
-			<img class="icono-bars" src="./assets/iconos/bars-solid.svg" alt="bars">
-		</div>
-		<div>
-			<h1>La Preuve</h1>
-		</div>
-		<div class="container-iconos">
-			<span class="container-icono">
-				<img class="icono" src="./assets/iconos/search-solid.svg" alt="search">
-			</span>
-			<span class="container-icono">
-				<img class="icono" src="./assets/iconos/user-solid.svg" alt="user">
-			</span>
-			<span class="container-icono">
-				<img src="./assets/iconos/shopping-cart-solid.svg" alt="cart">
-			</span>
-		</div>
-	</header>
-	<nav class="menu">
-		<div class="menu--item">
-			<a href="">SALE</a>
-		</div>
-		<div class="menu--item">
-			<a href="">E-SHOP</a>
-		</div>
-		<div class="menu--item">
-			<a href="">LOOKBOOK</a>
-		</div>
-		<div class="menu--item">
-			<a href="">CAMPAÑA</a>
-		</div>
-		<div class="menu--item">
-			<a href="">LOCALES</a>
-		</div>
-	</nav>
+	<!-- HEADER-NAVBAR-->
+	<div class="container-header-nav">
+		<header>
+			<div class="container-icono-bars">
+				<img class="icono-bars" src="./assets/iconos/bars-solid.svg" alt="bars">
+			</div>
+			<div>
+				<h1>La Preuve</h1>
+			</div>
+			<div class="container-iconos">
+				<span class="container-icono">
+					<img class="icono" src="./assets/iconos/search-solid.svg" alt="search">
+				</span>
+				<span class="container-icono">
+					<img class="icono" src="./assets/iconos/user-solid.svg" alt="user">
+				</span>
+				<span class="container-icono">
+					<img src="./assets/iconos/shopping-cart-solid.svg" alt="cart">
+				</span>
+			</div>
+		</header>
+
+		<nav class="menu">
+			<div class="menu--item">
+				<a href="">SALE</a>
+			</div>
+			<div class="menu--item">
+				<a href="">E-SHOP</a>
+			</div>
+			<div class="menu--item">
+				<a href="">LOOKBOOK</a>
+			</div>
+			<div class="menu--item">
+				<a href="">CAMPAÑA</a>
+			</div>
+			<div class="menu--item">
+				<a href="">LOCALES</a>
+			</div>
+		</nav>
+	</div>
+
+	<!-- ASIDE ARTICULE -->
 	<div class="container-aside-articule">
 		<aside>
-			<h2>Zapatillas</h2>
+			<div class="container-titulo">
+				<h2>Zapatillas</h2>
+			</div>
 			<div class="container-filtrar">
 				<h3>Filtrar</h3>
-				<div>
-					<h5>Categoría</h5>
-					<p>Zapatillas</p>
-					<p>Zapatos</p>
-					<p>Botas</p>
-					<p>Sandalias</p>
-					<p>Pantuflas</p>
+				<div class="container-categorias">
+					<div class="container-categoria categoria">
+						<h4>Categoría</h4>
+					</div>
+					<div class="container-categoria">
+						<p>Zapatillas</p>
+						<p>Zapatos</p>
+						<p>Botas</p>
+						<p>Sandalias</p>
+						<p>Pantuflas</p>
+					</div>
 				</div>
-				<div>
-					<h5>Talle</h5>
-					<p>36</p>
-					<p>38</p>
-					<p>40</p>
-					<p>42</p>
-					<p>44</p>
+				<div class="container-categorias">
+					<div class="container-categoria categoria">
+						<h4>Talle</h4>
+					</div>
+					<div class="container-categoria">
+						<p>36</p>
+						<p>38</p>
+						<p>40</p>
+						<p>42</p>
+						<p>44</p>
+					</div>
 				</div>
-				<div>
-					<h5>Color</h5>
-					<p>Amarillo</p>
-					<p>Negro</p>
-					<p>Verde</p>
-					<p>Azul</p>
-					<p>Blanco</p>
+				<div class="container-categorias">
+					<div class="container-categoria categoria">
+						<h4>Color</h4>
+					</div>
+					<div class="container-categoria">
+						<p>Amarillo</p>
+						<p>Negro</p>
+						<p>Verde</p>
+						<p>Azul</p>
+						<p>Blanco</p>
+					</div>
 				</div>
 			</div>
 		</aside>
 		<article>
 			<section>
-				<div>
+				<div class="container-img">
 					<img class="img-zapatilla" src="./assets/productos/zapatilla_1.jpg" alt="zapatilla modelo1">
 				</div>
 				<div class="container-textos">
 					<h4>Zapatilla 1-XFK</h4>
-					<p>$5000</p>
+					<span class="texto-precio">$5000</span>
 				</div>
 			</section>
 			<section>
-				<div>
+				<div class="container-img">
 					<img class="img-zapatilla" src="./assets/productos/zapatilla_2.jpg" alt="zapatilla modelo2">
 				</div>
 				<div class="container-textos">
 					<h4>Zapatilla 2000-X</h4>
-					<p>$98000</p>
+					<span class="texto-precio">$98000</span>
 				</div>
 			</section>
 			<section>
-				<div>
+				<div class="container-img">
 					<img class="img-zapatilla" src="./assets/productos/zapatilla_3.jpg" alt="zapatilla modelo3">
 				</div>
 				<div class="container-textos">
 					<h4>Zapatilla 3 Run</h4>
-					<p>$65000</p>
+					<span class="texto-precio">$65000</span>
 				</div>
 			</section>
 			<section>
-				<div>
+				<div class="container-img">
 					<img class="img-zapatilla" src="./assets/productos/zapatilla_3.jpg" alt="zapatilla modelo3">
 				</div>
 				<div class="container-textos">
 					<h4>Zapatilla 3 Run</h4>
-					<p>$65000</p>
+					<span class="texto-precio">$65000</span>
 				</div>
 			</section>
 			<section>
-				<div>
+				<div class="container-img">
 					<img class="img-zapatilla" src="./assets/productos/zapatilla_1.jpg" alt="zapatilla modelo1">
 				</div>
 				<div class="container-textos">
 					<h4>Zapatilla 1-XFK</h4>
-					<p>$5000</p>
+					<span class="texto-precio">$5000</span>
 				</div>
 			</section>
 			<section>
-				<div>
+				<div class="container-img">
 					<img class="img-zapatilla" src="./assets/productos/zapatilla_2.jpg" alt="zapatilla modelo2">
 				</div>
 				<div class="container-textos">
 					<h4>Zapatilla 2000-X</h4>
-					<p>$98000</p>
+					<span class="texto-precio">$98000</span>
 				</div>
 			</section>
 			<section>
-				<div>
+				<div class="container-img">
 					<img class="img-zapatilla" src="./assets/productos/zapatilla_1.jpg" alt="zapatilla modelo1">
 				</div>
 				<div class="container-textos">
 					<h4>Zapatilla 1-XFK</h4>
-					<p>$5000</p>
+					<span class="texto-precio">$5000</span>
 				</div>
 			</section>
 			<section>
-				<div>
+				<div class="container-img">
 					<img class="img-zapatilla" src="./assets/productos/zapatilla_2.jpg" alt="zapatilla modelo2">
 				</div>
 				<div class="container-textos">
 					<h4>Zapatilla 2000-X</h4>
-					<p>$98000</p>
+					<span class="texto-precio">$98000</span>
 				</div>
 			</section>
 			<section>
-				<div>
+				<div class="container-img">
 					<img class="img-zapatilla" src="./assets/productos/zapatilla_3.jpg" alt="zapatilla modelo3">
 				</div>
 				<div class="container-textos">
 					<h4>Zapatilla 3 Run</h4>
-					<p>$5000</p>
+					<span class="texto-precio">$5000</span>
 				</div>
 			</section>
 			<section>
-				<div>
+				<div class="container-img">
 					<img class="img-zapatilla" src="./assets/productos/zapatilla_2.jpg" alt="zapatilla modelo2">
 				</div>
 				<div class="container-textos">
 					<h4>Zapatilla 2000-X</h4>
-					<p>$5000</p>
+					<span class="texto-precio">$5000</span>
 				</div>
 			</section>
 			<section>
-				<div>
+				<div class="container-img">
 					<img class="img-zapatilla" src="./assets/productos/zapatilla_3.jpg" alt="zapatilla modelo3">
 				</div>
 				<div class="container-textos">
 					<h4>Zapatilla 3 Run</h4>
-					<p>$65000</p>
+					<span class="texto-precio">$65000</span>
 				</div>
 			</section>
 			<section>
-				<div>
+				<div class="container-img">
 					<img class="img-zapatilla" src="./assets/productos/zapatilla_1.jpg" alt="zapatilla modelo1">
 				</div>
 				<div class="container-textos">
 					<h4>Zapatilla 1-XFK</h4>
-					<p>$5000</p>
+					<span class="texto-precio">$5000</span>
 				</div>
 			</section>
 
 		</article>
 	</div>
 
-
+	<!-- ASIDE FOOTER -->
 	<footer>
 		<div class="container-texto-footer">
 			<span>Ayuda</span>
@@ -206,7 +226,7 @@
 			<span>Políticas de privacidad</span>
 		</div>
 	</footer>
-
+	<script src="index.js"></script>
 </body>
 
 </html>
