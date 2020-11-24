@@ -58,6 +58,9 @@ a {
   .container-iconos {
     display: flex;
   }
+  .icono-bars {
+    display: none;
+  }
 }
 
 @include phone {
