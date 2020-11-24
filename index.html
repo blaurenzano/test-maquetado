@@ -3,9 +3,206 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Test de maquetado</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <header class="fixed-top">
+    	<div style="position:relative">
+	    	<div><h1 class="text-center"><img heigh="200" width="200" src="assets/logo.svg"></h1></div>
+	    	<div>
+		    	<nav class="navbar navbar-expand-lg navbar-light bg-m">
+				  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation" style="z-index:3">
+				    <span class="navbar-toggler-icon"></span>
+				  </button>
+				  <div class="collapse navbar-collapse" id="navbarNavDropdown">
+				    <ul class="navbar-nav mx-auto">
+				      	<li class="nav-item active"><a class="nav-link" href="#">sale</a></li>
+			            <li class="nav-item"><a class="nav-link" href="#">e-shop</a></li>
+			            <li class="nav-item"><a class="nav-link" href="#">lookbook</a></li>
+			            <li class="nav-item"><a class="nav-link" href="#">campaña</a></li>
+						<li class="nav-item"><a class="nav-link" href="#">locales</a></li>
+					</ul>
+				  </div>
+				</nav>
+			</div>
 
-</body>
+			<div class="text-center" style="position:absolute;top:15px; width: 100%">
+				<h1 class="movil"><img heigh="130" width="130" src="assets/logo.svg"></h1>
+			</div>
+
+			<div style="position:absolute;top:18px; right: 10px;">
+				<ul>
+					<li class="left" class="d-none d-sm-block">
+						<a href="#">
+							<svg aria-hidden="true" height="20" width="20" focusable="false" data-prefix="fas" data-icon="search" class="svg-inline--fa fa-search fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z"></path></svg>
+						</a>
+						
+					</li>
+					<li class="left noenmovil">
+						<a href="#">
+							<svg aria-hidden="true" height="20" width="20"  focusable="false" data-prefix="fas" data-icon="user" class="svg-inline--fa fa-user fa-w-14" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M224 256c70.7 0 128-57.3 128-128S294.7 0 224 0 96 57.3 96 128s57.3 128 128 128zm89.6 32h-16.7c-22.2 10.2-46.9 16-72.9 16s-50.6-5.8-72.9-16h-16.7C60.2 288 0 348.2 0 422.4V464c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48v-41.6c0-74.2-60.2-134.4-134.4-134.4z"></path></svg>
+						</a>
+					</li>
+					<li class="left noenmovil">
+						<a href="#">
+							<svg aria-hidden="true" height="20" width="20" focusable="false" data-prefix="fas" data-icon="shopping-cart" class="svg-inline--fa fa-shopping-cart fa-w-18" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path fill="currentColor" d="M528.12 301.319l47.273-208C578.806 78.301 567.391 64 551.99 64H159.208l-9.166-44.81C147.758 8.021 137.93 0 126.529 0H24C10.745 0 0 10.745 0 24v16c0 13.255 10.745 24 24 24h69.883l70.248 343.435C147.325 417.1 136 435.222 136 456c0 30.928 25.072 56 56 56s56-25.072 56-56c0-15.674-6.447-29.835-16.824-40h209.647C430.447 426.165 424 440.326 424 456c0 30.928 25.072 56 56 56s56-25.072 56-56c0-22.172-12.888-41.332-31.579-50.405l5.517-24.276c3.413-15.018-8.002-29.319-23.403-29.319H218.117l-6.545-32h293.145c11.206 0 20.92-7.754 23.403-18.681z"></path></svg>
+						</a>
+					</li>
+				</ul>
+			</div>
+
+			
+		</div>
+    </header>
+    <section>
+    	<div class="container">
+	    	<div class="row">
+	    		<aside class="col-md-3">
+	    			<h2>Zapatillas</h2>
+	    			
+	    			<div class="d-none d-sm-block">
+	    				<h3>Filtrar</h3>
+		    			<div>
+		    				<h4>Categoría</h4>
+			    			<ul>
+			    				<li><a href="#">Zapatillas</a></li>
+			    				<li><a href="#">Zapatos</a></li>
+			    				<li><a href="#">Botas</a></li>
+			    				<li><a href="#">Sandalias</a></li>
+			    				<li><a href="#">Pantuflas</a></li>
+			    			</ul>
+		    			</div>
+
+		    			<div>
+		    				<h4>Talle</h4>
+			    			<ul>
+			    				<li><a href="#">36</a></li>
+			    				<li><a href="#">38</a></li>
+			    				<li><a href="#">40</a></li>
+			    				<li><a href="#">42</a></li>
+			    				<li><a href="#">44</a></li>
+			    			</ul>
+		    			</div>
+
+		    			<div>
+		    				<h4>Color</h4>
+			    			<ul>
+			    				<li><a href="#">Amarillo</a></li>
+			    				<li><a href="#">Negro</a></li>
+			    				<li><a href="#">Verde</a></li>
+			    				<li><a href="#">Azul</a></li>
+			    				<li><a href="#">Blanco</a></li>
+			    			</ul>
+		    			</div>
+		    		</div>
+	    			
+	    		</aside>
+
+	    		<article class="col-md-9">
+	    			<div class="row">
+	    				<div class="col-md-4">
+	    					<div class="articulos">
+	    						<img src="assets/productos/zapatilla_1.jpg" class="img-fluid">
+	    					</div>
+	    					<h3>Zapatilla 1-XFK</h3>
+	    					<p>$5000</p>
+	    				</div>
+
+	    				<div class="col-md-4">
+	    					<div class="articulos">
+	    						<img src="assets/productos/zapatilla_2.jpg" class="img-fluid">
+	    					</div>
+	    					<h3>Zapatilla 2000X</h3>
+	    					<p>$9800</p>
+	    				</div>
+
+	    				<div class="col-md-4">
+	    					<div class="articulos">
+	    						<img src="assets/productos/zapatilla_3.jpg" class="img-fluid">
+	    					</div>
+	    					<h3>Zapatilla 3 Run</h3>
+	    					<p>$6500</p>
+	    				</div>
+
+	    				<div class="col-md-4">
+	    					<div class="articulos">
+	    						<img src="assets/productos/zapatilla_3.jpg" class="img-fluid">
+	    					</div>
+	    					<h3>Zapatilla 3 Run</h3>
+	    					<p>$6500</p>
+	    				</div>
+
+	    				<div class="col-md-4">
+	    					<div class="articulos">
+	    						<img src="assets/productos/zapatilla_1.jpg" class="img-fluid">
+	    					</div>
+	    					<h3>Zapatilla 1-XFK</h3>
+	    					<p>$5000</p>
+	    				</div>
+
+	    				<div class="col-md-4">
+	    					<div class="articulos">
+	    						<img src="assets/productos/zapatilla_2.jpg" class="img-fluid">
+	    					</div>
+	    					<h3>Zapatilla 2000X</h3>
+	    					<p>$9800</p>
+	    				</div>
+
+	    				<div class="col-md-4">
+	    					<div class="articulos">
+	    						<img src="assets/productos/zapatilla_1.jpg" class="img-fluid">
+	    					</div>
+	    					<h3>Zapatilla 1-XFK</h3>
+	    					<p>$5000</p>
+	    				</div>
+
+	    				<div class="col-md-4">
+	    					<div class="articulos">
+	    						<img src="assets/productos/zapatilla_2.jpg" class="img-fluid">
+	    					</div>
+	    					<h3>Zapatilla 2000X</h3>
+	    					<p>$9800</p>
+	    				</div>
+
+	    				<div class="col-md-4">
+	    					<div class="articulos">
+	    						<img src="assets/productos/zapatilla_3.jpg" class="img-fluid">
+	    					</div>
+	    					<h3>Zapatilla 3 Run</h3>
+	    					<p>$6500</p>
+	    				</div>
+	    			</div>
+	    		</article>
+	    	</div>
+    	</div>
+    </section>
+
+    <footer>
+    	<div class="container">
+    		<ul class="nav justify-content-center">
+			  <li class="nav-item">
+			    <a class="nav-link" href="#">Ayuda</a>
+			  </li>
+			  <li class="nav-item">
+			    <a class="nav-link" href="#">Contacto</a>
+			  </li>
+			  <li class="nav-item">
+			    <a class="nav-link" href="#">Términos y condiciones</a>
+			  </li>
+			  <li class="nav-item">
+			    <a class="nav-link" href="#">Políticas de Privacidad</a>
+			  </li>
+			</ul>
+    	</div>
+    </footer>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+  </body>
 </html>
