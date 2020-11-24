@@ -1,0 +1,32 @@
+.container-filtrar {
+  display: none;
+}
+aside {
+  font-family: $roboto;
+}
+h2,
+p {
+  margin: 4px 0;
+}
+h4 {
+  font-weight: bold;
+}
+@include desktop {
+  .container-filtrar {
+    display: block;
+  }
+  aside {
+    width: 333px;
+    margin-right: 16px;
+  }
+  .container-titulo {
+    border-bottom: 1px solid black;
+    width: 260px;
+  }
+  .container-categoria {
+    padding: 5px 0px 2.5px 16px;
+  }
+  .categoria {
+    background-color: $gris-oscuro;
+  }
+}

@@ -1,0 +1,10 @@
+@mixin desktop {
+  @media (min-width: 1025px) {
+    @content;
+  }
+}
+@mixin phone {
+  @media (max-width: 767px) {
+    @content;
+  }
+}
