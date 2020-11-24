@@ -2,7 +2,7 @@ header,
 nav {
   background-color: $fondo_header;
   height: 50px;
-  color: $texto_header;
+  color: $gris_oscuro;
 }
 
 h1 {
@@ -30,7 +30,7 @@ nav {
 
 a {
   text-decoration: none;
-  color: $texto_header;
+  color: $gris_oscuro;
   font-size: 20px;
   font-weight: 100;
 }
@@ -50,7 +50,6 @@ a {
   nav {
     display: block;
   }
-
   .menu {
     display: flex;
     justify-content: center;
@@ -59,7 +58,7 @@ a {
   .container-iconos {
     display: flex;
   }
-  .icono-bars {
+  .burger {
     display: none;
   }
 }
@@ -67,5 +66,9 @@ a {
 @include phone {
   h1 {
     font-size: 24px;
+  }
+  header {
+    position: fixed;
+    width: 100%;
   }
 }
