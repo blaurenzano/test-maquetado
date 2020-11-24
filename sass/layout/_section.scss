@@ -2,28 +2,61 @@ article {
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding-bottom: 66.5px;
 }
 h4,
 p {
   color: $color-texto;
 }
-h2 {
-  border-bottom: 1px solid;
+
+section {
+  width: 331px;
+  height: 295px;
 }
 .img-zapatilla {
+  width: 331px;
+}
+.container-img {
+  width: 331px;
   height: 232px;
+  border-bottom: 1px solid #030b1c;
+}
+h4 {
+  font-weight: 400;
+  padding-bottom: 5px;
+}
+.texto-precio {
+  margin: 8px 0;
+  font-weight: 600;
 }
 .container-textos {
-  border-top: 1px solid $color-texto;
+  padding: 10px 0;
+}
+.container-titulo {
+  margin: 15px 0 28.5px 14px;
 }
 
 @include desktop {
   article {
     flex-direction: row;
     flex-wrap: wrap;
+    padding-bottom: 0;
   }
   section {
     width: 260px;
-    margin: 0 10px;
+    height: 232px;
+    margin: 0 8px 16px 0;
+  }
+
+  .container-img {
+    width: 260px;
+    height: 182px;
+    border-bottom: 1px solid #030b1c;
+  }
+  .img-zapatilla {
+    width: 260px;
+  }
+  .container-textos {
+    padding: 7.5px 0;
   }
 }
