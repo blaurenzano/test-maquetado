@@ -11,7 +11,11 @@ h4,
 ul,
 li {
   margin: 0;
+  padding: 0;
   font-family: $roboto;
+}
+h1 {
+  font-size: 24px;
 }
 
 .container-aside-articule {
@@ -21,8 +25,12 @@ li {
 
 @include desktop {
   .container-aside-articule {
-    background-color: $gris_claro;
-    padding: 0 139px;
+    background-color: $gris-claro;
+    padding: 136px 139px 157px;
     flex-direction: row;
+  }
+  .container-header-nav {
+    position: fixed;
+    width: 100%;
   }
 }
