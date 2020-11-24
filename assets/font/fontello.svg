@@ -1,0 +1,18 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns="http://www.w3.org/2000/svg">
+<metadata>Copyright (C) 2020 by original authors @ fontello.com</metadata>
+<defs>
+<font id="fontello" horiz-adv-x="1000" >
+<font-face font-family="fontello" font-weight="400" font-stretch="normal" units-per-em="1000" ascent="850" descent="-150" />
+<missing-glyph horiz-adv-x="1000" />
+<glyph glyph-name="user-solid" unicode="&#xe800;" d="M438 350c138 0 250 112 250 250s-112 250-250 250-250-112-250-250 111-250 250-250z m175-62h-33c-43-20-92-32-142-32s-99 12-143 32h-32c-145 0-263-118-263-263v-81c0-52 42-94 94-94h687c52 0 94 42 94 94v81c0 145-118 263-262 263z" horiz-adv-x="875" />
+
+<glyph glyph-name="shopping-cart-solid" unicode="&#xe801;" d="M1032 262l92 406c7 29-16 57-46 57h-767l-18 88c-4 21-24 37-46 37h-200c-26 0-47-21-47-47v-31c0-26 21-47 47-47h136l138-671c-33-19-55-54-55-95 0-60 49-109 109-109s109 49 109 109c0 31-12 59-32 79h409c-20-20-33-48-33-79 0-60 49-109 110-109s109 49 109 109c0 44-25 81-62 99l11 47c7 30-16 58-46 58h-524l-13 62h573c22 0 41 15 46 37z" horiz-adv-x="1125" />
+
+<glyph glyph-name="search-solid" unicode="&#xe802;" d="M986-15l-194 195c-9 9-21 14-34 14h-31c54 69 86 155 86 250 0 224-182 406-407 406s-406-182-406-406 182-406 406-406c95 0 181 32 250 85v-31c0-13 5-25 14-34l195-194c18-19 48-19 66 0l55 55c19 18 19 48 0 66z m-580 209c-138 0-250 112-250 250 0 138 112 250 250 250 138 0 250-112 250-250 0-138-111-250-250-250z" horiz-adv-x="1000" />
+
+<glyph glyph-name="bars-solid" unicode="&#xe803;" d="M31 592h813c17 0 31 14 31 31v79c0 17-14 31-31 31h-813c-17 0-31-14-31-31v-79c0-17 14-31 31-31z m0-312h813c17 0 31 14 31 31v78c0 17-14 31-31 31h-813c-17 0-31-14-31-31v-78c0-17 14-31 31-31z m0-313h813c17 0 31 14 31 31v79c0 17-14 31-31 31h-813c-17 0-31-14-31-31v-79c0-17 14-31 31-31z" horiz-adv-x="875" />
+</font>
+</defs>
+</svg>

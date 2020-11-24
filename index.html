@@ -1,11 +1,182 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-	<meta charset="UTF-8">
-	<title>Test de maquetado</title>
-	<link rel="stylesheet" href="styles.css">
-</head>
-<body>
 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>Test de maquetado</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- NAV HEADER -->
+    <header>
+        <div class="container-fluid">
+            <div class="row navbar navbar-expand-lg">
+                <div class="col-2 d-md-none">
+                    <i class="icon-burguer"></i>
+                </div>
+                <div class="col-8 offset-md-2">
+                    <h1 class="text-center">
+                        <img src="assets/img/logo.png" alt="logo empresa">
+                    </h1>
+                </div>
+                <div class="col-2 text-right">
+                    <i class="icon-search d-none d-md-inline-block"></i>
+                    <i class="icon-user d-none d-md-inline-block"></i>
+                    <i class="icon-shopping-cart"></i>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <nav>
+                    <ul class="d-none d-md-flex nav text-uppercase">
+                        <li class="nav-item dropdown"><a class="nav-link active" href="#">Sale</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">E-shop</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Lookbook</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Campaña</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Locales</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <!-- NAV HEADER -->
+
+    <div class="container py-3">
+        <div class="row">
+            <div class="col-3 d-none d-md-block">
+                <aside>
+                    <h2 class="border-bottom font-weight-bold py-2">Zapatillas</h2>
+                    <div class="font-weight-bold title-filter">Filtrar</div>
+                    <div class="container-filters pt-2">
+                        <ul>
+                            <li>
+                                <div>Categoría</div>
+                                <ul>
+                                    <li>Zapatillas</li>
+                                    <li>Zapatos</li>
+                                    <li>Botas</li>
+                                    <li>Sandalias</li>
+                                    <li>Pantuflas</li>
+                                </ul>
+                            </li>
+                            <li>
+                                <div>Talle</div>
+                                <ul>
+                                    <li>36</li>
+                                    <li>38</li>
+                                    <li>40</li>
+                                    <li>42</li>
+                                    <li>44</li>
+                                </ul>
+                            </li>
+                            <li>
+                                <div>Color</div>
+                                <ul>
+                                    <li>Amarillo</li>
+                                    <li>Negro</li>
+                                    <li>Verde</li>
+                                    <li>Azul</li>
+                                    <li>Blanco</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </aside>
+            </div>
+            <div class="col-12 col-md-9">
+                <!-- MAIN PRODUCTS -->
+                <main class="pb-3">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-12 d-md-none">
+                                <h2 class="border-bottom font-weight-bold py-2">Zapatillas</h2>
+                            </div>
+                            <div class="col-12 col-md-6 col-lg-4">
+                                <div class="border-bottom container-img-product" style="background-image: url(assets/img/zapatilla_1.jpg)"></div>
+                                <ul>
+                                    <li>Zapatilla 1-XFK</li>
+                                    <li class="font-weight-bold">$5000</li>
+                                </ul>
+                            </div>
+                            <div class="col-12 col-md-6 col-lg-4">
+                                <div class="border-bottom container-img-product" style="background-image: url(assets/img/zapatilla_2.jpg)"></div>
+                                <ul>
+                                    <li>Zapatilla 1-XFK</li>
+                                    <li class="font-weight-bold">$5000</li>
+                                </ul>
+                            </div>
+                            <div class="col-12 col-md-6 col-lg-4">
+                                <div class="border-bottom container-img-product" style="background-image: url(assets/img/zapatilla_3.jpg)"></div>
+                                <ul>
+                                    <li>Zapatilla 1-XFK</li>
+                                    <li class="font-weight-bold">$5000</li>
+                                </ul>
+                            </div>
+                            <div class="col-md-6 col-lg-4">
+                                <div class="border-bottom container-img-product" style="background-image: url(assets/img/zapatilla_1.jpg)"></div>
+                                <ul>
+                                    <li>Zapatilla 1-XFK</li>
+                                    <li class="font-weight-bold">$5000</li>
+                                </ul>
+                            </div>
+                            <div class="col-md-6 col-lg-4">
+                                <div class="border-bottom container-img-product" style="background-image: url(assets/img/zapatilla_2.jpg)"></div>
+                                <ul>
+                                    <li>Zapatilla 1-XFK</li>
+                                    <li class="font-weight-bold">$5000</li>
+                                </ul>
+                            </div>
+                            <div class="col-md-6 col-lg-4">
+                                <div class="border-bottom container-img-product" style="background-image: url(assets/img/zapatilla_3.jpg)"></div>
+                                <ul>
+                                    <li>Zapatilla 1-XFK</li>
+                                    <li class="font-weight-bold">$5000</li>
+                                </ul>
+                            </div>
+                            <div class="col-md-6 col-lg-4">
+                                <div class="border-bottom container-img-product" style="background-image: url(assets/img/zapatilla_1.jpg)"></div>
+                                <ul>
+                                    <li>Zapatilla 1-XFK</li>
+                                    <li class="font-weight-bold">$5000</li>
+                                </ul>
+                            </div>
+                            <div class="col-md-6 col-lg-4">
+                                <div class="border-bottom container-img-product" style="background-image: url(assets/img/zapatilla_2.jpg)"></div>
+                                <ul>
+                                    <li>Zapatilla 1-XFK</li>
+                                    <li class="font-weight-bold">$5000</li>
+                                </ul>
+                            </div>
+                            <div class="col-md-6 col-lg-4">
+                                <div class="border-bottom container-img-product" style="background-image: url(assets/img/zapatilla_3.jpg)"></div>
+                                <ul>
+                                    <li>Zapatilla 1-XFK</li>
+                                    <li class="font-weight-bold">$5000</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </main>
+                <!-- MAIN PRODUCTS -->
+            </div>
+        </div>
+    </div>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="container">
+            <ul class="row justify-content-center list-group list-group-horizontal-md text-center">
+                <li class="list-group-item"><a href="">Ayuda</a></li>
+                <li class="list-group-item"><a href="">Contacto</a></li>
+                <li class="list-group-item"><a href="">Términos y condiciones</a></li>
+                <li class="list-group-item"><a href="">Políticas de privacidad</a></li>
+            </ul>
+        </div>
+    </footer>
+    <!-- FOOTER -->
 </body>
+
 </html>
