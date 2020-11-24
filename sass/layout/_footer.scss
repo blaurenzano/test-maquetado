@@ -1,15 +1,9 @@
 footer {
   background-color: $fondo_header;
-  color: $texto_header;
+  color: $gris_oscuro;
   display: flex;
   flex-direction: column;
   align-items: center;
-}
-.container-textos {
-  padding: 20px 0;
-
-  border-top: 1px solid;
-  margin: 20px;
 }
 
 .container-texto-footer {
