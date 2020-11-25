@@ -1,3 +1,154 @@
-body{
+/* ============================= */
+/*          BASIC SETUP          */
+/* ============================= */
+
+body {
 	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	background-color: #FAFAFA;
+}
+
+
+/* ============================= */
+/*          HEADER               */
+/* ============================= */
+
+.header {
+	width: 100%;
+	background: #100217E6;
+	padding: 10px 0;
+}
+
+.header__title {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+}
+
+.header__logo {
+	grid-column: 2 / 3;
+	justify-self: center;
+	height: 30px;
+}
+
+.header__box-icons {
+	justify-self: end;
+	align-self: end;
+	margin-right: 20px;
+}
+
+.header__icon {
+	width: 24px;
+	height: 24px;
+	margin: 8px;
+	cursor: pointer;
+	color: #fff;
+}
+
+.header__nav {
+	display: flex;
+	justify-content: space-around;
+	width: 85%;
+	list-style: none;
+	margin: 14px auto 4px auto;
+}
+
+.header__nav a {
+	color: #FAFAFA;
+	text-decoration: none;
+	text-transform: uppercase;
+}
+
+
+
+/* ============================= */
+/*          SIDEBAR              */
+/* ============================= */
+
+.container {
+	display: flex;
+	width: 90%;
+	margin: 0 auto;
+	padding: 50px 0;
+}
+
+.sidebar {
+	width: 30%;
+	color: #030B1C;
+}
+
+.sidebar__title {
+	width: 300px;
+	font-size: 24px;
+	border-bottom: 1px solid #030B1C;
+}
+
+.sidebar__box { width: 300px; }
+
+.sidebar__menu {
+	padding-left: 10px;
+	background-color: #E4E8EE;
+}
+
+.sidebar__list {
+	list-style: none;
+	margin-left: -20px;
+	margin-top: -12px;
+	cursor: pointer;
+}
+
+
+
+/* ============================= */
+/*          PRODUCTS             */
+/* ============================= */
+
+.products {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-template-rows: repeat(4, 1fr);
+	grid-gap: 20px;
+}
+
+.products__box {
+	width: 260px;
+	height: 240px;
+}
+
+.products__img {
+	height: 180px;
+	border-bottom: 1px solid #030B1C;
+}
+
+.products__content {
+	font-size: 16px;
+	margin-top: -2px;
+}
+
+.products__price { margin-top: -12px; }
+
+
+
+/* ============================= */
+/*          FOOTER               */
+/* ============================= */
+
+.footer {
+	width: 100%;
+	background: #100217E6;
+}
+
+.footer__links {
+	display: flex;
+	width: 70%;
+	height: 70px;
+	margin: 0 auto;
+	list-style: none;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.footer__links a {
+	color: #FAFAFA;
+	text-decoration: none;
 }

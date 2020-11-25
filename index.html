@@ -1,11 +1,139 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-	<meta charset="UTF-8">
-	<title>Test de maquetado</title>
-	<link rel="stylesheet" href="styles.css">
-</head>
-<body>
 
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+   <link rel="stylesheet" href="styles.css">
+   <title>Test de maquetado</title>
+</head>
+
+<body>
+   <header class="header">
+      <div class="header__title">
+         <img class="header__logo" src="assets/logo.svg" alt="Logo">
+         <div class="header__box-icons">
+            <img class="header__icon" src="assets/iconos/search-solid.svg" alt="Search">
+            <img class="header__icon" src="assets/iconos/user-solid.svg" alt="User">
+            <img class="header__icon" src="assets/iconos/shopping-cart-solid.svg" alt="Cart">
+         </div>
+      </div>
+      <div>
+         <ul class="header__nav">
+            <li> <a href="#"><b>Sale</b></a> </li>
+            <li> <a href="#">E-Shop</a> </li>
+            <li> <a href="#">LookBook</a> </li>
+            <li> <a href="#">Campaña</a> </li>
+            <li> <a href="#">Locales</a> </li>
+         </ul>
+      </div>
+   </header>
+
+   <main class="container">
+      <div class="sidebar">
+         <h2 class="sidebar__title"><b>Zapatillas</b></h2>
+         <h3>Filtrar</h3>
+         <div class="sidebar__box">
+            <h4 class="sidebar__menu">Categoría</h4>
+            <ul class="sidebar__list">
+               <li>Zapatillas</li>
+               <li>Zapatos</li>
+               <li>Botas</li>
+               <li>Sandalias</li>
+               <li>Pantuflas</li>
+            </ul>
+            <h4 class="sidebar__menu">Talle</h4>
+            <ul class="sidebar__list">
+               <li>36</li>
+               <li>38</li>
+               <li>40</li>
+               <li>42</li>
+               <li>44</li>
+            </ul>
+            <h4 class="sidebar__menu">Color</h4>
+            <ul class="sidebar__list">
+               <li>Amarillo</li>
+               <li>Negro</li>
+               <li>Verde</li>
+               <li>Azul</li>
+               <li>Blanco</li>
+            </ul>
+         </div>
+      </div>
+
+      <div class="products">
+         <div class="products__box">
+            <img class="products__img" src="assets/productos/zapatilla_1.jpg" alt="Zapatilla_1">
+            <p class="products__content">Zapatilla 1 XFK</p>
+            <p class="products__price"><b>$5000</b></p>
+         </div>
+         <div class="products__box">
+            <img class="products__img" src="assets/productos/zapatilla_2.jpg" alt="Zapatilla_2">
+            <p class="products__content">Zapatilla 2000-X</p>
+            <p class="products__price"><b>$9800</b></p>
+         </div>
+         <div class="products__box">
+            <img class="products__img" src="assets/productos/zapatilla_3.jpg" alt="Zapatilla_3">
+            <p class="products__content">Zapatilla 3 Run</p>
+            <p class="products__price"><b>$6500</b></p>
+         </div>
+         <div class="products__box">
+            <img class="products__img" src="assets/productos/zapatilla_3.jpg" alt="Zapatilla_3">
+            <p class="products__content">Zapatilla 3 Run</p>
+            <p class="products__price"><b>$6500</b></p>
+         </div>
+         <div class="products__box">
+            <img class="products__img" src="assets/productos/zapatilla_1.jpg" alt="Zapatilla_1">
+            <p class="products__content">Zapatilla 1 XFK</p>
+            <p class="products__price"><b>$5000</b></p>
+         </div>
+         <div class="products__box">
+            <img class="products__img" src="assets/productos/zapatilla_2.jpg" alt="Zapatilla_2">
+            <p class="products__content">Zapatilla 2000-X</p>
+            <p class="products__price"><b>$9800</b></p>
+         </div>
+         <div class="products__box">
+            <img class="products__img" src="assets/productos/zapatilla_1.jpg" alt="Zapatilla_1">
+            <p class="products__content">Zapatilla 1 XFK</p>
+            <p class="products__price"><b>$5000</b></p>
+         </div>
+         <div class="products__box">
+            <img class="products__img" src="assets/productos/zapatilla_2.jpg" alt="Zapatilla_2">
+            <p class="products__content">Zapatilla 2000-X</p>
+            <p class="products__price"><b>$9800</b></p>
+         </div>
+         <div class="products__box">
+            <img class="products__img" src="assets/productos/zapatilla_3.jpg" alt="Zapatilla_3">
+            <p class="products__content">Zapatilla 3 Run</p>
+            <p class="products__price"><b>$6500</b></p>
+         </div>
+         <div class="products__box">
+            <img class="products__img" src="assets/productos/zapatilla_2.jpg" alt="Zapatilla_2">
+            <p class="products__content">Zapatilla 2000-X</p>
+            <p class="products__price"><b>$9800</b></p>
+         </div>
+         <div class="products__box">
+            <img class="products__img" src="assets/productos/zapatilla_3.jpg" alt="Zapatilla_3">
+            <p class="products__content">Zapatilla 3 Run</p>
+            <p class="products__price"><b>$6500</b></p>
+         </div>
+         <div class="products__box">
+            <img class="products__img" src="assets/productos/zapatilla_1.jpg" alt="Zapatilla_1">
+            <p class="products__content">Zapatilla 1 XFK</p>
+            <p class="products__price"><b>$5000</b></p>
+         </div>
+      </div>
+   </main>
+
+   <footer class="footer">
+      <ul class="footer__links">
+         <li> <a href="#">Ayuda</a> </li>
+         <li> <a href="#">Contacto</a> </li>
+         <li> <a href="#">Términos y condiciones</a> </li>
+         <li> <a href="#">Políticas de privacidad</a> </li>
+      </ul>
+   </footer>
 </body>
+
 </html>
