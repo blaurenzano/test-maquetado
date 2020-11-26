@@ -1,0 +1,44 @@
+/* Menu de navegacion en mobile */
+.nav-mobile {
+	display: none;
+	width: 100%;
+    position: fixed;
+    height: 100%;
+    top: 0;
+    left: -100%;
+    z-index: 10;
+    background-color: #100217fa;
+}
+.nav-mobile-container {
+	width: 100%;
+	height: 100%;
+	position: relative;
+}
+.nav-mobile-container-close { 
+	position: absolute;
+    top: 10px;
+    right: 10px;
+    color: white;
+    height: 30px;
+    width: 30px;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 30px;
+}
+.nav-mobile-container-options-table {
+	width: 100%;
+    height: 100%;
+    display: table;
+}
+.nav-mobile-container-options-table .center-content {
+	display: table-cell;
+	vertical-align: middle;
+	text-align: center;
+	width: 100%;
+	height: 100%;
+}
+.nav-mobile .nav-item {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 40px;
+}

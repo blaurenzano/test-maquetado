@@ -1,0 +1,79 @@
+/* Estilos logo e iconos */
+header {
+	width: 100%;
+    height: 100px;
+    background-color: #100217E6;
+    position: fixed;
+    top: 0;
+    left: 0;
+    box-shadow: 0px 3px 6px rgba(0,0,0,.26);
+    z-index: 1;
+}
+.header-bar-top {
+	width: 100%;
+    height: 60%;
+}
+.header-bar-top-logo {
+	width: 100%;
+    height: 100%;
+    padding: 17px 0px 10px 0px;
+    box-sizing: border-box;
+    position: relative;
+}
+.header-bar-top-logo img {
+	width: 100%;
+    height: 100%;
+}
+.header-bar-top-container {
+	position: absolute;
+    right: 20px;
+    top: 22%;
+    display: inline-block;
+}
+.header-bar-top-container-icons {
+	width: 25px;
+    height: 25px;
+    box-sizing: border-box;
+    vertical-align: top;
+    display: inline-block;
+    margin-right: 10px; 
+}
+.header-bar-top-container-icons img {
+	width: 100%;
+	height: 100%;
+	cursor: pointer;
+	filter: invert(90%) sepia(6%) saturate(18%) hue-rotate(30deg) brightness(117%) contrast(96%);
+}
+.header-bar-top-container-icons img:hover {
+	opacity: .2;
+}
+.header-bar-hidden-menu {
+    position: absolute;
+    left: 10px;
+    top: 30%;
+    display: none;
+}
+/* Estilos menu navegacion */
+header .nav-desktop {
+    width: 100%;
+    height: 40%;
+    text-align: center;
+    box-sizing: border-box;
+    padding-top: 0.3%;
+}
+.nav-item {
+	width: auto;
+	color: #FAFAFA;
+	margin-right: 10px;
+	display: inline-block;
+	padding: 0px 3%;
+}
+.nav-item:last-child {
+	margin-right: unset; 
+}
+.nav-item span {
+	cursor: pointer;
+}
+.nav-item span:hover {
+	font-weight: bold;
+}

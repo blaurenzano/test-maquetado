@@ -1,0 +1,43 @@
+/* Filtros */
+.filters-container {
+	width: 20%;
+    display: inline-block;
+    text-align: left;
+    max-width: 300px;
+}
+.category-display {
+	border-bottom: 1px solid black;
+    padding-bottom: 5px;
+    text-transform: capitalize;
+}
+.filters-container-options-display {
+	width: 100%;
+}
+.filters-container-options-title {
+	padding-top: 10px;
+    width: 100%;
+}
+.filters {
+	margin-top: 10px;
+	width: 100%;
+}
+.filters.closed  {
+	height: 27px;
+    overflow: hidden;
+}
+.filters-title {
+	background-color: #E4E8EE;
+    padding: 5px 0px 5px 15px;
+    cursor: pointer;
+}
+.filters-title:hover {
+	opacity: .5;
+}
+.filters-option {
+	padding: 3px 0px 3px 15px;
+	cursor: pointer;
+}
+.filters-option:hover, 
+.filters-option.selected {
+	font-weight: bold;
+}

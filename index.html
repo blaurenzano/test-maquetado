@@ -2,10 +2,305 @@
 <html lang="es">
 <head>
 	<meta charset="UTF-8">
-	<title>Test de maquetado</title>
-	<link rel="stylesheet" href="styles.css">
-</head>
-<body>
+	<meta content="width=device-width, initial-scale=1" name="viewport" />
 
+	<title>Test de maquetado</title>
+	<!-- CSS de los componentes, fonts y responsive -->
+	<link rel="stylesheet" href="css/fonts.css">
+
+	<link rel="stylesheet" href="styles.css">
+	<link rel="stylesheet" href="css/header.css">
+	<link rel="stylesheet" href="css/footer.css">
+	<link rel="stylesheet" href="css/menuMobile.css">
+	<link rel="stylesheet" href="css/visibilityController.css">
+	<link rel="stylesheet" href="css/filtros.css">
+	<link rel="stylesheet" href="css/productos.css">
+
+	<link rel="stylesheet" href="css/responsive.css">
+	<!-- -->
+
+	<!-- JS y JSON para test -->
+	<script type="text/javascript" src="js/app.js"></script>
+	<script type="text/javascript" src="json/data.json"></script>
+	<!-- -->
+
+	<!-- libreria para animaciones -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
+	<!-- -->
+
+</head>
+<body onload="load_complete()">
+	<div class="page-container">
+		<!-- Menu mobile -->
+		<nav class="nav-mobile" data-status="closed">
+			<div class="nav-mobile-container">
+				<div class="nav-mobile-container-close font-large-light bold hidden-menu">
+					X
+				</div>
+				<div class="nav-mobile-container-options-table">
+					<div class="center-content">
+						<div class="nav-item font-large-light">
+							<span>SALE</span>
+						</div>
+						<div class="nav-item font-large-light">
+							<span>E-SHOP</span>
+						</div>
+						<div class="nav-item font-large-light">
+							<span>LOOKBOOK</span>
+						</div>
+						<div class="nav-item font-large-light">
+							<span>CAMPA&Ntilde;A</span>
+						</div>
+						<div class="nav-item font-large-light">
+							<span>LOCALES</span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</nav>
+		<!-- Header -->
+		<header>
+			<div class="header-bar-top">
+				<div class="header-bar-top-logo">
+					<img src="assets/logo.svg">
+				</div>
+				<div class="header-bar-top-container">
+					<div class="header-bar-top-container-icons search">
+						<img src="assets/iconos/search-solid.svg">
+					</div><div class="header-bar-top-container-icons user">
+						<img src="assets/iconos/user-solid.svg">
+					</div><div class="header-bar-top-container-icons cart">
+						<img src="assets/iconos/shopping-cart-solid.svg">
+					</div>
+				</div>
+				<div class="header-bar-hidden-menu">
+					<div class="header-bar-top-container-icons hidden-menu">
+						<img src="assets/iconos/bars-solid.svg">
+					</div>
+				</div>
+			</div>
+			<nav class="nav-desktop">
+				<div class="nav-item font-large-light">
+					<span>SALE</span>
+				</div>
+				<div class="nav-item font-large-light">
+					<span>E-SHOP</span>
+				</div>
+				<div class="nav-item font-large-light">
+					<span>LOOKBOOK</span>
+				</div>
+				<div class="nav-item font-large-light">
+					<span>CAMPA&Ntilde;A</span>
+				</div>
+				<div class="nav-item font-large-light">
+					<span>LOCALES</span>
+				</div>
+			</nav>
+		</header>
+		<!-- Contenido -->
+		<div class="content">
+			<!-- Contenedor menu visibilidad del listado -->
+			<div class="visibility-container">
+				<div class="visibility-selected-container">
+					<div class="visibility-selected" title="Vista autom&aacute;tica">
+						<img src="assets/iconos/th-solid.svg" />
+					</div><div class="visibility-selected-arrow">
+						<img src="assets/iconos/chevron-down-solid.svg" />
+					</div>
+				</div>
+				<div class="visibility-options-container">
+					<div class="visibility-options" data-status="closed">
+						<div class="visibility-options-line mobile" data-cant="1">
+							<div class="visibility-options-item-label">
+								<span class="font-small-light">Ver 1 producto</span>
+							</div><div class="visibility-options-item" title="Ver 1 producto">
+								<img src="assets/iconos/th-mini-solid.svg" />
+							</div>
+						</div>
+						<div class="visibility-options-line" data-cant="2">
+							<div class="visibility-options-item-label">
+								<span class="font-small-light">Ver 2 productos</span>
+							</div><div class="visibility-options-item" title="Ver 2 productos">
+								<img src="assets/iconos/th-small-solid.svg" />
+							</div>
+						</div>
+						<div class="visibility-options-line desktop" data-cant="3">
+							<div class="visibility-options-item-label">
+								<span class="font-small-light">Ver 3 productos</span>
+							</div><div class="visibility-options-item" title="Ver 3 productos">
+								<img src="assets/iconos/th-medium-solid.svg" />
+							</div>
+						</div>
+						<div class="visibility-options-line desktop" data-cant="4">
+							<div class="visibility-options-item-label">
+								<span class="font-small-light">Ver 4 productos</span>
+							</div><div class="visibility-options-item" title="Ver 4 productos">
+								<img src="assets/iconos/th-large-solid.svg" />
+							</div>
+						</div>
+						<div class="visibility-options-line" data-cant="-1">
+							<div class="visibility-options-item-label">
+								<span class="font-small-light">Vista autom&aacute;tica</span>
+							</div><div class="visibility-options-item" title="Vista autom&aacute;tica">
+								<img src="assets/iconos/th-solid.svg" />
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- Filtros -->
+			<div class="filters-container">
+				<div id="active_filter" class="category-display font-large-regular bold">Todo</div>
+				<div class="filters-container-options-display">
+					<div class="filters-container-options-title font-medium-regular bold">Filtrar</div>
+					<div class="filters closed">
+						<div class="filters-title font-small-light bold">Categor&iacute;a</div>
+						<div class="filters-options-container" data-caso="category">
+							<div class="filters-option font-small-light" data-filtro="zapatillas">Zapatillas</div>
+							<div class="filters-option font-small-light" data-filtro="zapatos">Zapatos</div>
+							<div class="filters-option font-small-light" data-filtro="botas">Botas</div>
+							<div class="filters-option font-small-light" data-filtro="sandalias">Sandalias</div>
+							<div class="filters-option font-small-light" data-filtro="pantuflas">Pantuflas</div>
+						</div>
+					</div>
+					<div class="filters closed">
+						<div class="filters-title font-small-light bold">Talle</div>
+						<div class="filters-options-container" data-caso="size">
+							<div class="filters-option font-small-light" data-filtro="36">36</div>
+							<div class="filters-option font-small-light" data-filtro="38">38</div>
+							<div class="filters-option font-small-light" data-filtro="40">40</div>
+							<div class="filters-option font-small-light" data-filtro="42">42</div>
+							<div class="filters-option font-small-light" data-filtro="44">44</div>
+						</div>
+					</div>
+					<div class="filters closed">
+						<div class="filters-title font-small-light bold">Color</div>
+						<div class="filters-options-container" data-caso="color">
+							<div class="filters-option font-small-light" data-filtro="amarillo">Amarillo</div>
+							<div class="filters-option font-small-light" data-filtro="negro">Negro</div>
+							<div class="filters-option font-small-light" data-filtro="verde">Verde</div>
+							<div class="filters-option font-small-light" data-filtro="azul">Azul</div>
+							<div class="filters-option font-small-light" data-filtro="blanco">Blanco</div>
+						</div>
+					</div>
+				</div>
+			</div><div id="products-list" class="product-list" data-vista="-1"> <!-- Listado de productos -->
+				<div class="items-row">
+					<div class="items-card-x3">
+						<div class="item-card-img-container">
+							<div class="center-image">
+								<img src="assets/productos/zapatilla_1.jpg">
+							</div>
+						</div>
+						<div class="item-card-product-info">
+							<div class="item-card-product-info-margin font-small-light">Zapatilla 1-XFK</div>
+							<div class="font-small-light bold">$5000</div>
+						</div>
+					</div><div class="items-card-x3">
+						<div class="item-card-img-container">
+							<div class="center-image">
+								<img src="assets/productos/zapatilla_1.jpg">
+							</div>
+						</div>
+						<div class="item-card-product-info">
+							<div class="item-card-product-info-margin font-small-light">Zapatilla 1-XFK</div>
+							<div class="font-small-light bold">$5000</div>
+						</div>
+					</div><div class="items-card-x3">
+						<div class="item-card-img-container">
+							<div class="center-image">
+								<img src="assets/productos/zapatilla_1.jpg">
+							</div>
+						</div>
+						<div class="item-card-product-info">
+							<div class="item-card-product-info-margin font-small-light">Zapatilla 1-XFK</div>
+							<div class="font-small-light bold">$5000</div>
+						</div>
+					</div>
+				</div>
+				<div class="items-row">
+					<div class="items-card-x3">
+						<div class="item-card-img-container">
+							<div class="center-image">
+								<img src="assets/productos/zapatilla_1.jpg">
+							</div>
+						</div>
+						<div class="item-card-product-info">
+							<div class="item-card-product-info-margin font-small-light">Zapatilla 1-XFK</div>
+							<div class="font-small-light bold">$5000</div>
+						</div>
+					</div><div class="items-card-x3">
+						<div class="item-card-img-container">
+							<div class="center-image">
+								<img src="assets/productos/zapatilla_1.jpg">
+							</div>
+						</div>
+						<div class="item-card-product-info">
+							<div class="item-card-product-info-margin font-small-light">Zapatilla 1-XFK</div>
+							<div class="font-small-light bold">$5000</div>
+						</div>
+					</div><div class="items-card-x3">
+						<div class="item-card-img-container">
+							<div class="center-image">
+								<img src="assets/productos/zapatilla_1.jpg">
+							</div>
+						</div>
+						<div class="item-card-product-info">
+							<div class="item-card-product-info-margin font-small-light">Zapatilla 1-XFK</div>
+							<div class="font-small-light bold">$5000</div>
+						</div>
+					</div>
+				</div>
+				<div class="items-row">
+					<div class="items-card-x3">
+						<div class="item-card-img-container">
+							<div class="center-image">
+								<img src="assets/productos/zapatilla_1.jpg">
+							</div>
+						</div>
+						<div class="item-card-product-info">
+							<div class="item-card-product-info-margin font-small-light">Zapatilla 1-XFK</div>
+							<div class="font-small-light bold">$5000</div>
+						</div>
+					</div><div class="items-card-x3">
+						<div class="item-card-img-container">
+							<div class="center-image">
+								<img src="assets/productos/zapatilla_1.jpg">
+							</div>
+						</div>
+						<div class="item-card-product-info">
+							<div class="item-card-product-info-margin font-small-light">Zapatilla 1-XFK</div>
+							<div class="font-small-light bold">$5000</div>
+						</div>
+					</div><div class="items-card-x3">
+						<div class="item-card-img-container">
+							<div class="center-image">
+								<img src="assets/productos/zapatilla_1.jpg">
+							</div>
+						</div>
+						<div class="item-card-product-info">
+							<div class="item-card-product-info-margin font-small-light">Zapatilla 1-XFK</div>
+							<div class="font-small-light bold">$5000</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- Footer -->
+		<footer>
+			<div class="nav-item font-medium-light">
+				<span>Ayuda</span>
+			</div>
+			<div class="nav-item font-medium-light">
+				<span>Contacto</span>
+			</div>
+			<div class="nav-item font-medium-light">
+				<span>T&eacute;rminos y condiciones</span>
+			</div>
+			<div class="nav-item font-medium-light">
+				<span>Pol&iacute;ticas de privacidad</span>
+			</div>
+		</footer>
+	</div>
 </body>
 </html>

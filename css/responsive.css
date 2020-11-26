@@ -1,0 +1,61 @@
+/* On screens that are 600px or less */
+@media screen and (max-width: 679px) {
+	/* Header */
+	header { 
+		height: 70px; 
+	}
+	.header-bar-top {
+	    height: 100%;
+	}
+	.header-bar-top-logo {
+		text-align: center;
+		padding: 8px 0px 10px 0px;
+	}
+	.header-bar-top-logo img {
+		width: 50%;
+	}
+	header .nav-desktop {
+		display: none;
+	}
+	.user, .search {
+		display: none;
+	}
+	.header-bar-top-container {
+		right: 5px;
+    	top: 30%;
+	}
+	.header-bar-hidden-menu {
+		display: inline-block;
+	}
+
+	/* Productos y filtros */
+	.content {
+		padding: 80px 0px 40px 0px;
+	}
+	.filters-container {
+		display: block;
+		width: 100%;
+	}
+	.product-list {
+		width: 100%;
+		margin-top: 20px;
+		text-align: center;
+	}
+
+	/* Opciones de visibilidad */
+	.visibility-container {
+		top: 71px;
+	}
+	.visibility-options-line.mobile {
+		display: block;
+	}
+	.visibility-options-line.desktop {
+		display: none;
+	}
+	/* Footer */
+	footer .nav-item{
+		padding: 0;
+    	margin: 5px 0px;
+    	width: 100%;
+	}
+}
