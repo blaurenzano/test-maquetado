@@ -1,11 +1,238 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta charset="UTF-8">
 	<title>Test de maquetado</title>
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="styles.css">
 </head>
 <body>
-
+	<div class="container">
+		<header>
+			<div class="menu-icon" onclick="showMenu()">
+				<img src="/assets/iconos/bars-solid.svg" alt="" id="menu-icon">
+			</div>
+			<div class="banner">
+				<img class="logo" src="/assets/logo.svg" alt="logo" id="logo">
+				<div class="icons">
+					<a href="#">
+						<img src="/assets/iconos/search-solid.svg" alt="" id="search-icon">
+					</a>	
+					<a href="#">
+						<img src="/assets/iconos/user-solid.svg" alt="" id="user-icon">
+					</a>	
+					<a href="#">
+						<img src="/assets/iconos/shopping-cart-solid.svg" alt="" id="shopping-icon">
+					</a>			
+				</div>
+			</div>
+			<nav id="header-nav" class="header-nav">
+				<ul>
+					<li><a href="#">sale</a></li>
+					<li><a href="#">e-shop</a></li>
+					<li><a href="#">lookbook</a></li>
+					<li><a href="#">campaña</a></li>
+					<li><a href="#">locales</a></li>
+				</ul>
+			</nav>
+		</header>
+		<main class="main">
+			<menu>
+				<div class="menu-container">
+					<div class="footwear">
+						<h1>Zapatillas</h1>
+					</div>
+					<div class="filter">
+						<h2>Filtrar</h2>
+					</div>
+					<div class="categories">
+						<h3 class="categories-title title-content">
+							<a href="#categories-content" class="accordion-toggle">Categoria</a>
+						</h3> 
+						<ul class="categories-content menu-content accordion-content" id="categories-content">
+							<li><h3>Zapatillas</h3></li>
+							<li><h3>Zapatos</h3></li>
+							<li><h3>Botas</h3></li>
+							<li><h3>Zandalias</h3></li>
+							<li><h3>Pantuflas</h3></li>
+						</ul>
+					</div>
+					<div class="shoe-size">
+						<h3 class="shoe-size-title title-content">
+							<a href="#shoe-size-content" class="accordion-toggle">Talle</a>
+						</h3>
+						<ul class="shoe-size-content menu-content accordion-content" id="shoe-size-content">
+							<li><h3>36</h3></li>
+							<li><h3>38</h3></li>
+							<li><h3>40</h3></li>
+							<li><h3>42</h3></li>
+							<li><h3>44</h3></li>
+						</ul>
+					</div>
+					<div class="shoe-colour">
+						<h3 class="shoe-colour-title title-content">
+							<a href="#shoe-colour-content" class="accordion-toggle">Color</a></h3>
+						<ul class="shoe-colour-content menu-content accordion-content" id="shoe-colour-content">
+							<li><h3>Amarillo</h3></li>
+							<li><h3>Negro</h3></li>
+							<li><h3>Verde</h3></li>
+							<li><h3>Azul</h3></li>
+							<li><h3>Blanco</h3></li>
+						</ul>
+					</div>
+				</div>
+			</menu>
+			<div class="products-container">
+				<ul class="products">
+					<div class="products-title">
+						<h1>Zapatillas</h1>
+					</div>
+					<li>
+						<div class="product">
+							<a href="#">
+								<img src="/assets/productos/zapatilla_1.jpg" alt="zapatilla 1" />
+							</a>
+							<div class="product-name">
+								<h3 class="h3">Zapatilla 1XFK</h3>
+								<h3 class="h3">$5000</h3>
+							</div>
+						</div>
+					</li>
+					<li>
+						<div class="product">
+							<a href="#">
+								<img src="/assets/productos/zapatilla_2.jpg" alt="zapatilla 2" />
+							</a>
+							<div class="product-name">
+								<h3 class="h3">Zapatilla 2000-X</h3>
+								<h3 class="h3">$9800</h3>
+							</div>
+						</div>
+					</li>
+					<li>
+						<div class="product">
+							<a href="#">
+								<img src="/assets/productos/zapatilla_3.jpg" alt="zapatilla 3" />
+							</a>
+							<div class="product-name">
+								<h3 class="h3">Zapatilla 3 Run</h3>
+								<h3 class="h3">$6500</h3>
+							</div>
+						</div>
+					</li>
+					<li>
+						<div class="product">
+							<a href="#">
+								<img src="/assets/productos/zapatilla_3.jpg" alt="zapatilla 3" />
+							</a>
+							<div class="product-name">
+								<h3 class="h3">Zapatilla 3 Run</h3>
+								<h3 class="h3">$6500</h3>
+							</div>
+						</div>
+					</li>
+					<li>
+						<div class="product">
+							<a href="#">
+								<img src="/assets/productos/zapatilla_1.jpg" alt="zapatilla 1" />
+							</a>
+							<div class="product-name">
+								<h3 class="h3">Zapatilla 1XFK</h3>
+								<h3 class="h3">$5000</h3>
+							</div>
+						</div>
+					</li>
+					<li>
+						<div class="product">
+							<a href="#">
+								<img src="/assets/productos/zapatilla_2.jpg" alt="zapatilla 2" />
+							</a>
+							<div class="product-name">
+								<h3 class="h3">Zapatilla 2000-X</h3>
+								<h3 class="h3">$9800</h3>
+							</div>
+						</div>
+					</li>
+					<li>
+						<div class="product">
+							<a href="#">
+								<img src="/assets/productos/zapatilla_1.jpg" alt="zapatilla 1" />
+							</a>
+							<div class="product-name">
+								<h3 class="h3">Zapatilla 1XFK</h3>
+								<h3 class="h3">$5000</h3>
+							</div>
+						</div>
+					</li>
+					<li>
+						<div class="product">
+							<a href="#">
+								<img src="/assets/productos/zapatilla_2.jpg" alt="zapatilla 2" />
+							</a>
+							<div class="product-name">
+								<h3 class="h3">Zapatilla 2000-X</h3>
+								<h3 class="h3">$9800</h3>
+							</div>
+						</div>
+					</li>
+					<li>
+						<div class="product">
+							<a href="#">
+								<img src="/assets/productos/zapatilla_3.jpg" alt="zapatilla 3" />
+							</a>
+							<div class="product-name">
+								<h3 class="h3">Zapatilla 3 Run</h3>
+								<h3 class="h3">$6500</h3>
+							</div>
+						</div>
+					</li>
+					<li>
+						<div class="product">
+							<a href="#">
+								<img src="/assets/productos/zapatilla_2.jpg" alt="zapatilla 2" />
+							</a>
+							<div class="product-name">
+								<h3 class="h3">Zapatilla 2000-X</h3>
+								<h3 class="h3">$9800</h3>
+							</div>
+						</div>
+					</li>
+					<li>
+						<div class="product">
+							<a href="#">
+								<img src="/assets/productos/zapatilla_3.jpg" alt="zapatilla 3" />
+							</a>
+							<div class="product-name">
+								<h3 class="h3">Zapatilla 3 Run</h3>
+								<h3 class="h3">$6500</h3>
+							</div>
+						</div>
+					</li>
+					<li>
+						<div class="product">
+							<a href="#">
+								<img src="/assets/productos/zapatilla_1.jpg" alt="zapatilla 1" />
+							</a>
+							<div class="product-name">
+								<h3 class="h3">Zapatilla 1XFK</h3>
+								<h3 class="h3">$5000</h3>
+							</div>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</main>
+		<footer class="footer">
+			<ul class="footer-content">
+				<li><a href="#"><h3>Ayuda</h3></a></li> 
+				<li><a href="#"><h3>Contacto</h3></a></li>
+				<li><a href="#"><h3>Terminos y condiciones</h3></a></li>
+				<li><a href="#"><h3>Politicas y privacidad</h3></a></li>
+			</ul>
+		</footer>
+	</div>
+	<script src="src/app.js"></script>
 </body>
 </html>
