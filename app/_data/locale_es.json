@@ -1,0 +1,309 @@
+{
+	"head": {
+		"lang": "es",
+		"title": "La Preuve",
+		"description": "",
+		"keywords": "",
+
+		"apple_mobile_web_app_title": "",
+
+		"theme": {
+			"color": "#100217"
+		},
+
+		"facebook": {
+			"app_id": "",
+			"title": "",
+			"description": "",
+			"image": "assets/images/share_img_fb.png"
+		},
+
+		"twitter": {
+			"title": "",
+			"description": "",
+			"image": "assets/images/share_img_tw.png"
+		}
+
+	},
+
+	"header": {
+		"title": "La Preuve",
+		"logo": "assets/logo.svg",
+		"mobile_menu": {
+			"caption": "Abrir Menú",
+			"icon": "/assets/iconos/bars-solid.svg",
+			"close": "/assets/iconos/close.svg",
+			"close_caption": "Cerrar Menú"
+		},
+		"toolbar": [
+			{
+				"label": "Buscar",
+				"class": "desktop-only",
+				"mobile_class": "",
+				"icon": "/assets/iconos/search-solid.svg"
+			},
+			{
+				"label": "Mi cuenta",
+				"class": "desktop-only",
+				"mobile_class": "",
+				"icon": "/assets/iconos/user-solid.svg"
+			},
+			{
+				"label": "Carrito",
+				"class": "",
+				"mobile_class": "hidden",
+				"icon": "/assets/iconos/shopping-cart-solid.svg"
+			}
+		]
+	},
+
+	"navigation": [
+		{
+			"label": "Sale",
+			"url": "/",
+			"class": "active"
+		},
+		{
+			"label": "E-shop",
+			"url": "/"
+		},
+		{
+			"label": "Lookbook",
+			"url": "/"
+		},
+		{
+			"label": "Campaña",
+			"url": "/"
+		},
+		{
+			"label": "Locales",
+			"url": "/"
+		}
+	],
+
+	"sidebar": {
+		"title": "Zapatillas",
+		"filter_title": "Filtrar",
+		"filters": [
+			{
+				"label": "Categoría",
+				"type": "category",
+				"values": [
+					"zapatillas",
+					"zapatos",
+					"botas",
+					"sandalias",
+					"pantuflas"
+				]
+			},	
+			{
+				"label": "Talle",
+				"type": "size",
+				"values": [
+					"36",
+					"38",
+					"40",
+					"42",
+					"44"
+				]
+			},
+			{
+				"label": "Color",
+				"type": "color",
+				"values": [
+					"amarillo",
+					"negro",
+					"verde",
+					"azul",
+					"blanco"
+				]
+			}
+		]
+	},
+
+	"controls": {
+		"count": {
+			"label": "producto(s)"
+		},
+		"order": [
+			{
+				"label": "Relevancia",
+				"class": "",
+				"value": "*",
+				"selected": true
+			},
+			{
+				"label": "Menor precio",
+				"class": "",
+				"value": "-"
+			},
+			{
+				"label": "Mayor precio",
+				"class": "",
+				"value": "+"
+			}
+		],
+		"layout": [
+			{
+				"label": "0",
+				"class": "",
+				"value": "",
+				"selected": true
+			},
+			{
+				"label": "1",
+				"class": "mobile-only",
+				"value": "cols-1"
+			},
+			{
+				"label": "2",
+				"class": "",
+				"value": "cols-2"
+			},
+			{
+				"label": "3",
+				"class": "desktop-only",
+				"value": "cols-3"
+			},
+			{
+				"label": "4",
+				"class": "desktop-only",
+				"value": "cols-4"
+			}
+		]
+	},
+
+	
+
+	"products": [
+		{
+			"title": "Zapatilla 1-XFK",
+			"price": "5000",
+			"thumb": "assets/productos/zapatilla_1.jpg",
+			"category": "zapatillas",
+			"size": ["36","38"],
+			"color": ["azul", "verde", "blanco"],
+			"url": "/"
+		},
+		{
+			"title": "Zapatilla 2000-X",
+			"price": "9800",
+			"thumb": "assets/productos/zapatilla_2.jpg",
+			"category": "botas",
+			"size": ["38","40","42"],
+			"color": ["negro", "verde", "azul", "amarillo"],
+			"url": "/"
+		},
+		{
+			"title": "Zapatilla 3 Run",
+			"price": "6500",
+			"thumb": "assets/productos/zapatilla_3.jpg",
+			"category": "sandalias",
+			"size": ["38", "40","42","44"],
+			"color": ["negro", "verde", "azul"],
+			"url": "/"
+		},
+		{
+			"title": "Zapatilla 3 Run",
+			"price": "6500",
+			"thumb": "assets/productos/zapatilla_3.jpg",
+			"category": "zapatillas",
+			"size": ["36", "38", "44"],
+			"color": ["blanco", "negro", "verde"],
+			"url": "/"
+		},
+		{
+			"title": "Zapatilla 1-XFK",
+			"price": "5000",
+			"thumb": "assets/productos/zapatilla_1.jpg",
+			"category": "pantuflas",
+			"size": ["44", "38"],
+			"color": ["amarillo", "negro", "blanco"],
+			"url": "/"
+		},
+		{
+			"title": "Zapatilla 2000-X",
+			"price": "9800",
+			"thumb": "assets/productos/zapatilla_2.jpg",
+			"category": "botas",
+			"size": ["44","38"],
+			"color": ["blanco", "negro", "verde"],
+			"url": "/"
+		},
+		{
+			"title": "Zapatilla 1-XFK",
+			"price": "5000",
+			"thumb": "assets/productos/zapatilla_1.jpg",
+			"category": "zapatillas",
+			"size": ["42,36,38"],
+			"color": ["azul", "verde", "blanco"],
+			"url": "/"
+		},
+		{
+			"title": "Zapatilla 2000-X",
+			"price": "9800",
+			"thumb": "assets/productos/zapatilla_2.jpg",
+			"category": "botas",
+			"size": ["38","40","42","36","44"],
+			"color": ["negro", "verde", "azul"],
+			"url": "/"
+		},
+		{
+			"title": "Zapatilla 3 Run",
+			"price": "6500",
+			"thumb": "assets/productos/zapatilla_3.jpg",
+			"category": "pantuflas",
+			"size": ["38","36","40","44","42","46"],
+			"color": ["negro", "verde", "azul"],
+			"url": "/"
+		},
+		{
+			"title": "Zapatilla 2000-X",
+			"price": "9800",
+			"thumb": "assets/productos/zapatilla_2.jpg",
+			"category": "botas",
+			"size": ["38","40","42","44"],
+			"color": ["blanco", "amarillo", "azul"],
+			"url": "/"
+		},
+		{
+			"title": "Zapatilla 3 Run",
+			"price": "6500",
+			"thumb": "assets/productos/zapatilla_3.jpg",
+			"category": "sandalias",
+			"size": ["38","42","44","40","436"],
+			"color": ["blanco", "verde", "amarillo"],
+			"url": "/"
+		},
+		{
+			"title": "Zapatilla 1-XFK",
+			"price": "5000",
+			"thumb": "assets/productos/zapatilla_1.jpg",
+			"category": "zapatos",
+			"size": ["36","38","44"],
+			"color": ["azul", "blanco", "amarillo"],
+			"url": "/"
+		}
+	],
+
+	"footer": {
+		"links": [
+			{
+				"label": "Ayuda",
+				"url": "/"
+			},
+			{
+				"label": "Contacto",
+				"url": "/"
+			},
+			{
+				"label": "Términos y condiciones",
+				"url": "/"
+			},
+			{
+				"label": "Políticas de privacidad",
+				"url": "/"
+			}
+		]
+	}
+}

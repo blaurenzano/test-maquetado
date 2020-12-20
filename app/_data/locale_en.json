@@ -1,0 +1,28 @@
+{
+    "head": {
+        "lang": "en",
+        "title": "",
+        "description": "",
+        "keywords": "",
+
+        "apple_mobile_web_app_title": "",
+
+        "theme": {
+            "color": "#ec2844"
+        },
+
+        "facebook": {
+            "app_id": "",
+            "title": "",
+            "description": "",
+            "image": "assets/images/share_img_fb.png"
+        },
+
+        "twitter": {
+            "title": "",
+            "description": "",
+            "image": "assets/images/share_img_tw.png"
+        }
+
+    }
+}

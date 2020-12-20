@@ -1,0 +1,70 @@
+<title>{{ head.title }}</title>
+<meta charset="UTF-8">
+<meta name="description" content="{{ head.description }}">
+<meta name="keywords" content="{{ head.keywords }}">
+
+<!-- https://a11yproject.com/posts/never-use-maximum-scale/ -->
+<!-- Never user maximum-scale=1 -->
+<!-- Avoid using user-scalable="no" -->
+
+<meta name="viewport"
+        content="width=device-width, height=device-height, initial-scale=1.0, minimum-scale=1.0, shrink-to-fit=no">
+<meta http-equiv="x-ua-compatible" content="ie=edge">
+
+<!-- https://developer.apple.com/library/safari/documentation/AppleApplications/Reference/SafariHTMLRef/Articles/MetaTags.html -->
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="{{ head.apple_mobile_web_app_title }}">
+
+<meta property="og:title" content="{{ head.facebook.title }}">
+<meta property="og:description" content="{{ head.facebook.description }}">
+<meta property="og:image" content="{{ SITE_URL }}{{ head.facebook.image }}">
+<meta property="og:image:width" content="2048">
+<meta property="og:image:height" content="1072">
+<meta property="og:type" content="website">
+<meta property="og:url" content="{{ SITE_URL }}">
+<meta property="fb:app_id" content="{{ head.facebook.app_id }}">
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="{{ head.twitter.title }}">
+<meta name="twitter:description" content="{{ head.twitter.title }}">
+<meta name="twitter:image" content="{{ SITE_URL }}{{ head.twitter.image }}">
+
+
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="{{ head.theme.color}}">
+<meta name="msapplication-TileColor" content="{{ head.theme.color}}">
+<meta name="theme-color" content="{{ head.theme.color}}">
+
+<!-- @see https://web.dev/uses-rel-preconnect/?utm_source=lighthouse&utm_medium=devtools -->
+<!-- @see https://developers.google.com/web/fundamentals/performance/resource-prioritization#use-case_knowing_where_from_but_not_what_youre_fetching -->
+<link rel="preconnect" href="https://www.google-analytics.com">
+
+<!-- @see https://developer.mozilla.org/en-US/docs/Web/HTML/Preloading_content -->
+<!--<link rel="preload" as="font" type="font/woff2" crossorigin="anonymous" href="./assets/fonts/....woff2">-->
+
+<!-- @see https://web.dev/defer-non-critical-css/ -->
+<!--<link rel="preload" href="css/main.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" type="text/css" href="css/main.css"></noscript>-->
+
+<link rel="stylesheet" type="text/css" href="css/main.css">
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<!--<script async src="https://www.googletagmanager.com/gtag/js?id={{ GA_TRACKING_ID }}"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+        dataLayer.push(arguments);
+    }
+
+    gtag('js', new Date());
+    gtag('config', '{{ GA_TRACKING_ID }}');
+</script>
+
+{# IMPORTANT: Our main file must go AFTER we declare gtag() and dataLayer #}
+-->
+<script defer type="text/javascript" src="js/main.bundle.js"></script>

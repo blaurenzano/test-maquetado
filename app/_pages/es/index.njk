@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="{{ head.lang }}" class="no-js la-preuve">
+	<head>
+		{% include "../_templates/_head.njk" %}
+	</head>
+	<body>
+		<main class="la-preuve-wrapper" id="view-sale">
+			{% include "../_templates/structure/_header.njk" %}
+			<div class="content-wrapper">
+				<div>
+					{% include "../_templates/structure/_sidebar.njk" %}
+				</div>
+				<div class="listing">
+					{# send data to listing component #}
+					{% set listing_data = products %}
+					{% include "../_templates/components/_listing.njk" %}
+				</div>
+			</div>
+			{% include "../_templates/structure/_footer.njk" %}
+			<div class="header__mobile-menu--toggle menu-mobile-helper"></div>
+		</main>
+	</body>
+</html>

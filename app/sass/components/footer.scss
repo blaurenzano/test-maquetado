@@ -1,0 +1,54 @@
+.footer {
+	background-color: $darkviolet;
+	padding: 2rem 1rem;
+
+	* {
+		color: $textwhite;
+	}
+
+	ul {
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		max-width: 70rem;
+		margin: 0 auto;
+
+		li {
+			display: block;
+			position: relative;
+			padding: 0 3rem;
+
+			a {
+				text-decoration: none;
+
+				&:hover {
+					text-decoration: underline;
+				}
+			}
+		}
+
+		@media all and (max-width: $mobileWidth) {
+			display: block;
+
+			li {
+				padding-bottom: 1.5rem;
+			}
+		}
+	}
+
+}
+
+
+@media all and (min-width: $mobileWidth + 1) {
+
+	.la-preuve-wrapper {
+		position: relative;
+		min-height: 100vh;
+	}
+	.footer {
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		width: 100%;
+	}
+}

@@ -1,0 +1,169 @@
+@import '../vars';
+
+*, *:before, *:after {
+	box-sizing: inherit; //box-sizing : border-box;
+	-webkit-tap-highlight-color: transparent;
+}
+
+/*
+* {
+	-webkit-overflow-scrolling: auto;
+}
+*/
+
+a:link,
+a:visited {
+	color: inherit;
+}
+
+// Remove bullets from ul li
+ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+
+	li {
+		margin: 0;
+		padding: 0;
+		list-style: none;
+	}
+}
+
+img {
+	vertical-align: top;
+	max-width: 100%;
+}
+
+button::-moz-focus-inner{
+	padding : 0;
+	border  : 0;
+}
+
+button {
+	padding: 0;
+	border: none;
+
+	// Be careful with this. In some iPhones the text inside some buttons were selectable
+	// and prevented the button from being clicked
+	user-select: none;
+}
+
+svg {
+	//max-width: 100%;
+	width: 100%;
+	height: 100%;
+
+	fill: currentColor;
+	display: block; // Eliminates strange space below the element because it's inline by default
+
+	path {
+		fill: inherit;
+	}
+}
+
+hr {
+	border: none;
+	height: 1px;
+	background-color: $black;
+}
+
+.relative {
+	position: relative;
+}
+
+.text-left {
+	text-align: left;
+}
+
+.text-right {
+	text-align: right;
+}
+
+.text-center {
+	text-align: center;
+}
+
+.text-uppercase {
+	text-transform: uppercase;
+}
+
+.flex-column {
+	display: flex;
+	flex-direction: column;
+}
+
+.flex-row {
+	display: flex;
+	flex-direction: row;
+}
+
+.flex-center {
+	justify-content: center;
+	align-items: center;
+}
+
+.justify-around {
+	justify-content: space-around;
+}
+
+.justify-between {
+	justify-content: space-between;
+}
+
+.flex-grow {
+	flex-grow: 1;
+}
+
+.justify-center {
+	justify-content: center;
+}
+
+.justify-between {
+	justify-content: space-between;
+}
+
+.align-center {
+	align-items: center;
+}
+
+.flex-row.flex-end {
+	justify-content: flex-end;
+}
+
+.flex-column.flex-end {
+	align-items: flex-end;
+}
+
+.no-wrap {
+	white-space: nowrap;
+}
+
+.hidden {
+	display: none !important;
+}
+	
+.content-wrapper {
+	margin: 0 auto;
+	max-width: 112rem;
+}
+
+.la-preuve-wrapper {
+	transition: all $transition-normal;
+	padding-top: 15rem;
+
+	@media all and (max-width: $mobileWidth) {
+		padding-top: 9rem;
+	}
+}
+
+@media all and (min-width: $mobileWidth + 1) {
+	.mobile-only {
+		display: none !important;
+	}
+}
+
+@media all and (max-width: $mobileWidth) {
+	.desktop-only {
+		display: none !important;
+	}
+}

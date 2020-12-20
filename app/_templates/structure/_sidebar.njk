@@ -1,0 +1,32 @@
+{%- macro random_int(len) -%}
+	{%- for _ in range(len) -%}
+		{{ range(10) | random }}
+	{%- endfor -%}
+{%- endmacro -%}
+
+<div class="sidebar">
+	<p><strong class="text-xlarge">{{sidebar.title}}</strong></p>
+	<hr>
+	<div class="sidebar__filter desktop-only">
+		<form>
+			<p class="text-large">{{sidebar.filter_title}}</p>
+			{% for item in sidebar.filters -%}
+
+			{% set id = "title-" + random_int(10) %}
+			<div class="sidebar__filter--wrapper">
+				<input type="checkbox" checked id="{{id}}" class="sidebar__filter--title-checkbox visually-hidden">
+				<label for="{{id}}" class="sidebar__filter--title">{{item.label}}</label>
+				<ul class="sidebar__filter--box">
+					{% for value in item.values -%}
+					<li data-filter="{{value}}">
+						{% set id = "filter-" + random_int(10) %}
+						<input class="sidebar__filter--item visually-hidden" type="checkbox" value="{{value}}" data-type="{{item.type}}" id="{{id}}" />
+						<label class="sidebar__filter--item--label" for="{{id}}">{{value}}</label>
+					</li>
+					{%- endfor %}
+				</ul>
+			</div>
+			{%- endfor %}
+		</form>
+	</div>
+</div>

@@ -1,0 +1,17 @@
+<div class="menu">
+	<a href="/" class="menu__close header__mobile-menu--toggle"><img src="{{header.mobile_menu.close}}" alt="{{header.mobile_menu.close_caption}}"></a>
+	<a href="/" class="menu__logo"><img src="{{header.logo}}" alt=""></a>
+	<ul  class="menu__tools">
+		{% for item in header.toolbar -%}
+		<li class="{{item.mobile_class}}">
+			<a href="#"><img src="{{item.icon}}" alt="{{item.label}}"></a>
+		</li>
+		{%- endfor %}
+	</ul>
+	
+	<ul class="menu__links">
+		{% for item in navigation -%}
+		<li><a href="{{item.url}}" class="{{item.class}}">{{item.label}}</a></li>
+		{%- endfor %}
+	</ul>
+</div>

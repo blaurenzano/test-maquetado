@@ -1,0 +1,130 @@
+.listing {
+
+	&__controls {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+	}
+	form {
+		margin: 1rem 0;
+		text-align: right;
+
+		.listing__container--layout-selector {
+			font-family: 'Glyphter';
+			vertical-align: bottom;
+		}
+
+		select {
+			display: inline-block;
+			font-size: 1.6rem;
+			font-weight: normal;
+			color: $textblack;
+			padding: .5rem;
+			margin: 0;
+			border: 1px solid #aaa;
+			border-radius: .5em;
+			background-color: transparent;
+
+			// TODO: revisar porque estos prefijos no los agrega ???
+			-moz-appearance: none;
+			-webkit-appearance: none;
+			appearance: none;
+		}
+
+		select::-ms-expand {
+			display: none;
+		}
+
+		select:hover {
+			border-color: #888;
+		}
+
+		select:focus {
+			outline: 1px solid $black;
+		}
+
+		select option {
+			font-weight: normal;
+		}
+	}
+
+	.listing__container {
+		width: 100%;
+		max-width: 83rem; //ie 11 fix
+		margin-bottom: 10rem;
+		display: flex;
+		flex-wrap: wrap;
+
+		> * {
+			width: (1 / 3) * 100%;
+
+			@media all and (min-width: $mobileWidth + 1) and (max-width: $tabletWidth) {
+				width: (1 / 2) * 100%;
+			}
+
+			@media all and (max-width: $mobileWidth) {
+				width: (1 / 1) * 100%;
+			}
+		}
+
+		&[data-layout=cols-1] > * {
+			width:  (1 / 1) * 100%;
+		}
+
+		&[data-layout=cols-2] > * {
+			width:  (1 / 2) * 100%;
+		}
+
+		&[data-layout=cols-3] > * {
+			width:  (1 / 3) * 100%;
+		}
+
+		&[data-layout=cols-4] > * {
+			width:  (1 / 4) * 100%;
+		}
+
+		&--target {
+			display: block;
+			transition: all $transition-normal;
+			overflow: hidden;
+			text-decoration: none;
+			margin: .5rem;
+
+			&:hover,
+			&:focus {
+				.listing__container--thumb {
+					transform: scale(1.05);
+				}
+			}
+
+			&:focus {
+				outline: 1px solid $black;
+			}
+		}
+
+		&--thumb {
+			border-bottom: 1px solid $black;
+			transform-origin: bottom center;
+			transition: all $transition-normal;
+		}
+
+		&--title {
+			margin: 0;
+			margin-top: .8rem;
+			font-size: 1.6rem;
+			line-height: 2.2rem;
+			font-weight: normal;
+		}
+
+		&--price {
+			margin: 0;
+			font-size: 1.6rem;
+			line-height: 2.2rem;
+			font-weight: bold;
+
+			&::before {
+				content: "$";
+			}
+		}
+	}
+}

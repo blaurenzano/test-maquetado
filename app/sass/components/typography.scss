@@ -1,0 +1,35 @@
+@import '../vars';
+
+
+.text-xlarge {
+	font-size: 2.4rem;
+}
+
+.text-large {
+	font-size: 2rem;
+}
+
+.text-small {
+	font-size: 0.75rem;
+}
+
+
+.text-bold {
+	font-weight: bold;
+}
+
+.text-uppercase {
+	text-transform: uppercase;
+}
+
+.text-nowrap {
+	white-space: nowrap;
+}
+
+sup {
+	top: -0.8em;
+}
+
+@media all and (max-width: $mobileWidth) {
+
+}

@@ -1,0 +1,31 @@
+<header class="header text-center">
+	<div class="constrain">
+		<div class="relative">
+			<div class="header__mobile-menu">
+				<a href="#" class="header__mobile-menu--toggle">
+					<img src="{{header.mobile_menu.icon}}" alt="{{header.mobile_menu.caption}}">
+				</a>
+			</div>
+			{% include "./_menu.njk" %}
+			<h1>
+				<a href="/"><img class="header__logo"src="{{header.logo}}" alt="{{header.title}}"/></a>
+			</h1>
+			<div class="header__toolbar">
+				<ul>
+					{% for item in header.toolbar -%}
+					<li class="{{item.class}}">
+						<a href="#"><img src="{{item.icon}}" alt="{{item.label}}"></a>
+					</li>
+					{%- endfor %}
+				</ul>
+			</div>
+		</div>
+		<nav class="header__topbar">
+			<ul>
+				{% for item in navigation -%}
+				<li><a href="{{item.url}}" class="{{item.class}}">{{item.label}}</a></li>
+				{%- endfor %}
+			</ul>
+		</nav>
+	</div>
+</header>
