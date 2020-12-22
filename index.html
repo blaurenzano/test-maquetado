@@ -1,36 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title> Test de maquetado </title>
-	<link rel="preconnect" href="https://fonts.gstatic.com" />
-	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
-	<!-- Jquery -->
-	<script src="https://code.jquery.com/jquery-3.5.1.js"
-		integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
-	<link rel="stylesheet" href="css/styles.css" />
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Test de maquetado</title>
+	<!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <linkhref="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+    rel="stylesheet"/>
+    <!-- Jquery -->
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.js"
+      integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+      crossorigin="anonymous"
+	></script>
+	<!-- Hoja de Estilos -->
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+
+  <body>
+
     <header class="header">
 
       <figure class="header__logo">
-        <a href="#"><img src="assets/logo.svg" alt="La Preuve" /></a>
+        <a href="#"><img src="./assets/logo.svg" alt="La Preuve" /></a>
       </figure>
 
       <div class="header__iconos">
         <a id="search" href="#"
-          ><img src="assets/iconos/search-solid.svg" alt="search"
+          ><img src="./assets/iconos/search-solid.svg" alt="search"
         /></a>
-        <a id="user" href="#"><img src="assets/iconos/user-solid.svg" alt="usuario" /></a>
+        <a id="user" href="#"
+          ><img src="./assets/iconos/user-solid.svg" alt="usuario"
+        /></a>
         <a id="cart" href="#"
-          ><img src="assets/iconos/shopping-cart-solid.svg" alt="carrito"
+          ><img src="./assets/iconos/shopping-cart-solid.svg" alt="carrito"
         /></a>
-	  </div>
-	  
-	  	<i class="header__burgerbutton">
-		<img src="assets/iconos/bars-solid.svg" alt="Mostrar Menu">
-		</i>
+      </div>
+
+      <i class="header__burgerbutton">
+        <img src="./assets/iconos/bars-solid.svg" alt="Mostrar Menu" />
+      </i>
 
       <nav class="header__nav">
         <ul>
@@ -47,144 +57,187 @@
     <main class="main">
 
       <aside class="main__aside">
-		  <h1 class="main__aside--h1"> Zapatillas </h1>
-		  <h2 class="main__aside--h2"> Filtrar </h2>
-		  <div>
-			  <h3 class="main__aside--h3"> Categoría </h3>
-			  <div>
-				  <ul class="main__aside--ul">
-					  <li> Zapatillas </li>
-					  <li> Zapatos </li>
-					  <li> Botas </li>
-					  <li> Sandalias </li>
-					  <li> Pantuflas </li>
-				  </ul>
-			  </div>
-		  </div>
+        <h1 class="main__aside--h1">Zapatillas</h1>
+		<h2 class="main__aside--h2">Filtrar</h2>
+		
+        <div>
+          <h3 class="main__aside--h3">Categoría</h3>
+          <div>
+            <ul class="main__aside--ul">
+              <li><a href="#"> Zapatillas </a></li>
+              <li><a href="#"> Zapatos </a></li>
+              <li><a href="#"> Botas </a></li>
+              <li><a href="#"> Sandalias </a></li>
+              <li><a href="#"> Pantuflas </a></li>
+            </ul>
+          </div>
+        </div>
 
-		  <div>
-			  <h3 class="main__aside--h3"> Talle </h3>
-			  <div>
-				  <ul class="main__aside--ul">
-					  <li> 36 </li>
-					  <li> 38 </li>
-					  <li> 40 </li>
-					  <li> 42 </li>
-					  <li> 44 </li>
-				  </ul>
-			  </div>
-		  </div>
+        <div>
+          <h3 class="main__aside--h3">Talle</h3>
+          <div>
+            <ul class="main__aside--ul">
+              <li><a href="#"> 36 </a></li>
+              <li><a href="#"> 38 </a></li>
+              <li><a href="#"> 40 </a></li>
+              <li><a href="#"> 42 </a></li>
+              <li><a href="#"> 44 </a></li>
+            </ul>
+          </div>
+        </div>
 
-		  <div>
-			  <h3 class="main__aside--h3"> Color </h3>
-			  <div>
-				  <ul class="main__aside--ul">
-					  <li> Amarillo </li>
-					  <li> Negro </li>
-					  <li> Verde </li>
-					  <li> Azul </li>
-					  <li> Blanco </li>
-				  </ul>
-			  </div>
-		  </div>
-	  </aside>
+        <div>
+          <h3 class="main__aside--h3">Color</h3>
+          <div>
+            <ul class="main__aside--ul">
+              <li><a href="#"> Amarillo </a></li>
+              <li><a href="#"> Negro </a></li>
+              <li><a href="#"> Verde </a></li>
+              <li><a href="#"> Azul </a></li>
+              <li><a href="#"> Blanco </a></li>
+            </ul>
+          </div>
+        </div>
+      </aside>
 
       <section class="main__productos">
-
-		<div class="main__productos--card">
-			<a href="#"><img src="assets/productos/zapatilla_1.jpg" alt="Zapatilla 1-XFK"></a>
-			<p> Zapatilla 1-XFK</p>
-			<h4>$5000</h4>
-		</div>
-
-		<div class="main__productos--card">
-			<a href="#"><img src="assets/productos/zapatilla_2.jpg" alt="Zapatilla 2000-X"></a>
-			<p> Zapatilla 2000-X</p>
-			<h4>$9800</h4>
-		</div>
-
-		<div class="main__productos--card">
-			<a href="#"><img src="assets/productos/zapatilla_3.jpg" alt="Zapatilla 3 Run"></a>
-			<p> Zapatilla 3 Run</p>
-			<h4>$6500</h4>
-		</div>
 		
 		<div class="main__productos--card">
-			<a href="#"><img src="assets/productos/zapatilla_3.jpg" alt="Zapatilla 3 Run"></a>
-			<p> Zapatilla 3 Run</p>
-			<h4>$6500</h4>
-		</div>
+          <a href="#"
+            ><img
+              src="./assets/productos/zapatilla_1.jpg"
+              alt="Zapatilla 1-XFK"
+          /></a>
+          <p>Zapatilla 1-XFK</p>
+          <h4>$5000</h4>
+        </div>
 
-		<div class="main__productos--card">
-			<a href="#"><img src="assets/productos/zapatilla_1.jpg" alt="Zapatilla 1-XFK"></a>
-			<p> Zapatilla 1-XFK</p>
-			<h4>$5000</h4>
-		</div>
+        <div class="main__productos--card">
+          <a href="#"
+            ><img
+              src="./assets/productos/zapatilla_2.jpg"
+              alt="Zapatilla 2000-X"
+          /></a>
+          <p>Zapatilla 2000-X</p>
+          <h4>$9800</h4>
+        </div>
 
-		<div class="main__productos--card">
-			<a href="#"><img src="assets/productos/zapatilla_2.jpg" alt="Zapatilla 2000-X"></a>
-			<p> Zapatilla 2000-X</p>
-			<h4>$9800</h4>
-		</div>
+        <div class="main__productos--card">
+          <a href="#"
+            ><img
+              src="./assets/productos/zapatilla_3.jpg"
+              alt="Zapatilla 3 Run"
+          /></a>
+          <p>Zapatilla 3 Run</p>
+          <h4>$6500</h4>
+        </div>
 
-		<div class="main__productos--card">
-			<a href="#"><img src="assets/productos/zapatilla_1.jpg" alt="Zapatilla 1-XFK"></a>
-			<p> Zapatilla 1-XFK</p>
-			<h4>$5000</h4>
-		</div>
+        <div class="main__productos--card">
+          <a href="#"
+            ><img
+              src="./assets/productos/zapatilla_3.jpg"
+              alt="Zapatilla 3 Run"
+          /></a>
+          <p>Zapatilla 3 Run</p>
+          <h4>$6500</h4>
+        </div>
 
-		<div class="main__productos--card">
-			<a href="#"><img src="assets/productos/zapatilla_2.jpg" alt="Zapatilla 2000-X"></a>
-			<p> Zapatilla 2000-X</p>
-			<h4>$9800</h4>
-		</div>
+        <div class="main__productos--card">
+          <a href="#"
+            ><img
+              src="./assets/productos/zapatilla_1.jpg"
+              alt="Zapatilla 1-XFK"
+          /></a>
+          <p>Zapatilla 1-XFK</p>
+          <h4>$5000</h4>
+        </div>
 
-		<div class="main__productos--card">
-			<a href="#"><img src="assets/productos/zapatilla_3.jpg" alt="Zapatilla 3 Run"></a>
-			<p> Zapatilla 3 Run</p>
-			<h4>$6500</h4>
-		</div>
+        <div class="main__productos--card">
+          <a href="#"
+            ><img
+              src="./assets/productos/zapatilla_2.jpg"
+              alt="Zapatilla 2000-X"
+          /></a>
+          <p>Zapatilla 2000-X</p>
+          <h4>$9800</h4>
+        </div>
 
-		<div class="main__productos--card">
-			<a href="#"><img src="assets/productos/zapatilla_2.jpg" alt="Zapatilla 2000-X"></a>
-			<p> Zapatilla 2000-X</p>
-			<h4>$9800</h4>
-		</div>
+        <div class="main__productos--card">
+          <a href="#"
+            ><img
+              src="./assets/productos/zapatilla_1.jpg"
+              alt="Zapatilla 1-XFK"
+          /></a>
+          <p>Zapatilla 1-XFK</p>
+          <h4>$5000</h4>
+        </div>
 
-		<div class="main__productos--card">
-			<a href="#"><img src="assets/productos/zapatilla_3.jpg" alt="Zapatilla 3 Run"></a>
-			<p> Zapatilla 3 Run</p>
-			<h4>$6500</h4>
-		</div>
+        <div class="main__productos--card">
+          <a href="#"
+            ><img
+              src="./assets/productos/zapatilla_2.jpg"
+              alt="Zapatilla 2000-X"
+          /></a>
+          <p>Zapatilla 2000-X</p>
+          <h4>$9800</h4>
+        </div>
 
-		<div class="main__productos--card">
-			<a href="#"><img src="assets/productos/zapatilla_1.jpg" alt="Zapatilla 1-XFK"></a>
-			<p> Zapatilla 1-XFK</p>
-			<h4>$5000</h4>
-		</div>
+        <div class="main__productos--card">
+          <a href="#"
+            ><img
+              src="./assets/productos/zapatilla_3.jpg"
+              alt="Zapatilla 3 Run"
+          /></a>
+          <p>Zapatilla 3 Run</p>
+          <h4>$6500</h4>
+        </div>
 
+        <div class="main__productos--card">
+          <a href="#"
+            ><img
+              src="./assets/productos/zapatilla_2.jpg"
+              alt="Zapatilla 2000-X"
+          /></a>
+          <p>Zapatilla 2000-X</p>
+          <h4>$9800</h4>
+        </div>
+
+        <div class="main__productos--card">
+          <a href="#"
+            ><img
+              src="./assets/productos/zapatilla_3.jpg"
+              alt="Zapatilla 3 Run"
+          /></a>
+          <p>Zapatilla 3 Run</p>
+          <h4>$6500</h4>
+        </div>
+
+        <div class="main__productos--card">
+          <a href="#"
+            ><img
+              src="./assets/productos/zapatilla_1.jpg"
+              alt="Zapatilla 1-XFK"
+          /></a>
+          <p>Zapatilla 1-XFK</p>
+          <h4>$5000</h4>
+		</div>
+		
 	  </section>
-
+	  
     </main>
 
     <footer class="footer">
-		<ul>
-			<li><a href="#"> Ayuda </a></li>
-			<li><a href="#"> Contacto </a></li>
-			<li><a href="#"> Términos y Condiciones </a></li>
-			<li><a href="#"> Políticas de Privacidad </a></li>
 
-		</ul>
+      <ul>
+        <li><a href="#"> Ayuda </a></li>
+        <li><a href="#"> Contacto </a></li>
+        <li><a href="#"> Términos y Condiciones </a></li>
+        <li><a href="#"> Políticas de Privacidad </a></li>
+	  </ul>
+	  
+    </footer>
 
-	</footer>
-
-
-<!-- Hoja de FUnciones -->
-<script
-src="https://code.jquery.com/jquery-3.5.1.js"
-integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
-crossorigin="anonymous"></script>
-	<script src="js/funciones.js"></script>
- 
-</body>
+    <!-- Hoja de Funciones -->
+    <script src="./js/funciones.js"></script>
+  </body>
 </html>

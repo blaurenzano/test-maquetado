@@ -31,13 +31,14 @@
 
         display: initial;
         left: 2rem;
+        z-index: 999;
     }
 
     .header__nav {
     
         position: fixed;
         background-color: #100217E6;
-        z-index: 999;
+        z-index: 998;
         top: 0;
         left: -70vw;
         width: 70vw;
@@ -65,7 +66,7 @@
         }
     }
 
-    .header__burgerbutton.active {
+    .active {
         left: 0;
     }
 

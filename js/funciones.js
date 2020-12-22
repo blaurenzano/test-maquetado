@@ -1,5 +1,4 @@
-
-//      Menu Hamburguesa Responsive
+/* BURGER BUTTON */
 
 const menu = document.querySelector('.header__nav');
 const burgerButton = document.querySelector('.header__burgerbutton');
