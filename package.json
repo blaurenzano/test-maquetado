@@ -1,0 +1,25 @@
+{
+  "name": "test-maquetado",
+  "version": "1.0.0",
+  "description": "En el siguiente vínculo vas a encontrar el diseño de una web hecho en Adobe XD, en versión desktop y mobile:\r https://xd.adobe.com/view/f3229a4d-559d-4a23-500f-6c99f584ac0e-8513/\r Podés alternar entre la vista interactiva o la vista de especificaciones con los botones de la derecha, para poder ver datos de medidas, tipografías, colores, etc.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+     "build-css": "node-sass --include-path scss scss/styles.scss css/styles.css",
+     "watch-css": "nodemon -e scss -x \"npm run build-css\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GonzaloManoukian/test-maquetado.git"
+  },
+  "author": "Gonzalo Manoukian",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/GonzaloManoukian/test-maquetado/issues"
+  },
+  "homepage": "https://github.com/GonzaloManoukian/test-maquetado#readme",
+  "dependencies": {
+    "node-sass": "^5.0.0",
+    "nodemon": "^2.0.6"
+  }
+}
