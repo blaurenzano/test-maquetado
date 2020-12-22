@@ -1,11 +1,151 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
 	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
 	<title>Test de maquetado</title>
-	<link rel="stylesheet" href="styles.css">
+	<link rel="stylesheet" href="styles.css"><!-- CSS only -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
 </head>
-<body>
 
+<body>
+	<div id="page">
+		<header class="d-flex flex-md-column justify-content-between justify-content-md-center align-items-center">
+			<a href="#" id="bars-menu" class="mobile-menu d-block d-md-none">
+				<span></span>
+				<span></span>
+				<span></span>
+			</a>
+			<div class="logo"></div>
+			<a href="#" id="shopping-cart-menu" class="mobile-menu d-block d-md-none">
+				<img src="./assets/iconos/shopping-cart-solid.svg">
+			</a>
+			<nav class="d-none">
+				<ul class="list-inline">
+					<li class="link list-inline-item links-header active">SALE</li>
+					<li class="link list-inline-item links-header">E-SHOP</li>
+					<li class="link list-inline-item links-header">LOOKBOOK</li>
+					<li class="link list-inline-item links-header">CAMPAÑA</li>
+					<li class="link list-inline-item links-header">LOCALES</li>
+				</ul>
+			</nav>
+			<div class="user-menu d-none d-md-block">
+				<a href="#" class="search">
+					<img src="./assets/iconos/search-solid.svg">
+				</a>
+				<a href="#" class="profile">
+					<img src="./assets/iconos/user-solid.svg">
+				</a>
+				<a href="#" class="cart">
+					<img src="./assets/iconos/shopping-cart-solid.svg">
+				</a>
+			</div> <!-- .user-menu -->
+		</header>
+		<div class="container">
+			<div class="row">
+				<aside class="filters-wrap col-md-3">
+					<h1 class="h1">Zapatillas</h1>
+					<div class="filters d-none d-md-block">
+						<h2 class="h2">Filtrar</h2>
+						<div class="accordion accordion-flush" id="accordionFlushExample">
+							<div class="accordion-item">
+								<div class="accordion-header" id="flush-headingOne">
+									<h3 class="h3 accordion-button" type="button" data-bs-toggle="collapse"
+										data-bs-target="#flush-collapseOne" aria-expanded="true"
+										aria-controls="flush-collapseOne">
+										Categoría
+									</h3>
+								</div>
+								<div id="flush-collapseOne" class="accordion-collapse collapse show"
+									aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+									<ul class="accordion-body list-unstyled">
+										<li class="link texto">Zapatillas</li>
+										<li class="link texto">Zapatos</li>
+										<li class="link texto">Botas</li>
+										<li class="link texto">Sandalias</li>
+										<li class="link texto">Pantuflas</li>
+									</ul>
+								</div>
+							</div>
+							<div class="accordion-item">
+								<div class="accordion-header" id="flush-headingTwo">
+									<h3 class="h3 collapsed accordion-button" type="button" data-bs-toggle="collapse"
+										data-bs-target="#flush-collapseTwo" aria-expanded="false"
+										aria-controls="flush-collapseTwo">
+										Talle
+									</h3>
+								</div>
+								<div id="flush-collapseTwo" class="accordion-collapse collapse"
+									aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+									<ul class="accordion-body list-unstyled">
+										<li class="link texto">36</li>
+										<li class="link texto">38</li>
+										<li class="link texto">40</li>
+										<li class="link texto">42</li>
+										<li class="link texto">44</li>
+									</ul>
+								</div>
+							</div>
+							<div class="accordion-item">
+								<div class="accordion-header" id="flush-headingThree">
+									<h3 class="h3 collapsed accordion-button" type="button" data-bs-toggle="collapse"
+										data-bs-target="#flush-collapseThree" aria-expanded="false"
+										aria-controls="flush-collapseThree">
+										Color
+									</h3>
+								</div>
+								<div id="flush-collapseThree" class="accordion-collapse collapse"
+									aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+									<ul class="accordion-body list-unstyled">
+										<li class="link texto">Amarillo</li>
+										<li class="link texto">Negro</li>
+										<li class="link texto">Verde</li>
+										<li class="link texto">Azul</li>
+										<li class="link texto">Blanco</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+				</aside>
+				<section class="col-md-9">
+					<div class="grid-selectors d-flex justify-content-end">
+						<span>Columnas:</span>
+						<ul class="list-inline d-block d-md-none selectors">
+							<li class="list-inline-item link">1</li>
+							<li class="list-inline-item two-columns link">2</li>
+						</ul>
+						<ul class="list-inline d-none d-md-block selectors">
+							<li class="list-inline-item link">2</li>
+							<li class="list-inline-item three-columns link">3</li>
+							<li class="list-inline-item link">4</li>
+						</ul>
+					</div> <!-- .grid-selectors -->
+					<div id="products"></div> <!-- .products -->
+				</section>
+			</div> <!-- .row -->
+		</div> <!-- .container -->
+		<footer class="footer">
+			<div class="container">
+				<nav class="nav flex-column flex-sm-row justify-content-center">
+					<a class="text-sm-center nav-link links-footer" href="#">Ayuda</a>
+					<a class="text-sm-center nav-link links-footer" href="#">Contacto</a>
+					<a class="text-sm-center nav-link links-footer" href="#">Términos y condiciones</a>
+					<a class="text-sm-center nav-link links-footer" href="#">Políticas de privacidad</a>
+				</nav>
+			</div> <!-- .container -->
+		</footer>
+	</div> <!-- #page -->
+	<script src="https://code.jquery.com/jquery-3.5.1.min.js"
+		integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+	<script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+		integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+		crossorigin="anonymous"></script>
+	<script src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
+	<script type="module" src="index.js"></script>
 </body>
+
 </html>
