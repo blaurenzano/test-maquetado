@@ -1,0 +1,127 @@
+
+@media screen and (max-width: 1023px) {
+
+    .header__nav {
+        width: 70%;
+    }
+    .main__productos--card {
+        min-width: 20rem;
+        width: 45%;
+        margin: 0 0 2rem 2rem;
+    }
+}
+
+@media screen and (max-width: 767px) {
+
+    .header {
+        height: 70px;
+    }
+
+    .header__logo img {
+        width: 140px;
+    }
+
+    .header__iconos {
+
+        position: absolute;
+        right: 2rem;
+    }
+
+    .header__burgerbutton {
+
+        display: initial;
+        left: 2rem;
+        z-index: 999;
+    }
+
+    .header__nav {
+    
+        position: fixed;
+        background-color: #100217E6;
+        z-index: 998;
+        top: 0;
+        left: -70vw;
+        width: 70vw;
+        height: 100vh;
+        bottom: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: .3s;
+        margin: 0;
+
+        ul {
+            flex-flow: column;
+            align-items: flex-start;
+            margin-left: 2rem;
+    
+            li {
+                display: list-item;
+                flex: 0;
+                border-bottom: 1px solid #444e51;
+                width: 200px;
+                text-align: start;
+                padding: 1rem 0;
+            }
+        }
+    }
+
+    .active {
+        left: 0;
+    }
+
+    #search, #user {
+        display: none;
+    }
+
+
+    /* MAIN */
+
+    .main {
+        width: initial;
+        display: block;
+        margin: 10rem 2rem 5rem;
+    }
+
+    /* ASIDE - FILTROS */
+
+    .main__aside--h2, .main__aside--h3, .main__aside--ul {
+        display: none;
+    }
+
+    /* PRODUCTOS */
+
+    .main__productos--card {
+        width: 100%;
+        max-width: 35rem;
+        margin: 2rem auto;
+
+        
+        p {
+            font-size: 2rem;
+        }
+
+        h4 {
+            font-size: 2rem;
+        }
+    }
+
+    /* FOOTER */
+
+    .footer {
+        height: auto;
+        text-align: center;
+    
+        ul {
+            width: initial;
+            display: initial;
+            margin: 2rem 0 1rem;
+
+    
+            li {
+                display: block;
+                margin-bottom: 2rem;
+            }
+        }
+    }
+}
