@@ -144,7 +144,7 @@ body {
         text-decoration: none;
         color: #FAFAFA; }
 
-@media (max-width: 1023px) {
+@media screen and (max-width: 1023px) {
   .header__nav {
     width: 70%; }
   .main__productos--card {
@@ -152,7 +152,7 @@ body {
     width: 45%;
     margin: 0 0 2rem 2rem; } }
 
-@media (max-width: 767px) {
+@media screen and (max-width: 767px) {
   .header {
     height: 70px; }
   .header__logo img {
