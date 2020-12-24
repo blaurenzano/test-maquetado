@@ -2,10 +2,204 @@
 <html lang="es">
 <head>
 	<meta charset="UTF-8">
-	<title>Test de maquetado</title>
-	<link rel="stylesheet" href="styles.css">
-</head>
-<body>
+  <title>La Preuve</title>
+  <link rel="icon" href="./assets/iconos/favicon.ico">
+  <link rel="stylesheet" href="./styles.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 
-</body>
+  <!-- Meta Tags for sharing  -->
+  <meta name="title" content="La Preuve">
+  <meta name="description" content="Footwear store with premium product selection">
+
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://heuristic-cori-48e07b.netlify.app/">
+  <meta property="og:title" content="La Preuve">
+  <meta property="og:description" content="Footwear store with premium product selection">
+  <meta property="og:image" content="./assets/logo.png">
+
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:url" content="https://heuristic-cori-48e07b.netlify.app/">
+  <meta property="twitter:title" content="La Preuve">
+  <meta property="twitter:description" content="Footwear store with premium product selection">
+  <meta property="twitter:image" content="./assets/logo.png">
+</head>
+
+<body>
+  <div class="page-wrapper">
+    <div class="mobile-navbar-header">
+      <img class="sidebar-toggle" src="./assets/iconos/bars-solid.svg"/>
+      <img class="logo" src="./assets/logo.svg"/>
+      <img class="cart" src="./assets/iconos/shopping-cart-solid.svg" />
+    </div>
+    <div class="desktop-navbar">
+        <a href="#">
+          <img class="logo" src="./assets/logo.svg"/>
+        </a>
+      <div class="buttons-container">
+        <img class="search" src="./assets/iconos/search-solid.svg"/>
+        <img class="user" src="./assets/iconos/user-solid.svg"/>
+        <img class="cart" src="./assets/iconos/shopping-cart-solid.svg"/>
+      </div>
+      <ul class="desktop-navbar-links">
+        <li>
+          <a href="#"  class="active">SALE</a>
+        </li>
+        <li>
+          <a href="#">E-SHOP</a>
+        </li>
+        <li>
+          <a href="#">LOOKBOOK</a>
+        </li>
+        <li>
+          <a href="#">CAMPAÑA</a>
+        </li>
+        <li>
+          <a href="#">LOCALES</a>
+        </li>
+      </ul>
+    </div>
+    <aside class="sidebar">
+      <button class="close-btn">
+        <img src="./assets/iconos/close.svg" />
+      </button>
+      <ul class="links">
+        <li>
+          <a href="#">SALE</a>
+        </li>
+        <li>
+          <a href="#">E-SHOP</a>
+        </li>
+        <li>
+          <a href="#">LOOKBOOK</a>
+        </li>
+        <li>
+          <a href="#">CAMPAÑA</a>
+        </li>
+        <li>
+          <a href="#">LOCALES</a>
+        </li>
+      </ul>
+    </aside>
+
+    <h1 class="section-title">Zapatillas</h1>
+    <div class="main-section-container">
+      <div class="filters-container">
+        <h1 class="desktop-section-title">Zapatillas</h1>
+        <h1 class="desktop-filters-title">Filtrar</h1>
+
+        <div class="filter-container">
+          <div class="filter-section">
+            <h4 class="filter-title">Ordenar Productos</h4>
+            <button class="filter-btn">
+              <span class="show-icon">
+                <img src="./assets/iconos/show.svg">
+              </span>
+              <span class="hide-icon">
+                <img src="./assets/iconos/hide.svg">
+              </span>
+            </button>
+          </div>
+          <ul class="filter-list">
+              <li class="filter-product-sort-btn" data-id="lower">Menor Precio</li>
+              <li class="filter-product-sort-btn" data-id="higher">Mayor Precio</li>
+          </ul>
+        </div>
+        <div class="filter-container">
+          <div class="filter-section">
+            <h4 class="filter-title">Categoría</h4>
+            <button class="filter-btn">
+              <span class="show-icon">
+                <img src="./assets/iconos/show.svg">
+              </span>
+              <span class="hide-icon">
+                <img src="./assets/iconos/hide.svg">
+              </span>
+            </button>
+          </div>
+          <ul class="filter-list">
+              <li class="filter-product-category-btn">Zapatillas</li>
+              <li class="filter-product-category-btn">Zapatos</li>
+              <li class="filter-product-category-btn">Botas</li>
+              <li class="filter-product-category-btn">Sandalias</li>
+              <li class="filter-product-category-btn">Pantuflas</li>
+          </ul>
+        </div>
+        <div class="filter-container">
+          <div class="filter-section">
+            <h4 class="filter-title">Talle</h4>
+            <button class="filter-btn">
+              <span class="show-icon">
+                <img src="./assets/iconos/show.svg">
+              </span>
+              <span class="hide-icon">
+                <img src="./assets/iconos/hide.svg">
+              </span>
+            </button>
+          </div>
+          <ul class="filter-list">
+              <li class="filter-product-size-btn" data-id="todos">Todos</li>
+              <li class="filter-product-size-btn" data-id="36">36</li>
+              <li class="filter-product-size-btn" data-id="38">38</li>
+              <li class="filter-product-size-btn" data-id="40">40</li>
+              <li class="filter-product-size-btn" data-id="42">42</li>
+              <li class="filter-product-size-btn" data-id="44">44</li>
+          </ul>
+        </div>
+
+        <div class="filter-container">
+          <div class="filter-section">
+            <h4 class="filter-title">color</h4>
+            <button class="filter-btn">
+              <span class="show-icon">
+                <img src="./assets/iconos/show.svg">
+              </span>
+              <span class="hide-icon">
+                <img src="./assets/iconos/hide.svg">
+              </span>
+            </button>
+          </div>
+          <ul class="filter-list">
+              <li class="filter-product-color-btn" data-id="todos">Todos</li>
+              <li class="filter-product-color-btn" data-id="amarillo">Amarillo</li>
+              <li class="filter-product-color-btn" data-id="negro">Negro</li>
+              <li class="filter-product-color-btn" data-id="verde">Verde</li>
+              <li class="filter-product-color-btn" data-id="azul">Azul</li>
+              <li class="filter-product-color-btn" data-id="blanco">Blanco</li>
+          </ul>
+        </div>
+      </div>
+      <div class="section-center" id="section">
+          <article class="menu-item">
+            <div class="box-limit">
+              <img src="" class="photo" alt="" />
+            </div>
+              <div class="item-info">
+                <h4 class="product-title"></h4>
+                <h4 class="price"></h4>
+              </div>
+          </article>
+      </div>
+    </div>
+
+    <footer>
+      <ul class="footer-container">
+        <li>
+          <a href="#">Ayuda</a>
+        </li>
+        <li>
+          <a href="#">Contacto</a>
+        </li>
+        <li>
+          <a href="#">Términos y Condiciones</a>
+        </li>
+        <li>
+          <a href="#">Políticas de privacidad</a>
+        </li>
+      </ul>
+    </footer>
+
+    <script type="text/javascript" src="script.js"></script>
+  </body>
+</div>
 </html>

@@ -1,0 +1,99 @@
+
+  [
+  {
+    "img": "./assets/productos/zapatilla_1.jpg",
+    "title": "Zapatilla 1-XFK",
+    "category": "zapatillas",
+    "color": "blanco",
+    "size": "36",
+    "price": 5000
+  },
+  {
+    "img": "./assets/productos/zapatilla_2.jpg",
+    "title": "Zapatilla 2000-X",
+    "category": "zapatillas",
+    "color": "negro",
+    "size": "38",
+    "price": 9800
+  },
+  {
+    "img": "./assets/productos/zapatilla_3.jpg",
+    "title": "Zapatilla 3 Run",
+    "category": "zapatillas",
+    "color": "negro",
+    "size": "36",
+    "price": 6500
+  },
+  {
+    "img": "./assets/productos/zapatilla_3.jpg",
+    "title": "Zapatilla 3 Run",
+    "category": "zapatillas",
+    "color": "negro",
+    "size": "44",
+    "price": 6500
+  },
+  {
+    "img": "./assets/productos/zapatilla_1.jpg",
+    "title": "Zapatilla 1-XFK",
+    "category": "zapatillas",
+    "color": "blanco",
+    "size": "38",
+    "price": 5000
+  },
+  {
+    "img": "./assets/productos/zapatilla_2.jpg",
+    "title": "Zapatilla 2000-X",
+    "category": "zapatillas",
+    "color": "negro",
+    "size": "42",
+    "price": 9800
+  },
+  {
+    "img": "./assets/productos/zapatilla_1.jpg",
+    "title": "Zapatilla 1-XFK",
+    "category": "zapatillas",
+    "color": "blanco",
+    "size": "36",
+    "price": 5000
+  },
+  {
+    "img": "./assets/productos/zapatilla_2.jpg",
+    "title": "Zapatilla 2000-X",
+    "category": "zapatillas",
+    "color": "negro",
+    "size": "44",
+    "price": 9800
+  },
+  {
+    "img": "./assets/productos/zapatilla_3.jpg",
+    "title": "Zapatilla 3 Run",
+    "category": "zapatillas",
+    "color": "negro",
+    "size": "40",
+    "price": 6500
+  },
+  {
+    "img": "./assets/productos/zapatilla_2.jpg",
+    "title": "Zapatilla 2000-X",
+    "category": "zapatillas",
+    "color": "negro",
+    "size": "40",
+    "price": 9800
+  },
+  {
+    "img": "./assets/productos/zapatilla_3.jpg",
+    "title": "Zapatilla 3 Run",
+    "category": "zapatillas",
+    "color": "negro",
+    "size": "42",
+    "price": 6500
+  },
+  {
+    "img": "./assets/productos/zapatilla_1.jpg",
+    "title": "Zapatilla 1-XFK",
+    "category": "zapatillas",
+    "color": "blanco",
+    "size": "44",
+    "price": 5000
+  }
+]
