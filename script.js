@@ -1,3 +1,5 @@
+// Adding sidebar functionality 
+
 const toggle = document.querySelector(".sidebar-toggle");
 const sidebar = document.querySelector(".sidebar");
 const closeBtn = document.querySelector(".close-btn");
@@ -28,6 +30,7 @@ async function getProducts(){
 
 getProducts()
 
+// populating screen with products 
 
 const sectionCenter = document.querySelector(".section-center");
 
@@ -35,7 +38,9 @@ const sectionCenter = document.querySelector(".section-center");
 function displayMenuItems(menuItems) {
   let displayMenu = menuItems.map(function (item) {
     return `<article class="menu-item">
+      <div class="box-limit">
         <img src=${item.img} class="photo" alt=${item.title} />
+      </div>
         <div class="item-info">
           
             <h4 class="product-title">${item.title}</h4>
@@ -47,6 +52,9 @@ function displayMenuItems(menuItems) {
   sectionCenter.innerHTML = displayMenu;
 }
 
+// Adding acordeon functionality to filters, i select the btns and then loop 
+  // through them to add an event listener
+
 const btns = document.querySelectorAll(".filter-btn");
 
 btns.forEach(function(btn) {
@@ -56,7 +64,7 @@ btns.forEach(function(btn) {
   });
 });
 
-// filter products by color
+// filter products by color functionality
 
 const filterColorBtns = document.querySelectorAll(".filter-product-color-btn");
 
@@ -76,7 +84,7 @@ filterColorBtns.forEach(function (btn) {
   });
 });
 
-// filter products by size
+// filter products by size functionality
 
 const filterSizeBtns = document.querySelectorAll(".filter-product-size-btn");
 
@@ -97,7 +105,7 @@ filterSizeBtns.forEach(function (btn) {
 });
 
 
-// sort products by price
+// sort products by price functionality
 
 const filterSortBtns = document.querySelectorAll(".filter-product-sort-btn");
 
@@ -123,27 +131,4 @@ filterSortBtns.forEach(function (btn) {
   });
 });
 
-// Choosing amount of columns 
-
-const section = document.getElementById('section');
-const gridBtns = document.querySelectorAll('.grid-option');
-
-console.log(section);
-
-gridBtns.forEach(function(btn) {
-  btn.addEventListener("click", (e) => {
-    const option = e.currentTarget.dataset.id;
-    console.log(option)
-    console.log(section.classList)
-    if(option === 2) {
-      section.classList.add('section-center-col-2');
-      console.log(section.classList)
-    } else if(option === 3) {
-      section.classList.add('section-center-col-3');
-      console.log(section.classList)
-    } else if(option === 4) {
-      section.classList.add('section-center-col-4');
-      console.log(section.classList)
-    }
-  });
-});
+// made with love by Gustavo Madrid 
