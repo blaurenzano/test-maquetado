@@ -1,11 +1,241 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
 	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Test de maquetado</title>
 	<link rel="stylesheet" href="styles.css">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
 </head>
-<body>
 
+<body>
+	<!-- ----------------HEADER----------------- -->
+	<header class="header">
+		<!-- ---------------MOBILE-HEADER---------------- -->
+		<div class="header__container--mobile">
+			<div class="header__burgerMenuContainer">
+				<img src="./assets/iconos/bars-solid.svg" alt="burger menu" class="header__burgerMenu">
+			</div>
+			<div class="header__logoContainer">
+				<a href="#">
+					<img src="./assets/logo.svg" alt="brand logo" class="header__logo">
+				</a>
+			</div>
+			<div class="header__cartContainer">
+				<img src="./assets/iconos/shopping-cart-solid.svg" alt="cart" class="header__cart">
+			</div>
+		</div>
+		<!-- ---------------END-MOBILE-HEADER---------------- -->
+		<!-- ---------------DESKTOP-HEADER---------------- -->
+		<div class="header__container--desktop">
+			<div class="header__top">
+				<div class="header__logoContainer">
+					<a href="#">
+						<img src="./assets/logo.svg" alt="brand logo" class="header__logo--desktop">
+					</a>
+				</div>
+				<div class="header__iconsContainer">
+					<a href="#">
+						<img src="./assets/iconos/search-solid.svg" alt="search" class="headerIcon">
+					</a>
+					<a href="#">
+						<img src="./assets/iconos/user-solid.svg" alt="user" class="headerIcon">
+					</a>
+					<a href="#">
+						<img src="./assets/iconos/shopping-cart-solid.svg" alt="cart" class="headerIcon">
+					</a>
+				</div>
+			</div>
+			<nav class="header__links">
+				<ul class="header__nav">
+					<li><a href="#" class="header__link header__link--bold">SALE</a></li>
+					<li><a href="#" class="header__link">E-SHOP</a></li>
+					<li><a href="#" class="header__link">LOOKBOOK</a></li>
+					<li><a href="#" class="header__link">CAMPAÑA</a></li>
+					<li><a href="#" class="header__link">LOCALES</a></li>
+				</ul>
+			</nav>
+		</div>
+		<!-- ---------------END-DESKTOP-HEADER---------------- -->
+	</header>
+	<!-- ----------------END-HEADER------------------->
+
+	<!-- ----------------PRODUCTS-SECTION------------------->
+	<section class="search-main">
+		<aside class="search-aside">
+			<h2 class="search__title">Zapatillas</h2>
+			<div class="search__filters">
+				<h3 class="search__filter-title">Filtrar</h3>
+				<!-- -----------CATEGORY-FILTERS------------ -->
+				<div class="category">
+					<div class="category__name-container">
+						<h4 class="category__name">Categoría</h4>
+					</div>
+					<ul class="category__links">
+						<li><a href="#" class="category__link">Zapatillas</a></li>
+						<li><a href="#" class="category__link">Zapatos</a></li>
+						<li><a href="#" class="category__link">Botas</a></li>
+						<li><a href="#" class="category__link">Sandalias</a></li>
+						<li><a href="#" class="category__link">Pantuflas</a></li>
+					</ul>
+				</div>
+				<div class="category">
+					<div class="category__name-container">
+						<h4 class="category__name">Talle</h4>
+					</div>
+					<ul class="category__links">
+						<li><a href="#" class="category__link">36</a></li>
+						<li><a href="#" class="category__link">38</a></li>
+						<li><a href="#" class="category__link">40</a></li>
+						<li><a href="#" class="category__link">42</a></li>
+						<li><a href="#" class="category__link">44</a></li>
+					</ul>
+				</div>
+				<div class="category">
+					<div class="category__name-container">
+						<h4 class="category__name">Color</h4>
+					</div>
+					<ul class="category__links">
+						<li><a href="#" class="category__link">Amarillo</a></li>
+						<li><a href="#" class="category__link">Negro</a></li>
+						<li><a href="#" class="category__link">Verde</a></li>
+						<li><a href="#" class="category__link">Azul</a></li>
+						<li><a href="#" class="category__link">Blanco</a></li>
+					</ul>
+				</div>
+				<!-- -----------END-CATEGORY-FILTERS------------ -->
+			</div>
+		</aside>
+		<div class="products__container">
+			<h2 class="products__title">Zapatillas</h2>
+			<div class="products__grid">
+				<article class="card">
+					<figure class="card__figure">
+						<img src="./assets/productos/zapatilla_1.jpg" alt="producto" class="card__image">
+					</figure>
+					<div class="card__body">
+						<div class="card__title">Zapatilla 1-XFK</div>
+						<div class="card__price">$5000</div>
+					</div>
+				</article>
+				<article class="card">
+					<figure class="card__figure">
+						<img src="./assets/productos/zapatilla_2.jpg" alt="producto" class="card__image">
+					</figure>
+					<div class="card__body">
+						<div class="card__title">Zapatilla 2000-X</div>
+						<div class="card__price">$9800</div>
+					</div>
+				</article>
+				<article class="card">
+					<figure class="card__figure">
+						<img src="./assets/productos/zapatilla_3.jpg" alt="producto" class="card__image">
+					</figure>
+					<div class="card__body">
+						<div class="card__title">Zapatilla 3 Run</div>
+						<div class="card__price">$6500</div>
+					</div>
+				</article>
+				<article class="card">
+					<figure class="card__figure">
+						<img src="./assets/productos/zapatilla_1.jpg" alt="producto" class="card__image">
+					</figure>
+					<div class="card__body">
+						<div class="card__title">Zapatilla 1-XFK</div>
+						<div class="card__price">$5000</div>
+					</div>
+				</article>
+				<article class="card">
+					<figure class="card__figure">
+						<img src="./assets/productos/zapatilla_2.jpg" alt="producto" class="card__image">
+					</figure>
+					<div class="card__body">
+						<div class="card__title">Zapatilla 2000-X</div>
+						<div class="card__price">$9800</div>
+					</div>
+				</article>
+				<article class="card">
+					<figure class="card__figure">
+						<img src="./assets/productos/zapatilla_3.jpg" alt="producto" class="card__image">
+					</figure>
+					<div class="card__body">
+						<div class="card__title">Zapatilla 3 Run</div>
+						<div class="card__price">$6500</div>
+					</div>
+				</article>
+				<article class="card">
+					<figure class="card__figure">
+						<img src="./assets/productos/zapatilla_1.jpg" alt="producto" class="card__image">
+					</figure>
+					<div class="card__body">
+						<div class="card__title">Zapatilla 1-XFK</div>
+						<div class="card__price">$5000</div>
+					</div>
+				</article>
+				<article class="card">
+					<figure class="card__figure">
+						<img src="./assets/productos/zapatilla_2.jpg" alt="producto" class="card__image">
+					</figure>
+					<div class="card__body">
+						<div class="card__title">Zapatilla 2000-X</div>
+						<div class="card__price">$9800</div>
+					</div>
+				</article>
+				<article class="card">
+					<figure class="card__figure">
+						<img src="./assets/productos/zapatilla_3.jpg" alt="producto" class="card__image">
+					</figure>
+					<div class="card__body">
+						<div class="card__title">Zapatilla 3 Run</div>
+						<div class="card__price">$6500</div>
+					</div>
+				</article>
+				<article class="card">
+					<figure class="card__figure">
+						<img src="./assets/productos/zapatilla_1.jpg" alt="producto" class="card__image">
+					</figure>
+					<div class="card__body">
+						<div class="card__title">Zapatilla 1-XFK</div>
+						<div class="card__price">$5000</div>
+					</div>
+				</article>
+				<article class="card">
+					<figure class="card__figure">
+						<img src="./assets/productos/zapatilla_2.jpg" alt="producto" class="card__image">
+					</figure>
+					<div class="card__body">
+						<div class="card__title">Zapatilla 2000-X</div>
+						<div class="card__price">$9800</div>
+					</div>
+				</article>
+				<article class="card">
+					<figure class="card__figure">
+						<img src="./assets/productos/zapatilla_3.jpg" alt="producto" class="card__image">
+					</figure>
+					<div class="card__body">
+						<div class="card__title">Zapatilla 3 Run</div>
+						<div class="card__price">$6500</div>
+					</div>
+				</article>
+			</div>
+		</div>
+	</section>
+	<!-- ----------------END-PRODUCTS-SECTION------------------->
+
+	<!-- ----------------HEADER-SECTION------------------->
+	<footer class="footer">
+		<nav class="footer__links">
+			<ul class="footer__nav">
+				<li class="footer__li"><a href="" class="footer__link">Ayuda</a></li>
+				<li class="footer__li"><a href="" class="footer__link">Contacto</a></li>
+				<li class="footer__li"><a href="" class="footer__link">Términos y condiciones</a></li>
+				<li><a href="" class="footer__link">Políticas de privacidad</a></li>
+			</ul>
+		</nav>
+	</footer>
+	<!-- ----------------END-HEADER-SECTION------------------->
 </body>
+
 </html>
