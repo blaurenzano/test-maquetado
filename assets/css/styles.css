@@ -1,0 +1,266 @@
+body{
+    background-color: #FAFAFA !important;
+    margin: 0
+}
+
+/* Fuentes */
+
+h1, h2, h3 {
+
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold !important;
+    color: #030B1C;
+    font-style: normal;
+}
+
+/* Header */
+
+header {
+    background-color: #100217E6;
+    color: #FAFAFA !important;
+}
+
+.custom-header {
+    display: flex;
+    min-height: 60px;
+    align-items: center;
+    color: #FAFAFA !important;
+
+}
+
+.custom-logo {
+    flex: 10;
+    text-align: center;
+}
+
+.custom-header_items{
+    flex: 1;
+    display: inline-flex;
+    justify-content: center;
+
+}
+
+.custom-header_items a{
+    margin-right: 10px;
+}
+
+.custom-header_items img{
+    width: 30px;
+}
+
+/* Navbar */
+
+.custom-navbar ul {
+    margin: 14px auto 0 auto;
+}
+
+.nav-link {
+    color: #FAFAFA;
+    font-family: 'Roboto', sans-serif;
+    font-size: 26px;    
+}
+
+.nav-item{
+    margin-right: 90px;
+}
+
+/* Sección de productos */
+
+.selector-desktop ul, .selector-mobile ul {
+    min-width: 0;
+}
+
+.products-section {
+    display: flex;
+    margin: 60px;
+    min-height: 80vh;
+}
+
+.products-section__filter{
+    min-width: 19vw;
+    margin: 0 0px 0 7%;
+}
+
+.products-section__filter h1{
+    text-align: left;
+}
+
+.products-section__filter hr{
+    margin: 1rem 0 !important;
+    border: 1px solid black !important;
+    opacity: 1 !important;
+    height: 1px !important;
+}
+
+.products-section__filter-type h3{
+    padding: 5px 0 5px 16px;    
+}
+
+.products-section__filter-type button {    
+    border: none;
+    background-color: #E4E8EE !important;
+    padding: 0;
+    margin-top: 10px;
+}
+
+.products-section__filter-type ul{
+    list-style: none;
+    padding: 16px;
+}
+
+.products-section__filter-type ul li{
+    font-family: 'Roboto', sans-serif;
+    font-size: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.products-section__filter-type button:focus{
+    box-shadow: none;
+    border: none;
+}
+
+.card {
+    border: none !important;
+    width: 90% !important;
+    margin: auto;
+}
+
+.card:hover {
+    opacity: .2;
+}
+
+.card-img-top {
+    border-bottom: 1px solid black;
+}
+
+.card-body {
+    background-color: #FAFAFA;
+
+}
+
+.row-cols-2 .card-title {
+    font-size: 1rem;
+}
+
+.card-text {
+    font-weight: bold;
+    font-size: 20px;
+
+}
+
+/* Footer */
+
+footer {
+    background-color: #100217E6;
+    color: #FAFAFA;
+    min-height: 58px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer ul{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    list-style: none;
+    margin: 0;
+}
+footer ul li {
+    margin-right: 69px;
+}
+
+/* Media queries */
+
+@media (min-width: 992px) {
+
+    .custom-logo a img {
+        width: 300px;
+        margin-left: 190px;
+        margin-top: 15px;
+    }    
+
+    .nav-item {
+        margin-right: 7vw;
+    }
+
+    .nav-item:last-child {
+        margin-right: 0px;
+    }
+
+    .navbar-toggler.navbar-dark {
+        display: none;
+    }  
+
+    .selector-desktop{
+        display: block;
+    }
+
+    .selector-mobile{
+        display: none;
+    }
+}
+
+@media (max-width: 991px) {
+    
+    .custom-header_items a:nth-of-type(1){
+        display: none;
+    }
+
+    .custom-header_items a:nth-of-type(2){
+        display: none;
+    }
+
+    .custom-navbar{
+        text-align: center;
+    }
+    
+    .nav-item {
+        margin: 0px;
+    }
+
+    .products-section__filter {
+        min-width: 30vw;
+        margin: 0;
+    }
+
+    .selector-desktop{
+        display: none;
+    }
+
+    .selector-mobile{
+        display: block;
+    }
+}
+
+@media (max-width: 576px) {
+
+    .custom-logo a img {
+        width: 70%;
+    }
+    .products-section__filter{
+        display: none;
+    }    
+
+    footer ul{
+        display: block;
+    }
+
+    footer ul li{
+        margin: 15px 0 15px 0;
+    }
+
+    .custom-header_items img {
+        width: 7vw;        
+    }
+    .custom-header_items a:nth-of-type(3){
+        padding-right: 10px;
+    }
+
+    .custom-header_items img{
+        margin: 0;
+    }    
+}
