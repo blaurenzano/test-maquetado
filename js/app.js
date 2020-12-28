@@ -1,3 +1,5 @@
+const grid = document.querySelector('#grid-product')
+
 // -------------------MENU-MOBILE--------------------
 const mainMenu = document.querySelector('.mobile-menu')
 const closeMenu = document.querySelector('.mobile-menu__close')
@@ -39,7 +41,6 @@ const twoColumn = document.getElementById('two')
 const threeColumn = document.getElementById('three')
 const fourColumn = document.getElementById('four')
 
-let grid = document.getElementById('grid-product')
 oneColumn.addEventListener('click', showOne)
 twoColumn.addEventListener('click', showTwo)
 threeColumn.addEventListener('click', showThree)
@@ -76,3 +77,33 @@ function showFour() {
 }
 
 // -------------------END-COLUMNS-FILTERS------------------
+
+// -------------------PETICION-DE-DATOS-JSON--------------------
+function traerDatos() {
+  const xhttp = new XMLHttpRequest()
+  //   Realizamos peticion al archivo json
+  xhttp.open('GET', '../json/productos.json', true)
+  xhttp.send()
+  //   Cuando los cambios estan listos utilizamos los datos que contiene el json
+  xhttp.onreadystatechange = function () {
+    if (this.readyState == 4 && this.status == 200) {
+      let datos = JSON.parse(this.responseText)
+
+      datos.forEach((producto) => {
+        grid.innerHTML += `
+            <article class="card">
+            <figure class="card__figure">
+                <img src="${producto.img}" alt="producto" class="card__image">
+            </figure>
+            <div class="card__body">
+                <div class="card__title">${producto.title}</div>
+                <div class="card__price">${producto.price}</div>
+            </div>
+            </article>
+            `
+      })
+    }
+  }
+}
+traerDatos()
+// -------------------END-PETICION-DE-DATOS-JSON----------------
