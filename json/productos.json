@@ -30,11 +30,6 @@
         "price": "$6500"
     },
     {
-        "img": "./assets/productos/zapatilla_3.jpg",
-        "title": "Zapatilla 3 Run 3",
-        "price": "$6500"
-    },
-    {
         "img": "./assets/productos/zapatilla_1.jpg",
         "title": "Zapatilla 1-XFK 1",
         "price": "$5000"
@@ -43,5 +38,10 @@
         "img": "./assets/productos/zapatilla_2.jpg",
         "title": "Zapatilla 2000-X 2",
         "price": "$9800"
+    },
+    {
+        "img": "./assets/productos/zapatilla_3.jpg",
+        "title": "Zapatilla 3 Run 3",
+        "price": "$6500"
     }
 ]

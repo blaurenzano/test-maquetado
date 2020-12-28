@@ -1,51 +1,16 @@
-// -------------------PETICION-DE-DATOS-JSON--------------------
-function traerDatos() {
-  //   console.log('dentro de funcion')
-
-  const xhttp = new XMLHttpRequest()
-
-  xhttp.open('GET', '../json/productos.json', true)
-  xhttp.send()
-
-  xhttp.onreadystatechange = function () {
-    if (this.readyState == 4 && this.status == 200) {
-      //   console.log(this.responseText)
-      let datos = JSON.parse(this.responseText)
-      console.log(datos)
-
-      let res = document.querySelector('#grid-product')
-      res.innerHTML = ''
-
-      datos.forEach((producto) => {
-        res.innerHTML += `
-        <article class="card tres-seis">
-        <figure class="card__figure">
-            <img src="${producto.img}" alt="producto" class="card__image">
-        </figure>
-        <div class="card__body">
-            <div class="card__title">${producto.title}</div>
-            <div class="card__price">${producto.price}</div>
-        </div>
-        </article>
-        `
-      })
-    }
-  }
-}
-// -------------------END-PETICION-DE-DATOS-JSON----------------
-
 // -------------------MENU-MOBILE--------------------
 const mainMenu = document.querySelector('.mobile-menu')
 const closeMenu = document.querySelector('.mobile-menu__close')
 const openMenu = document.querySelector('.header__burgerMenuContainer')
-
+// Agregamos el evento click a los elementos necesarios para abrir y cerrar
 openMenu.addEventListener('click', show)
 closeMenu.addEventListener('click', close)
-
+// funcion que muestra el elemento del menu
 function show() {
   mainMenu.style.display = 'flex'
   mainMenu.style.top = '0'
 }
+// funcion que oculta el elemento del menu
 function close() {
   mainMenu.style.top = '-100%'
 }
@@ -74,14 +39,14 @@ const twoColumn = document.getElementById('two')
 const threeColumn = document.getElementById('three')
 const fourColumn = document.getElementById('four')
 
-const grid = document.getElementById('grid-product')
-
+let grid = document.getElementById('grid-product')
 oneColumn.addEventListener('click', showOne)
 twoColumn.addEventListener('click', showTwo)
 threeColumn.addEventListener('click', showThree)
 fourColumn.addEventListener('click', showFour)
 
 function showOne() {
+  console.log('one')
   if (grid.style.gridTemplateColumns != 'repeat(1, 260px)') {
     grid.style.gridTemplateColumns = 'repeat(1, 260px)'
   } else {

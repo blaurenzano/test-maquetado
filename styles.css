@@ -232,6 +232,9 @@ body{
 	padding-bottom: 8px;
 	border-bottom: 1px solid var(--fondo-header);
 }
+#col__controller {
+	opacity: 0;
+}
 @media screen and (min-width: 1000px){
 	.search-main {
 		display: grid;
@@ -250,6 +253,7 @@ body{
 		gap: 10px;
 	}
 	#col__controller {
+		opacity: 1;
 		height: 40px;
 		width: auto;
 		position: absolute;
