@@ -317,11 +317,24 @@ body{
 		align-items: center;
 	}
 	.category__name {
+		width: 100%;
 		font-family: var(--font-principal);
 		font-size: 16px;
 		color: var(--color-texto);
 		font-weight: 700;
 		margin: auto 16px;
+		pointer-events: none;
+	}
+	.category__name:after {
+		float: right;
+		content: '\002B';
+	}
+	.active > .category__name:after {
+		float: right;
+		content: '\2212';
+	}
+	.active + .category__links {
+		display: block;
 	}
 	.category__links {
 		margin: 4px 0px;
@@ -331,6 +344,10 @@ body{
 		font-size: 16px;
 		font-weight: 500;
 		margin: 4px 0;
+		display: none;
+	}
+	.category__links.active {
+		display: block;
 	}
 	.category__link {
 		text-decoration: none;
