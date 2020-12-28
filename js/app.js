@@ -83,7 +83,7 @@ function traerDatos() {
   const xhttp = new XMLHttpRequest()
   //   Realizamos peticion al archivo json
   xhttp.open('GET', '../json/productos.json', true)
-  xhttp.send()
+  xhttp.send(false)
   //   Cuando los cambios estan listos utilizamos los datos que contiene el json
   xhttp.onreadystatechange = function () {
     if (this.readyState == 4 && this.status == 200) {
