@@ -2,10 +2,176 @@
 <html lang="es">
 <head>
 	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1"/>
+
 	<title>Test de maquetado</title>
 	<link rel="stylesheet" href="styles.css">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
 </head>
 <body>
+	<header class="header">
+		<input class="header__container__menu--btn" type="checkbox" id="menu-btn"/>
+		<div class="header__container">
+		  <label class="header__container__menu--icon" for="menu-btn">
+			<img src="assets/iconos/hamburguesa.svg" alt="" />
+		  </label>
+		  <img class="header__container--logo" src="assets/logo.svg" alt="" />
+		  <div class="header__container--icons">
+			<a href="#"><img src="assets/iconos/search.svg" alt="" /></a>
+			<a href="#"><img src="assets/iconos/user.svg" alt="" /></a>
+			<a href="#"><img src="assets/iconos/shopping-cart.svg" alt="" /></a>
+		  </div>
+		</div>
+		<nav class="header__nav">
+		  <a href="#">Sale</a>
+		  <a href="#">E-shop</a>
+		  <a href="#">Lookbook</a>
+		  <a href="#">Campaña</a>
+		  <a href="#">Locales</a>
+		</nav>
+	  </header>
+	  <main class="container">
+		<aside class="container__aside">
+		  <h1>Zapatillas</h1>
+		<div class="container__aside--filters">
+			<h2>Filtrar</h2>
+		<div class="aside__filter">
+			<input class="aside__filter--accordion" type="checkbox" id="accordion" checked>
+			<label class="aside__filter--h3" for="accordion">
+				<h3>Categoría</h3>
+			</label>
+			<ul class="aside__filter--list">
+				<li><a href="#">Zapatillas</a></li>
+				<li><a href="#">Zapatos</a></li>
+				<li><a href="#">Botas</a></li>
+				<li><a href="#">Sandalias</a></li>
+				<li><a href="#">Pantuflas</a></li>
+			</ul>
+		</div>
+		<div class="aside__filter">
+			<input class="aside__filter--accordion" type="checkbox" id="accordion-2">
+			<label class="aside__filter--h3" for="accordion-2">
+				<h3>Talle</h3>
+			</label>
+			<ul class="aside__filter--list">
+				<li><a href="#">36</a></li>
+				<li><a href="#">38</a></li>
+				<li><a href="#">40</a></li>
+				<li><a href="#">42</a></li>
+				<li><a href="#">44</a></li>
+			</ul>
+		</div>
+		<div class="aside__filter">
+			<input class="aside__filter--accordion" type="checkbox" id="accordion-3">
+			<label class="aside__filter--h3" for="accordion-3">
+				<h3>Color</h3>
+			</label>
+			<ul class="aside__filter--list">
+				<li><a href="#">Amarillo</a></li>
+				<li><a href="#">Negro</a></li>
+				<li><a href="#">Verde</a></li>
+				<li><a href="#">Azul</a></li>
+				<li><a href="#">Blanco</a></li>
+			</ul>
+			</div>
+		</div>
+		</aside>
+  
+			<div class="container__contents">
+				<div class="container__content--card">
+					<a href="#">
+						<img src="assets/productos/zapatilla_1.jpg" alt="">
+						<h4>Zapatilla 1-XFK</h4>
+						<p>$5000</p>
+					</a>
+				</div>
+				<div class="container__content--card">
+					<a href="#">
+						<img src="assets/productos/zapatilla_2.jpg" alt="">
+						<h4>Zapatilla 2000-X</h4>
+						<p>$9800</p>
+					</a>
+				</div>
+				<div class="container__content--card">
+					<a href="#">
+						<img src="assets/productos/zapatilla_3.jpg" alt="">
+						<h4>Zapatilla 3 Run</h4>
+						<p>$6500</p>
+					</a>
+				</div>
+				<div class="container__content--card">
+					<a href="#">
+						<img src="assets/productos/zapatilla_3.jpg" alt="">
+						<h4>Zapatilla 3 Run</h4>
+						<p>$6500</p>
+					</a>
+				</div>
+				<div class="container__content--card">
+					<a href="#">
+						<img src="assets/productos/zapatilla_1.jpg" alt="">
+						<h4>Zapatilla 1-XFK</h4>
+						<p>$5000</p>
+					</a>
+				</div>
+				<div class="container__content--card">
+					<a href="#">
+						<img src="assets/productos/zapatilla_2.jpg" alt="">
+						<h4>Zapatilla 2000-X</h4>
+						<p>$9800</p>
+					</a>
+				</div>
+				<div class="container__content--card">
+					<a href="#">
+						<img src="assets/productos/zapatilla_1.jpg" alt="">
+						<h4>Zapatilla 1-XFK</h4>
+						<p>$5000</p>
+					</a>
+				</div>
+				<div class="container__content--card">
+					<a href="#">
+						<img src="assets/productos/zapatilla_2.jpg" alt="">
+						<h4>Zapatilla 2000-X</h4>
+						<p>$9800</p>
+					</a>
+				</div>
+				<div class="container__content--card">
+					<a href="#">
+						<img src="assets/productos/zapatilla_3.jpg" alt="">
+						<h4>Zapatilla 3 Run</h4>
+						<p>$6500</p>
+					</a>
+				</div>
+				<div class="container__content--card">
+					<a href="#">
+						<img src="assets/productos/zapatilla_2.jpg" alt="">
+						<h4>Zapatilla 2000-X</h4>
+						<p>$9800</p>
+					</a>
+				</div>
+				<div class="container__content--card">
+					<a href="#">
+						<img src="assets/productos/zapatilla_3.jpg" alt="">
+						<h4>Zapatilla 3 Run</h4>
+						<p>$6500</p>
+					</a>
+				</div>
+				<div class="container__content--card">
+					<a href="#">
+						<img src="assets/productos/zapatilla_1.jpg" alt="">
+						<h4>Zapatilla 1-XFK</h4>
+						<p>$5000</p>
+					</a>
+				</div>
 
+			</div>
+	</main>
+
+	<footer>
+		<a href="#">Ayuda</a>
+		<a href="#">Contacto</a>
+		<a href="#">Términos y condiciones</a>
+		<a href="#">Políticas de privacidad</a>
+	</footer>
 </body>
 </html>
