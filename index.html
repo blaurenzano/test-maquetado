@@ -10,7 +10,7 @@
 	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
 </head>
 
-<body>
+<body onload="traerDatos()">
 	<!-- ----------------HEADER----------------- -->
 	<header class="header">
 		<!-- ---------------MOBILE-HEADER---------------- -->
@@ -96,11 +96,26 @@
 						<h4 class="category__name">Talle</h4>
 					</div>
 					<ul class="category__links">
-						<li><a href="#" class="category__link">36</a></li>
-						<li><a href="#" class="category__link">38</a></li>
-						<li><a href="#" class="category__link">40</a></li>
-						<li><a href="#" class="category__link">42</a></li>
-						<li><a href="#" class="category__link">44</a></li>
+						<li>
+							<input type="radio" name="filtro" class="category__input" id="tres-seis">
+							<label for="tres-seis" class="category__link">36</label>
+						</li>
+						<li>
+							<input type="radio" name="filtro" class="category__input" id="tres-ocho">
+							<label for="tres-ocho" class="category__link">38</label>
+						</li>
+						<li>
+							<input type="radio" name="filtro" class="category__input" id="talle40">
+							<label for="talle40" class="category__link">40</label>
+						</li>
+						<li>
+							<input type="radio" name="filtro" class="category__input" id="talle42">
+							<label for="talle42" class="category__link">42</label>
+						</li>
+						<li>
+							<input type="radio" name="filtro" class="category__input" id="talle44">
+							<label for="talle44" class="category__link">44</label>
+						</li>
 					</ul>
 				</div>
 				<div class="category">
@@ -120,113 +135,24 @@
 		</aside>
 		<div class="products__container">
 			<h2 class="products__title">Zapatillas</h2>
-			<div class="products__grid">
-				<article class="card">
+			<div class="products__grid" id="grid-product">
+				<div id="col__controller">
+					<input type="checkbox" name="filtro" id="one">
+					<label for="one">1 Col</label>
+					<input type="checkbox" name="filtro" id="two">
+					<label for="two">2 Col</label>
+					<input type="checkbox" name="filtro" id="three">
+					<label for="three">3 Col</label>
+					<input type="checkbox" name="filtro" id="four">
+					<label for="four">4 Col</label>
+				</div>
+				<article class="card tres-seis">
 					<figure class="card__figure">
 						<img src="./assets/productos/zapatilla_1.jpg" alt="producto" class="card__image">
 					</figure>
 					<div class="card__body">
 						<div class="card__title">Zapatilla 1-XFK</div>
 						<div class="card__price">$5000</div>
-					</div>
-				</article>
-				<article class="card">
-					<figure class="card__figure">
-						<img src="./assets/productos/zapatilla_2.jpg" alt="producto" class="card__image">
-					</figure>
-					<div class="card__body">
-						<div class="card__title">Zapatilla 2000-X</div>
-						<div class="card__price">$9800</div>
-					</div>
-				</article>
-				<article class="card">
-					<figure class="card__figure">
-						<img src="./assets/productos/zapatilla_3.jpg" alt="producto" class="card__image">
-					</figure>
-					<div class="card__body">
-						<div class="card__title">Zapatilla 3 Run</div>
-						<div class="card__price">$6500</div>
-					</div>
-				</article>
-				<article class="card">
-					<figure class="card__figure">
-						<img src="./assets/productos/zapatilla_1.jpg" alt="producto" class="card__image">
-					</figure>
-					<div class="card__body">
-						<div class="card__title">Zapatilla 1-XFK</div>
-						<div class="card__price">$5000</div>
-					</div>
-				</article>
-				<article class="card">
-					<figure class="card__figure">
-						<img src="./assets/productos/zapatilla_2.jpg" alt="producto" class="card__image">
-					</figure>
-					<div class="card__body">
-						<div class="card__title">Zapatilla 2000-X</div>
-						<div class="card__price">$9800</div>
-					</div>
-				</article>
-				<article class="card">
-					<figure class="card__figure">
-						<img src="./assets/productos/zapatilla_3.jpg" alt="producto" class="card__image">
-					</figure>
-					<div class="card__body">
-						<div class="card__title">Zapatilla 3 Run</div>
-						<div class="card__price">$6500</div>
-					</div>
-				</article>
-				<article class="card">
-					<figure class="card__figure">
-						<img src="./assets/productos/zapatilla_1.jpg" alt="producto" class="card__image">
-					</figure>
-					<div class="card__body">
-						<div class="card__title">Zapatilla 1-XFK</div>
-						<div class="card__price">$5000</div>
-					</div>
-				</article>
-				<article class="card">
-					<figure class="card__figure">
-						<img src="./assets/productos/zapatilla_2.jpg" alt="producto" class="card__image">
-					</figure>
-					<div class="card__body">
-						<div class="card__title">Zapatilla 2000-X</div>
-						<div class="card__price">$9800</div>
-					</div>
-				</article>
-				<article class="card">
-					<figure class="card__figure">
-						<img src="./assets/productos/zapatilla_3.jpg" alt="producto" class="card__image">
-					</figure>
-					<div class="card__body">
-						<div class="card__title">Zapatilla 3 Run</div>
-						<div class="card__price">$6500</div>
-					</div>
-				</article>
-				<article class="card">
-					<figure class="card__figure">
-						<img src="./assets/productos/zapatilla_1.jpg" alt="producto" class="card__image">
-					</figure>
-					<div class="card__body">
-						<div class="card__title">Zapatilla 1-XFK</div>
-						<div class="card__price">$5000</div>
-					</div>
-				</article>
-				<article class="card">
-					<figure class="card__figure">
-						<img src="./assets/productos/zapatilla_2.jpg" alt="producto" class="card__image">
-					</figure>
-					<div class="card__body">
-						<div class="card__title">Zapatilla 2000-X</div>
-						<div class="card__price">$9800</div>
-					</div>
-				</article>
-				<article class="card">
-					<figure class="card__figure">
-						<img src="./assets/productos/zapatilla_3.jpg" alt="producto" class="card__image">
-					</figure>
-					<div class="card__body">
-						<div class="card__title">Zapatilla 3 Run</div>
-						<div class="card__price">$6500</div>
 					</div>
 				</article>
 			</div>

@@ -243,9 +243,22 @@ body{
 		display: none;
 	}
 	.products__grid {
+		margin-top: 50px;
+		position: relative;
 		display: grid;
 		grid-template-columns: repeat(3, 260px);
 		gap: 10px;
+	}
+	#col__controller {
+		height: 40px;
+		width: auto;
+		position: absolute;
+		right: 0;
+		top: -50px;
+		font-family: var(--font-principal);
+		font-size: 16px;
+		color: var(--color-texto);
+		font-weight: 700;
 	}
 }
 /* ---------END-PRODUCTS-CONTAINER-------------- */
@@ -344,15 +357,22 @@ body{
 		font-size: 16px;
 		font-weight: 500;
 		margin: 4px 0;
+		transition: 1s ease-in-out;
 		display: none;
 	}
 	.category__links.active {
 		display: block;
 	}
 	.category__link {
+		display: block;
 		text-decoration: none;
 		color: var(--color-texto);
+		cursor: pointer;
 	}
+	input[type="radio"] {
+		display: none;
+	}
+
 }
 /* ---------END-CATEGORY-FILTERS-STYLES-------------- */
 
