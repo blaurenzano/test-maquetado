@@ -1,0 +1,98 @@
+[
+    {
+        "img": "./assets/productos/zapatilla_1.jpg",
+        "modelo": "Zapatilla 1-XFK",
+        "precio": "5000",
+        "color": "blanco",
+        "talle": "40",
+        "categoria": "zapatillas"
+    },
+    {
+        "img": "./assets/productos/zapatilla_2.jpg",
+        "modelo": "Zapatilla 2000-X",
+        "precio": "9800",
+        "color": "negro",
+        "talle": "42",
+        "categoria": "zapatillas"
+    },
+    {
+        "img": "./assets/productos/zapatilla_3.jpg",
+        "modelo": "Zapatilla 3 Run",
+        "precio": "6500",
+        "color": "negro",
+        "talle": "36",
+        "categoria": "zapatillas"
+    },
+    {
+        "img": "./assets/productos/zapatilla_3.jpg",
+        "modelo": "Zapatilla 3 Run",
+        "precio": "6500",
+        "color": "negro",
+        "talle": "38",
+        "categoria": "zapatillas"
+    },
+    {
+        "img": "./assets/productos/zapatilla_1.jpg",
+        "modelo": "Zapatilla 1-XFK",
+        "precio": "5000",
+        "color": "blanco",
+        "talle": "42",
+        "categoria": "zapatillas"
+    },
+    {
+        "img": "./assets/productos/zapatilla_2.jpg",
+        "modelo": "Zapatilla 2000-X",
+        "precio": "9800",
+        "color": "negro",
+        "talle": "40",
+        "categoria": "zapatillas"
+    },
+    {
+        "img": "./assets/productos/zapatilla_1.jpg",
+        "modelo": "Zapatilla 1-XFK",
+        "precio": "5000",
+        "color": "blanco",
+        "talle": "40",
+        "categoria": "zapatillas"
+    },
+    {
+        "img": "./assets/productos/zapatilla_2.jpg",
+        "modelo": "Zapatilla 2000-X",
+        "precio": "9800",
+        "color": "negro",
+        "talle": "36",
+        "categoria": "zapatillas"
+    },
+    {
+        "img": "./assets/productos/zapatilla_3.jpg",
+        "modelo": "Zapatilla 3 Run",
+        "precio": "6500",
+        "color": "negro",
+        "talle": "42",
+        "categoria": "zapatillas"
+    },
+    {
+        "img": "./assets/productos/zapatilla_2.jpg",
+        "modelo": "Zapatilla 2000-X",
+        "precio": "9800",
+        "color": "negro",
+        "talle": "38",
+        "categoria": "zapatillas"
+    },
+    {
+        "img": "./assets/productos/zapatilla_3.jpg",
+        "modelo": "Zapatilla 3 Run",
+        "precio": "6500",
+        "color": "negro",
+        "talle": "38",
+        "categoria": "zapatillas"
+    },
+    {
+        "img": "./assets/productos/zapatilla_1.jpg",
+        "modelo": "Zapatilla 1-XFK",
+        "precio": "5000",
+        "color": "blanco",
+        "talle": "36",
+        "categoria": "zapatillas"
+    }
+]

@@ -120,18 +120,40 @@ body {
   padding: 2rem 0;
 }
 
-.main__aside--h3 {
+.main__aside--button {
   font-weight: bold;
   background-color: #e4e8ee;
   width: 100%;
   padding: 0.5rem 1rem;
+  margin-bottom: 0.5rem;
+  transition: background-color 0.2;
+  cursor: pointer;
+}
+
+.main__aside--button::after {
+  content: "\25be";
+  float: right;
+  transform: scale(1.2);
+}
+
+.main__aside--button--active {
+  background-color: darken(#e4e8ee, 30%);
+}
+
+.main__aside--button--active::after {
+  content: "\25b4";
+}
+
+.main__aside--atributos {
+  overflow: hidden;
+  max-height: 0;
+  transition: max-height 0.2s;
 }
 
 .main__aside--ul {
   list-style: none;
   padding: 0.5rem 1rem 0;
   margin-bottom: 1rem;
-
   li {
     line-height: 2.5rem;
 
@@ -166,7 +188,7 @@ body {
   a {
     text-decoration: none;
     border-bottom: 1px solid #030b1c;
-    
+
     img {
       width: 100%;
     }
