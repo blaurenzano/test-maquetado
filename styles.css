@@ -1,3 +1,275 @@
+html {
+	position: relative;
+}
 body{
 	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	background-color: #fafafa;
+}
+header {
+	background-color: #100217E6;
+}
+header .logo {
+	display:block;
+	margin:auto;
+	padding: 15px 0 5px 0;
+}
+header .iconos {
+	text-align: end;
+	position: absolute;
+	top: 0;
+	right: 0;
+	margin: 20px;
+} 
+header .iconos .icono {
+	padding-right: 5px;
+}
+.navbar .nav {
+	list-style: none;
+	text-align: center;
+	display: flex;
+	justify-content: center;
+}
+.navbar .nav .item {
+	display: inline-block;
+	margin: 0 50px 10px 50px;
+}
+.navbar .nav .item .link {
+	font-family: 'Roboto';
+	font-style: normal;
+	font-size: 20px;
+	color: #fafafa;
+	line-height : 20px;
+	text-transform: uppercase;
+	text-decoration: none;
+	transition: all 0.9s;
+}
+.navbar .nav .item .link:hover {
+	color: #767c77;
+	-moz-transform: scale(1.2);
+	-webkit-transform: scale(1.2);
+	transform: scale(1.2);
+}
+#btn-menu {
+	display: none;
+}
+header label {
+	display: none ;
+	padding: 20px;
+	width: 10%;
+    position: fixed;
+    top: 0;
+}
+header label:hover {
+	cursor: pointer;
+}
+.container {
+	margin: 40px 190px 0 190px ;
+}
+.container .left {
+	float: left;
+	width: 22%;
+	
+}
+.container .left .titulo-secundario {
+	font-family: 'Roboto';
+	font-weight: bold;
+	font-size: 24px;
+	color: #030B1C;
+	line-height : 29px;
+	padding-bottom: 10px;
+	border-bottom: 1px #030B1C solid;
+	width: 250px;
+}
+.container .left .subtitulo-secundario {
+	font-family: 'Roboto';
+	font-weight: bold;
+	color: #030B1C;
+	font-size: 20px;
+	line-height : 24px;
+}
+.container .left .titulos {
+	font-family: 'Roboto';
+	font-weight: bold;
+	color: #030B1C;
+	font-size: 16px;
+	line-height : 19px;
+	width: 250px;
+	background-color: #E4E8EE;
+	padding-left: 15px;
+	margin: 0 0;
+	width: 240px;
+	display: block;
+	cursor: pointer;
+	border: 1px #fff solid;
+}
+.container .left .titulos:hover{
+	 background-color: #d0d7e0;
+ }
+.container .left .lista {
+	list-style: none;
+	padding-left: 15px;
+	margin: 0 0;
+	height: 0;
+	overflow: hidden;
+	transition: all 0.5s;
+}
+.container .left .lista .elemento {
+	font-family: 'Roboto';
+	font-style: normal;
+	color: #030B1C;
+	font-size: 16px;
+	line-height : 22px;
+	padding-left: 0;
+}
+.container .left .acordeon input {
+	display: none;
+}
+.container .left .acordeon input:checked ~ .lista {
+	height: auto;
+}
+.container .right {
+	float: right;
+	width: 78%;
+	margin-bottom: 12%;
+}
+.container .right .zapatilla {
+	display: inline-block;
+	padding: 0 35px 5px 0;
+	
+}
+.container .right .zapatilla .nombre {
+	font-family: 'Roboto';
+	color: #030B1C;
+	font-size: 16px;
+	line-height : 22px;
+	margin: 0 0;
+}
+.container .right .zapatilla .img-zapatillas {
+	border-bottom: 1px #030B1C solid;
+	width: 110%;
+	padding: 20px 0 0 0;
+}
+.precio {
+	font-family: 'Roboto';
+	font-weight: bold;
+	color: #030B1C;
+	font-size: 16px;
+	line-height : 22px;
+	margin: 0 0;
+}
+.footer-name {
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	background-color: #100217E6;
+}
+.footer-name .lista-footer {
+	list-style: none;
+	text-align: center;
+}
+.footer-name .lista-footer .item-footer {
+	display: inline-block;
+	margin: 0 50px 0 50px;
+}
+.footer-name .lista-footer .item-footer a {
+	font-family: 'Roboto';
+	font-style: normal;
+	font-size: 16px;
+	line-height : 22px;
+	color: #fafafa;
+	text-decoration: none;
+}
+
+/************MEDIA QUERY*************/
+@media only screen 
+and (min-device-width : 320px) 
+and (max-device-width : 480px) {
+	body {
+		background-color: #fff;
+	}
+	header {
+		padding: 30px 0 30px 0;
+		width: 104%;
+	}
+	header label {
+		display: block;
+	}
+	.hamburguesa {
+		width: 65px;
+    	padding: 18px 40px 0 40px;
+	}
+	header .logo {
+		width: 30%;
+	}
+	.navbar {
+		position: absolute;
+		background-color: #100217E6;
+		width: 70%;
+		margin-left: -70%;
+		transition: all 0.5s;
+	}
+	.nav {
+		flex-direction: column;
+	}
+	.navbar .nav .item {
+		border: 1px solid #fafafa;
+	}
+	#btn-menu:checked ~ .navbar {
+		margin: 0;
+	}
+	header .iconos .icono {
+		width: 70px;
+    	padding: 10px;
+	}
+	.icon {
+		display: none;
+	}
+	.container {
+		margin: 10px 20px 40px 50px;
+	}
+	.container .left {
+		float: none;
+	}
+	.container .left .filtros {
+		display: none;
+	}
+	.container .left .titulo-secundario{
+		width: 53vh;
+		font-size: 60px;
+		padding-bottom: 40px;
+	}
+	.container .right {
+		display: grid;
+		float: none;
+		margin-bottom: 50%;
+	}
+	.container .right .repetido{
+		display: none;
+	}
+	.container .right .zapatilla {
+		width: 118%;
+	}
+	.container .right .zapatilla .nombre {
+		font-size: 50px;
+		padding: 15px;
+	}
+	.precio {
+		font-size: 50px;
+		padding: 30px 0 10px 15px;
+	}
+	.footer-name {
+		width: 104%;
+		margin-top: 50px;
+	}
+	.footer-name .lista-footer {
+		display: grid;
+	}
+	.footer-name .lista-footer .item-footer {
+		margin: 20px 20px;
+	}
+	.footer-name .lista-footer .item-footer a {
+		font-size: 35px;
+	}
 }
