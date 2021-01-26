@@ -1,7 +1,7 @@
 //NavbarContainer selector
 const navbarContainer = document.querySelector(".header__nav");
 //Hamburger Icon selector
-const btnNavbar = document.querySelector(".icon_bars");
+const btnNavbar = document.querySelector(".icon__bars");
 
 //Filters object
 var filters = {
@@ -12,8 +12,8 @@ var filters = {
 
 //Set display style to Navbar
 btnNavbar.onclick = () => {
-    document.querySelector(".icon_profile").classList.toggle('header__icon--hidden');
-    document.querySelector(".icon_search").classList.toggle('header__icon--hidden') ;
+    document.querySelector(".icon__profile").classList.toggle('header__icon--hidden');
+    document.querySelector(".icon__search").classList.toggle('header__icon--hidden') ;
     navbarContainer.classList.toggle('header__nav--show');
 }
 

@@ -31,7 +31,7 @@ ul{
 	padding:1.5rem;
 }
 
-.header__container > div:not(.icon_logo){
+.header__container > div:not(.icon__logo){
 	width:33%;
 }
 
@@ -72,12 +72,12 @@ ul{
 }
 
 /*Header Icons*/
-.icon_bars{
+.icon__bars{
 	background: url('/assets/iconos/bars-solid.svg') no-repeat;
 	width: 27px;
 }
 
-.icon_logo{
+.icon__logo{
 	background: url('/assets/logo.svg') no-repeat;
 	background-size:contain;
 	width: 145px;
@@ -99,7 +99,7 @@ ul{
 	background: url('/assets/iconos/user-solid.svg') no-repeat;
 }
 
-.icon_cart{
+.icon__cart{
 	background: url('/assets/iconos/shopping-cart-solid.svg') no-repeat;
 }
 
@@ -244,11 +244,11 @@ ul{
 		flex-direction:row;
 	}
 
-	.icon_bars{
+	.icon__bars{
 		opacity:0;
 	}
 
-	.icon_logo{
+	.icon__logo{
 		width:206px;
 		height:30px;
 	}
