@@ -1,0 +1,75 @@
+[
+    {
+    "name": "Zapatilla 1-XFK",
+    "type": "Zapatillas",
+    "waist": "36",
+    "price": 5000,
+    "color": "Blanco",
+    "img": "/assets/productos/zapatilla_1.jpg"
+  }, 
+    {
+    "name": "Zapatilla 2000-X",
+    "type": "Zapatillas",
+    "waist": "40",
+    "price": 5500,
+    "color": "Negro",
+    "img": "/assets/productos/zapatilla_2.jpg"
+  }, 
+    {
+    "name": "Zapatilla 3 Run",
+    "type": "Zapatillas",
+    "waist": "44",
+    "price": 6000,
+    "color": "Amarillo",
+    "img": "/assets/productos/zapatilla_3.jpg"
+  }, 
+    {
+    "name": "Zapato 1-XFK",
+    "type": "Zapatos",
+    "waist": "36",
+    "price": 5000,
+    "color": "Blanco",
+    "img": "/assets/productos/zapatilla_1.jpg"
+  }, 
+    {
+    "name": "Zapato 2000-X",
+    "type": "Zapatos",
+    "waist": "40",
+    "price": 5500,
+    "color": "Negro",
+    "img": "/assets/productos/zapatilla_2.jpg"
+  }, 
+    {
+    "name": "Zapato 3 Run",
+    "type": "Zapatos",
+    "waist": "44",
+    "price": 6000,
+    "color": "Amarillo",
+    "img": "/assets/productos/zapatilla_3.jpg"
+  }, 
+    {
+    "name": "Bota 1-XFK",
+    "type": "Botas",
+    "waist": "36",
+    "price": 5000,
+    "color": "Blanco",
+    "img": "/assets/productos/zapatilla_1.jpg"
+  }, 
+    {
+    "name": "Bota 2000-X",
+    "type": "Botas",
+    "waist": "40",
+    "price": 5500,
+    "color": "Negro",
+    "img": "/assets/productos/zapatilla_2.jpg"
+  }, 
+    {
+    "name": "Bota 3 Run",
+    "type": "Botas",
+    "waist": "44",
+    "price": 6000,
+    "color": "Amarillo",
+    "img": "/assets/productos/zapatilla_3.jpg"
+  }
+]
+  

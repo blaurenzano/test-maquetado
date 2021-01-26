@@ -2,10 +2,103 @@
 <html lang="es">
 <head>
 	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no">
+	<link rel="stylesheet" href="/css/styles.css">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 	<title>Test de maquetado</title>
-	<link rel="stylesheet" href="styles.css">
+	
 </head>
 <body>
-
+	<header class="header">
+		<div class="header__container">
+			<div class="header__icon icon_bars"></div>
+			<div class="header__icon icon_logo"></div>
+			<div class="icon__group">
+				<div class="header__icon header__icon--hidden icon__search"></div>
+				<div class="header__icon header__icon--hidden icon__profile"></div>
+				<div class="header__icon icon_cart"></div>
+			</div>
+		</div>
+		<nav class="header__nav">
+			<ul class="header__ul">
+				<li class="header__li"><a class="header__a--active"href="#sale">SALE</a></li>
+				<li class="header__li"><a class="header__a" href="#eshop">E-SHOP</a></li>
+				<li class="header__li"><a class="header__a" href="#lookbook">LOOKBOOK</a></li>
+				<li class="header__li"><a class="header__a" href="#campaña">CAMPAÑA</a></li>
+				<li class="header__li"><a class="header__a" href="#locales">LOCALES</a></li>
+			</ul>
+		</nav>
+	</header>
+	<main class="main">
+		<aside class="main__aside main__aside--none">
+			<nav>
+			<ul>
+				<li>
+					<h1 class="aside__filter section__h1">Zapatillas</h1>
+					<div class="aside__grid"></div>
+					<h2 class="aside__filter section__h2">Filtrar</h2>
+					<section>
+						<h1 class="filter__title">Categoria</h1>
+						<ul class="filter__ul filter__ul--show">
+							<div class="filter__div">
+								<li class="filter__li" data-filter="Zapatillas" data-filtertype="type">Zapatillas</li>
+								<li class="filter__li" data-filter="Zapatos" data-filtertype="type">Zapatos</li>
+								<li class="filter__li" data-filter="Botas" data-filtertype="type">Botas</li>
+								<li class="filter__li" data-filter="Sandalias" data-filtertype="type">Sandalias</li>
+								<li class="filter__li" data-filter="Pantuflas" data-filtertype="type">Pantuflas</li>
+							</div>
+						</ul>
+					</section>
+				</li>
+				<li>
+					<section>
+						<h1 class="filter__title">Talle</h1>
+						<ul class="filter__ul filter__ul--show">
+							<div class="filter__div">
+								<li class="filter__li" data-filter="36" data-filtertype="waist">36</li>
+								<li class="filter__li" data-filter="38" data-filtertype="waist">38</li>
+								<li class="filter__li" data-filter="40" data-filtertype="waist">40</li>
+								<li class="filter__li" data-filter="42" data-filtertype="waist">42</li>
+								<li class="filter__li" data-filter="44" data-filtertype="waist">44</li>
+							</div>
+						</ul>
+					</section>
+				</li>
+				<li>
+					<section>
+						<h1 class="filter__title">Color</h1>
+						<ul class="filter__ul filter__ul--show">
+							<div class="filter__div">
+								<li class="filter__li" data-filter="Amarillo" data-filtertype="color">Amarillo</li>
+								<li class="filter__li" data-filter="Negro" data-filtertype="color">Negro</li>
+								<li class="filter__li" data-filter="Verde" data-filtertype="color">Verde</li>
+								<li class="filter__li" data-filter="Azul" data-filtertype="color">Azul</li>
+								<li class="filter__li" data-filter="Blanco" data-filtertype="color">Blanco</li>
+							</div>
+						</ul>
+					</section>
+				</li>
+			</ul>
+			</nav>
+		</aside>
+		<section class="main__section">
+			<div class="section__grid grid__desktop"></div>
+			<div class="section__grid grid__mobile"></div>
+			<h1 class="section__filter section__h1">Zapatillas</h1>
+			<div class="section__productos"></div>
+		</section>
+	</main>
+	<footer class="footer">
+		<nav class="footer__nav">
+			<ul class="footer__ul">
+				<li class="footer__li"><a class="footer__a" href="#ayuda">Ayuda</a></li>
+				<li class="footer__li"><a class="footer__a" href="#contacto">Contacto</a></li>
+				<li class="footer__li"><a class="footer__a" href="#terminos">Términos y condiciones</a></li>
+				<li class="footer__li"><a class="footer__a" href="#politicas">Políticas de privacidad</a></li>
+			</ul>
+		</nav>
+	</footer>
+	<script src="/js/index.js"></script>
 </body>
 </html>
