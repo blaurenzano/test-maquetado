@@ -1,36 +1,70 @@
-# Ejercicio de maquetado html & css
-En el siguiente vínculo vas a encontrar el diseño de una web hecho en Adobe XD, en versión desktop y mobile:
-https://xd.adobe.com/view/f3229a4d-559d-4a23-500f-6c99f584ac0e-8513/
-Podés alternar entre la vista interactiva o la vista de especificaciones con los botones de la derecha, para poder ver datos de medidas, tipografías, colores, etc.
+# Getting Started with Create React App
 
-## Objetivo
-El objetivo del ejercicio es maquetar el diseño usando html y css. Cuanto más fiel al diseño sea el resultado mejor.
-Podés armarlo como te sea más cómodo, si preferís usar sass, less, o incluso algún framework. Siempre aclarando si hace falta hacer alguna instalación o correr algún comando para poder ver el resultado.
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-#### Evaluaremos:
-* Fidelidad al diseño desktop y mobile
-* Que el resultado sea responsive
-* Código prolijo y semántico
-* Convenciones en nombres de clases (ej BEM)
+## Available Scripts
 
-#### Puntos opcionales:
-Cualquier detalle que le quieras agregar es bienvenido, pero opcional, aquí algunas sugerencias:
-* Armar un menú desplegable para mobile
-* Hacer una funcionalidad de acordeon para los filtros para ocultar/mostrar cada atributo
-* Hacer que al seleccionar un atributo de los filtros se muestren solo algunos de los productos
-* Agregar un selector o botones arriba a la derecha para cambiar la cantidad de columnas de la grilla de productos entre 2, 3 y 4 en desktop, ó 1 y 2 en mobile.
-* Cargar los productos tomando info desde un archivo JSON externo
+In the project directory, you can run:
 
-## Pasos a seguir:
+### `npm start`
 
-### Si te resulta cómodo usar git:
-1. Hacer un fork del repositorio en tu cuenta.
-2. Armar el código de la pantalla según el diseño.
-3. Hacer push de tus cambios en el fork.
-4. Crear un pull request en el repositorio original (git@github.com:blaurenzano/test-maquetado.git).
-5. Avisarnos que ya está listo el ejercicio por el mismo medio en que estábamos en contacto y enviar un link al pull request.
+Runs the app in the development mode.\
+Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-### Si preferís no usar git:
-1. Descargarte este código inicial como .zip con el botón verde de arriba
-2. Armar el código de la pantalla según el diseño.
-3. Enviarnos un .zip con el código final por el mismo medio en que estábamos en contacto.
+The page will reload if you make edits.\
+You will also see any lint errors in the console.
+
+### `npm test`
+
+Launches the test runner in the interactive watch mode.\
+See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+
+### `npm run build`
+
+Builds the app for production to the `build` folder.\
+It correctly bundles React in production mode and optimizes the build for the best performance.
+
+The build is minified and the filenames include the hashes.\
+Your app is ready to be deployed!
+
+See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+
+### `npm run eject`
+
+**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+
+If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+
+Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+
+You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+
+## Learn More
+
+You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+
+To learn React, check out the [React documentation](https://reactjs.org/).
+
+### Code Splitting
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+
+### Analyzing the Bundle Size
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+
+### Making a Progressive Web App
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+
+### Advanced Configuration
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+
+### Deployment
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+
+### `npm run build` fails to minify
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)

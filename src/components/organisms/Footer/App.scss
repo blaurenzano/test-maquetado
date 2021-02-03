@@ -1,0 +1,20 @@
+.footer-container {
+  background-color: #100217;
+  display: flex;
+  height: 58px;
+  justify-content: space-around;
+  padding: 0% 20%;
+
+  @media (max-width: 768px) {
+    display: grid;
+    height: 150px;
+  } 
+
+  a{
+    align-self: center;
+    color: white;
+    text-decoration: none;
+    margin: auto;
+    font-size: 16px;
+  }
+}
