@@ -1,11 +1,174 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
-	<meta charset="UTF-8">
-	<title>Test de maquetado</title>
-	<link rel="stylesheet" href="styles.css">
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Google Fonts-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/estilos.css">
+
+    <title>Proyecto trabajo maquetacion</title>
+
 </head>
+
+
 <body>
 
+    <header>
+
+        <div class="contenedor">
+
+            <!--Menu hamburguesa-->
+            <div id="menu" class="hamburguesa">
+                <img src="./imagenes/hamburguesa.svg" alt="">
+            </div>
+
+            <!--Logo tienda-->
+            <div class="logo">
+                <img class="contenedor__img" src="./imagenes/logo.svg" alt="">
+            </div>
+
+            <!--Iconos tienda-->
+            <div class="iconos">
+                <img src="./imagenes/busqueda.svg" alt="">
+                <img src="./imagenes/usuario.svg" alt="">
+                <img class="icono-esp" src="./imagenes/carrito.svg" alt="">
+            </div>
+
+            <!--Nav tienda-->
+            <nav class="nav">
+                <ul class="nav__ul">
+                    <li class="nav__li"><a class="nav__sale" href="#">SALE</a></li>
+                    <li class="nav__li"><a href="#">E-SHOP</a></li>
+                    <li class="nav__li"><a href="#">LOOKBOOK</a></li>
+                    <li class="nav__li"><a href="#">CAMPAÑA</a></li>
+                    <li class="nav__li"><a href="#">LOCALES</a></li>
+                </ul>
+            </nav>
+            
+        </div>
+    
+    </header>
+
+
+    <!--h3 responsive-->
+    <h3 class="h3-movil">Zapatillas</h3>
+
+
+
+    <section class="sect-uno">
+
+        <div class="contenedor-dos">
+            
+            <!--parte izquierda CARACTERISTICAS-->
+            <div class="contenedor-dos-caracteristicas">
+
+                <h3>Zapatillas</h3>
+                <h4>Filtrar</h4>
+
+                <p class="titles">Categoria</p>
+                <ul class="titles__ul">
+                    <li class="title__li">Zapatillas</li>
+                    <li class="title__li">Zapatos</li>
+                    <li class="title__li">Botas</li>
+                    <li class="title__li">Sandalias</li>
+                    <li class="title__li">Pantuflas</li>
+                </ul>
+                
+                <p class="titles">Talle</p>
+                <ul class="titles__ul">
+                    <li class="title__li">36</li>
+                    <li class="title__li">38</li>
+                    <li class="title__li">40</li>
+                    <li class="title__li">42</li>
+                    <li class="title__li">44</li>
+                </ul>
+
+                <p class="titles">Color</p>
+                <ul class="titles__ul">
+                    <li class="title__li">Amarillo</li>
+                    <li class="title__li">Negro</li>
+                    <li class="title__li">Verde</li>
+                    <li class="title__li">Azul</li>
+                    <li class="title__li">Blanco</li>
+                </ul>
+
+            </div>
+
+
+            <!--parte derecha PRODUCTOS-->
+            <div class="contenedor-dos-productos">
+
+                <div class="productos">
+                    <img class="productos__zapas" src="./imagenes/zapatilla_1.png" alt="">
+                    <p>Zapatilla 1-XFK</p>
+                    <p class="productos__price">$5000</p>
+                </div>
+                <div class="productos">
+                    <img class="productos__zapas" src="./imagenes/zapatilla_2.png" alt="">
+                    <p>Zapatilla 2000-X</p>
+                    <p class="productos__price">$9800</p>
+                </div>
+                <div class="productos">
+                    <img class="productos__zapas" src="./imagenes/zapatilla_3.png" alt="">
+                    <p>Zapatilla 3 RUN</p>
+                    <P class="productos__price">$6500</P>
+                </div>
+
+                <div class="productos">
+                    <img class="productos__zapas" src="./imagenes/zapatilla_3.png" alt="">
+                    <P>Zapatilla 3 RUN</P>
+                    <p class="productos__price">$6500</p>
+                </div>
+                <div class="productos">
+                    <img class="productos__zapas" src="./imagenes/zapatilla_1.png" alt="">
+                    <p>Zapatilla 1-XFK</p>
+                    <p class="productos__price">$5000</p>
+                </div>
+                <div class="productos">
+                    <img class="productos__zapas" src="./imagenes/zapatilla_2.png" alt="">
+                    <p>Zapatilla 2000-X</p>
+                    <p class="productos__price">$9800</p>
+                </div>
+
+                <div class="productos">
+                    <img class="productos__zapas" src="./imagenes/zapatilla_1.png" alt="">
+                    <p>Zapatilla 1-XFK</p>
+                    <p class="productos__price">$5000</p>
+                </div>
+                <div class="productos">
+                    <img class="productos__zapas" src="./imagenes/zapatilla_2.png" alt="">
+                    <p>Zapatilla 2000-X</p>
+                    <p class="productos__price">$9800</p>
+                </div>
+                <div class="productos">
+                    <img class="productos__zapas" src="./imagenes/zapatilla_3.png" alt="">
+                    <p>Zapatilla 3 RUN</p>
+                    <p class="productos__price">$6500</p>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!--footer-->
+    <footer class="footer">
+        <nav class="footer__nav">
+            <ul class="footer__ul">
+                <li class="footer__li"><a href="#">Ayuda</a></li>
+                <li class="footer__li"><a href="#">Contacto</a></li>
+                <li class="footer__li"><a href="#">Terminos y condiciones</a></li>
+                <li class="footer__li"><a href="#">Politicas de privacidad</a></li>
+            </ul>
+        </nav>
+    </footer>
+
+    <script src="./js/js.js"></script>
 </body>
 </html>

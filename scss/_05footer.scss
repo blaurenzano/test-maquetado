@@ -1,0 +1,21 @@
+.footer{
+    background: $negro;
+    height: 50px;
+}
+
+.footer__ul{
+    list-style:none;
+    display: flex;
+    justify-content: center;
+}
+
+.footer__li{
+    margin: 18px 40px 0px 40px;
+}
+
+.footer__li a{
+    color: $blanco;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: lighter;
+}
