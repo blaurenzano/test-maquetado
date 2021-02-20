@@ -1,0 +1,66 @@
+.contenedor{
+    background-color:$negro;
+    width: 100%;
+    margin: auto;
+    height: 100px;
+    align-items: center;
+    position: relative;
+    box-shadow: 0px -10px 5px 10px $negro;
+}
+
+.hamburguesa{
+    display: none;
+}
+
+.logo{
+    text-align: center;
+}
+
+.contenedor__img {
+    width: 206px;
+    height: 30px;
+    margin-top: 25px;
+}
+
+.iconos{
+    position: absolute;
+    right: 30px;
+    top: 30px;
+}
+
+.iconos img{
+    width: 23px;
+    height: 27px;
+    margin: 0px 3px;
+}
+
+.icono-esp{
+    width: 23px;
+    height: 27px;
+}
+
+.nav{
+    width: 70%;
+    margin: auto;
+}
+
+.nav__ul{
+    display: flex;
+    justify-content: space-evenly;
+    margin: 10px 0px 0px 0px;
+
+}
+
+.nav__li{
+    list-style: none;
+}
+
+.nav__li a{
+    text-decoration: none;
+    color: $blanco;
+    font-size: 20px;
+}
+
+.nav__sale{
+    font-weight: bold;
+}

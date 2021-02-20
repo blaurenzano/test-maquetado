@@ -1,0 +1,21 @@
+.contenedor-dos-productos{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+    margin-left: 15px;
+    margin-bottom: 90px;
+}
+
+.productos__zapas{
+    width: 260px;
+    height: 180px;
+    border-bottom: 1px solid $negro;
+}
+
+.productos p{
+    font-size: 16px;
+}
+
+.productos__price{
+    font-weight: bold;
+}

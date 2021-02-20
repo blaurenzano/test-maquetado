@@ -1,0 +1,125 @@
+@media screen and (max-width: 1000px){
+
+    .contenedor-dos-productos{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px 20px;
+    margin-left: 20px;
+    }
+}
+
+
+@media screen and (max-width: 800px){
+
+    .contenedor{
+    background-color: $negro;
+    width: 100%;
+    margin: auto;
+    height: 60px;
+    align-items: center;
+    position: relative;
+    box-shadow: 0px -10px 5px 10px $negro
+    }
+
+    .h3-movil {
+        display: flex;
+        font-size: 24px;
+        padding-bottom: 5px;
+        margin-bottom: 10px;
+        border-bottom: solid 1px $negro;
+        font-weight: bold;
+        padding: 12px 0px;
+        width: 90%;
+        margin: auto;
+    }
+
+    .contenedor__img {
+        width: 160px;
+        height: 30px;
+        margin-top: 12px;
+    }
+
+    .hamburguesa {
+    display: flex;
+    position: absolute;
+    top: 16px;
+    left: 15px;
+    cursor: pointer;
+    }
+    
+    .hamburguesa img{
+        width: 23px;
+        height: 23px;
+    }
+
+    .iconos {
+        position: absolute;
+        right: 18px;
+        top: 18px;
+    }
+
+    .iconos img {
+        width: 23px;
+        height: 23px;
+        margin: 0px 3px;
+        display: none;
+    }
+
+    .iconos .icono-esp{
+        display: flex;
+    }
+
+    .nav{
+        width: 100%;
+    }
+
+    .nav__ul{
+        flex-direction: column;
+        background-color: $negro;
+        margin: 13px 0px 0px 0px;
+        padding: 0px 0px;
+        transform: translateX(-1000px);
+        opacity: .9.8;
+        transition: .7s;
+    }
+
+    .nav__ul.show{
+        transform: translateX(0px);
+    }
+
+    .nav__li{
+        padding: 10px 12px;
+    }
+
+    .contenedor-dos {
+        width: auto;
+        margin: auto;
+        display: flex;
+        margin-top: 40px;
+    }
+
+    .contenedor-dos-caracteristicas {
+        /* width: 260px; */
+        display: none;
+    }
+
+    .contenedor-dos-productos {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 20px 0px;
+        margin-left: 0px;
+    }
+
+    .footer__ul{
+        list-style:none;
+        flex-direction: column;
+    }
+
+    .footer {
+        padding: 0px 0px 25px;
+        background: $negro;
+        height: auto;
+        text-align: center;
+    }
+}
+
