@@ -1,0 +1,39 @@
+// Textos, párrafos, etc...
+*
+	-webkit-hyphens auto
+	-moz-hyphens auto
+	hyphens auto
+
+address
+	font-family fuente_cursiva
+	b, strong
+		font-family fuente_cursiva_negrita
+	
+
+b, strong
+	font-family fuente_negrita
+
+em
+	font-family fuente_cursiva
+
+em > b,
+em > strong,
+b > em,
+strong > em
+	font-family fuente_cursiva_negrita !important
+	text-decoration underline
+
+p
+	//text-indent 2em
+
+	ol
+	ul
+		margin-left 0.5em
+
+// Alineaciones
+.alineacion
+	&__derecha
+		text-align right
+	
+	&__izquierda
+		text-align left

@@ -1,0 +1,60 @@
+// El header principal de la web
+h1, h2, h3, h4, h5, h6
+	font-family fuente_heading_bold
+
+.heading
+	background gris_fuerte
+	overflow hidden
+	position relative
+	
+	// El Botón del Menú
+	&__menu
+		display inline-block
+		float right
+		margin 0.5em 0
+
+		a
+			color gris_suave
+			font-size 2em
+			text-decoration none
+			&:hover
+			&:focus
+				color gris_medio
+	
+	// El Título principal
+	&__title
+		color gris_suave
+		clear both
+		font-size 1em
+		padding-left 0.5em
+		padding-right 0.5em
+
+
+// El logotipo
+.heading__logo
+	display inline-block
+	float left
+	
+	&__figure
+		max-width 200px
+		padding 0
+		margin 0.25em
+		img
+			width 100%
+
+// Las Mediaqueries
+@media all and (min-width: 1000px)
+	.heading
+		// El botón del Menú
+		&__menu
+			display none
+		
+		// El logotipo
+		&__logo
+			&__figure
+				margin 0.5em
+		
+		// El Título principal
+		&__title
+			font-size 1.5em
+			text-align left

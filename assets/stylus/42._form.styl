@@ -1,0 +1,144 @@
+// Formularios
+input[type="date"]
+input[type="email"]
+input[type="number"]
+input[type="tel"]
+input[type="text"]
+input[type="url"]
+input[type="search"]
+textarea
+select
+	border 1px solid plateado
+	border-radius 4px
+	box-sizing border-box
+	color gris_fuerte
+	display block
+	font-family Monospace
+	height 2.5em
+	line-height 100%
+	margin-bottom 1em
+	padding 0.25em 0.5em
+	outline none
+	transition_comun()
+	vertical-align baseline
+	width 100%
+
+	&:hover
+		border-color rgba(verde_azulado, 0.5)
+		box-shadow 0px 0px 10px 2px rgba(verde_azulado, 0.5)
+
+	&:focus
+		border-color verde_azulado
+		box-shadow 0px 0px 10px 2px verde_azulado
+		outline none
+
+textarea
+	min-height 120px
+
+
+// Funcionalidades del formulario de contacto
+.captcha--imagen
+.recargar__imagen
+	display inline-block
+	vertical-align middle
+
+.captcha__input[name="ct_captcha"]
+	display inline-block
+	margin-bottom 0.5em
+	margin-top 0.5em
+	margin-left 0.5em
+	max-width 150px
+	vertical-align middle
+
+.recargar__imagen
+	&:hover
+	&:focus
+		transform rotate(45deg)
+	&:active
+		transform rotate(90deg)
+
+.verificacion
+	border-bottom 1px dashed gris_suave
+	padding-bottom 0.5em
+	margin-bottom 0.5em
+
+// Placeholders
+.placeholders
+	color red
+
+.search
+	position relative
+
+	input[type="search"]
+		background none
+		border-color plateado
+		margin 0
+		padding-right 50px
+	
+	button[type="submit"]
+		background plateado
+		border plateado
+		border-radius 0 4px 4px 0
+		color blanco
+		cursor pointer
+		height 100%
+		padding-left 12px
+		padding-right 12px
+		position absolute
+		right 0
+		text-align center
+		text-shadow_lindo()
+		transition_comun()
+		top 0
+		// width 40px
+		&:hover
+		&:focus
+			background rosa_suave
+
+// Parámetros de flash
+.objeto_flash
+	border 1px solid esmeralda
+	cursor pointer
+	display inline-block
+	width 40px
+
+	&__param
+		cursor pointer
+
+// Mensajes de error y envío
+.respuesta
+	&--ok
+		background rgba(esmeralda, 0.25)
+		filter unquote("progid:DXImageTransform.Microsoft.gradient( startColorstr='#8000ff00', endColorstr='#8000ff00',GradientType=1 )")
+		border 2px solid esmeralda
+		color esmeralda
+		display inline-block
+		font-family fuente_heading_bold_italic
+		font-style italic
+		font-weight bolder
+		margin 0.5em auto
+		padding 0.5em
+
+	&--mal
+		background rgba(rojo_google, 0.25)
+		filter unquote("progid:DXImageTransform.Microsoft.gradient( startColorstr='#80ff0000', endColorstr='#80ff0000',GradientType=1 )")
+		border 2px solid rojo_google
+		color rojo_google
+		display inline-block
+		font-family fuente_heading_bold_italic
+		font-style italic
+		font-weight bolder
+		margin 0.5em auto
+		padding 0.5em
+		position relative
+
+	&--error
+		background rgba(amarillo_flor, 0.25)
+		filter unquote("progid:DXImageTransform.Microsoft.gradient( startColorstr='#80FFFF00', endColorstr='#80FFFF00',GradientType=1 )")
+		border 2px solid amarillo_flor
+		display inline-block
+		font-family fuente_heading_bold_italic
+		font-style italic
+		font-weight bolder
+		margin 0.5em auto
+		padding 0.5em

@@ -1,0 +1,75 @@
+// Navegación principal de la web
+.nav
+	font-family fuente_heading_bold
+	font-size 1.25em
+	clear both
+
+	&__list
+		list-style none
+		display none
+		// height 0
+		margin 0
+		// opacity 0
+		padding 0
+		text-align left
+		// visibility hidden
+
+		li
+			border-bottom 1px solid gris_suave
+			border-top 1px solid negro
+			display block
+
+			a
+				color gris_suave
+				display block
+				padding 0.5em
+				text-decoration none
+				&:hover
+				&:focus
+					color gris_medio
+		
+		// Borrando los bordes de los extremos
+		.last-child
+			border-bottom none
+		
+		.first-child
+			border-top none
+		
+		// Los enlaces activo y actualmente corrientes
+		li.current-menu-item
+		li.current_page_item
+			a
+				color rosa_suave
+		
+		// Abriendo y cerrando el menú
+		&-abrir
+			display block !important
+			// height auto
+			// opacity 1
+			// visibility visible
+
+		&-cerrar
+			display none
+			// height 0
+			// opacity 0
+			// visibility hidden
+
+// Puntos de quiebre
+@media all and (min-width: 1000px)
+	.nav
+		display inline-block
+		position absolute
+		right 0
+		top 0
+
+		&__list
+			display table
+			// height 0
+			opacity 1
+			visibility visible
+
+			li
+				display table-cell
+				border-top none
+				border-bottom none
+				font-size 0.8em

@@ -1,0 +1,91 @@
+/* ============================  Funciones reutilizables ===============================*/
+
+triangle(width = 10px, height = 10px, direction = 'bottom', color = #000)
+
+	// Base triangle styles
+	width 0
+	height 0
+	background 0
+	border-style solid
+
+	// Styles for each direction
+	directions = {
+		top: {
+			border-width: 0 (width * .5) height (width * .5),
+			border-color: transparent transparent color transparent
+		},
+		topRight: {
+			border-width: 0 width height 0,
+			border-color: transparent color transparent transparent
+		},
+		right: {
+			border-width: (height * .5) 0 (height *.5) width,
+			border-color: transparent transparent transparent color
+		},
+		bottomRight: {
+			border-width: 0 0 height width,
+			border-color: transparent transparent color transparent
+		},
+		bottom: {
+			border-width: height (width * .5) 0 (width * .5),
+			border-color: color transparent transparent transparent
+		},
+		bottomLeft: {
+			border-width: width 0 0 height,
+			border-color: transparent transparent transparent color
+		},
+		left: {
+			border-width: (height * .5) width (height * .5) 0,
+			border-color: transparent color transparent transparent
+		},
+		topLeft: {
+			border-width: height width 0 0,
+			border-color: color transparent transparent transparent
+		}
+	}
+
+	// Mixin styles for passed direction
+	styles = directions[direction]
+	{styles}
+
+
+/*************************************** Otras generales */
+transition_comun()
+	transition all 0.3s ease-in-out
+
+box-shadow_lindo()
+	box-shadow 0px 1px 1px 0px rgba(#fff, 0.5) inset, 0px -15px 15px 0px rgba(#000, 0.25) inset
+	-o-box-shadow 0px 1px 1px 0px rgba(#fff, 0.5) inset, 0px -15px 15px 0px rgba(#000, 0.25) inset
+	-ms-box-shadow 0px 1px 1px 0px rgba(#fff, 0.5) inset, 0px -15px 15px 0px rgba(#000, 0.25) inset
+	-moz-box-shadow 0px 1px 1px 0px rgba(#fff, 0.5) inset, 0px -15px 15px 0px rgba(#000, 0.25) inset
+
+text-shadow_lindo()
+	text-shadow 0px -1px 0px rgba(#000, 0.5)
+	-o-text-shadow 0px -1px 0px rgba(#000, 0.5)
+	-ms-text-shadow 0px -1px 0px rgba(#000, 0.5)
+	-moz-text-shadow 0px -1px 0px rgba(#000, 0.5)
+	-webkit-text-shadow 0px -1px 0px rgba(#000, 0.5)
+
+background-size()
+	background-size arguments
+	-o-background-size arguments
+	-ms-background-size arguments
+	-moz-background-size arguments
+	-webkit-background-size arguments
+	// -ms-behavior: url("../js/backgroundsize.min.htc")
+
+white-space_pre-wrap()
+	white-space pre-wrap
+	white-space -o-pre-wrap
+	white-space -pre-wrap
+	white-space -moz-pre-wrap
+	white-space -webkit-pre-wrap
+
+// reutilizables
+.clearboth
+.separador
+	clear both
+
+@media all and (min-width: 900px)
+	.separador
+		margin 0.65em 0
