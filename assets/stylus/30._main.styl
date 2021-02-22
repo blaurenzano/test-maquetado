@@ -1,38 +1,27 @@
 // Estructura principal del web en su cuerpo central
-a
-	color verde_azulado
+*
+	-webkit-hyphens auto
+	-moz-hyphens auto
+	hyphens auto
 	transition all 0.1s ease-in-out
-	&:hover
+	box-sizing border-box
+
+a
+	color azul_feisbuc
+	text-decoration none
+
 	&:focus
+		color azul_feisbuc
+
+	&:hover
+	&:active
 		color rosa_suave
 
 body
-	ol, ul
-		list-style-position inside
-
-html
-	color gris_medio
 	font-family fuente
-	font-size $em
-	text-align center
+	font-size normal
 	-webkit-font-smoothing antialiased
 	-moz-osx-font-smoothing grayscale
 
-
-.wrapper
-	background #fff
-	margin 0 auto
-
-// medias queries
-@media all and (min-width: 900px)
-	.wrapper
-		max-width 1200px
-
-	.content
-		box-sizing border-box
-		display inline-block
-		float left
-		margin 0
-		max-width 70%
-		vertical-align top
-		width 100%
+img
+	width 100%
