@@ -1,0 +1,98 @@
+[
+    {
+        "id": 1,
+        "name": "Zapatilla 1-XFK",
+        "type": "zapatilla",
+        "price": 5000,
+        "size": [36, 38, 40, 42],
+        "color": "white"
+    },
+    {
+        "id": 2,
+        "name": "Zapatilla 2000-X",
+        "type": "bota",
+        "price": 9800,
+        "size": [36, 38, 40],
+        "color": "black"
+    },
+    {
+        "id": 3,
+        "name": "Zapatilla 3 Run",
+        "type": "zapatilla",
+        "price": 6500,
+        "size": [36, 38, 40, 42, 44],
+        "color": "black"
+    },
+    {
+        "id": 3,
+        "name": "Zapatilla 3 Run",
+        "type": "zapatilla",
+        "price": 6500,
+        "size": [36, 38, 40, 42, 44],
+        "color": "black"
+    },
+    {
+        "id": 1,
+        "name": "Zapatilla 1-XFK",
+        "type": "zapatilla",
+        "price": 5000,
+        "size": [36, 38, 40, 42],
+        "color": "white"
+    },
+    {
+        "id": 2,
+        "name": "Zapatilla 2000-X",
+        "type": "bota",
+        "price": 9800,
+        "size": [36, 38, 40],
+        "color": "black"
+    },
+    {
+        "id": 1,
+        "name": "Zapatilla 1-XFK",
+        "type": "zapatilla",
+        "price": 5000,
+        "size": [36, 38, 40, 42],
+        "color": "white"
+    },
+    {
+        "id": 2,
+        "name": "Zapatilla 2000-X",
+        "type": "zapatilla",
+        "price": 9800,
+        "size": [36, 38, 40],
+        "color": "black"
+    },
+    {
+        "id": 3,
+        "name": "Zapatilla 3 Run",
+        "type": "zapatilla",
+        "price": 6500,
+        "size": [36, 38, 40, 42, 44],
+        "color": "black"
+    },
+    {
+        "id": 2,
+        "name": "Zapatilla 2000-X",
+        "type": "zapatilla",
+        "price": 9800,
+        "size": [36, 38, 40],
+        "color": "black"
+    },
+    {
+        "id": 3,
+        "name": "Zapatilla 3 Run",
+        "type": "zapatilla",
+        "price": 6500,
+        "size": [36, 38, 40, 42, 44],
+        "color": "black"
+    },
+    {
+        "id": 1,
+        "name": "Zapatilla 1-XFK",
+        "type": "zapatilla",
+        "price": 5000,
+        "size": [36, 38, 40, 42],
+        "color": "white"
+    }
+]
