@@ -3,9 +3,430 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Test de maquetado</title>
-	<link rel="stylesheet" href="styles.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+	<link rel="stylesheet" href="css/styles.css">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+	<script src="https://code.jquery.com/jquery-1.9.1.min.js"></script>
 </head>
-<body>
+<body onload="obtenerDatos();">
+	<header class="navbar nav-top">
+			<div class="container">
+				<a href="" title="#">
+					<img class="header-logo" src="assets/logo.svg">
+				</a>
+			</div>
+			<div class="header-icons">
+				<a href="#">
+					<img class="img-icons header-icon-mobile" src="assets/iconos/search-solid.png">	
+				</a>
+				<a href="#">
+					<img class="img-icons header-icon-mobile" src="assets/iconos/user-solid.png">	
+				</a>
+				<a href="#">
+					<img class="img-icons" src="assets/iconos/shopping-cart-solid.png">	
+				</a>
+			</div>
+			<div class="container">
+				<nav class="navbar navbar-expand-lg">
+					<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+					  <img class="navbar-toggler-icon" src="assets/iconos/bars-solid.png">
+					</button>
+					<a href="" title="#">
+						<img class="header-logo-mobile" src="assets/logo.svg">
+					</a>
+					<div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+					  <div class="navbar-nav">
+						<a class="nav-item nav-link active" href="#">SALE</span></a>
+						<a class="nav-item nav-link" href="#">E-SHOP</a>
+						<a class="nav-item nav-link" href="#">LOOKBOOK</a>
+						<a class="nav-item nav-link" href="#">CAMPAÑA</a>
+						<a class="nav-item nav-link" href="#">LOCALES</a>
+					  </div>
+					</div>
+				</nav>
+			</div>
+	</header>
+	<main>
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-12 col-md-12 col-xl-12">
+					<div class="row">
+						<div class="col-xs-12 col-md-12 col-xl-12">
+							<div class="shop-views">
+								<button onclick='cambiarColumna(3)' id="shop-display-4" class="shop-display active">
+									<img class="display-grid" src="assets/iconos/4.png";>
+								</button>
+								<button onclick='cambiarColumna(4)' id="shop-display-3" class="shop-display">
+									<img class="display-grid" src="assets/iconos/3.png";>
+								</button>
+								<button onclick='cambiarColumna(6)' id="shop-display-2" class="shop-display-mobile">
+									<img class="display-grid" src="assets/iconos/2.png";>
+								</button>
+								<button onclick='cambiarColumna(12)' id="shop-display-1" class="shop-display-mobile">
+									<img class="display-grid" src="assets/iconos/1.png";>
+								</button>
+							</div>
+						</div>
+						<div class="col-12 col-md-3 col-xl-3 col-filter-product">
+							<h1 class="filter-title">
+								Zapatillas
+							</h1>
+							<hr>
+							<span class="filter-subtitle">
+								Filtrar
+							</span>
+								<div class="filter-content">
+									<a id="filter-category-open" class="filter-show">Categoría</a>
+									<a id="filter-category-close" class="filter-show show">Categoría</a>
+									<ul class="list-unstyled filter-item-category show-animated">
+										<li class="filter-item">
+											<a onclick='cambiarCategoria("Zapatillas")' class="filter-show-item">
+													Zapatillas
+											</a>
+										</li>
+										<li class="filter-item">
+											<a onclick='cambiarCategoria("Zapatos")' class="filter-show-item">
+												Zapatos
+											</a>
+										</li>
+										<li class="filter-item">
+											<a onclick='cambiarCategoria("Botas")' class="filter-show-item">
+												Botas
+											</a>
+										</li>
+										<li class="filter-item">
+											<a onclick='cambiarCategoria("Sandalias")' class="filter-show-item">
+												Sandalias
+											</a>
+										</li>
+										<li class="filter-item">
+											<a onclick='cambiarCategoria("Pantuflas")' class="filter-show-item">
+												Pantuflas
+											</a>
+										</li>
+									</ul>
+								</div>
+								<div class="filter-content">
+									<a id="filter-waist-open" class="filter-show">Talle</a>
+									<a id="filter-waist-close" class="filter-show show">Talle</a>
+									<ul class="list-unstyled filter-item-waist show-animated">
+										<li class="filter-item">
+											<a onclick='cambiarTalle(36)' class="filter-show-item">
+													36
+											</a>
+										</li>
+										<li class="filter-item">
+											<a onclick='cambiarTalle(38)' class="filter-show-item">
+													38
+											</a>
+										</li>
+										<li class="filter-item">
+											<a onclick='cambiarTalle(40)' class="filter-show-item">
+													40
+											</a>
+										</li>
+										<li class="filter-item">
+											<a onclick='cambiarTalle(42)' class="filter-show-item">
+													42
+											</a>
+										</li>
+										<li class="filter-item">
+											<a onclick='cambiarTalle(44)' class="filter-show-item">
+													44
+											</a>
+										</li>
+									</ul>
+								</div>
+								<div class="filter-content">
+									<a id="filter-color-open" class="filter-show">Color</a>
+									<a id="filter-color-close" class="filter-show show">Color</a>
+									<ul class="list-unstyled filter-item-color show-animated">
+										<li class="filter-item">
+											<a onclick='cambiarColor("Amarillo")' class="filter-show-item">
+													Amarillo
+											</a>
+										</li>
+										<li class="filter-item">
+											<a onclick='cambiarColor("Negro")' class="filter-show-item">
+													Negro
+											</a>
+										</li>
+										<li class="filter-item">
+											<a onclick='cambiarColor("Verde")' class="filter-show-item">
+													Verde
+											</a>
+										</li>
+										<li class="filter-item">
+											<a onclick='cambiarColor("Azul")' class="filter-show-item">
+													Azul
+											</a>
+										</li>
+										<li class="filter-item">
+											<a onclick='cambiarColor("Blanco")' class="filter-show-item">
+													Blanco
+											</a>
+										</li>
+									</ul>
+								</div> 
+						</div>
+						<div class="col-12 col-md-9 col-xl-9 col-filter-product">
+							<div class="row" id="contenido">
 
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>	
+		</div>
+	</main>
+	<footer class="footer-content d-flex align-items-center">
+		<div class="container container-footer">
+			<nav class="navbar navbar-expand-md footer-desktop">
+				<div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+				  <div class="navbar-nav">
+					<a class="nav-item nav-link-footer" href="#">Ayuda</a>
+					<a class="nav-item nav-link-footer" href="#">Contacto</a>
+					<a class="nav-item nav-link-footer" href="#">Términos y condiciones</a>
+					<a class="nav-item nav-link-footer" href="#">Polítcas de privacidad</a>
+				  </div>
+				</div>
+			</nav>
+			<div class="row footer-mobile">
+				<div class="col-xs-12 col-md-3 col-xl-3 footer-col">
+					<a class="nav-item" href="#">Ayuda</a>
+				</div>
+				<div class="col-xs-12 col-md-3 col-xl-3 footer-col">
+					<a class="nav-item" href="#">Contacto</a>
+				</div>
+				<div class="col-xs-12 col-md-3 col-xl-3 footer-col">
+					<a class="nav-item" href="#">Términos y condiciones</a>
+				</div>
+				<div class="col-xs-12 col-md-3 col-xl-3 footer-col">
+					<a class="nav-item" href="#">Polítcas de privacidad</a>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<script>
+		
+        var contenido = document.querySelector('#contenido')
+
+        function obtenerDatos() {
+            fetch('product.json')
+                .then(res => res.json())
+                .then(datos => {
+                    tabla(datos)
+                })
+        }
+
+		function cambiarColumna(columna){
+			fetch('product.json')
+                .then(res => res.json())
+                .then(datos => {
+					tabla5(datos)
+					function tabla5(datos) {
+						contenido.innerHTML = ''
+						
+						for(let valor of datos){
+							contenido.innerHTML += `
+							<div class="col-${ columna } col-md-${ columna } col-xl-${ columna }">
+								<div class="card">
+									<div class="card-image">
+										<a>
+											<img src="${ valor.url }" class="img-card">
+										</a>
+									</div>
+									<hr>
+									<div class="card-content">
+										<span class="card-title">
+											<a>${ valor.name }</a>
+										</span>
+										<div class="card-price" id="price">
+											<span>${ valor.precio }</span>
+										</div>						  
+									</div>
+								</div>
+							</div>
+							`
+						}
+					}
+                })
+		}
+
+
+		function cambiarCategoria(categoria){
+			fetch('product.json')
+                .then(res => res.json())
+                .then(datos => {
+					tabla2(datos)
+					function tabla2(datos) {
+						contenido.innerHTML = ''
+						const datos2 = datos.filter(d2 => d2.categoria === categoria);
+						for(let valor of datos2){
+							contenido.innerHTML += `
+							<div class="col-md-4 col-xl-4">
+								<div class="card">
+									<div class="card-image">
+										<a>
+											<img src="${ valor.url }" class="img-card">
+										</a>
+									</div>
+									<hr>
+									<div class="card-content">
+										<span class="card-title">
+											<a>${ valor.name }</a>
+										</span>
+										<div class="card-price" id="price">
+											<span>${ valor.precio }</span>
+										</div>						  
+									</div>
+								</div>
+							</div>
+							`
+						}
+					}
+                })
+		}
+
+		function cambiarTalle(talle){
+			fetch('product.json')
+                .then(res => res.json())
+                .then(datos => {
+					tabla3(datos)
+					function tabla3(datos) {
+						contenido.innerHTML = ''
+						const datos3 = datos.filter(d3 => d3.talle === talle);
+						for(let valor of datos3){
+							contenido.innerHTML += `
+							<div class="col-md-4 col-xl-4">
+								<div class="card">
+									<div class="card-image">
+										<a>
+											<img src="${ valor.url }" class="img-card">
+										</a>
+									</div>
+									<hr>
+									<div class="card-content">
+										<span class="card-title">
+											<a>${ valor.name }</a>
+										</span>
+										<div class="card-price" id="price">
+											<span>${ valor.precio }</span>
+										</div>						  
+									</div>
+								</div>
+							</div>
+							`
+						}
+					}
+                })
+		}
+
+		function cambiarColor(color){
+			fetch('product.json')
+                .then(res => res.json())
+                .then(datos => {
+					tabla4(datos)
+					function tabla4(datos) {
+						contenido.innerHTML = ''
+						const datos4 = datos.filter(d4 => d4.color === color);
+						for(let valor of datos4){
+							contenido.innerHTML += `
+							<div class="col-md-4 col-xl-4">
+								<div class="card">
+									<div class="card-image">
+										<a>
+											<img src="${ valor.url }" class="img-card">
+										</a>
+									</div>
+									<hr>
+									<div class="card-content">
+										<span class="card-title">
+											<a>${ valor.name }</a>
+										</span>
+										<div class="card-price" id="price">
+											<span>${ valor.precio }</span>
+										</div>						  
+									</div>
+								</div>
+							</div>
+							`
+						}
+					}
+                })
+		}
+
+        function tabla(datos) {
+            contenido.innerHTML = ''
+
+            for(let valor of datos){
+                contenido.innerHTML += `
+                <div class="col-md-4 col-xl-4">
+					<div class="card">
+						<div class="card-image">
+							<a>
+								<img src="${ valor.url }" class="img-card">
+							</a>
+						</div>
+						<hr>
+						<div class="card-content">
+							<span class="card-title">
+								<a>${ valor.name }</a>
+							</span>
+							<div class="card-price" id="price">
+								<span>${ valor.precio }</span>
+							</div>						  
+						</div>
+					</div>
+				</div>
+                `
+            }
+        }
+
+		
+
+    </script>
+	<script>
+		$(document).ready(function() {
+		 $('#filter-category-open').click(function() {
+			 $('.filter-item-category').addClass('show-animated');
+			 $('#filter-category-open').removeClass('show');
+			 $('#filter-category-close').addClass('show');
+		 });
+	 
+		 $('#filter-category-close').click(function() {
+			 $('.filter-item-category').removeClass('show-animated');
+			 $('#filter-category-open').addClass('show');
+			 $('#filter-category-close').removeClass('show');
+		 });
+
+		 $('#filter-waist-open').click(function() {
+			 $('.filter-item-waist').addClass('show-animated');
+			 $('#filter-waist-open').removeClass('show');
+			 $('#filter-waist-close').addClass('show');
+		 });
+
+		 $('#filter-waist-close').click(function() {
+			 $('.filter-item-waist').removeClass('show-animated');
+			 $('#filter-waist-open').addClass('show');
+			 $('#filter-waist-close').removeClass('show');
+		 });
+
+		 $('#filter-color-open').click(function() {
+			 $('.filter-item-color').addClass('show-animated');
+			 $('#filter-color-open').removeClass('show');
+			 $('#filter-color-close').addClass('show');
+		 });
+
+		 $('#filter-color-close').click(function() {
+			 $('.filter-item-color').removeClass('show-animated');
+			 $('#filter-color-open').addClass('show');
+			 $('#filter-color-close').removeClass('show');
+		 });
+	 });
+	 </script>
+	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
 </body>
 </html>
