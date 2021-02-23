@@ -1,40 +1,34 @@
 // El header principal de la web
 .header
-	align-items start
 	background fondo_header
 	color texto_header
+	align-items stretch
+	align-content stretch
 	display flex
-	flex-flow column wrap
+	flex-flow row nowrap
+	flex-wrap nowrap
 	justify-content space-between
+	padding 16px
+	position relative
 	height 69px
-	padding 1em
 
 	&__botones
+		border 1px solid red
+		overflow hidden
+		box-sizing border-box
 
-		// Ocultando botones innecesario
-		&__usuario,
-		&__buscar
-			visibility hidden
-			display none
+		a
+			background pink
+			display table-cell
 	
-		// El menú
-		&__menu
-			background blanco_puro url("assets/iconos/bars-solid.svg") 50% 50% no-repeat
-			display block
-			color blanco_puro
-			height 26px
-			width: 30px
-	
-	// El logotipo
 	&__logo
 		border 1px solid green
-		&_h1
-			padding 0
-			margin 0
-			width 140px
-	
+		width auto
 
-	// El carrito de compras
-	&__carrito
-		img
-			height 26px
+		&_h1
+			margin 0
+			padding 0
+
+			a
+				display block
+				background pink

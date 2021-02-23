@@ -1,3 +1,32 @@
 // Navegación principal de la web
+.header__nav
+	overflow hidden
+	position relative
+	transition all 0.3s ease-in-out
+
+.cerrado
+	opacity 0
+	height 0
+	visibility hidden
+	z-index -1
+
+.abierto
+	height auto
+	opacity 1
+	visibility visible
+	z-index 1
+
 .nav
-    display none
+	&__ul
+		list-style none
+		margin 0
+		padding 0
+
+		&__li
+
+			&_a
+				color texto_header
+				border-top 1px solid blanco_transparente
+				display block
+				padding 1em 0
+				text-transform uppercase
