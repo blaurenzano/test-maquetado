@@ -1,5 +1,5 @@
 # Versión en vivo del ejercicio resuelto
-Enlace: <a href="" target="_blank"></a>
+Enlace: https://edgardoraul.github.io/test-maquetado/
 
 # Ejercicio de maquetado html & css
 En el siguiente vínculo vas a encontrar el diseño de una web hecho en Adobe XD, en versión desktop y mobile:
