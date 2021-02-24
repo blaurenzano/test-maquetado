@@ -5,7 +5,7 @@
 	<title>Test de maquetado</title>
 	<link rel="preconnect" href="https://fonts.gstatic.com" />
 	<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,100;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet" />
-	<link rel="stylesheet" href="styles.css" />
+	<link rel="stylesheet" href="assets/css/style.css" />
 	<link rel="shortcut icon" href="assets/iconos/favicon.ico" type="image/x-icon" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=2.0, user-scalable=yes" />
 </head>
@@ -14,49 +14,49 @@
 		<header class="cuerpo__header header">
 			<div class="header__botones">
 				<a id="boton_menu" class="header__botones__menu" href="#">
-					<img src="assets/iconos/bars-solid.svg" alt="Menú de Opciones" />
+					<span class="icon-bars-solid"></span>
 				</a>
 			</div>
 			<div class="header__logo">
 				<h1 class="header__logo_h1">
 					<a href="#">
-						<img src="assets/logo.svg" alt="Logo La Preuve" />
+						<img src="assets/img/logo.svg" alt="Logo La Preuve" />
 					</a>
 				</h1>
 			</div>
 			<div class="header__botones">
 				<a class="header__botones__carrito" href="#">
-					<img src="assets/iconos/shopping-cart-solid.svg" alt="Carrito de Compras" />
+					<span class="icon-shopping-cart-solid"></span>
 				</a>
-				<a class="header__botones__buscar" href="#">
-					<img src="assets/iconos/search-solid.svg" alt="Buscar" />
+				<a class="header__botones__buscar" href="#" title="Buscar">
+					<span class="icon-search-solid"></span>
 				</a>
 				<a class="header__botones__usuario" href="#">
-					<img src="assets/iconos/user-solid.svg" alt="Usuario" />
+					<span class="icon-user-solid"></span>
 				</a>
 			</div>
-			<div id="header_nav" class="header__nav animated">
-				<nav class="nav">
-					<ul class="nav__ul">
-						<li class="nav__ul__li">
-							<a href="#" class="nav__ul__li_a activo">Sale</a>
-						</li>
-						<li class="nav__ul__li">
-							<a href="#" class="nav__ul__li_a">E-Shop</a>
-						</li>
-						<li class="nav__ul__li">
-							<a href="#" class="nav__ul__li_a">Lookbook</a>
-						</li>
-						<li class="nav__ul__li">
-							<a href="#" class="nav__ul__li_a">Campaña</a>
-						</li>
-						<li class="nav__ul__li">
-							<a href="#" class="nav__ul__li_a">Locales</a>
-						</li>
-					</ul>
-				</nav>
-			</div>
 		</header>
+		<div id="header_nav" class="header__nav animated">
+			<nav class="nav">
+				<ul class="nav__ul">
+					<li class="nav__ul__li">
+						<a href="#" class="nav__ul__li_a activo">Sale</a>
+					</li>
+					<li class="nav__ul__li">
+						<a href="#" class="nav__ul__li_a">E-Shop</a>
+					</li>
+					<li class="nav__ul__li">
+						<a href="#" class="nav__ul__li_a">Lookbook</a>
+					</li>
+					<li class="nav__ul__li">
+						<a href="#" class="nav__ul__li_a">Campaña</a>
+					</li>
+					<li class="nav__ul__li">
+						<a href="#" class="nav__ul__li_a">Locales</a>
+					</li>
+				</ul>
+			</nav>
+		</div>
 		<div class="cuerpo__main">
 			<main class="main">
 				<div class="main__aside">
@@ -138,15 +138,19 @@
 				<div class="main__seccion">
 					<section class="articulos">
 						<article class="articulos__item item">
-							<a href="#" class="item__enlace">
-								<figure class="item__enlace__figure">
+							<figure class="item__enlace__figure">
+								<a href="#" class="item__enlace">
 									<img src="assets/productos/zapatilla_1.jpg" alt="Zapatilla 1-XFK" />
-									<figcaption class="item__enlace__figure_descripcion">Zapatilla 1-XFK</figcaption>
-								</figure>
-								<div class="item__precio">
-									$5000
-								</div>
-							</a>
+								</a>
+								<figcaption>
+									<div class="item__enlace__figure_descripcion">
+										Zapatilla 1-XFK
+									</div>
+									<div class="item__precio">
+										$5000
+									</div>
+								</figcaption>
+							</figure>
 						</article>
 						<article class="articulos__item item">
 							<a href="#" class="item__enlace">

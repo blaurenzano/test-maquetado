@@ -1,34 +1,42 @@
 // El header principal de la web
 .header
-	background fondo_header
+	align-items center
+	background rgba(fondo_header, 0.95)
 	color texto_header
-	align-items stretch
-	align-content stretch
 	display flex
-	flex-flow row nowrap
-	flex-wrap nowrap
 	justify-content space-between
-	padding 16px
-	position relative
+	left 0
 	height 69px
-
-	&__botones
-		border 1px solid red
-		overflow hidden
-		box-sizing border-box
-
-		a
-			background pink
-			display table-cell
+	padding 14px
+	position fixed
+	top 0
+	width 100%
+	z-index 2
 	
 	&__logo
-		border 1px solid green
-		width auto
-
 		&_h1
 			margin 0
 			padding 0
+			font-size 100%
+				
+			img
+				height 20px
+	
+	&__botones
+		span
+			font-size 24px
+		
+		&__menu
+		&__carrito
+			color texto_header
+		
+		&__menu
+			&:hover
+				tranform(rotateX(90deg))
+			
+		// En el teléfono están ocultos algunos botones
+		&__usuario
+		&__buscar
+			color texto_header
+			display none
 
-			a
-				display block
-				background pink
