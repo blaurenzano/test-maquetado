@@ -1,5 +1,6 @@
 # Versión en vivo del ejercicio resuelto
 Enlace: https://edgardoraul.github.io/test-maquetado/
+Se utilizó un poco de javascript puro y Stylus + Nib como preprocesador de CSS3.
 
 # Ejercicio de maquetado html & css
 En el siguiente vínculo vas a encontrar el diseño de una web hecho en Adobe XD, en versión desktop y mobile:
