@@ -1,0 +1,64 @@
+// Navegación principal de la web
+.header__nav
+	background rgba(fondo_header, 0.95)
+	left 0
+	overflow hidden
+	position fixed
+	top 69px
+	width 100%
+
+.cerrado
+	opacity 0
+	height 0
+	visibility hidden
+	z-index -1
+
+.abierto
+	height auto
+	opacity 1
+	visibility visible
+	z-index 1
+
+.nav
+	&__ul
+		list-style none
+		margin 0
+		padding 0
+
+		&__li
+
+			&_a
+				color texto_header
+				border-top 1px solid blanco_transparente
+				display block
+				padding 1em
+				text-transform uppercase
+			
+.activo
+	font-weight bolder
+
+/* Modo Desktop */
+@media all and (min-width 1080px)
+	.abierto
+	.cerrado
+		height 46px
+		opacity 1
+		top 54.2px
+		visibility visible
+		z-index 1
+
+	.header__nav
+		text-align center
+	
+	.nav
+		max-width 804px
+		margin auto
+
+		&__ul
+			display flex
+			justify-content space-around
+			align-content flex-start
+
+			&__li
+				a
+					border-top none

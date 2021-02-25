@@ -1,11 +1,295 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-	<meta charset="UTF-8">
+	<meta charset="UTF-8" />
 	<title>Test de maquetado</title>
-	<link rel="stylesheet" href="styles.css">
+	<link rel="preconnect" href="https://fonts.gstatic.com" />
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,100;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet" />
+	<link rel="stylesheet" href="assets/css/style.css" />
+	<link rel="shortcut icon" href="assets/iconos/favicon.ico" type="image/x-icon" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=2.0, user-scalable=yes" />
 </head>
 <body>
+	<div class="cuerpo">
+		<header class="cuerpo__header header">
+			<div class="header__botones">
+				<a id="boton_menu" class="header__botones__menu" href="#">
+					<span class="icon-bars-solid"></span>
+				</a>
+			</div>
+			<div class="header__logo">
+				<h1 class="header__logo_h1">
+					<a href="#">
+						<img src="assets/img/logo.svg" alt="Logo La Preuve" />
+					</a>
+				</h1>
+			</div>
+			<div class="header__botones">
+				<a class="header__botones__carrito" href="#">
+					<span class="icon-shopping-cart-solid"></span>
+				</a>
+				<a class="header__botones__buscar" href="#" title="Buscar">
+					<span class="icon-search-solid"></span>
+				</a>
+				<a class="header__botones__usuario" href="#">
+					<span class="icon-user-solid"></span>
+				</a>
+			</div>
+		</header>
+		<div id="header_nav" class="header__nav animated">
+			<nav class="nav">
+				<ul class="nav__ul">
+					<li class="nav__ul__li">
+						<a href="#" class="nav__ul__li_a activo">Sale</a>
+					</li>
+					<li class="nav__ul__li">
+						<a href="#" class="nav__ul__li_a">E-Shop</a>
+					</li>
+					<li class="nav__ul__li">
+						<a href="#" class="nav__ul__li_a">Lookbook</a>
+					</li>
+					<li class="nav__ul__li">
+						<a href="#" class="nav__ul__li_a">Campaña</a>
+					</li>
+					<li class="nav__ul__li">
+						<a href="#" class="nav__ul__li_a">Locales</a>
+					</li>
+				</ul>
+			</nav>
+		</div>
+		<div class="cuerpo__main">
+			<main class="main">
+				<div class="main__aside">
+					<aside class="aside">
+						<header class="aside__header">
+							<h2 class="aside__header_h2">Zapatillas</h2>
+							<h3 class="aside__header_h3">Filtrar</h3>
+						</header>
+						<div class="aside__acordeon">
+							<div class="asside__acordeon_1 filtro">
+								<header class="filtro__header">
+									<h3>Categoría</h3>
+								</header>
+								<ul class="filtro__lista">
+									<li class="filtro__lista__li">
+										<a href="#">Zapatillas</a>
+									</li>
+									<li class="filtro__lista__li">
+										<a href="#">Zapatos</a>
+									</li>
+									<li class="filtro__lista__li">
+										<a href="#">Botas</a>
+									</li>
+									<li class="filtro__lista__li">
+										<a href="#">Sandalias</a>
+									</li>
+									<li class="filtro__lista__li">
+										<a href="#">Pantuflas</a>
+									</li>
+								</ul>
+							</div>
+							<div class="asside__acordeon_2 filtro">
+								<header class="filtro__header">
+									<h3>Talle</h3>
+								</header>
+								<ul class="filtro__lista">
+									<li class="filtro__lista__li">
+										<a href="#">36</a>
+									</li>
+									<li class="filtro__lista__li">
+										<a href="#">38</a>
+									</li>
+									<li class="filtro__lista__li">
+										<a href="#">40</a>
+									</li>
+									<li class="filtro__lista__li">
+										<a href="#">42</a>
+									</li>
+									<li class="filtro__lista__li">
+										<a href="#">44</a>
+									</li>
+								</ul>
+							</div>
+							<div class="asside__acordeon_1 filtro">
+								<header class="filtro__header">
+									<h3>Color</h3>
+								</header>
+								<ul class="filtro__lista">
+									<li class="filtro__lista__li">
+										<a href="#">Amarillo</a>
+									</li>
+									<li class="filtro__lista__li">
+										<a href="#">Negro</a>
+									</li>
+									<li class="filtro__lista__li">
+										<a href="#">Verde</a>
+									</li>
+									<li class="filtro__lista__li">
+										<a href="#">Azul</a>
+									</li>
+									<li class="filtro__lista__li">
+										<a href="#">Blanco</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</aside>
+				</div>
+				<div class="main__seccion">
+					<section class="articulos">
 
+						<!-- Listado de artículos a la venta -->
+
+						<article class="articulos__item item">
+							<figure class="item__enlace__figure">
+								<img src="assets/productos/zapatilla_1.jpg" alt="Zapatilla 1-XFK" />
+								<a href="#" class="item__enlace">
+									<figcaption>
+										<div class="item__enlace__descripcion">
+											Zapatilla 1-XFK
+										</div>
+									</figcaption>
+								</a>
+							</figure>
+							<div class="item__precio">
+								$5000
+							</div>
+						</article>
+
+						<article class="articulos__item item">
+							<figure class="item__enlace__figure">
+								<img src="assets/productos/zapatilla_2.jpg" alt="Zapatilla 2000-X" />
+								<a href="#" class="item__enlace">
+									<figcaption>
+										<div class="item__enlace__descripcion">
+											Zapatilla 2000-X
+										</div>
+									</figcaption>
+								</a>
+							</figure>
+							<div class="item__precio">
+								$9800
+							</div>
+						</article>
+
+						<article class="articulos__item item">
+							<figure class="item__enlace__figure">
+								<img src="assets/productos/zapatilla_3.jpg" alt="Zapatilla 3 Run" />
+								<a href="#" class="item__enlace">
+									<figcaption>
+										<div class="item__enlace__descripcion">
+											Zapatilla 3 Run
+										</div>
+									</figcaption>
+								</a>
+							</figure>
+							<div class="item__precio">
+								$6500
+							</div>
+						</article>
+						
+						<article class="articulos__item item">
+							<figure class="item__enlace__figure">
+								<img src="assets/productos/zapatilla_3.jpg" alt="Zapatilla 3 Run" />
+								<a href="#" class="item__enlace">
+									<figcaption>
+										<div class="item__enlace__descripcion">
+											Zapatilla 3 Run
+										</div>
+									</figcaption>
+								</a>
+							</figure>
+							<div class="item__precio">
+								$6500
+							</div>
+						</article>
+
+						<article class="articulos__item item">
+							<figure class="item__enlace__figure">
+								<img src="assets/productos/zapatilla_1.jpg" alt="Zapatilla 1-XFK" />
+								<a href="#" class="item__enlace">
+									<figcaption>
+										<div class="item__enlace__descripcion">
+											Zapatilla 1-XFK
+										</div>
+									</figcaption>
+								</a>
+							</figure>
+							<div class="item__precio">
+								$5000
+							</div>
+						</article>
+
+						<article class="articulos__item item">
+							<figure class="item__enlace__figure">
+								<img src="assets/productos/zapatilla_1.jpg" alt="Zapatilla 1-XFK" />
+								<a href="#" class="item__enlace">
+									<figcaption>
+										<div class="item__enlace__descripcion">
+											Zapatilla 1-XFK
+										</div>
+									</figcaption>
+								</a>
+							</figure>
+							<div class="item__precio">
+								$5000
+							</div>
+						</article>
+
+						<article class="articulos__item item">
+							<figure class="item__enlace__figure">
+								<img src="assets/productos/zapatilla_1.jpg" alt="Zapatilla 1-XFK" />
+								<a href="#" class="item__enlace">
+									<figcaption>
+										<div class="item__enlace__descripcion">
+											Zapatilla 1-XFK
+										</div>
+									</figcaption>
+								</a>
+							</figure>
+							<div class="item__precio">
+								$5000
+							</div>
+						</article>
+
+						<article class="articulos__item item">
+							<figure class="item__enlace__figure">
+								<img src="assets/productos/zapatilla_1.jpg" alt="Zapatilla 1-XFK" />
+								<a href="#" class="item__enlace">
+									<figcaption>
+										<div class="item__enlace__descripcion">
+											Zapatilla 1-XFK
+										</div>
+									</figcaption>
+								</a>
+							</figure>
+							<div class="item__precio">
+								$5000
+							</div>
+						</article>
+					</section>
+				</div>
+			</main>
+		</div>
+		<footer class="cuerpo__footer footer">
+			<nav class="footer__nav">
+				<ul class="footer__nav__ul">
+					<li class="footer__nav__ul_li">
+						<a class="footer__nav__ul_li__a" href="#">Ayuda</a>
+					</li>
+					<li class="footer__nav__ul_li">
+						<a class="footer__nav__ul_li__a" href="#">Contacto</a>
+					</li>
+					<li class="footer__nav__ul_li">
+						<a class="footer__nav__ul_li__a" href="#">Términos y Condiciones</a>
+					</li>
+					<li class="footer__nav__ul_li">
+						<a class="footer__nav__ul_li__a" href="#">Políticas de Privacidad</a>
+					</li>
+				</ul>
+			</nav>
+		</footer>
+	</div>
+	<script type="text/javascript" src="assets/js/scripts.js"></script>
 </body>
 </html>

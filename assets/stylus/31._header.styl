@@ -1,0 +1,67 @@
+// El header principal de la web
+.header
+	align-items center
+	background rgba(fondo_header, 0.95)
+	color texto_header
+	display flex
+	flex-flow row nowrap
+	justify-content space-between
+	left 0
+	height 69px
+	padding 14px
+	position fixed
+	top 0
+	width 100%
+	z-index 2
+	
+	&__logo
+		&_h1
+			margin 0
+			padding 0
+			font-size 100%
+				
+			img
+				height 20px
+	
+	&__botones
+		span
+			font-size 24px
+		
+		&__menu
+		&__carrito
+			color texto_header
+		
+		&__menu
+			display block
+			&:hover
+				tranform(rotateX(90deg))
+			
+		// En el teléfono están ocultos algunos botones
+		&__usuario
+		&__buscar
+			color texto_header
+			display none
+
+/* Modo Tableta */
+@media all and (min-width 720px)
+	.header
+		&__botones
+			&__usuario
+			&__buscar
+				display inline-block
+				margin-left 0.5rem
+
+
+/* Modo Desktop */
+@media all and (min-width 1090px)
+	.header
+		height auto
+		align-content flex-end
+
+		&__botones
+		&__logo
+			position relative
+			top 0.8rem
+
+			&__menu
+				display none
