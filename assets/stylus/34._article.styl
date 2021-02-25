@@ -1,1 +1,43 @@
 // Artículos, items de productos
+// Artículos e items
+.articulos
+	&__item
+		margin 0.4rem 0
+
+.item
+	&__enlace
+		color color_texto
+		display block
+		border-top 1px solid color_texto
+		padding 0.5rem 0
+		
+		&__descripcion
+			font-size 1rem
+		
+	&__precio
+		font-weight bolder
+		font-size 1.25rem
+
+/* Modo Tableta */
+@media all and (min-width 720px)
+	.articulos
+		align-items stretch
+		align-content flex-start
+		display flex
+		flex-direction column
+		flex-flow wrap
+		justify-content space-between
+		
+		&__item
+			width 49%
+
+
+
+/* Modo Desktop */
+@media all and (min-width 1090px)
+	.articulos
+		flex-direction row
+		max-width 812px
+
+		&__item
+			max-width 32.5%

@@ -4,6 +4,7 @@
 	background rgba(fondo_header, 0.95)
 	color texto_header
 	display flex
+	flex-flow row nowrap
 	justify-content space-between
 	left 0
 	height 69px
@@ -31,6 +32,7 @@
 			color texto_header
 		
 		&__menu
+			display block
 			&:hover
 				tranform(rotateX(90deg))
 			
@@ -40,3 +42,20 @@
 			color texto_header
 			display none
 
+/* Modo Tableta */
+@media all and (min-width 720px)
+	.header
+		&__botones
+			&__usuario
+			&__buscar
+				display inline-block
+				margin-left 0.5rem
+
+
+/* Modo Desktop */
+@media all and (min-width 1090px)
+	.header
+		height auto
+
+		&__botones__menu
+			display none

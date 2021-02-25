@@ -1,11 +1,44 @@
 // El Sidebar y todo su contenido
 .aside
-    &__header_h3
-    &__acordeon
-        display none
+	&__header_h3
+	&__acordeon
+		display none
+	
+	&&__header_h3
+		font-size 1.25rem
  
-    &__header
-        &_h2
-            font-size: 29px
-            margin 0.4rem 0
+	&__header
 
+		&_h2
+			border-bottom 1px solid color_texto
+			font-size 1.8rem
+			padding-bottom 0.4rem
+			margin 0.4rem 0
+
+.filtro
+	&__header
+		background gris_claro
+		padding 0.3125rem 1rem
+
+		h3
+			margin 0
+			font-size 1rem
+	
+	&__lista
+		list-style none
+		padding-left 1rem
+
+		&__li
+			line-height 1.5rem
+			*
+				color color_texto
+
+/* Modo Desktop */
+@media all and (min-width 1090px)
+	.aside
+		margin-right 1rem
+		width 260px
+	
+		&__header_h3
+		&__acordeon
+			display block
