@@ -246,6 +246,7 @@ img {
     max-width: 1072px;
     margin-left: auto;
     margin-right: auto;
+    margin-top: 1rem;
   }
   .cuerpo__main {
     margin-top: 100px;
@@ -317,8 +318,17 @@ img {
 @media all and (min-width: 1090px) {
   .header {
     height: auto;
+    -ms-flex-line-pack: end;
+    -webkit-align-content: flex-end;
+    align-content: flex-end;
   }
-  .header__botones__menu {
+  .header__botones,
+  .header__logo {
+    position: relative;
+    top: 0.8rem;
+  }
+  .header__botones__menu,
+  .header__logo__menu {
     display: none;
   }
 }
@@ -358,6 +368,9 @@ img {
   padding: 1em;
   text-transform: uppercase;
 }
+.activo {
+  font-weight: bolder;
+}
 @media all and (min-width: 1080px) {
   .abierto,
   .cerrado {
@@ -384,6 +397,9 @@ img {
     -ms-flex-pack: distribute;
     -webkit-justify-content: space-around;
     justify-content: space-around;
+    -ms-flex-line-pack: start;
+    -webkit-align-content: flex-start;
+    align-content: flex-start;
   }
   .nav__ul__li a {
     border-top: none;
