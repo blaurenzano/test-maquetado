@@ -1,0 +1,140 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap");
+:root {
+  --fondo-header: #100217;
+  --texto-header: #FAFAFA;
+  --gris-claro: #E4E8EE;
+  --color-texto: #030B1C;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  font-family: "Roboto", sans-serif;
+}
+
+a {
+  font-family: "Roboto", sans-serif;
+}
+
+.header {
+  width: 100%;
+  height: 5em;
+  background: var(--fondo-header);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 1em;
+}
+.header .nav-mobile__hamburguer {
+  cursor: pointer;
+}
+
+.nav-mobile__link {
+  position: fixed;
+  background: rgba(0, 0, 0, 0.9);
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 50vh;
+  padding: 2em;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  clip-path: circle(0% at 0% 0);
+  font-weight: 300;
+  transition: ease-in-out 0.5s;
+}
+.nav-mobile__link li {
+  list-style: none;
+}
+.nav-mobile__link li a {
+  color: var(--texto-header);
+  text-decoration: none;
+  transition: 0.3s all ease;
+}
+
+.navTwo {
+  clip-path: circle(150% at 100% 0);
+  margin-top: 5em;
+}
+
+.main {
+  width: 100%;
+  height: 100%;
+  padding: 3em 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.main .main__title {
+  width: 90%;
+  border-bottom: var(--color-texto) 0.2em solid;
+}
+.main .main__title h1 {
+  color: var(--color-texto);
+  font-size: 2em;
+  margin: 0.5em 1em;
+}
+.main .products-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.product {
+  width: 90%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.product img {
+  width: 80%;
+}
+.product .product__info {
+  width: 100%;
+  height: 100%;
+  border-top: var(--color-texto) 0.2em solid;
+}
+.product .product__info p {
+  font-size: 1.5em;
+  margin: 0.2em 0;
+}
+.product .product__info .product__price {
+  font-weight: bold;
+}
+
+.footer {
+  width: 100%;
+  height: 100%;
+  background: var(--fondo-header);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footer ul {
+  margin: 2em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.footer ul li {
+  padding: 0.5em;
+}
+.footer ul li a {
+  text-decoration: none;
+  color: var(--texto-header);
+}
+
+/*# sourceMappingURL=main.css.map */
