@@ -38,7 +38,7 @@ const createCard = (product) => {
             <img src=${product.img} alt="product-img">
             <div class="product__info">
                 <p class="product__name">${product.producto}</p>
-                <p class="product__price">${product.valor}</p>
+                <p class="product__price">$${product.valor}</p>
             </div>
         </a>
         `;
