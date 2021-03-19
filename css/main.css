@@ -24,22 +24,23 @@ a {
 }
 
 .header {
+  position: fixed;
   width: 100%;
-  height: 12em;
+  height: 5em;
   background: var(--fondo-header);
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 3em;
+  padding: 0 1em;
 }
 .header .nav-mobile__hamburguer, .header .header__cart {
   cursor: pointer;
 }
 .header .nav-mobile__hamburguer img, .header .header__cart img {
-  width: 4em;
+  width: 1.5em;
 }
 .header .header__logo img {
-  width: 23em;
+  width: 8em;
 }
 
 .nav-mobile__link {
@@ -64,18 +65,18 @@ a {
   color: var(--texto-header);
   text-decoration: none;
   transition: 0.3s all ease;
-  font-size: 2em;
+  font-size: 1em;
 }
 
 .navTwo {
   clip-path: circle(150% at 100% 0);
-  margin-top: 10em;
+  margin-top: 5em;
 }
 
 .main {
   width: 100%;
   height: 100%;
-  padding: 3em 0 6em 0;
+  padding: 3em 0;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -84,10 +85,11 @@ a {
 .main .main__title {
   width: 90%;
   border-bottom: var(--color-texto) 0.2em solid;
+  margin-top: 2em;
 }
 .main .main__title h1 {
   color: var(--color-texto);
-  font-size: 3.5em;
+  font-size: 2em;
   font-weight: bold;
   margin: 0.5em 0;
 }
@@ -107,20 +109,24 @@ a {
   align-items: center;
   flex-direction: column;
 }
-.product img {
+.product a {
+  text-decoration: none;
+  color: var(--color-texto);
+}
+.product a img {
   width: 100%;
   margin: 3em 0 0 0;
 }
-.product .product__info {
+.product a .product__info {
   width: 100%;
   height: 100%;
   border-top: var(--color-texto) 0.2em solid;
 }
-.product .product__info p {
-  font-size: 3em;
+.product a .product__info p {
+  font-size: 1.2em;
   margin: 0.2em 0;
 }
-.product .product__info .product__price {
+.product a .product__info .product__price {
   font-weight: bold;
 }
 
@@ -133,7 +139,7 @@ a {
   align-items: center;
 }
 .footer ul {
-  margin: 3em 0;
+  margin: 1em 0;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -145,7 +151,7 @@ a {
 .footer ul li a {
   text-decoration: none;
   color: var(--texto-header);
-  font-size: 2.5em;
+  font-size: 1em;
 }
 
 @media screen and (min-width: 950px) {
@@ -200,7 +206,7 @@ a {
     align-items: flex-start;
     justify-content: center;
     flex-direction: row;
-    padding: 3em 6em 6em 6em;
+    padding: 7em 6em 6em 6em;
   }
 
   .filter {
