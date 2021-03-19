@@ -1,11 +1,137 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-	<meta charset="UTF-8">
-	<title>Test de maquetado</title>
-	<link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/main.css">
+	<script src="js/jquery-3.6.0.min.js"></script>
+	<title>Test de maquetado - Ramón Urchipia</title>
 </head>
 <body>
+	<header class="header">
+		<div class="header__menu-mobile" id="header__menu-mobile">
+			<nav class="nav-mobile">
+				<ul class="nav-mobile__link">
+					<li><a href="#sale">SALE</a></li>
+					<li><a href="#e-shop">E-SHOP</a></li>
+					<li><a href="#lookbook">LOOKBOOK</a></li>
+					<li><a href="#campana">CAMPAÑA</a></li>
+					<li><a href="#locales">LOCALES</a></li>
+				</ul>
+				
+				<div class="nav-mobile__hamburguer" id="iconNav">
+					<img src="assets/iconos/hamburguesa.svg" alt="Menu">
+				</div>
+			</nav>
+		</div>
+
+		<div class="header__logo">
+			<a href="index.html">
+				<img src="assets/logo.svg" alt="Logo">
+			</a>
+		</div>
+
+		<div class="header__cart">
+			<a href="#">
+				<img src="assets/iconos/shopping-cart-solid.svg" alt="Cart">
+			</a>
+		</div>
+
+		<div class="header__desktop">
+			<div class="header__logo-icons">
+				<span></span>
+				<div class="header__logo-desktop">
+					<a href="index.html">
+						<img src="assets/logo.svg" alt="Logo">
+					</a>
+				</div>
+				<div class="header__icons-desktop">
+					<a href="#">
+						<img src="assets/iconos/search-solid.svg" alt="Cart">
+					</a>
+					<a href="#">
+						<img src="assets/iconos/user-solid.svg" alt="Cart">
+					</a>
+					<a href="#">
+						<img src="assets/iconos/shopping-cart-solid.svg" alt="Cart">
+					</a>
+				</div>
+			</div>
+
+			<ul class="nav-desktop__link">
+				<li><a href="#sale">SALE</a></li>
+				<li><a href="#e-shop">E-SHOP</a></li>
+				<li><a href="#lookbook">LOOKBOOK</a></li>
+				<li><a href="#campana">CAMPAÑA</a></li>
+				<li><a href="#locales">LOCALES</a></li>
+			</ul>
+
+		</div>
+
+	</header>
+
+	<main class="main">
+
+		<div class="main__title">
+			<h1>Zapatillas</h1>
+		</div>
+
+		<aside class="filter">
+			<div class="filter__title">
+				<h1>Zapatillas</h1>
+			</div>
+
+			<div class="filter__filter">
+				<h2>Filtrar</h2>
+			</div>
+
+			<section class="filter-container">
+
+				<h3>Categoría</h3>
+				<ul>
+					<li><a class="filterType" href="#">Zapatillas</a></li>
+					<li><a class="filterType" href="#">Zapatos</a></li>
+					<li><a class="filterType" href="#">Botas</a></li>
+					<li><a class="filterType" href="#">Sandalias</a></li>
+					<li><a class="filterType" href="#">Pantuflas</a></li>
+				</ul>
+
+				<h3>Talle</h3>
+				<ul>
+					<li><a href="#">36</a></li>
+					<li><a href="#">38</a></li>
+					<li><a href="#">40</a></li>
+					<li><a href="#">42</a></li>
+					<li><a href="#">44</a></li>
+				</ul>
+
+				<h3>Color</h3>
+				<ul>
+					<li><a href="#">Amarillo</a></li>
+					<li><a href="#">Negro</a></li>
+					<li><a href="#">Verde</a></li>
+					<li><a href="#">Azul</a></li>
+					<li><a href="#">Blanco</a></li>
+				</ul>
+
+			</section>
+		</aside>
+
+		<section class="products-container">
+		</section>
+	</main>
+
+	<footer class="footer">
+		<ul>
+			<li><a href="#">Ayuda</a></li>
+			<li><a href="#">Contacto</a></li>
+			<li><a href="#">Términos y condiciones</a></li>
+			<li><a href="#">Políticas de privacidad</a></li>
+		</ul>
+	</footer>
+
+	<script src="js/navMobile.js"></script>
+	<script src="js/main.js"></script>
 
 </body>
 </html>
