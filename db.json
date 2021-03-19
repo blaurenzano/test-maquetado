@@ -2,55 +2,55 @@
     {
       "producto": "Zapatilla 1-XFK",
       "valor": 5000,
-      "tipo": "zapatilla",
+      "tipo": "Zapatillas",
       "img": "assets/productos/zapatilla_1.jpg"
     },
     {
       "producto": "Zapatilla 2000-X",
       "valor": 9800,
-      "tipo": "bota",
+      "tipo": "Botas",
       "img": "assets/productos/zapatilla_2.jpg"
     },
     {
-      "producto": "Les Paul Standard 50s",
+      "producto": "Zapatilla 3 Run",
       "valor": 6500,
-      "tipo": "Zapatilla 3 Run",
+      "tipo": "Zapatillas",
       "img": "assets/productos/zapatilla_3.jpg"
     },
     {
       "producto": "Zapatilla 1-XFK",
       "valor": 5000,
-      "tipo": "zapatilla",
+      "tipo": "Zapatillas",
       "img": "assets/productos/zapatilla_1.jpg"
     },
     {
       "producto": "Zapatilla 2000-X",
       "valor": 9800,
-      "tipo": "bota",
+      "tipo": "Botas",
       "img": "assets/productos/zapatilla_2.jpg"
     },
     {
-      "producto": "Les Paul Standard 50s",
+      "producto": "Zapatilla 3 Run",
       "valor": 6500,
-      "tipo": "Zapatilla 3 Run",
+      "tipo": "Zapatillas",
       "img": "assets/productos/zapatilla_3.jpg"
     },
     {
       "producto": "Zapatilla 1-XFK",
       "valor": 5000,
-      "tipo": "zapatilla",
+      "tipo": "Zapatillas",
       "img": "assets/productos/zapatilla_1.jpg"
     },
     {
       "producto": "Zapatilla 2000-X",
       "valor": 9800,
-      "tipo": "bota",
+      "tipo": "Botas",
       "img": "assets/productos/zapatilla_2.jpg"
     },
     {
-      "producto": "Les Paul Standard 50s",
+      "producto": "Zapatilla 3 Run",
       "valor": 6500,
-      "tipo": "Zapatilla 3 Run",
+      "tipo": "Zapatillas",
       "img": "assets/productos/zapatilla_3.jpg"
     }
   ]

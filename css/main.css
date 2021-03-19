@@ -217,10 +217,10 @@ a {
     border-bottom: var(--color-texto) 0.2em solid;
   }
   .filter .filter__title h1 {
-    padding: 0.5em;
+    padding: 0.5em 0.5em 0.5em 0;
   }
   .filter .filter__filter h2 {
-    padding: 0.5em;
+    padding: 0.5em 0.5em 0.5em 0;
   }
   .filter .filter-container {
     width: 100%;
