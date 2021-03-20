@@ -1,11 +1,207 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-	<meta charset="UTF-8">
-	<title>Test de maquetado</title>
-	<link rel="stylesheet" href="styles.css">
-</head>
-<body>
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-</body>
+	<!--CSS-->
+	<link href="styles.css" rel="stylesheet">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    
+    <!--Fuente-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
+    <title>Test de maquetado</title>
+  </head>
+  <body onload="traer()">
+
+	<!--NAVBAR-->
+	<div class="container-fluid px-0 header sticky-top">
+        <nav class="navbar navbar-expand-lg d-flex header-top">
+          
+                <button class="navbar-toggler" type="button" 
+                  data-bs-toggle="collapse" 
+                  data-bs-target="#navbarSupportedContent" 
+                  aria-controls="navbarSupportedContent" 
+                  aria-expanded="false" aria-label="Toggle navigation" id="barsButton">
+                    <span class="bars"></span>
+                </button>
+              
+              <a class="" href="#"><img class="logo" src="/assets/logo.svg" width="200"></a>
+              <a class=""><img class="icon3 shopping_mobile" alt="" width="30" height="24"></a>
+
+					<div class="col">
+						<div class="pt-4">
+						<div class=" icon-shop ">
+							<a class="" href="#"><img class="icon1" alt="" width="30" height="24"></a>
+							<a class=" " href="#"><img class="icon2" alt="" width="30" height="24"></a>
+							<a class=" " href="#"><img class="icon3" alt="" width="30" height="24"></a>
+						</div>
+					</div>
+					</div>
+        </nav>
+
+        <div class="nav-bottom">
+        <nav class="navbar navbar-expand-lg navbar-dark d-flex">
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <div class="navbar-nav w-100 justify-content-evenly" id="js-menu">
+                  <a class="nav-item nav-link active" href="#">SALE</a>
+                  <a class="nav-item nav-link" href="#">E-SHOP</a>
+                  <a class="nav-item nav-link" href="#">LOOKBOOK</a>
+                  <a class="nav-item nav-link" href="#">CAMPAÑA</a>
+                  <a class="nav-item nav-link" href="#">LOCALES</a>
+                </div>
+              </div>
+        </nav>
+      </div>
+      </div>
+	<!--FIN NAVBAR-->
+      
+  <div class="container-fluid filtro-gallery">
+    
+    <div class="row">
+      <!--Filtro-->
+      <div class="col-lg-4 col-md col-sm mt-5">
+        <div id="container">
+          <header>
+            <h2>Zapatillas</h2>
+            <h3>Filtrar</h3>
+          </header>
+          <section id="accordion">
+            <div>
+              
+              <input type="checkbox" id="check-1" />
+            
+              <label for="check-1">Categoria</label>
+              <article class="galeria-filtro">
+                <ul id="accordionfilter">
+                  <li>
+                    <a href="#" class="categoryItem" data-filter="todos">Todos</a>
+                  </li>
+                  <li>
+                    <a href="#" class="categoryItem" data-filter="zapatilla">Zapatillas</a>
+                  </li>
+                  <li>
+                    <a href="#" class="categoryItem" data-filter="zapato">Zapato</a>
+                  </li>
+                  <li>
+                    <a href="#" class="categoryItem" data-filter="bota">Botas</a>
+                  </li>
+                  <li>
+                    <a href="#" class="categoryItem" data-filter="sandalia">Sandalias</a>
+                  </li>
+                  <li>
+                    <a href="#" class="categoryItem" data-filter="pantufla">Pantuflas</a>
+                  </li>
+                </ul>
+              </article>
+            </div>
+            <div>
+              <input type="checkbox" id="check-2" />
+              <label for="check-2">Talle</label>
+              <article>
+                <ul id="accordionfilter">
+                  <li>
+                    <a href="#" class="categoryItem" data-filter="talle36">36</a>
+                  </li>
+                  <li>
+                    <a href="#" class="categoryItem" data-filter="talle38">38</a>
+                  </li>
+                  <li>
+                    <a href="#" class="categoryItem" data-filter="talle40">40</a>
+                  </li>
+                  <li>
+                    <a href="#" class="categoryItem" data-filter="talle42">42</a>
+                  </li>
+                  <li>
+                    <a href="#" class="categoryItem" data-filter="talle44">44</a>
+                  </li>
+                </ul>
+              </article>
+            </div>
+            <div>
+              <input type="checkbox" id="check-3" />
+              <label for="check-3">Color</label>
+              <article>
+                <ul id="accordionfilter">
+                  <li>
+                    <a href="#" class="categoryItem" data-filter="amarillo">Amarillo</a>
+                  </li>
+                  <li>
+                    <a href="#" class="categoryItem" data-filter="negro">Negro</a>
+                  </li>
+                  <li>
+                    <a href="#" class="categoryItem" data-filter="verde">Verde</a>
+                  </li>
+                  <li>
+                    <a href="#" class="categoryItem" data-filter="azul">Azul</a>
+                  </li>
+                  <li>
+                    <a href="#" class="categoryItem" data-filter="blanco">Blanco</a>
+                  </li>
+                </ul>
+              </article>
+            </div>
+          </section>
+        </div>
+      </div>
+
+
+      <div class="col-lg-8 col-md col-sm">
+        <div class="galeria-producto row mt-5 mb-5" id="productos">
+        </div>
+
+      </div>
+
+
+    </div>
+  </div>
+
+  
+    <div class="container-fluid footer">
+      <div class="row ">
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg px-0">
+          <ul>
+            <li><a href="#" class="">Ayuda</a> </li>
+            <li><a href="#" class="">Contacto</a></li>
+            <li><a href="#" class="">Términos y condiciones</a></li>
+            <li><a href="#" class="">Políticas de privacidad</a></li>
+          </ul>
+
+
+
+          
+          
+          
+          
+        </div>
+      </div>
+    </div>
+
+
+
+    <!-- Optional JavaScript; choose one of the two! -->
+    
+    <script src="/assets/js/script.js"></script>
+    <script src="/assets/js/jquery-3.6.0.min.js"></script>
+    <script src="/assets/data/info.json"></script>
+    
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.6.0/dist/umd/popper.min.js" integrity="sha384-KsvD1yqQ1/1+IA7gi3P0tyJcT3vR+NdBTt13hSJ2lnve8agRGXTTyNaBYmCR/Nwi" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.min.js" integrity="sha384-nsg8ua9HAw1y0W1btsyWgBklPnCUAFLuTMS2G72MMONqmOymq585AcH49TLBQObG" crossorigin="anonymous"></script>
+    -->
+
+    <script>
+      
+    </script>
+  </body>
 </html>
