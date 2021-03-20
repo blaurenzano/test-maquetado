@@ -1,3 +1,274 @@
-body{
+
+body,
+nav{
 	margin: 0;
+	padding: 0;
+	font-family: 'Roboto', sans-serif;
 }
+
+
+
+/**** ESTILOS NAVBAR  *****/
+
+.icon1{
+	content: url(/assets/iconos/search-solid.svg);
+}
+
+.icon2{
+	content: url(/assets/iconos/user-solid.svg);
+}
+
+.icon3{
+	content: url(/assets/iconos/shopping-cart-solid.svg);
+}
+
+.header{
+	background-color: #100217E6!important;
+	color: white!important;
+	box-shadow: 0px 3px 6px #00000026;
+	opacity: 1;
+}
+
+.bars{
+	content: url(/assets/iconos/bars-solid.svg);
+}
+
+.logo{
+	position: absolute;
+	left: 43%;
+	bottom: 30%;
+}
+
+.icon-shop{
+	display: flex;
+	justify-content: flex-end;
+}
+
+.icon-shop a{
+	margin-right: 10px;
+}
+
+.shopping_mobile{
+	display: none;
+}
+
+
+#barsButton,
+#barsButton:focus,
+#barsButton:active{
+    outline: none;
+    box-shadow: none;
+	border: none;
+}
+
+
+/******* Filtro Acordeon *******/
+
+.filtro-gallery{
+	background-color: #FAFAFA
+}
+
+#container {
+    margin: 0 auto;
+    width: 50%;
+}
+
+#container h2{
+	padding: 10px;
+    border-bottom: 1px solid;
+	font-size: 24px;
+	letter-spacing: 0.48px;
+	font-weight: bold;
+}
+
+#container h3{
+	padding: 10px;
+	font-size: 20px;
+	letter-spacing: 0.4px;
+	font-weight: bold;
+}
+
+#accordion input {
+  display: none;
+}
+
+#accordion label {
+  cursor: pointer;
+  display: block;
+  margin-bottom: .125em;
+  padding: .25em 1em;
+  z-index: 20;
+  font-size: 16px;
+  font-weight: bold;
+  letter-spacing: 0.32px;
+}
+
+
+#accordion input:checked + label {
+  background: #E4E8EE;
+  color: black;
+  margin-bottom: 0;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+
+#accordion article {
+  height:0px;
+  overflow:hidden;
+}
+
+#accordion input:checked ~ article {
+  height: auto;
+  margin-bottom: .125em;
+}
+
+#accordionfilter{
+	text-align: left;
+	font-size: 20px;
+	list-style: none;
+	
+}
+
+article ul li a{
+	text-decoration: none;
+	color: black;
+	font-size: 16px;
+	letter-spacing: 0.32px;
+}
+
+article ul li a:hover{
+	text-decoration: none;
+}
+
+.galeria-producto{
+	display: flex;
+	justify-content: center;
+}
+
+.galeria-producto .item img{
+	width: 262px;
+	height: 182px;
+}
+
+.galeria-filtro .filtro-active{
+	border-bottom: 1px solid;
+}
+
+.item img{
+	width: 260px;
+	border-bottom: 1px solid;
+}
+
+.precio-producto{
+	font-weight: bold;
+	padding: 0;
+	margin-bottom: 15px;
+}
+
+.nombre-producto{
+	padding: 0;
+	margin-bottom: 0;
+}
+
+.footer{
+	background-color: #100217E6;
+	box-shadow: 0px -3px 6px #00000026;
+	opacity: 1;
+	padding: 25px;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+}
+
+.footer ul li{
+	display: inline;
+}
+
+.footer ul li a{
+	text-decoration: none;
+	color: white;
+	margin-right: 60px;
+}
+
+
+
+/* Media Queries */
+	
+	@media only screen and (max-width:575px) {
+		
+		.icon1,
+		.icon2,
+		.icon3{
+			display: none;
+		}
+
+		.shopping_mobile{
+			display: block;
+			position: absolute;
+			left: 83%;
+			bottom: 25%;
+		}
+
+		.header-top{
+			height: 80px;
+		}
+
+		.bars{
+			display: block;
+			position: absolute;
+			left: 5%;
+			bottom: 25%;
+			width: 25px;
+		}
+
+		.active {
+			display: block;
+		}
+
+		#js-menu{
+			text-align: center;
+		}
+
+		.logo{
+			display: block;
+			position: absolute;
+			left: 28%;
+			bottom: 30%;
+			width: 150px;
+		}
+
+		.navbar-brand{
+			position: absolute;
+			left: 35%;
+			margin-left: -60px;
+		}
+
+		#container{
+			margin: 0;
+			width: 100%;
+		}
+
+		#container h3{
+			display: none;
+		}
+
+		#accordion{
+			display: none;
+		}
+
+		.galeria-producto .item img{
+			width: 320px;
+			height: 232px;
+			
+		}
+
+		.footer ul li{
+			display: block;
+			text-align: center;
+			margin-bottom: 10px;
+		}
+
+		
+	
+	}
