@@ -28,7 +28,7 @@ function App() {
           <Shoes shoes={shoes} mobile={mobile}></Shoes>
         </div>
       </div>
-      <Footer mobile={mobile}></Footer>
+      <Footer showNumber={showNumber} mobile={mobile}></Footer>
     </div>
   );
 }

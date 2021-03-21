@@ -79,6 +79,7 @@ const Shoes = ({ shoes, mobile }) => {
         {shoes.map((item) => {
           return (
             <Shoe
+              mobile={mobile}
               key={item.id}
               name={item.name}
               price={item.price}

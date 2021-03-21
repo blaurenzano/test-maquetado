@@ -12,6 +12,11 @@ const Foot = styled.footer`
     return mobile ? "column" : "row";
   }};
   text-align: center;
+  left: 0;
+  position: ${({ showNumber }) => {
+    return parseInt(showNumber) === 4 ? "absolute" : "relative";
+  }};
+  width: 100%;
 `;
 
 const Option = styled.footer`
@@ -20,9 +25,9 @@ const Option = styled.footer`
   margin-right: 2rem;
 `;
 
-const Footer = ({ mobile }) => {
+const Footer = ({ mobile, showNumber }) => {
   return (
-    <Foot mobile={mobile}>
+    <Foot showNumber={showNumber} mobile={mobile}>
       <Option>Ayuda</Option>
       <Option>Contacto</Option>
       <Option>Terminos y condiciones</Option>

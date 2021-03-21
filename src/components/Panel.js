@@ -4,9 +4,16 @@ import styled from "styled-components";
 import * as data from "../products.json";
 
 const List = styled.li`
-  background-color: ${({ clean }) => {
-    return clean ? "white" : "";
+  background-color: ${({ selected, name }) => {
+    return selected.includes(name) ? "#edf1f7" : "white";
   }};
+  list-style-type: none;
+  margin: 0.2rem;
+  width: 100%;
+  cursor: pointer;
+`;
+
+const Filt = styled.li`
   list-style-type: none;
   margin: 0.2rem;
   width: 100%;
@@ -54,7 +61,7 @@ const Img = styled.img`
 const Panel = ({ mobile }) => {
   const { shoesKey } = useContext(ShoesContext);
   const [shoes, setShoes] = shoesKey;
-  const [cleanF, setCleanF] = React.useState(false);
+  const [selected, setSelected] = React.useState([]);
 
   let refMenuBtn = useRef(),
     refMenu = useRef(),
@@ -90,8 +97,8 @@ const Panel = ({ mobile }) => {
     }
   };
 
-  const handleFilter = (e, filterName, filter) => {
-    e.target.style.backgroundColor = "#edf1f7";
+  const handleFilter = (filterName, filter) => {
+    setSelected([...selected, filter]);
     if (filterName === "type") {
       setShoes(
         shoes.filter((shoe) => {
@@ -102,7 +109,7 @@ const Panel = ({ mobile }) => {
     if (filterName === "size") {
       setShoes(
         shoes.filter((shoe) => {
-          return shoe.size.includes(filter);
+          return shoe.size.includes(parseInt(filter));
         })
       );
     }
@@ -113,7 +120,6 @@ const Panel = ({ mobile }) => {
         })
       );
     }
-    setCleanF(false);
   };
 
   return (
@@ -143,34 +149,39 @@ const Panel = ({ mobile }) => {
           </ListName>
           <div style={{ display: "block" }} ref={refCatMenu}>
             <List
-              clean={cleanF}
-              onClick={(e) => {
-                handleFilter(e, "type", "zapatilla");
+              name="zapatilla"
+              selected={selected}
+              onClick={() => {
+                handleFilter("type", "zapatilla");
               }}
             >
               Zapatillas
             </List>
             <List
-              clean={cleanF}
-              onClick={(e) => handleFilter(e, "type", "zapato")}
+              name="zapato"
+              selected={selected}
+              onClick={() => handleFilter("type", "zapato")}
             >
               Zapatos
             </List>
             <List
-              clean={cleanF}
-              onClick={(e) => handleFilter(e, "type", "bota")}
+              name="bota"
+              selected={selected}
+              onClick={() => handleFilter("type", "bota")}
             >
               Botas
             </List>
             <List
-              clean={cleanF}
-              onClick={(e) => handleFilter(e, "type", "sandalia")}
+              name="sandalia"
+              selected={selected}
+              onClick={() => handleFilter("type", "sandalia")}
             >
               Sandalias
             </List>
             <List
-              clean={cleanF}
-              onClick={(e) => handleFilter(e, "type", "pantufla")}
+              name="pantufla"
+              selected={selected}
+              onClick={() => handleFilter("type", "pantufla")}
             >
               Pantuflas
             </List>
@@ -184,19 +195,41 @@ const Panel = ({ mobile }) => {
             Talle
           </ListName>
           <div style={{ display: "block" }} ref={refSizeMenu}>
-            <List clean={cleanF} onClick={(e) => handleFilter(e, "size", 36)}>
+            <List
+              name="36"
+              selected={selected}
+              onClick={() => {
+                handleFilter("size", "36");
+              }}
+            >
               36
             </List>
-            <List clean={cleanF} onClick={(e) => handleFilter(e, "size", 38)}>
+            <List
+              name="38"
+              selected={selected}
+              onClick={() => handleFilter("size", "38")}
+            >
               38
             </List>
-            <List clean={cleanF} onClick={(e) => handleFilter(e, "size", 40)}>
+            <List
+              name="40"
+              selected={selected}
+              onClick={() => handleFilter("size", "40")}
+            >
               40
             </List>
-            <List clean={cleanF} onClick={(e) => handleFilter(e, "size", 42)}>
+            <List
+              name="42"
+              selected={selected}
+              onClick={() => handleFilter("size", "42")}
+            >
               42
             </List>
-            <List clean={cleanF} onClick={(e) => handleFilter(e, "size", 44)}>
+            <List
+              name="44"
+              selected={selected}
+              onClick={() => handleFilter("size", "44")}
+            >
               44
             </List>
           </div>
@@ -210,46 +243,51 @@ const Panel = ({ mobile }) => {
           </ListName>
           <div style={{ display: "block" }} ref={refColorMenu}>
             <List
-              clean={cleanF}
-              onClick={(e) => handleFilter(e, "color", "yellow")}
+              name="yellow"
+              selected={selected}
+              onClick={() => handleFilter("color", "yellow")}
             >
               Amarillo
             </List>
             <List
-              clean={cleanF}
-              onClick={(e) => handleFilter(e, "color", "black")}
+              name="black"
+              selected={selected}
+              onClick={(e) => handleFilter("color", "black")}
             >
               Negro
             </List>
             <List
-              clean={cleanF}
-              onClick={(e) => handleFilter(e, "color", "green")}
+              name="green"
+              selected={selected}
+              onClick={() => handleFilter("color", "green")}
             >
               Verde
             </List>
             <List
-              clean={cleanF}
-              onClick={(e) => handleFilter(e, "color", "blue")}
+              name="blue"
+              selected={selected}
+              onClick={() => handleFilter("color", "blue")}
             >
               Azul
             </List>
             <List
-              clean={cleanF}
-              onClick={(e) => handleFilter(e, "color", "white")}
+              name="white"
+              selected={selected}
+              onClick={() => handleFilter("color", "white")}
             >
               Blanco
             </List>
           </div>
         </ul>
         <hr></hr>
-        <List
+        <Filt
           onClick={() => {
             setShoes(data.data);
-            setCleanF(true);
+            setSelected([]);
           }}
         >
           Limpiar filtro
-        </List>
+        </Filt>
       </Wrapper>
     </div>
   );

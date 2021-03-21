@@ -1,29 +1,23 @@
 import React from "react";
 import { Card } from "react-bootstrap";
 
-const Shoe = ({ id, name, price, image, showNumber }) => {
+const Shoe = ({ mobile, name, price, image, showNumber }) => {
   return (
     <Card
       border="light"
-      className={`col-${
+      className={`p-0 col-${
         parseInt(showNumber) === 3
           ? 3
           : parseInt(showNumber) === 2
           ? 4
           : parseInt(showNumber) === 4
           ? 2
-          : 6
-      } m-4 outline-none`}
-      style={{ width: "18rem" }}
+          : 9
+      }  ml-4 mr-4 outline-none`}
     >
-      <Card.Img
-        style={{ width: "150%" }}
-        className="border-bottom"
-        variant="top"
-        src={image}
-      />
+      <Card.Img className="border-bottom" variant="top" src={image} />
       <Card.Body>
-        <Card.Title>{name}</Card.Title>
+        <Card.Title className={`${mobile ? "h6" : ""}`}>{name}</Card.Title>
         <Card.Text>
           <b>${price}</b>
         </Card.Text>
