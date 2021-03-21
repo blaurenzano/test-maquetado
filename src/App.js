@@ -17,7 +17,7 @@ function App() {
       setMobile(true);
       setShowNumber(1);
     }
-  });
+  }, [setMobile, setShowNumber]);
 
   return (
     <div>
@@ -25,10 +25,10 @@ function App() {
       <div className="container">
         <div className="d-flex flex-row">
           <Panel mobile={mobile}></Panel>
-          <Shoes shoes={shoes} showNumber={showNumber}></Shoes>
+          <Shoes shoes={shoes} mobile={mobile}></Shoes>
         </div>
       </div>
-      <Footer></Footer>
+      <Footer mobile={mobile}></Footer>
     </div>
   );
 }

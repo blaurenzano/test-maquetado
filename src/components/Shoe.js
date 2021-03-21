@@ -6,7 +6,13 @@ const Shoe = ({ id, name, price, image, showNumber }) => {
     <Card
       border="light"
       className={`col-${
-        showNumber === 3 ? 3 : showNumber === 2 ? 4 : showNumber === 4 ? 2 : 6
+        parseInt(showNumber) === 3
+          ? 3
+          : parseInt(showNumber) === 2
+          ? 4
+          : parseInt(showNumber) === 4
+          ? 2
+          : 6
       } m-4 outline-none`}
       style={{ width: "18rem" }}
     >

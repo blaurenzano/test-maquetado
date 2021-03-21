@@ -8,6 +8,10 @@ const Foot = styled.footer`
   justify-content: center;
   margin-top: 1rem;
   padding: 0.5rem;
+  flex-direction: ${({ mobile }) => {
+    return mobile ? "column" : "row";
+  }};
+  text-align: center;
 `;
 
 const Option = styled.footer`
@@ -16,9 +20,9 @@ const Option = styled.footer`
   margin-right: 2rem;
 `;
 
-const Footer = () => {
+const Footer = ({ mobile }) => {
   return (
-    <Foot>
+    <Foot mobile={mobile}>
       <Option>Ayuda</Option>
       <Option>Contacto</Option>
       <Option>Terminos y condiciones</Option>
