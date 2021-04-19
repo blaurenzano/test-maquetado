@@ -1,0 +1,100 @@
+[
+  {
+    "img":"assets/productos/zapatilla_1.jpg",
+    "name":"Zapatilla 1-XFK",
+    "price":5000
+  },
+  {
+    "img":"assets/productos/zapatilla_2.jpg",
+    "name":"Zapatilla 2000-X",
+    "price":9800
+  },
+  {
+    "img":"assets/productos/zapatilla_3.jpg",
+    "name":"Zapatilla 3 Run",
+    "price":6500
+  },
+
+
+  {
+    "img":"assets/productos/zapatilla_2.jpg",
+    "name":"Zapatilla 2000-X",
+    "price":9800
+  },
+  {
+    "img":"assets/productos/zapatilla_3.jpg",
+    "name":"Zapatilla 3 Run",
+    "price":6500
+  },
+  {
+    "img":"assets/productos/zapatilla_1.jpg",
+    "name":"Zapatilla 1-XFK",
+    "price":5000
+  },
+
+
+  {
+    "img":"assets/productos/zapatilla_3.jpg",
+    "name":"Zapatilla 3 Run",
+    "price":6500
+  },
+  {
+    "img":"assets/productos/zapatilla_1.jpg",
+    "name":"Zapatilla 1-XFK",
+    "price":5000
+  },
+  {
+    "img":"assets/productos/zapatilla_2.jpg",
+    "name":"Zapatilla 2000-X",
+    "price":9800
+  },
+  {
+    "img":"assets/productos/zapatilla_1.jpg",
+    "name":"Zapatilla 1-XFK",
+    "price":5000
+  },
+  {
+    "img":"assets/productos/zapatilla_2.jpg",
+    "name":"Zapatilla 2000-X",
+    "price":9800
+  },
+  {
+    "img":"assets/productos/zapatilla_3.jpg",
+    "name":"Zapatilla 3 Run",
+    "price":6500
+  },
+
+
+  {
+    "img":"assets/productos/zapatilla_2.jpg",
+    "name":"Zapatilla 2000-X",
+    "price":9800
+  },
+  {
+    "img":"assets/productos/zapatilla_3.jpg",
+    "name":"Zapatilla 3 Run",
+    "price":6500
+  },
+  {
+    "img":"assets/productos/zapatilla_1.jpg",
+    "name":"Zapatilla 1-XFK",
+    "price":5000
+  },
+
+
+  {
+    "img":"assets/productos/zapatilla_3.jpg",
+    "name":"Zapatilla 3 Run",
+    "price":6500
+  },
+  {
+    "img":"assets/productos/zapatilla_1.jpg",
+    "name":"Zapatilla 1-XFK",
+    "price":5000
+  },
+  {
+    "img":"assets/productos/zapatilla_2.jpg",
+    "name":"Zapatilla 2000-X",
+    "price":9800
+  }
+]

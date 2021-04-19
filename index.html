@@ -1,11 +1,105 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-	<meta charset="UTF-8">
-	<title>Test de maquetado</title>
-	<link rel="stylesheet" href="styles.css">
-</head>
-<body>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>La Preuve</title>
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
+	</head>
+	<body>
+		<div id="app">
+			<header class="header">
+				<div class="toggle-nav">
+					<a href="#" v-on:click="openNav"><i class="icon icon-bars-solid"></i></a>
+				</div>
+				<div class="brand">
+					<a href="#">
+						<img src="assets/logo.svg" alt="La Preuve" width="206" title="La Preuve">
+					</a>
+				</div>
+				<div class="links-nav">
+					<a href="#"><i class="icon icon-search-solid"></i></a>
+					<a href="#"><i class="icon icon-user-solid"></i></a>
+					<a href="#" class="shopping-cart"><i class="icon icon-shopping-cart-solid"></i></a>
+				</div>
+			</header>
+			<nav class="nav">
+				<a href="#" v-on:click="closeNav" class="close-nav">cerrar</a>
+				<ul>
+					<li class="active"><a href="#">Sale</a></li>
+					<li><a href="#">E-shop</a></li>
+					<li><a href="#">Lookbook</a></li>
+					<li><a href="#">Campaña</a></li>
+					<li><a href="#">Locales</a></li>
+				</ul>
+			</nav>
+			<section class="section">
+				<div class="container">
+					<aside class="aside">
+						<div class="filters">
+							<h3>Zapatillas</h3>
 
-</body>
+							<h5>Filtrar</h5>
+							<div>
+								<h4  v-on:click="accordion('category')">Categoria</h4>
+								<ul :class="state.category ? '' : 'hide'">
+
+									<li>Zapatillas</li>
+									<li>Zapatos</li>
+									<li>Botas</li>
+									<li>Sandalias</li>
+									<li>Pantuflas</li>
+								</ul>
+							</div>
+							<div>
+								<h4 v-on:click="accordion('size')">Talle</h4>
+								<ul :class="state.size ? '' : 'hide'">
+									<li>36</li>
+									<li>38</li>
+									<li>40</li>
+									<li>42</li>
+									<li>44</li>
+								</ul>
+							</div>
+							<div>
+								<h4 v-on:click="accordion('color')">Color</h4>
+								<ul :class="state.color ? '' : 'hide'">
+									<li>Amarillo</li>
+									<li>Negro</li>
+									<li>Verde</li>
+									<li>Azul</li>
+									<li>Blanco</li>
+								</ul>
+							</div>
+						</div>
+					</aside>
+					<main class="main items-hide">
+						<div class="load">
+							<div class="loading"><div></div><div></div></div>
+						</div>
+						<div class="item" v-for="item in data">
+							<div class="wrap-img">
+								<img :src="item.img" width="260" alt="{{ item.name }}" title="{{ item.name }}">
+							</div>
+							<div class="wrap-data">
+								<div class="name"> {{ item.name }} </div>
+								<div class="price"> {{ item.price }} </div>
+							</div>
+						</div>
+					</main>
+				</div>
+			</section>
+			<footer class="footer">
+				<ul>
+					<li><a href="#">Ayuda</a></li>
+					<li><a href="#">Contacto</a></li>
+					<li><a href="#">Términos y condiciones</a></li>
+					<li><a href="#">Política de privacidad</a></li>
+				</ul>
+			</footer>
+		</div>
+		<script src="js/main.js"></script>
+	</body>
 </html>
+

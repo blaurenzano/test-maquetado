@@ -1,0 +1,32 @@
+.links-nav{
+  a{
+    text-decoration: none;
+    display: none;
+
+    &.shopping-cart{
+      display: block;
+      padding:3px 14px;
+    }
+
+    .icon{
+      font-size: 23px;
+      color:white;
+    }
+  }
+}
+@media (min-width: @medium) {
+  .links-nav{
+    position: absolute;
+    top:24px;
+    right: 40px;
+    display: flex;
+    a{
+      display: inline-block;
+      padding:0;
+      &.shopping-cart{
+        display: inline-block;
+        padding:0;
+      }
+    }
+  }
+}

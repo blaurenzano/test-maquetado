@@ -1,0 +1,20 @@
+.header{
+  background-color:@bg-dark;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+@media (min-width: @medium) {
+  .header{
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+
+
+
+@import "__nav";
+@import "__linksnav";
+@import "__brand";

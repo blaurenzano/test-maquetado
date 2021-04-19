@@ -1,0 +1,29 @@
+.container{
+  width: 100%;
+  max-width: @desktop-max-w;
+  margin:0 auto;
+  display: flex;
+  flex-direction: column;
+
+  .aside{
+    width: 100%;
+  }
+  .main{
+    width: 100%;
+  }
+}
+
+@media (min-width: @medium) {
+  .container{
+    flex-direction: row;
+    justify-content: space-between;
+
+    .aside{
+      width: @aside-w;
+    }
+    .main{
+      width: ~"calc(100% - @{aside-w} - 8px )";
+    }
+
+  }
+}

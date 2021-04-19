@@ -1,0 +1,57 @@
+.filters{
+  h3{
+    font-size: 24px;
+    font-weight: bold;
+    padding:0 0 8px 0;
+    border-bottom: solid 1px @black;
+    margin:0 0 16px 0;
+  }
+  h5{
+    font-size: 20px;
+    line-height:24px;
+    margin:0 0 14px;
+  }
+  h4{
+    background-color: @light-grey;
+    font-size: 16px;
+    font-weight: bold;
+    padding:5px 16px;
+    margin: 0 0 8px 0;
+    cursor:pointer;
+  }
+  ul{
+    margin:0;
+    line-height: 20px;
+    list-style: none;
+    display: block;
+    transition: all 0.25s ease-in-out;
+    max-height: 150px;
+    overflow: hidden;
+    padding:0;
+    max-height: 0;
+    &.hide{
+      padding: 0 0 14px 0;
+      max-height: 150px;
+    }
+    li{
+      padding:0 16px;
+    }
+  }
+}
+
+
+@media (min-width: @medium) {
+  .filters{
+    ul {
+      overflow: hidden;
+      padding: 0;
+      max-height: 0;
+      padding: 0 0 14px 0;
+      max-height: 150px;
+      &.hide {
+        padding:0;
+        max-height: 0;
+      }
+    }
+  }
+}
