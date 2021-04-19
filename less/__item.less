@@ -1,0 +1,51 @@
+.item{
+  max-width: unset;
+  box-sizing: border-box;
+  display: block;
+  flex-shrink: 1;
+  flex-basis: 100%;
+  margin-bottom: 32px;
+  padding:0 14px;
+  opacity:0;
+  &.fade{
+    animation-name: fade;
+    animation-duration: 1.2s;
+    animation-fill-mode: forwards;
+    animation-delay: 0.25s;
+  }
+
+  .wrap-img{
+    background-color: @white;
+    img{
+     width: 100%;
+    }
+  }
+  .wrap-data{
+    border-top:solid 1px @black;
+    padding-top: 10px;
+    .name{
+      font-size: 16px;
+      line-height: 16px;
+    }
+    .price{
+      font-size: 16px;
+      line-height: 22px;
+      font-weight: 700;
+    }
+  }
+
+}
+
+@media (min-width: @medium) {
+  .item {
+    max-width: 260px;
+    flex-basis: 33.33%;
+    padding:0 8px;
+  }
+}
+
+
+@keyframes fade {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}

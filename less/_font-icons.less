@@ -1,0 +1,50 @@
+@font-face {
+  font-family: 'lapreuve';
+  src: url('../assets/font/lapreuve.eot?62816954');
+  src: url('../assets/font/lapreuve.eot?62816954#iefix') format('embedded-opentype'),
+  url('../assets/font/lapreuve.woff?62816954') format('woff'),
+  url('../assets/font/lapreuve.ttf?62816954') format('truetype'),
+  url('../assets/font/lapreuve.svg?62816954#lapreuve') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.icon{
+  font-family: @icon-font;
+  font-style: normal;
+  font-weight: normal;
+  speak: never;
+
+  display: inline-block;
+  text-decoration: inherit;
+  width: 1em;
+  margin-right: .2em;
+  text-align: center;
+  /* opacity: .8; */
+
+  /* For safety - reset parent styles, that can break glyph codes*/
+  font-variant: normal;
+  text-transform: none;
+
+  /* fix buttons height, for twitter bootstrap */
+  line-height: 1em;
+
+  /* Animation center compensation - margins should be symmetric */
+  /* remove if not needed */
+  margin-left: .2em;
+
+  /* You can be more comfortable with increased icons size */
+  /* font-size: 120%; */
+
+  /* Font smoothing. That was taken from TWBS */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  /* Uncomment for 3D effect */
+  /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
+}
+
+.icon-bars-solid:before { content: '\e800'; }
+.icon-search-solid:before { content: '\e801'; }
+.icon-shopping-cart-solid:before { content: '\e802'; }
+.icon-user-solid:before { content: '\e803'; }
