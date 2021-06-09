@@ -65,14 +65,19 @@ const SubContainer = styled.div`
     flex-flow: row nowrap;
     height: auto;
     margin-top: 0.5rem;
+    align-items: center;
+    justify-content: space-around;
     img {
       width: 22px;
-      margin-left: 0.5rem;
-      margin-top: -6px;
     }
     input {
       width: 90%;
       margin-left: 0.5rem;
+      margin-bottom: 0;
+    }
+    @media (max-width: 600px) {
+      width: 95%;
+      justify-content: space-between;
     }
   }
 `;

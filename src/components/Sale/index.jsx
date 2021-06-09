@@ -3,6 +3,7 @@ import AccordionSummary from "@material-ui/core/AccordionSummary";
 import AccordionDetails from "@material-ui/core/AccordionDetails";
 import data from "../../assets/info/data.json";
 import Fuse from "fuse.js";
+import { IoMdClose } from "react-icons/io";
 import {
   Container,
   SubContainer,
@@ -82,6 +83,13 @@ export default function Sale() {
     setSearchColor(value);
   }
 
+  function clearFilters() {
+    setSearchCategory(null);
+    setSearchSize(null);
+    setSearchColor(null);
+    setQuerySearch(null);
+  }
+
   return (
     <Container>
       <SubContainer className="category">
@@ -94,12 +102,18 @@ export default function Sale() {
               placeholder="Search..."
               onChange={(e) => setQuerySearch(e.target.value)}
             />
+            <IoMdClose
+              size="24px"
+              style={{ cursor: "pointer" }}
+              title="Limpiar Filtros"
+              onClick={clearFilters}
+            />
           </SubContainer>
           <SubContainer className="filterContainer">
             {searchCategory !== null ? (
               <Title>Tipo: {searchCategory}</Title>
             ) : null}
-            {searchSize !== null ? <Title>Talle: {searchSize}</Title> : null}
+            {searchSize !== null ? <Title>Talle: {searchSize} </Title> : null}
             {searchColor !== null ? <Title>Color: {searchColor}</Title> : null}
           </SubContainer>
           <hr />
