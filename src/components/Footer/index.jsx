@@ -6,10 +6,19 @@ export default function Footer() {
   return (
     <Container>
       <SubContainer>
-        <Title>Ayuda</Title>
-        <Title>Contacto</Title>
-        <Title>Términos y condiciones</Title>
-        <Title>Politicas de privacidad</Title>
+        <Link to="/">
+          <Title>Ayuda</Title>
+        </Link>
+        <Link to="/">
+          <Title>Contacto</Title>
+        </Link>
+        <Link to="/">
+          <Title>Términos y condiciones</Title>
+        </Link>
+        <Link to="/">
+          <Title>Politicas de privacidad</Title>
+        </Link>
+        <Link to="/"></Link>
       </SubContainer>
     </Container>
   );

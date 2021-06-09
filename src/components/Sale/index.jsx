@@ -34,9 +34,7 @@ export default function Sale() {
   const result = fuse.search(
     querySearch + searchCategory + searchSize + searchColor
   );
-  console.log("searchCategory", searchCategory);
 
-  console.log(result);
   const resultMap =
     result.length > 0
       ? result.map((product, i) => {
@@ -87,7 +85,6 @@ export default function Sale() {
     setSearchCategory(null);
     setSearchSize(null);
     setSearchColor(null);
-    setQuerySearch(null);
   }
 
   return (

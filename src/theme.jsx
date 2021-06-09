@@ -47,34 +47,10 @@ body{
     background: transparent;
     overflow-x: hidden;
   }
-
-  /*Alerts Toast*/
-  .Toastify__toast-body{
-    color: white ;
-  }
-  .Toastify__toast{
-    border-radius: 0.3rem;
-    color: white ;
-  }
-
-  .Toastify__toast--info {
-    background-color: ${({ theme }) => theme.navBar.primary};
-    color: white ;
-}
-
-  .Toastify__toast--success {
-    background-color:#419619;
-    color: white ;
-}
-
-.Toastify__toast--error {
-  background-color:#b30000;
-  color: white ;
-}
   
   /* Track */
   ::-webkit-scrollbar-track {
-    border-radius: 5px;
+    border-radius: 3px;
     background: none;
     background-color: transparent;
     background: transparent;
@@ -84,10 +60,10 @@ body{
   ::-webkit-scrollbar-thumb {
     background: radial-gradient(
       circle,
-      ${({ theme }) => theme.third} 0%,
-      ${({ theme }) => theme.secondary} 100%
+      ${({ theme }) => theme.navBar.primary} 0%,
+      ${({ theme }) => theme.navBar.primary} 100%
     );
-    border-radius: 10px;
+    border-radius: 3px;
     opacity: 0.3;
     transition: all 0.5s;
   }
@@ -96,15 +72,12 @@ body{
   ::-webkit-scrollbar-thumb:hover {
     background: radial-gradient(
       circle,
-      ${({ theme }) => theme.secondary} 100%,
-      ${({ theme }) => theme.third} 0%
+      ${({ theme }) => theme.navBar.primary} 100%,
+      ${({ theme }) => theme.navBar.primary} 0%
     );
     transition: all 0.5s;
   }
 }
-
-
-
   #root{
     background-color: ${({ theme }) => theme.body};
     padding: 0;
@@ -123,13 +96,11 @@ const stylesThemes = {
   body: "#FAFAFA",
   primary: "#100217E6",
   secondary: "#E4E8EE",
-  third: "#DDC5A2",
   textColor: "#030B1C",
   filterColor: "#E4E8EE",
   navBar: {
     primary: "#100217E6",
     secondary: "#FAFAFA",
-    hover: "#DDC5A2",
   },
 };
 

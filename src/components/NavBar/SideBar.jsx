@@ -1,17 +1,16 @@
 import React, { useState } from "react";
 import { MobileMenu, Button, SubContainer, Title } from "./style";
-import { Link } from "react-router-dom";
 import { IoMdClose } from "react-icons/io";
 import { GiHamburgerMenu } from "react-icons/gi";
 
 export default function SideBar({ children }) {
   const [open, setOpen] = useState(false);
 
-  function closeModal() {
+  function closeBurger() {
     setOpen(false);
   }
 
-  function openModal() {
+  function openBurger() {
     setOpen(true);
   }
 
@@ -22,12 +21,12 @@ export default function SideBar({ children }) {
         aria-label="Menu"
         aria-controls="menu"
         aria-expanded={open}
-        onClick={openModal}
+        onClick={openBurger}
       >
         <GiHamburgerMenu />
       </Button>
-      <MobileMenu isOpen={open} onClose={closeModal} className="burgerMenu">
-        <Button onClick={closeModal}>
+      <MobileMenu isOpen={open} onClose={closeBurger} className="burgerMenu">
+        <Button onClick={closeBurger}>
           <IoMdClose />
         </Button>
         <Title>
