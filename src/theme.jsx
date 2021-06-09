@@ -86,12 +86,9 @@ body{
     overflow-x: hidden !important;
   }
   }
-
-textarea, p{
-  opacity: 0.8;
-}
 `;
 
+/*Styles pass as props */
 const stylesThemes = {
   body: "#FAFAFA",
   primary: "#100217E6",

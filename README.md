@@ -25,7 +25,6 @@
     <li>
       <a href="#getting-started">Getting Started</a>
       <ul>
-        <li><a href="#prerequisites">Prerequisites</a></li>
         <li><a href="#installation">Installation</a></li>
       </ul>
     </li>
@@ -38,7 +37,12 @@
 
 <!-- ABOUT THE PROJECT -->
 ## About The Project
-
+This project is based on React JS using styled-components for the style of the page. 
+The functionalities are:
+- Search
+- Filter between "Size", "Type", "Color"
+- Move between components (currently you only have one "Sale")
+- Fully Responsive
 
 
 
@@ -90,7 +94,7 @@ To get a local copy up and running follow these simple example steps.
 <!-- LICENSE -->
 ## License
 
-Distributed under the MIT License. See `LICENSE` for more information.
+Distributed under the MIT License. See * [LICENSE](https://mit-license.org/) for more information.
 
 
 
