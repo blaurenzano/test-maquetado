@@ -46,6 +46,7 @@ const SubContainer = styled.div`
     width: 70%;
     max-width: 967px;
     height: 100%;
+    min-height: 800px;
     flex-flow: row wrap;
     padding: 41px 39px 0 0;
     align-items: flex-start;

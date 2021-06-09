@@ -3,23 +3,26 @@ import { Container, SubContainer, Title } from "./style";
 import { Link } from "react-router-dom";
 
 export default function Footer() {
+  const links = [
+    "Ayuda",
+    "Contacto",
+    "Términos y condiciones",
+    "Politicas de privacidad",
+  ];
+
+  const linksSearchs = () => {
+    return links.map((name, i) => {
+      return (
+        <Link to="/sale" key={i}>
+          <Title>{name}</Title>
+        </Link>
+      );
+    });
+  };
+
   return (
     <Container>
-      <SubContainer>
-        <Link to="/">
-          <Title>Ayuda</Title>
-        </Link>
-        <Link to="/">
-          <Title>Contacto</Title>
-        </Link>
-        <Link to="/">
-          <Title>Términos y condiciones</Title>
-        </Link>
-        <Link to="/">
-          <Title>Politicas de privacidad</Title>
-        </Link>
-        <Link to="/"></Link>
-      </SubContainer>
+      <SubContainer>{linksSearchs()}</SubContainer>
     </Container>
   );
 }

@@ -21,6 +21,12 @@ export default function Sale() {
   const [searchColor, setSearchColor] = useState(null);
   const [querySearch, setQuerySearch] = useState();
 
+  const categories = ["Zapatillas", "Botas", "Sandalias", "Pantuflas"];
+
+  const sizes = ["35", "38", "40", "42", "44"];
+
+  const colors = ["Amarillo", "Negro", "Verde", "Azul", "Blanco"];
+
   const options = {
     includeScore: false,
     threshold: 0.74,
@@ -56,6 +62,40 @@ export default function Sale() {
             </ProductContainer>
           );
         });
+
+  const getFilterCategory = () => {
+    return categories.map((category, i) => {
+      return (
+        <Filter
+          onClick={(e) => filterCategory(e)}
+          key={i}
+          value={category}
+          type="button"
+        />
+      );
+    });
+  };
+
+  const getFilterSize = () => {
+    return sizes.map((size, i) => {
+      return (
+        <Filter onClick={(e) => filterSize(e)} value={size} type="button" />
+      );
+    });
+  };
+
+  const getFilterColor = () => {
+    return colors.map((color, i) => {
+      return (
+        <Filter
+          onClick={(e) => filterColor(e)}
+          key={i}
+          value={color}
+          type="button"
+        />
+      );
+    });
+  };
 
   function filterCategory(e) {
     let value = e.target.value;
@@ -107,9 +147,7 @@ export default function Sale() {
             />
           </SubContainer>
           <SubContainer className="filterContainer">
-            {searchCategory !== null ? (
-              <Title>Tipo: {searchCategory}</Title>
-            ) : null}
+            {searchCategory !== null ? <Title>{searchCategory}</Title> : null}
             {searchSize !== null ? <Title>Talle: {searchSize} </Title> : null}
             {searchColor !== null ? <Title>Color: {searchColor}</Title> : null}
           </SubContainer>
@@ -119,72 +157,19 @@ export default function Sale() {
             <AccordionSummary aria-controls="panel1a-content">
               <Paragraph className="categoryName">Categorias</Paragraph>
             </AccordionSummary>
-            <AccordionDetails>
-              <Filter
-                onClick={(e) => filterCategory(e)}
-                value="Zapatillas"
-                type="button"
-              />
-              <Filter
-                onClick={(e) => filterCategory(e)}
-                value="Botas"
-                type="button"
-              />
-              <Filter
-                onClick={(e) => filterCategory(e)}
-                value="Sandalias"
-                type="button"
-              />
-              <Filter
-                onClick={(e) => filterCategory(e)}
-                value="Pantuflas"
-                type="button"
-              />
-            </AccordionDetails>
+            <AccordionDetails>{getFilterCategory()}</AccordionDetails>
           </SelectMenu>
           <SelectMenu>
             <AccordionSummary aria-controls="panel1a-content">
               <Paragraph className="categoryName">Talle</Paragraph>
             </AccordionSummary>
-            <AccordionDetails>
-              <Filter onClick={(e) => filterSize(e)} value="35" type="button" />
-              <Filter onClick={(e) => filterSize(e)} value="38" type="button" />
-              <Filter onClick={(e) => filterSize(e)} value="40" type="button" />
-              <Filter onClick={(e) => filterSize(e)} value="42" type="button" />
-              <Filter onClick={(e) => filterSize(e)} value="44" type="button" />
-            </AccordionDetails>
+            <AccordionDetails>{getFilterSize()}</AccordionDetails>
           </SelectMenu>
           <SelectMenu>
             <AccordionSummary aria-controls="panel1a-content">
               <Paragraph className="categoryName">Color</Paragraph>
             </AccordionSummary>
-            <AccordionDetails>
-              <Filter
-                onClick={(e) => filterColor(e)}
-                value="Amarillo"
-                type="button"
-              />
-              <Filter
-                onClick={(e) => filterColor(e)}
-                value="Negro"
-                type="button"
-              />
-              <Filter
-                onClick={(e) => filterColor(e)}
-                value="Verde"
-                type="button"
-              />
-              <Filter
-                onClick={(e) => filterColor(e)}
-                value="Azul"
-                type="button"
-              />
-              <Filter
-                onClick={(e) => filterColor(e)}
-                value="Blanco"
-                type="button"
-              />
-            </AccordionDetails>
+            <AccordionDetails>{getFilterColor()}</AccordionDetails>
           </SelectMenu>
         </SubContainer>
       </SubContainer>

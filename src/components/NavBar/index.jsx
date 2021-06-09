@@ -9,6 +9,18 @@ export default function NavBar() {
   const theme = useTheme();
   const isDesktop = useMediaQuery(theme.breakpoints.up("sm"));
 
+  const links = ["Sale", "E-shop", "LookBook", "Campaña", "Locales"];
+
+  const linksSearchs = () => {
+    return links.map((name, i) => {
+      return (
+        <Link to="/sale" key={i}>
+          <Title>{name}</Title>
+        </Link>
+      );
+    });
+  };
+
   const userLinks = (
     <SubContainer className="userLinks">
       <Link to="/">
@@ -41,45 +53,13 @@ export default function NavBar() {
             </SubContainer>
           </SubContainer>
           <SubContainer className="links">
-            <TitleContainer className="links">
-              <Link to="/sale">
-                <Title>Sale</Title>
-              </Link>
-              <Link to="/">
-                <Title>E-shop</Title>
-              </Link>
-              <Link to="/">
-                <Title>LookBook</Title>
-              </Link>
-              <Link to="/">
-                <Title>Campaña</Title>
-              </Link>
-              <Link to="/">
-                <Title>Locales</Title>
-              </Link>
-            </TitleContainer>
+            <TitleContainer className="links">{linksSearchs()}</TitleContainer>
           </SubContainer>
         </>
       ) : (
         <>
           <SideBar>
-            <TitleContainer className="links">
-              <Link to="/sale">
-                <Title>Sale</Title>
-              </Link>
-              <Link to="/">
-                <Title>E-shop</Title>
-              </Link>
-              <Link to="/">
-                <Title>LookBook</Title>
-              </Link>
-              <Link to="/">
-                <Title>Campaña</Title>
-              </Link>
-              <Link to="/">
-                <Title>Locales</Title>
-              </Link>
-            </TitleContainer>
+            <TitleContainer className="links">{linksSearchs()}</TitleContainer>
           </SideBar>
           <SubContainer className="logoContainer">
             <img src="/logo.svg" alt="LOGO" className="logo" />
