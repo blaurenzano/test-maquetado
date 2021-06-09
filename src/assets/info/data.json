@@ -1,0 +1,110 @@
+[
+  {
+    "name": "Zapatilla 1-XFK",
+    "image": "/productos/zapatilla_1.jpg",
+    "categorie": "Zapatillas",
+    "price": 6210,
+    "in-stock": true,
+    "size-available": [36, 38],
+    "color": ["Rojo", "Amarillo"]
+  },
+  {
+    "name": "Zapatilla 2000-X",
+    "image": "/productos/zapatilla_2.jpg",
+    "categorie": "Botas",
+    "price": 9735,
+    "in-stock": true,
+    "size-available": [42, 44],
+    "color": ["Verde", "Azul"]
+  },
+  {
+    "name": "Zapatilla 3 Run",
+    "image": "/productos/zapatilla_3.jpg",
+    "categorie": "Sandalias",
+    "price": 7360,
+    "in-stock": true,
+    "size-available": [36],
+    "color": ["Blanco", "Negro"]
+  },
+  {
+    "name": "Botas Mujer Taco",
+    "image": "https://http2.mlstatic.com/D_NQ_NP_956006-MLA41942997582_052020-O.webp",
+    "categorie": "Botas",
+    "price": 8450,
+    "in-stock": true,
+    "size-available": [42, 44],
+    "color": ["Verde", "Azul"]
+  },
+  {
+    "name": "Peluche Pantubotas Cómodas",
+    "image": "https://http2.mlstatic.com/D_NQ_NP_781480-MLA46134232955_052021-O.webp",
+    "categorie": "Pantuflas",
+    "price": 5000,
+    "in-stock": true,
+    "size-available": [40],
+    "color": ["Rojo", "Amarillo"]
+  },
+  {
+    "name": "Zapatillas Skater De Lona",
+    "image": "https://http2.mlstatic.com/D_NQ_NP_941056-MLA32966152562_112019-O.webp",
+    "categorie": "Zapatillas",
+    "price": 3695,
+    "in-stock": true,
+    "size-available": [36, 42],
+    "color": ["Blanco", "Negro"]
+  },
+  {
+    "name": "Havaianas Ojotas",
+    "image": "https://http2.mlstatic.com/D_NQ_NP_890277-MLA31088700241_062019-O.webp",
+    "categorie": "Sandalias",
+    "price": 9800,
+    "in-stock": true,
+    "size-available": [44],
+    "color": ["Verde", "Azul"]
+  },
+  {
+    "name": "Peluche Ojotas Chinelas",
+    "image": "https://http2.mlstatic.com/D_NQ_NP_606481-MLA45321182959_032021-O.webp",
+    "categorie": "Pantuflas",
+    "price": 4750,
+    "in-stock": true,
+    "size-available": [38, 44],
+    "color": ["Rojo", "Amarillo"]
+  },
+  {
+    "name": "Botitas B-6",
+    "image": "https://http2.mlstatic.com/D_NQ_NP_956006-MLA41942997582_052020-O.webp",
+    "categorie": "Botas",
+    "price": 9800,
+    "in-stock": true,
+    "size-available": [40, 42],
+    "color": ["Verde", "Azul"]
+  },
+  {
+    "name": "Zapatilla Adidas",
+    "image": "/productos/zapatilla_3.jpg",
+    "categorie": "Zapatillas",
+    "price": 2500,
+    "in-stock": true,
+    "size-available": [42, 44],
+    "color": ["Blanco", "Negro"]
+  },
+  {
+    "name": "Sandalias Nike",
+    "image": "/productos/zapatilla_1.jpg",
+    "categorie": "Sandalias",
+    "price": 7800,
+    "in-stock": true,
+    "size-available": [42, 44],
+    "color": ["Rojo", "Amarillo"]
+  },
+  {
+    "name": "Botas Street",
+    "image": "https://http2.mlstatic.com/D_NQ_NP_892341-MLA42552303992_072020-O.webp",
+    "categorie": "Botas",
+    "price": 3600,
+    "in-stock": true,
+    "size-available": [36, 44],
+    "color": ["Blanco", "Negro"]
+  }
+]
