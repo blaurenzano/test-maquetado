@@ -1,36 +1,124 @@
-# Ejercicio de maquetado html & css
-En el siguiente vínculo vas a encontrar el diseño de una web hecho en Adobe XD, en versión desktop y mobile:
-https://xd.adobe.com/view/f3229a4d-559d-4a23-500f-6c99f584ac0e-8513/
-Podés alternar entre la vista interactiva o la vista de especificaciones con los botones de la derecha, para poder ver datos de medidas, tipografías, colores, etc.
+[![MIT License][license-shield]][license-url]
+[![LinkedIn][linkedin-shield]][https://www.linkedin.com/in/elias-piscitelli/]
 
-## Objetivo
-El objetivo del ejercicio es maquetar el diseño usando html y css. Cuanto más fiel al diseño sea el resultado mejor.
-Podés armarlo como te sea más cómodo, si preferís usar sass, less, o incluso algún framework. Siempre aclarando si hace falta hacer alguna instalación o correr algún comando para poder ver el resultado.
 
-#### Evaluaremos:
-* Fidelidad al diseño desktop y mobile
-* Que el resultado sea responsive
-* Código prolijo y semántico
-* Convenciones en nombres de clases (ej BEM)
 
-#### Puntos opcionales:
-Cualquier detalle que le quieras agregar es bienvenido, pero opcional, aquí algunas sugerencias:
-* Armar un menú desplegable para mobile
-* Hacer una funcionalidad de acordeon para los filtros para ocultar/mostrar cada atributo
-* Hacer que al seleccionar un atributo de los filtros se muestren solo algunos de los productos
-* Agregar un selector o botones arriba a la derecha para cambiar la cantidad de columnas de la grilla de productos entre 2, 3 y 4 en desktop, ó 1 y 2 en mobile.
-* Cargar los productos tomando info desde un archivo JSON externo
+<!-- PROJECT LOGO -->
+<br />
+<p align="center">
+  <a href="https://github.com/othneildrew/Best-README-Template">
+    <img src="images/logo.png" alt="Logo" width="80" height="80">
+  </a>
+</p>
+  <h3 align="center">Proyect La Preuve</h3>
+<br />
 
-## Pasos a seguir:
 
-### Si te resulta cómodo usar git:
-1. Hacer un fork del repositorio en tu cuenta.
-2. Armar el código de la pantalla según el diseño.
-3. Hacer push de tus cambios en el fork.
-4. Crear un pull request en el repositorio original (git@github.com:blaurenzano/test-maquetado.git).
-5. Avisarnos que ya está listo el ejercicio por el mismo medio en que estábamos en contacto y enviar un link al pull request.
 
-### Si preferís no usar git:
-1. Descargarte este código inicial como .zip con el botón verde de arriba
-2. Armar el código de la pantalla según el diseño.
-3. Enviarnos un .zip con el código final por el mismo medio en que estábamos en contacto.
+<!-- TABLE OF CONTENTS -->
+<details open="open">
+  <summary>Table of Contents</summary>
+  <ol>
+    <li>
+      <a href="#about-the-project">About The Project</a>
+      <ul>
+        <li><a href="#built-with">Built With</a></li>
+        <li><a href="#libraries-used">Libraries used</a></li>
+      </ul>
+    </li>
+    <li>
+      <a href="#getting-started">Getting Started</a>
+      <ul>
+        <li><a href="#prerequisites">Prerequisites</a></li>
+        <li><a href="#installation">Installation</a></li>
+      </ul>
+    </li>
+    <li><a href="#usage">Usage</a></li>
+    <li><a href="#license">License</a></li>
+    <li><a href="#contact">Contact</a></li>
+    <li><a href="#acknowledgements">Acknowledgements</a></li>
+  </ol>
+</details>
+
+
+
+<!-- ABOUT THE PROJECT -->
+## About The Project
+
+[![Product Name Screen Shot][product-screenshot]](https://example.com)
+
+
+### Built With
+
+This section should list any major frameworks that you built your project using. Leave any add-ons/plugins for the acknowledgements section. Here are a few examples.
+* [React](https://es.reactjs.org/)
+* [Styled-Components](https://styled-components.com/)
+
+### Libraries used
+* [React Icons](https://react-icons.github.io/react-icons/)
+* [Material UI](https://material-ui.com/es/)
+* [Fuse JS](https://fusejs.io/)
+
+<!-- GETTING STARTED -->
+## Getting Started
+
+This is an example of how you may give instructions on setting up your project locally.
+To get a local copy up and running follow these simple example steps.
+
+
+### Installation
+
+1. Get sample layout at [https://xd.adobe.com/view/f3229a4d-559d-4a23-500f-6c99f584ac0e-8513/specs/](https://xd.adobe.com/view/f3229a4d-559d-4a23-500f-6c99f584ac0e-8513/specs/)
+
+2. Clone the repo
+   ```sh
+   git clone https://github.com/EliasPiscitelli/test-maquetado
+   ```
+
+3. Install NPM packages
+   ```sh
+   cd test-maquetado
+   ```
+
+4. Install NPM packages
+   ```sh
+   npm install
+   ```
+
+5. Start the proyect
+   ```sh
+   npm start
+   ```
+
+
+
+
+<!-- LICENSE -->
+## License
+
+Distributed under the MIT License. See `LICENSE` for more information.
+
+
+
+<!-- CONTACT -->
+## Contact
+
+Elias Piscitelli - elias.piscitelli@gmail.com
+
+Project Link: [https://github.com/EliasPiscitelli/test-maquetado](https://github.com/EliasPiscitelli/test-maquetado)
+
+
+
+<!-- ACKNOWLEDGEMENTS -->
+## Acknowledgements
+* [GitHub Emoji Cheat Sheet](https://www.webpagefx.com/tools/emoji-cheat-sheet)
+* [Img Shields](https://shields.io)
+* [Choose an Open Source License](https://choosealicense.com)
+* [GitHub Pages](https://pages.github.com)
+* [Animate.css](https://daneden.github.io/animate.css)
+* [Loaders.css](https://connoratherton.com/loaders)
+* [Slick Carousel](https://kenwheeler.github.io/slick)
+* [Smooth Scroll](https://github.com/cferdinandi/smooth-scroll)
+* [Sticky Kit](http://leafo.net/sticky-kit)
+* [JVectorMap](http://jvectormap.com)
+* [Font Awesome](https://fontawesome.com)
