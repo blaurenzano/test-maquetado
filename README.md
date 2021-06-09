@@ -7,7 +7,7 @@
 <br />
 <p align="center">
   <a href="https://github.com/othneildrew/Best-README-Template">
-    <img src="/readme_img.jpg" alt="Logo" width="140" height="120">
+    <img src="/public/readme_img.jpg" alt="Logo" width="140" height="120">
   </a>
 </p>
   <h3 align="center">Proyect La Preuve</h3>
